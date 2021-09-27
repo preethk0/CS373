@@ -8,6 +8,7 @@
 
 
 **Git SHA:** TODO
+
 **Project Leader:** Daniela Torres Martinez
 
 **GitLab Pipelines:** https://gitlab.com/mehuldar/aroundtheworld/-/pipelines
