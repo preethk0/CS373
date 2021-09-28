@@ -1,16 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Navbar, Nav } from "react-bootstrap";
 import "./NavBar.css";
-import NavBarItem from "./NavBarItem";
 
 const NavBar = ({}) => {
   return (
-    <div className="overallBar">
-      <NavBarItem to="/" title="Home" />
-      <NavBarItem to="/cats" title="Demographics" />
-      <NavBarItem to="/sheeps" title="Geography" />
-      <NavBarItem to="/goats" title="Food & Tourism" />
-    </div>
+    <Navbar bg="dark" variant="dark" className="overallBar">
+      <Navbar.Brand href="/">
+        <b>Around the World</b>
+      </Navbar.Brand>
+      <Nav className="me-auto">
+        <Nav.Link href="/demographics">Demographics</Nav.Link>
+        <Nav.Link href="/geography">Geography</Nav.Link>
+        <Nav.Link href="/foodandtourism">Food & Tourism</Nav.Link>
+      </Nav>
+    </Navbar>
   );
 };
 
