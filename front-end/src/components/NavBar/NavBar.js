@@ -7,9 +7,9 @@ const NavBar = ({}) => {
   return (
     <div className="overallBar">
       <NavBarItem to="/" title="Home" />
-      <NavBarItem to="/cats" title="Test" />
-      <NavBarItem to="/sheeps" title="Test1" />
-      <NavBarItem to="/goats" title="Test3" />
+      <NavBarItem to="/cats" title="Demographics" />
+      <NavBarItem to="/sheeps" title="Geography" />
+      <NavBarItem to="/goats" title="Food & Tourism" />
     </div>
   );
 };

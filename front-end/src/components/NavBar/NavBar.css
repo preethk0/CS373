@@ -1,9 +1,8 @@
 .overallBar {
-  flex: 1;
-  width: 100vw;
+  display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  padding: 0px 10vw;
   background-color: #89cdd3;
   height: 8vh;
 }

@@ -1,0 +1,14 @@
+.item {
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+}
+
+.linkStyle {
+  text-decoration: none;
+  color: black;
+}
+
+.linkStyle:hover {
+  font-weight: bold;
+}
