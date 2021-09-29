@@ -2,15 +2,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px;
+  padding: 30px 80px;
 }
 
 .header {
   font-weight: bold;
-  padding-bottom: 10px;
+  padding-top: 20px;
 }
 
 .descriptionText {
   font-size: 18px;
   text-align: center;
+}
+
+.memberCards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 32px;
+  padding: 20px 0px;
 }
