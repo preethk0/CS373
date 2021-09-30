@@ -1,0 +1,33 @@
+.bioCardStyle {
+  width: 350px;
+  height: 650px;
+}
+
+.cardStatsSection {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top-width: 1px;
+  border-top-color: #dbdbdb;
+  border-top-style: solid;
+}
+
+.statsCardStyle {
+  width: 170px;
+  height: 170px;
+  display: flex;
+}
+
+.statsValueStyle {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.statsTitleStyle {
+  font-size: 20px;
+  color: gray;
+}
+
+.toolCardStyle {
+  width: 250px;
+  height: 400px;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "antd";
-import "./BioCard.css";
+import "./Card.css";
 
 const BioCard = ({
   name,
@@ -12,7 +12,11 @@ const BioCard = ({
   tests,
 }) => {
   return (
-    <Card className="overallCardStyle" hoverable>
+    <Card
+      className="bioCardStyle"
+      hoverable
+      cover={photo && <img src={photo} />}
+    >
       <Card.Meta title={name} description={bio} />
       <div className="cardStatsSection">
         <div>Commits: {commits}</div>
