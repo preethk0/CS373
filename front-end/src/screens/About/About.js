@@ -4,6 +4,7 @@ import "./About.css";
 import BioCard from "../../components/Cards/BioCard";
 import StatsCard from "../../components/Cards/StatsCard";
 import ToolCard from "../../components/Cards/ToolCard";
+import { Spinner } from "react-bootstrap";
 
 const getGitLabStatistics = async () => {
   const commitsResponse = fetch(
@@ -73,20 +74,24 @@ const About = ({}) => {
         understand different perspectives and ways of life.
       </p>
       <h1 className="header">Our Team</h1>
-      {loaded && (
+      {loaded ? (
         <div className="cardsGrid">
           {Object.values(teamInfo).map((member) => (
             <BioCard {...member} />
           ))}
         </div>
+      ) : (
+        <Spinner animation="border" role="status" />
       )}
       <h1 className="header">GitLab Repository Statistics</h1>
-      {loaded && (
+      {loaded ? (
         <div className="cardsGrid">
           <StatsCard title="Commits" value={totalCommits} />
           <StatsCard title="Issues" value={totalIssues} />
           <StatsCard title="Unit Tests" value={totalTests} />
         </div>
+      ) : (
+        <Spinner animation="border" role="status" />
       )}
       <h1 className="header">Tools Used</h1>
       <div className="cardsGrid">
