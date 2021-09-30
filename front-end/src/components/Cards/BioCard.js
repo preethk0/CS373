@@ -17,7 +17,7 @@ const BioCard = ({
       hoverable
       cover={photo && <img src={photo} />}
     >
-      <Card.Meta title={name} description={bio} />
+      <Card.Meta title={name + ` (${responsibilities})`} description={bio} />
       <div className="cardStatsSection">
         <div>Commits: {commits}</div>
         <div>Issues: {issues}</div>
