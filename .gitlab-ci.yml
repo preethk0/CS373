@@ -1,0 +1,11 @@
+image: node:latest
+
+stages:
+  - build
+
+build_app:
+  stage: build
+  script:
+    - cd front-end
+    - npm install
+    - npm run-script build
