@@ -1,7 +1,14 @@
+.overallPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .coverImageStyle {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../../images/CoverImage.jpeg");
-  height: 93vh;
+  height: 85vh;
+  width: 100%;
   /* height: calc(80vh + 64px); */
   background-size: cover;
   display: flex;
@@ -14,8 +21,16 @@
     "Lucida Sans", Arial, sans-serif;
   font-weight: 600;
   align-self: center;
-  font-size: 50px;
+  font-size: 65px;
   color: white;
-  width: 300px;
+  width: 400px;
   text-align: center;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 32px;
+  padding: 20px 0px;
+  margin: 20px 0px;
 }
