@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import membersInfo, { toolsUsed } from "./AboutInformation";
+import membersInfo, { toolsUsed, ourTools } from "./AboutInformation";
 import "./About.css";
 import BioCard from "../../components/Cards/BioCard";
 import StatsCard from "../../components/Cards/StatsCard";
@@ -101,6 +101,12 @@ const About = ({}) => {
       </div>
       <h1 className="header">APIs</h1>
       <text style={{ fontSize: 25 }}>None as of right now!</text>
+      <h1 className="header">Our Tools & Data</h1>
+      <div className="cardsGrid">
+        {ourTools.map((tool) => (
+          <ToolCard {...tool} />
+        ))}
+      </div>
     </div>
   );
 };
