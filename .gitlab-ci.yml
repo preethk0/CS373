@@ -8,4 +8,4 @@ build_app:
   script:
     - cd front-end
     - npm install
-    - npm run-script build
+    - CI=false npm run-script build

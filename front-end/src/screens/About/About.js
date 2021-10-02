@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import membersInfo, { toolsUsed } from "./AboutInformation";
+import membersInfo, { toolsUsed, ourTools } from "./AboutInformation";
 import "./About.css";
 import BioCard from "../../components/Cards/BioCard";
 import StatsCard from "../../components/Cards/StatsCard";
@@ -19,10 +19,12 @@ const getGitLabStatistics = async () => {
   const issuesData = await issuesResponse;
 
   let totalCommits = 0;
+  let totalTests = 0;
   let totalIssues = issuesData.length;
   let membersData = membersInfo;
 
   commitsData.forEach((contributor) => {
+    totalTests += membersData[contributor.name]?.tests ?? 0;
     membersData[contributor.name].commits = contributor.commits;
     totalCommits += contributor.commits;
   });
@@ -34,17 +36,10 @@ const getGitLabStatistics = async () => {
   return {
     totalCommits,
     totalIssues,
+    totalTests,
     membersData,
-    totalTests: 0,
   };
 };
-
-// Description of site (purpose, intended users)
-// Explanation of the interesting result of integrating disparate data (idk what this means tbh)
-// Name, photo, bio, major responsibilities (ex: frontend vs backend team), # of commits, issues, and unit tests contributed of each team member
-// Total # of commits, issues, and unit tests
-// Links to APIs and additional data sources, and how each was scraped
-// Tools used and a description of how they were used
 
 const About = ({}) => {
   const [loaded, setLoaded] = useState(false);
@@ -101,6 +96,12 @@ const About = ({}) => {
       </div>
       <h1 className="header">APIs</h1>
       <text style={{ fontSize: 25 }}>None as of right now!</text>
+      <h1 className="header">Our Tools & Data</h1>
+      <div className="cardsGrid">
+        {ourTools.map((tool) => (
+          <ToolCard {...tool} />
+        ))}
+      </div>
     </div>
   );
 };

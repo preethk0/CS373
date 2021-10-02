@@ -99,4 +99,19 @@ export const toolsUsed = [
   },
 ];
 
+export const ourTools = [
+  {
+    name: "GitLab Repository",
+    photo: GitLabImage,
+    description: "Our GitLab repository",
+    link: "https://gitlab.com/mehuldar/aroundtheworld",
+  },
+  {
+    name: "Postman API",
+    photo: PostmanImage,
+    description: "API documentation",
+    link: "https://documenter.getpostman.com/view/17755632/UUy396JB",
+  },
+];
+
 export default membersInfo;

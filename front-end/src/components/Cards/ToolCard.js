@@ -8,7 +8,19 @@ const ToolCard = ({ name, photo, description, link }) => {
       <Card
         className="toolCardStyle"
         hoverable
-        cover={photo && <img src={photo} />}
+        cover={
+          photo && (
+            <img
+              src={photo}
+              style={{
+                width: "99%",
+                height: "99%",
+                marginTop: "0.5%",
+                marginLeft: "0.5%",
+              }}
+            />
+          )
+        }
       >
         <Card.Meta title={name} description={description} />
       </Card>

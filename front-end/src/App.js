@@ -8,6 +8,7 @@ import GeographyAll from "./screens/Geography/GeographyAll.js";
 import FoodAndTourismAll from "./screens/FoodAndTourism/FoodAndTourismAll.js";
 import About from "./screens/About/About.js";
 import DemographicsInstance from "./screens/Demographics/DemographicsInstance";
+import GeographyInstance from "./screens/Geography/GeographyInstance";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route exact path="/geography" component={GeographyAll} />
         <Route exact path="/foodandtourism" component={FoodAndTourismAll} />
         <Route path="/demographics/:country" component={DemographicsInstance} />
+        <Route path="/geography/:country" component={GeographyInstance} />
       </Switch>
     </Router>
   );
