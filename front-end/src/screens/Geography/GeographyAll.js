@@ -18,7 +18,12 @@ const GeographyAll = ({}) => {
   }
 
   return (
-    <div>
+    <div className="mainPage">
+      <h2 className="header">Geogrpahy</h2>
+      <p className="descriptionText">
+        Looking to learn more about a certain country? This page can quickly locate 
+        the country you're looking for and give you some basic information about it.
+      </p>
       <Bootstrap.Table table-bordered>
         <thead>
           <tr>
@@ -36,7 +41,5 @@ const GeographyAll = ({}) => {
     </div>
   );
 };
-
-{/* <a href={"/demographics/" + country}>{country}</a> */}
 
 export default GeographyAll;

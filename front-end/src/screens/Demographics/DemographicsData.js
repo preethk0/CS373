@@ -21,7 +21,7 @@ const DemographicsData = {
     country_id: 2,
     country_name: "China",
     country_flag:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.britannica.com%2Ftopic%2Fflag-of-China&psig=AOvVaw0Qd6CKHd76iM1cY48c75kL&ust=1633208820719000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKjl1o6PqvMCFQAAAAAdAAAAABAD",
+      "https://cdn.britannica.com/90/7490-004-BAD4AA72/Flag-China.jpg",
     country_capital: "Beijing",
     country_population: 1411778724,
     country_world_share: 18.5,
@@ -39,7 +39,7 @@ const DemographicsData = {
     country_id: 3,
     country_name: "India",
     country_flag:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFlag_of_India&psig=AOvVaw2CGq_nf3Wmz5PAom9yDSmQ&ust=1633209086915000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMirxI2QqvMCFQAAAAAdAAAAABAR",
+      "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
     country_capital: "New Delhi",
     country_population: 1352642280,
     country_world_share: 17.7,
