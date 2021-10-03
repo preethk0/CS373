@@ -1,4 +1,4 @@
-const DemographicsData = {
+const FoodAndTourismData = {
     USA: {
         country_id: 1,
         country_name: "United States of America",
@@ -37,5 +37,5 @@ const DemographicsData = {
     },
   };
   
-  export default DemographicsData;
+  export default FoodAndTourismData;
   
