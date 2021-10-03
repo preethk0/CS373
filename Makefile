@@ -9,8 +9,12 @@ CFILES :=                                     \
 
 check: $(CFILES)
 
+docker:
+	docker run -p 3000:3000 around-the-world
+
 frontend-install:
 	cd front-end/ && npm install
+
 frontend-start:
 	cd front-end/ && npm start
 
