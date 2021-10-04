@@ -13,10 +13,8 @@ const DemographicsInstance = ({}) => {
       <div class="row justify-content-center align-items-center">
         <div class="card text-center w-50">
           <div class="card-body">
-              <h1 class="card-title"> {country} </h1>
-              <p class="card-text"> <b> Country Name:</b> {DemographicsData[country].country_name} </p>
-              <img src = {DemographicsData[country].country_flag}/> 
-              <p class="card-text"> <b> Country Name:</b> {DemographicsData[country].country_name} </p>
+              <h1 class="card-title"> {DemographicsData[country].country_name} </h1>
+              <img src = {DemographicsData[country].country_flag} width="300" height="200"/>
               <p class="card-text"> <b> Country Capital:</b> {DemographicsData[country].country_capital} </p>
               <p class="card-text"> <b> Country Population:</b> {DemographicsData[country].country_population.toLocaleString()} </p>
               <p class="card-text"> <b> Country World Share:</b> {DemographicsData[country].country_world_share} </p>
@@ -31,7 +29,7 @@ const DemographicsInstance = ({}) => {
               <p class="card-text"> <b> Country Gov Type:</b> {DemographicsData[country].country_gov_type} </p>
           </div>
           <div className="LinksToModules">
-              <h4> Interested to learn more about {country}?</h4>
+              <h4> Interested to learn more about {DemographicsData[country].country_name}?</h4>
               <text>Check out the <a href={"/geography/" + country}>{"Geography"}</a> of this country</text><br/>
               <text>Check out the <a href={"/foodandtourism/" + country}>{"Food and Tourism"}</a> of this country</text>
         </div>
