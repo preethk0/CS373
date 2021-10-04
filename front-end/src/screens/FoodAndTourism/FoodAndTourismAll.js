@@ -18,7 +18,13 @@ const FoodAndTourismAll = ({}) => {
   }
 
   return (
-    <div>
+    <div className="mainPage">
+      <h2 className="header">Food and Tourism</h2>
+      <p className="descriptionText">
+        Looking for more tourism information before you visit a country? This page will help you quickly locate
+        a country and show you the food and landmarks you'll come across.
+
+      </p>
       <Bootstrap.Table table-bordered>
         <thead>
           <tr>

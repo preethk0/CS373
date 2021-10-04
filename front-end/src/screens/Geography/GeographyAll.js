@@ -19,10 +19,10 @@ const GeographyAll = ({}) => {
 
   return (
     <div className="mainPage">
-      <h2 className="header">Geogrpahy</h2>
+      <h2 className="header">Geography</h2>
       <p className="descriptionText">
-        Looking to learn more about a certain country? This page can quickly locate 
-        the country you're looking for and give you some basic information about it.
+        Want to know where the country is? This page will help you locate the country you're interested in and show you
+        some basic geographical information.
       </p>
       <Bootstrap.Table table-bordered>
         <thead>

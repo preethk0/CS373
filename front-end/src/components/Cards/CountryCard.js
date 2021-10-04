@@ -1,28 +1,28 @@
 import React from "react";
 import { Card } from "antd";
 import "./Card.css";
+import DemographicsData from "../../screens/Demographics/DemographicsData";
 
 const CountryCard = ({
-  country_id,
-  country_flag,
-  country_name,
-  country_capital,
-  country_population
+  country
 }) => {
     
     const formatNumbers = (number) => {
         return number.toLocaleString();
     }
 
+    const data = DemographicsData[country];
+    console.log(country);
+
     return (
-        <a href={"/demographics/" + country_id}>
+        <a href={"/demographics/" + country}>
             <Card
             className="countryCardStyle"
-            cover={country_flag && <img src={country_flag} />}
+            cover={data.country_flag && <img src={data.country_flag} />}
             >
-                <Card.Meta title={country_name} description={country_capital} />
+                <Card.Meta title={data.country_name} description={data.country_capital} />
                 <div className="cardStatsSection">
-                    <div>Population: {formatNumbers(country_population)}</div>
+                    <div>Population: {formatNumbers(data.country_population)}</div>
                 </div>
             </Card>
         </a>
