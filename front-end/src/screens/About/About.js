@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from "react";
-import membersInfo, { toolsUsed, ourTools } from "./AboutInformation";
+import membersInfo, {
+  toolsUsed,
+  ourTools,
+  gitLabSpecialCases,
+} from "./AboutInformation";
 import "./About.css";
 import BioCard from "../../components/Cards/BioCard";
 import StatsCard from "../../components/Cards/StatsCard";
@@ -25,7 +29,14 @@ const getGitLabStatistics = async () => {
 
   commitsData.forEach((contributor) => {
     totalTests += membersData[contributor.name]?.tests ?? 0;
-    membersData[contributor.name].commits = contributor.commits;
+
+    if (contributor.name in gitLabSpecialCases) {
+      membersData[gitLabSpecialCases[contributor.name]].commits =
+        contributor.commits;
+    } else if (contributor.name in membersData) {
+      membersData[contributor.name].commits = contributor.commits;
+    }
+
     totalCommits += contributor.commits;
   });
 

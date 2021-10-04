@@ -59,6 +59,11 @@ const membersInfo = {
   },
 };
 
+export const gitLabSpecialCases = {
+  preethk0: "Preeth Kanamangala",
+  "Justin Lee": "Justin O Lee",
+};
+
 export const toolsUsed = [
   {
     name: "React",
