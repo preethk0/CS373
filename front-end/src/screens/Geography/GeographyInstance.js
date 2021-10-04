@@ -54,7 +54,7 @@ const GeographyInstance = ({}) => {
           </div>
         </div>
         <div className="LinksToModules">
-          <h4> Interested to learn more about {country}?</h4>
+          <h4> Interested to learn more about {data.country_name}?</h4>
           <text>Check out the <a href={"/demographics/" + country}>{"Basic Info and Demographics"}</a> of this country</text><br />
           <text>Check out the <a href={"/foodandtourism/" + country}>{"Food and Tourism"}</a> of this country</text>
         </div>
