@@ -19,11 +19,11 @@ const FoodAndTourismInstance = ({}) => {
         class="row justify-content-center"
         style={{ marginLeft: 70, paddingBottom: 30 }}
       >
+        <h1 class="countryName">
+            {FoodAndTourismData[country].country_name}
+        </h1>
         <div class="col">
           <div class="card-body">
-            <h1 class="card-title" style={{ marginBottom: 20 }}>
-              {FoodAndTourismData[country].country_name}
-            </h1>
             <h3 class="card-title">
               Food
             </h3>
