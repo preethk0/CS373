@@ -9,6 +9,7 @@
     align-items: left;
     padding: 20px 80px;
     box-sizing: content-box;
+    background-color: rgb(241, 241, 241);
 }
 
 .instancePage {
