@@ -3,27 +3,30 @@ import FoodAndTourismData from "./FoodAndTourismData";
 import * as Bootstrap from "react-bootstrap";
 
 const FoodAndTourismAll = ({}) => {
-
   const getFoodAndTourism = (country) => {
     const FoodAndTourism = FoodAndTourismData[country];
     return (
       <tr key={FoodAndTourism.id}>
-        <td>{FoodAndTourism.country_name}</td>
+        <td>
+          <a href={"/foodandtourism/" + country}>
+            {FoodAndTourism.country_name}
+          </a>
+        </td>
         <td>{FoodAndTourism.main_vegetable}</td>
         <td>{FoodAndTourism.number_of_tourists}</td>
         <td>{FoodAndTourism.revenue_from_tourism}</td>
         <td>{FoodAndTourism.average_temperature}</td>
       </tr>
-    )
-  }
+    );
+  };
 
   return (
     <div className="mainPage">
       <h2 className="header">Food and Tourism</h2>
       <p className="descriptionText">
-        Looking for more tourism information before you visit a country? This page will help you quickly locate
-        a country and show you the food and landmarks you'll come across.
-
+        Looking for more tourism information before you visit a country? This
+        page will help you quickly locate a country and show you the food and
+        landmarks you'll come across.
       </p>
       <Bootstrap.Table table-bordered>
         <thead>
@@ -35,9 +38,7 @@ const FoodAndTourismAll = ({}) => {
             <th scope="col">Average Temperature</th>
           </tr>
         </thead>
-        <tbody>
-          {Object.keys(FoodAndTourismData).map(getFoodAndTourism)}
-        </tbody>
+        <tbody>{Object.keys(FoodAndTourismData).map(getFoodAndTourism)}</tbody>
       </Bootstrap.Table>
     </div>
   );
