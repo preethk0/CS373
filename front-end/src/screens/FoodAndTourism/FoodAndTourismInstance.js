@@ -55,7 +55,7 @@ const FoodAndTourismInstance = ({}) => {
                 {FoodAndTourismData[country].main_attractions.join(", ")}
               </p>
               <p class="card-text">
-                <iframe width="420" height="315" src={attractions_link}></iframe>
+                <iframe width="500" height="300" src={attractions_link}></iframe>
               </p>
               <p class="card-text">
                 <b>Number of Tourists (per year): </b>
