@@ -4,6 +4,7 @@ import { useParams } from "react-router";
 
 const FoodAndTourismInstance = ({}) => {
   const { country } = useParams();
+  var attractions_link = FoodAndTourismData[country].main_attraction_video;
   return (
     <div class="container">
       <div class="row justify-content-center align-items-center">
@@ -23,6 +24,11 @@ const FoodAndTourismInstance = ({}) => {
           <p class="card-text">
             <b>Main Attractions: </b>
             {FoodAndTourismData[country].main_attractions.join(", ")}
+          </p>
+          <p class="card-text">
+            <iframe width="420" height="315"
+              src={attractions_link}>
+            </iframe>
           </p>
           <p class="card-text">
             <b>Number of Tourists (per year): </b>
