@@ -18,6 +18,11 @@ const FoodAndTourismInstance = ({}) => {
             <p class="card-text"> <b> Food Exported (per year):</b> {FoodAndTourismData[country].food_exported.toLocaleString()} </p>
             <p class="card-text"> <b> Revenue from Tourism (per year):</b> ${FoodAndTourismData[country].revenue_from_tourism.toLocaleString()} </p>
         </div>
+        <div className="LinksToModules">
+          <h4> Interested to learn more about {FoodAndTourismData[country].country_name}?</h4>
+          <text>Check out the <a href={"/demographics/" + country}>{"Demographics"}</a> of this country</text><br/>
+          <text>Check out the <a href={"/geography/" + country}>{"Geography"}</a> of this country</text>
+        </div>
       </div>
     </div>
   </div>);
