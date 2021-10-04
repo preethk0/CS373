@@ -61,7 +61,7 @@ const DemographicsInstance = ({}) => {
             {data.country_gov_type}
           </p>
         </div>
-        <div className="LinksToModules">
+        <div className="linksToModules">
           <h4> Interested to learn more about {data.country_name}?</h4>
           <text>
             Check out the <a href={"/geography/" + country}>{"Geography"}</a> of

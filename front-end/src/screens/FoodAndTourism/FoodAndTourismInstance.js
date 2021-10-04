@@ -37,7 +37,7 @@ const FoodAndTourismInstance = ({}) => {
             {FoodAndTourismData[country].revenue_from_tourism.toLocaleString()}
           </p>
         </div>
-        <div className="LinksToModules">
+        <div className="linksToModules">
           <h4>
             Interested to learn more about{" "}
             {FoodAndTourismData[country].country_name}?
