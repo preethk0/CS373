@@ -1,24 +1,31 @@
-import logo from "./logo.svg";
+import React from "react";
+import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
+import NavBar from "./components/NavBar/NavBar.js";
 import "./App.css";
+import DemographicsAll from "./screens/Demographics/DemographicsAll";
+import HomeSplash from "./screens/HomeSplash/HomeSplash.js";
+import GeographyAll from "./screens/Geography/GeographyAll.js";
+import FoodAndTourismAll from "./screens/FoodAndTourism/FoodAndTourismAll.js";
+import About from "./screens/About/About.js";
+import DemographicsInstance from "./screens/Demographics/DemographicsInstance";
+import GeographyInstance from "./screens/Geography/GeographyInstance";
+import FoodAndTourismInstance from "./screens/FoodAndTourism/FoodAndTourismInstance";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload. Test
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <NavBar />
+      <Switch>
+        <Route exact path="/" component={HomeSplash} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/demographics" component={DemographicsAll} />
+        <Route exact path="/geography" component={GeographyAll} />
+        <Route exact path="/foodandtourism" component={FoodAndTourismAll} />
+        <Route path="/demographics/:country" component={DemographicsInstance} />
+        <Route path="/geography/:country" component={GeographyInstance} />
+        <Route path="/foodandtourism/:country" component={FoodAndTourismInstance} />
+      </Switch>
+    </Router>
   );
 }
 
