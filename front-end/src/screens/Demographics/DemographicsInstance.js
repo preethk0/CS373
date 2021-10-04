@@ -8,13 +8,14 @@ const DemographicsInstance = ({}) => {
   const data = DemographicsData[country];
 
   return (
-    <><div className="subNavBar">
+    <>
+      <div className="subNavBar">
         <h1>Demographics of the World</h1>
         <text>
           <a href={"/demographics/"}>{"View All"}</a>
         </text>
-    </div>
-    <div className="mainPage">
+      </div>
+      <div className="mainPage">
         <div class="row justify-content-center align-items-center">
           <div class="card-body">
             <h1 class="card-title"> {data.country_name} </h1>
@@ -70,8 +71,8 @@ const DemographicsInstance = ({}) => {
           <div className="linksToModules">
             <h4> Interested to learn more about {data.country_name}?</h4>
             <text>
-              Check out the <a href={"/geography/" + country}>{"Geography"}</a> of
-              this country
+              Check out the <a href={"/geography/" + country}>{"Geography"}</a>{" "}
+              of this country
             </text>
             <br />
             <text>
@@ -81,7 +82,8 @@ const DemographicsInstance = ({}) => {
             </text>
           </div>
         </div>
-      </div></>
+      </div>
+    </>
   );
 };
 

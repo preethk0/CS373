@@ -63,7 +63,7 @@ const GeographyInstance = ({}) => {
                 <b>Oceans:</b> {data.country_adjacent_oceans.join(", ")}
               </text>
             </div>
-            <h3 className="aubTitle">Area</h3>
+            <h3 className="subTitle">Area</h3>
             <div className="area">
               <text>
                 <b>Area:</b> {data.country_land_area}
