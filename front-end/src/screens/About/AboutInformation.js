@@ -1,15 +1,15 @@
 import React from "react";
-import MehulImage from "../../images/MehulImage.jpeg";
-import DanielaImage from "../../images/DanielaImage.jpeg";
+import MehulImage from "../../images/MehulImage.png";
+import DanielaImage from "../../images/DanielaImage.png";
 import PreethImage from "../../images/PreethImage.png";
-import RaphaelImage from "../../images/RaphaelImage.jpeg";
-import JustinImage from "../../images/JustinImage.jpeg";
+import RaphaelImage from "../../images/RaphaelImage.png";
+import JustinImage from "../../images/JustinImage.png";
 import ReactImage from "../../images/Tools/ReactImage.png";
-import AWSImage from "../../images/Tools/AWSImage.jpeg";
-import NameCheapImage from "../../images/Tools/NameCheapImage.jpeg";
+import AWSImage from "../../images/Tools/AWSImage.png";
+import NameCheapImage from "../../images/Tools/NameCheapImage.png";
 import BootstrapImage from "../../images/Tools/BootstrapImage.png";
-import GitLabImage from "../../images/Tools/GitLabImage.jpeg";
-import PostmanImage from "../../images/Tools/PostmanImage.jpeg";
+import GitLabImage from "../../images/Tools/GitLabImage.png";
+import PostmanImage from "../../images/Tools/PostmanImage.png";
 
 const membersInfo = {
   "Mehul Daruka": {

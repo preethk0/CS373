@@ -1,8 +1,8 @@
 import React from "react";
 import ModelCard from "../../components/Cards/ModelCard";
-import DemographicsCoverImage from "../../images/DemographicsCoverImage.jpeg";
-import GeographyCoverImage from "../../images/GeographyCoverImage.jpeg";
-import FoodAndTourismCoverImage from "../../images/FoodAndTourismCoverImage.jpeg";
+import DemographicsCoverImage from "../../images/DemographicsCoverImage.png";
+import GeographyCoverImage from "../../images/GeographyCoverImage.png";
+import FoodAndTourismCoverImage from "../../images/FoodAndTourismCoverImage.png";
 import { FaChevronDown } from "react-icons/fa";
 
 import "./HomeSplash.css";
