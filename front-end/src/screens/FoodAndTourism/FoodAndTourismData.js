@@ -20,7 +20,7 @@ const FoodAndTourismData = {
     main_vegetable: "Bok Choy",
     main_attractions: [
       "The Great Wall of China",
-      "Imperial Palace,",
+      "Imperial Palace",
       "The Terracotta Army",
     ],
     main_attraction_video: "https://www.youtube.com/embed/tBNkeXmq4IQ",
