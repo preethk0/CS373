@@ -1,13 +1,28 @@
+
+.FullPage {
+    background-color: rgb(241, 241, 241);
+}
+.SubNavBar {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 20px 80px;
+    box-sizing: content-box;
+}
+
 .InstancePage {
     display: flex;
     flex-direction: column;
     align-items: left;
     padding: 30px 80px;
+    padding-left: 150px;
+    box-sizing: content-box;
+    background-color: rgb(255, 255, 255);
   }
   
   .CountryName {
     font-weight: bold;
-    padding-top: 20px;
+    padding-top: 10px;
   }
 
   .AllInfo {
