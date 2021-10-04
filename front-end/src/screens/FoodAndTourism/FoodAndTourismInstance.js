@@ -22,7 +22,7 @@ const FoodAndTourismInstance = ({}) => {
         <h1 class="countryName">
             {FoodAndTourismData[country].country_name}
         </h1>
-        <div class="col">
+        <div class="col" style={{ paddingLeft: 0 }}>
           <div class="card-body">
             <h3 class="card-title">
               Food
