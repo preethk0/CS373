@@ -8,7 +8,7 @@ const GeographyAll = ({}) => {
     const geography = GeographyData[country];
     return (
       <tr key={geography.id}>
-        <td>{geography.country_name}</td>
+        <td><a href={"/geography/" + country}>{geography.country_name}</a></td>
         <td>{geography.country_longitude}</td>
         <td>{geography.country_latitude}</td>
         <td>{geography.country_continent}</td>
@@ -19,7 +19,7 @@ const GeographyAll = ({}) => {
 
   return (
     <div className="mainPage">
-      <h2 className="header">Geogrpahy</h2>
+      <h2 className="header">Geography</h2>
       <p className="descriptionText">
         Looking to learn more about a certain country? This page can quickly locate 
         the country you're looking for and give you some basic information about it.
