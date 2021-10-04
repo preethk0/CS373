@@ -5,15 +5,15 @@
 }
 
 .coverImageStyle {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
     url("../../images/CoverImage.jpeg");
   height: 85vh;
   width: 100%;
-  /* height: calc(80vh + 64px); */
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .homeTitle {
@@ -25,6 +25,17 @@
   color: white;
   width: 400px;
   text-align: center;
+}
+
+.homeSubtitle {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 600;
+  align-self: center;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  width: 600px;
 }
 
 .cardsGrid {
