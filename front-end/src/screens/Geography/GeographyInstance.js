@@ -1,4 +1,5 @@
 import React from "react";
+import GoogleMapReact from 'google-map-react';
 import "./GeographyInstance.css";
 import GeographyData from "./GeographyData";
 import { useParams } from "react-router";
@@ -7,7 +8,15 @@ const GeographyInstance = ({}) => {
   const { country } = useParams();
   console.log(country);
   const data = GeographyData[country]
-  // var countries = data.country_adjacent_countries
+
+  const defaultProps = {
+    center: {
+      lat: data.country_latitude,
+      lng: data.country_longitude
+    },
+    zoom: 4
+  };
+
   return (
     <div className="FullPage">
       <div className="SubNavBar">
@@ -17,7 +26,13 @@ const GeographyInstance = ({}) => {
     <div className="InstancePage">
         <h1 className="CountryName">{data.country_name}</h1>
         <div className="AllInfo">
-          <img class="MapImage" src={data.country_map} alt="country map" />
+          <div style={{ height: '50vh', width: '100%' }}>
+            <GoogleMapReact
+              bootstrapURLKeys={{ key: "AIzaSyBTg1SVCHYOg71DzgOow9G1iYuEw3jtJQ4" }}
+              defaultCenter={defaultProps.center}
+              defaultZoom={defaultProps.zoom}>
+            </GoogleMapReact>
+        </div>
           <div class="ActualData">
             <h3 className="SubTitle">Location</h3>
             <div className="Location">
