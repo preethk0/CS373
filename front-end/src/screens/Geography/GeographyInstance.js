@@ -18,16 +18,16 @@ const GeographyInstance = ({}) => {
   };
 
   return (
-    <div className="FullPage">
-      <div className="SubNavBar">
+    <div className="fullPage">
+      <div className="subNavBar">
         <h1>Geographies of the World</h1>
         <text>
           <a href={"/geography/"}>{"View All"}</a>
         </text>
       </div>
-      <div className="InstancePage">
-        <h1 className="CountryName">{data.country_name}</h1>
-        <div className="AllInfo">
+      <div className="instancePage">
+        <h1 className="countryName">{data.country_name}</h1>
+        <div className="allInfo">
           <div style={{ height: "50vh", width: "100%" }}>
             <GoogleMapReact
               bootstrapURLKeys={{
@@ -37,9 +37,9 @@ const GeographyInstance = ({}) => {
               defaultZoom={defaultProps.zoom}
             ></GoogleMapReact>
           </div>
-          <div class="ActualData">
-            <h3 className="SubTitle">Location</h3>
-            <div className="Location">
+          <div className="actualData">
+            <h3 className="subTitle">Location</h3>
+            <div className="location">
               <text>
                 <b>Latitude:</b> {data.country_latitude}
               </text>
@@ -53,8 +53,8 @@ const GeographyInstance = ({}) => {
                 <b>Region:</b> {data.country_region}
               </text>
             </div>
-            <h3 className="SubTitle">Adjacent Countries and Oceans</h3>
-            <div className="Adjacent">
+            <h3 className="subTitle">Adjacent Countries and Oceans</h3>
+            <div className="adjacent">
               <text>
                 <b>Countries:</b> {data.country_adjacent_countries.join(", ")}
               </text>{" "}
@@ -63,8 +63,8 @@ const GeographyInstance = ({}) => {
                 <b>Oceans:</b> {data.country_adjacent_oceans.join(", ")}
               </text>
             </div>
-            <h3 className="SubTitle">Area</h3>
-            <div className="Area">
+            <h3 className="aubTitle">Area</h3>
+            <div className="area">
               <text>
                 <b>Area:</b> {data.country_land_area}
               </text>{" "}
@@ -75,7 +75,7 @@ const GeographyInstance = ({}) => {
             </div>
           </div>
         </div>
-        <div className="LinksToModules">
+        <div className="linksToModules">
           <h4> Interested to learn more about {data.country_name}?</h4>
           <text>
             Check out the{" "}

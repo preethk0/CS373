@@ -1,8 +1,9 @@
 
-.FullPage {
+.fullPage {
     background-color: rgb(241, 241, 241);
 }
-.SubNavBar {
+
+.subNavBar {
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -10,7 +11,7 @@
     box-sizing: content-box;
 }
 
-.InstancePage {
+.instancePage {
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -20,38 +21,31 @@
     background-color: rgb(255, 255, 255);
   }
   
-  .CountryName {
+  .countryName {
     font-weight: bold;
     padding-top: 10px;
   }
 
-  .AllInfo {
+  .allInfo {
     font-size: large;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 40px;
   }
 
-  .MapImage{
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 6px;
-    padding: 5px;
-    width: 800px;
-  }
-
-  .SubTitle {
+  .subTitle {
     font-weight: bold;
     font-size: xx-large;
     padding-top: 20px;
   }
   
-  .Location {
+  .location {
     display: grid;
     grid-template-columns: repeat(2, 200px);
     grid-column-gap: 0px;
   }
 
-  .LinksToModules{
+  .linksToModules{
     font-size: medium;
     padding-top: 20px;
   }
