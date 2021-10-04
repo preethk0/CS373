@@ -30,7 +30,9 @@ const getGitLabStatistics = async () => {
   });
 
   issuesData.forEach((issue) => {
-    membersData[issue.author.name].issues += 1;
+    if (issue.author.name in membersData) {
+      membersData[issue.author.name].issues += 1;
+    }
   });
 
   return {

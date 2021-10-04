@@ -18,6 +18,7 @@ const CountryCard = ({
         <a href={"/demographics/" + country}>
             <Card
             className="countryCardStyle"
+            hoverable
             cover={data.country_flag && <img src={data.country_flag} />}
             >
                 <Card.Meta title={data.country_name} description={data.country_capital} />

@@ -8,7 +8,7 @@ const GeographyAll = ({}) => {
     const geography = GeographyData[country];
     return (
       <tr key={geography.id}>
-        <td>{geography.country_name}</td>
+        <td><a href={"/geography/" + country}>{geography.country_name}</a></td>
         <td>{geography.country_longitude}</td>
         <td>{geography.country_latitude}</td>
         <td>{geography.country_continent}</td>
