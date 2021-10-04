@@ -19,7 +19,7 @@ const FoodAndTourismData = {
         main_fruit: "Kiwi",
         main_vegetable: "Bok Choy",
         main_attractions: ["The Great Wall of China", "Imperial Palace,", "The Terracotta Army"],
-        main_attractions_video: "https://www.youtube.com/embed/tBNkeXmq4IQ",
+        main_attraction_video: "https://www.youtube.com/embed/tBNkeXmq4IQ",
         number_of_tourists: 145000000,
         food_exported: 64830000000,
         revenue_from_tourism: 195000000000,
