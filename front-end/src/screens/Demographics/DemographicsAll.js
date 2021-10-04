@@ -24,8 +24,4 @@ const DemographicsAll = ({}) => {
   );
 };
 
-{
-  /* <a href={"/demographics/" + country}>{country}</a> */
-}
-
 export default DemographicsAll;
