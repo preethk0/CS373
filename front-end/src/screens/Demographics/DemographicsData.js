@@ -45,7 +45,7 @@ const DemographicsData = {
     country_world_share: 17.7,
     country_language: ["Hindi", "English"],
     country_timeZones: "UTC+05:30",
-    country_religions: ["None", "Buddhism", "Christianity"],
+    country_religions: ["Hinduism", "Islam", "Christianity", "Sikhism"],
     country_GDP: "$3.05 trillion",
     country_GDP_perCapita: "$2,191",
     country_currency: "INR",

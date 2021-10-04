@@ -1,0 +1,8 @@
+.mainPage {
+  display: flex;
+}
+
+.flag {
+  width: 40%;
+  padding: 30px 0px;
+}
