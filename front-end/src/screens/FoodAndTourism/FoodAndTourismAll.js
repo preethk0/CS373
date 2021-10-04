@@ -13,8 +13,8 @@ const FoodAndTourismAll = ({}) => {
           </a>
         </td>
         <td>{FoodAndTourism.main_vegetable}</td>
-        <td>{FoodAndTourism.number_of_tourists}</td>
-        <td>{FoodAndTourism.revenue_from_tourism}</td>
+        <td>{FoodAndTourism.number_of_tourists.toLocaleString()}</td>
+        <td>{FoodAndTourism.revenue_from_tourism.toLocaleString()}</td>
         <td>{FoodAndTourism.average_temperature}</td>
       </tr>
     );
