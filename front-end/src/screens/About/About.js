@@ -29,9 +29,13 @@ const getGitLabStatistics = async () => {
     totalCommits += contributor.commits;
   });
 
-  issuesData.forEach((issue) => {
-    if (issue.author.name in membersData) {
-      membersData[issue.author.name].issues += 1;
+  issuesData.forEach((issue, idx) => {
+    if (issue.state === "closed" && Boolean(issue.assignees)) {
+      issue.assignees.forEach((assignee) => {
+        if (assignee.name in membersData) {
+          membersData[assignee.name].issues += 1;
+        }
+      });
     }
   });
 

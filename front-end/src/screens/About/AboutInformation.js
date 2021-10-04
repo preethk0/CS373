@@ -39,7 +39,7 @@ const membersInfo = {
     issues: 0,
     tests: 0,
   },
-  "Justin Lee": {
+  "Justin O Lee": {
     name: "Justin Lee",
     photo: JustinImage,
     bio: "I'm a third year CS major at UT Austin. I'm from Plano, TX, and I'm an avid fan of Dallas sports teams. In my free time, I enjoy playing ultimate frisbee, bouldering, baking, and discovering new restaurants in Austin.",
