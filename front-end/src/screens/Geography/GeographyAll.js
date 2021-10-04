@@ -38,6 +38,9 @@ const GeographyAll = ({}) => {
         </thead>
         <tbody>{Object.keys(GeographyData).map(getGeography)}</tbody>
       </Bootstrap.Table>
+      <footer>
+            <div>Conutries Displayed: {Object.keys(GeographyData).length}</div>
+      </footer>
     </div>
   );
 };

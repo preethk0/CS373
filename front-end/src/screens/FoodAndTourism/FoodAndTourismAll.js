@@ -40,6 +40,9 @@ const FoodAndTourismAll = ({}) => {
         </thead>
         <tbody>{Object.keys(FoodAndTourismData).map(getFoodAndTourism)}</tbody>
       </Bootstrap.Table>
+      <footer>
+            <div>Conutries Displayed: {Object.keys(FoodAndTourismData).length}</div>
+      </footer>
     </div>
   );
 };

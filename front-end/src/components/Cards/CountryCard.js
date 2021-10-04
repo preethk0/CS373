@@ -23,6 +23,8 @@ const CountryCard = ({ country }) => {
         />
         <div className="cardStatsSection">
           <div>Population: {formatNumbers(data.country_population)}</div>
+          <div>Primary Language: {data.country_language[0]}</div>
+          <div>GDP: {data.country_GDP}</div>
         </div>
       </Card>
     </a>

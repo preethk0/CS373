@@ -16,6 +16,9 @@ const DemographicsAll = ({}) => {
             <CountryCard country={country} />
           ))}
       </div>
+      <footer>
+            <div>Conutries Displayed: {Object.keys(DemographicsData).length}</div>
+      </footer>
     </div>
   );
 };
