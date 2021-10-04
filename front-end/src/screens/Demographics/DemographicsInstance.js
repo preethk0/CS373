@@ -10,6 +10,12 @@ const DemographicsInstance = ({}) => {
   return (
     <div className="mainPage">
       <div class="row justify-content-center align-items-center">
+      <div className="subNavBar">
+        <h1>Demographics of the World</h1>
+        <text>
+          <a href={"/demographics/"}>{"View All"}</a>
+        </text>
+      </div>
         <div class="card-body">
           <h1 class="card-title"> {data.country_name} </h1>
           <img src={data.country_flag} className="flag" />
