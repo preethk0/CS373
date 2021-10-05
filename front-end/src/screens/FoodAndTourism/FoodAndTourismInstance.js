@@ -16,43 +16,56 @@ const FoodAndTourismInstance = ({}) => {
         </text>
       </div>
       <div
-        class="row justify-content-center align-items-center"
+        class="row justify-content-center"
         style={{ marginLeft: 70, paddingBottom: 30 }}
       >
-        <div class="card-body">
-          <h1 class="card-title" style={{ marginBottom: 20 }}>
+        <h1 class="countryName">
             {FoodAndTourismData[country].country_name}
-          </h1>
-          <p class="card-text">
-            <b>Main Dishes: </b>
-            {FoodAndTourismData[country].main_dishes.join(", ")}
-          </p>
-          <p class="card-text">
-            <b>Main Fruit: </b> {FoodAndTourismData[country].main_fruit}
-          </p>
-          <p class="card-text">
-            <b>Main Vegetable: </b>
-            {FoodAndTourismData[country].main_vegetable}
-          </p>
-          <p class="card-text">
-            <b>Main Attractions: </b>
-            {FoodAndTourismData[country].main_attractions.join(", ")}
-          </p>
-          <p class="card-text">
-            <iframe width="420" height="315" src={attractions_link}></iframe>
-          </p>
-          <p class="card-text">
-            <b>Number of Tourists (per year): </b>
-            {FoodAndTourismData[country].number_of_tourists.toLocaleString()}
-          </p>
-          <p class="card-text">
-            <b>Food Exported (per year): </b>
-            {FoodAndTourismData[country].food_exported.toLocaleString()}
-          </p>
-          <p class="card-text">
-            <b>Revenue from Tourism (per year): </b> $
-            {FoodAndTourismData[country].revenue_from_tourism.toLocaleString()}
-          </p>
+        </h1>
+        <div class="col" style={{ paddingLeft: 0 }}>
+          <div class="card-body">
+            <h3 class="card-title">
+              Food
+            </h3>
+            <p class="card-text">
+              <b>Main Dishes: </b>
+              {FoodAndTourismData[country].main_dishes.join(", ")}
+            </p>
+            <img src={FoodAndTourismData[country].main_dish_photo} className="flag" />
+            <p class="card-text">
+              <b>Main Fruit: </b> {FoodAndTourismData[country].main_fruit}
+            </p>
+            <p class="card-text">
+              <b>Main Vegetable: </b>
+              {FoodAndTourismData[country].main_vegetable}
+            </p>
+            <p class="card-text">
+              <b>Food Exported (per year): </b>
+              {FoodAndTourismData[country].food_exported.toLocaleString()}
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-body">
+            <h3 class="card-title">
+              Tourism
+            </h3>
+            <p class="card-text">
+                <b>Main Attractions: </b>
+                {FoodAndTourismData[country].main_attractions.join(", ")}
+              </p>
+              <p class="card-text">
+                <iframe width="500" height="300" src={attractions_link}></iframe>
+              </p>
+              <p class="card-text">
+                <b>Number of Tourists (per year): </b>
+                {FoodAndTourismData[country].number_of_tourists.toLocaleString()}
+              </p>
+              <p class="card-text">
+                <b>Revenue from Tourism (per year): </b> $
+                {FoodAndTourismData[country].revenue_from_tourism.toLocaleString()}
+              </p>
+          </div>
         </div>
         <div className="linksToModules">
           <h4>
