@@ -1,41 +1,45 @@
-**Group Members (GitLab ID, EID):**
+## Group Members (GitLab ID, EID)
 
-- Mehul Daruka: mehuldar, md43628
-- Preeth Kanamangala: preeth, pk9297
-- Justin Lee: justinolee, jol364
-- Raphael Samuel: RaphSamuel, rms4647
-- Daniela Torres Martinez: dany-torres, dmt2657
+| Name | Gitlab ID | EID
+| ------ | ------ | ------ |
+| Mehul Daruka | mehuldar | md43628 |
+| Preeth Kanamangala | preeth | pk9297 |
+| Justin Lee | justinolee | jol364 |
+| Raphael Samuel | RaphSamuel | rms4647 |
+| Daniela Torres Martinez | dany-torres | dmt2657 |
 
+## Git SHA
+| Phase | Git SHA 
+| ------ | ------ |
+| Phase 1 | bf017eea96c86dcd7370dc6b2bd15093b71d2ffa |
+| Phase 2 |  |
+| Phase 3 |  |
+| Phase 4 |  |
 
-**Git SHA:** TODO
+## Project Leader
+| Phase | Project Leader
+| ------ | ------ |
+| Phase 1 | Daniela Torres Martinez |
+| Phase 2 |  |
+| Phase 3 |  |
+| Phase 4 |  |
 
-**Project Leader:** Daniela Torres Martinez
+## GitLab Pipelines
+https://gitlab.com/mehuldar/aroundtheworld/-/pipelines
 
-**GitLab Pipelines:** https://gitlab.com/mehuldar/aroundtheworld/-/pipelines
+## Website
+https://www.around-the-world.me/
 
-**Website:** https://www.around-the-world.me/
+## Completion Times for Each Phase of the Project
 
+#### Phase 1:
 
-**Completion Times for Each Phase of the Project:**
+| Name | Estimate | Actual
+| ------ | ------ | ------ |
+| Mehul  | 15 | 18 |
+| Preeth | 15 | 15 |
+| Justin | 15 | 15 |
+| Raphael| 15 | 15 |
+| Daniela| 15 | 13 |
 
-**Phase 1:**
-
-Estimated completion time for each member:
-
-- Mehul   - 15 hours
-- Preeth  - 15 hours
-- Justin  - 15 hours
-- Raphael - 15 hours
-- Daniela - 15 hours
-
-
-Actual completion time for each member:
-
-- Mehul   - x hours
-- Preeth  - x hours
-- Justin  - x hours
-- Raphael - x hours
-- Daniela - x hours
-
-
-**Comments:**
+## Comments

@@ -6,7 +6,7 @@
 
 .coverImageStyle {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-    url("../../images/CoverImage.jpeg");
+    url("../../images/CoverImage.png");
   height: 85vh;
   width: 100%;
   background-size: cover;

@@ -3,7 +3,7 @@ const FoodAndTourismData = {
     country_id: 1,
     country_name: "United States of America",
     main_dishes: ["Cheeseburgers", "Pizza", "Hot Dog"],
-    main_dish_photo: 
+    main_dish_photo:
       "https://upload.wikimedia.org/wikipedia/commons/4/4d/Cheeseburger.jpg",
     main_fruit: "Banana",
     main_vegetable: "Potato",
@@ -18,7 +18,7 @@ const FoodAndTourismData = {
     country_id: 2,
     country_name: "China",
     main_dishes: ["Hotpot", "Sichuan Pork", "Dumplings"],
-    main_dish_photo: 
+    main_dish_photo:
       "https://upload.wikimedia.org/wikipedia/commons/3/3a/Xiao_Long_Bao_dumplings.jpg",
     main_fruit: "Kiwi",
     main_vegetable: "Bok Choy",
@@ -36,8 +36,8 @@ const FoodAndTourismData = {
   India: {
     country_id: 3,
     country_name: "India",
-    main_dishes: ["Butter chicken", "Chana masala"],
-    main_dish_photo: 
+    main_dishes: ["Butter Chicken", "Chana Masala"],
+    main_dish_photo:
       "https://upload.wikimedia.org/wikipedia/commons/3/3c/Chicken_makhani.jpg",
     main_fruit: "Mango",
     main_vegetable: "Pumpkin",
