@@ -39,7 +39,7 @@ const DemographicsData = {
     country_id: 3,
     country_name: "India",
     country_flag:
-      "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
+      "https://cdn.britannica.com/97/1597-004-05816F4E.jpg",
     country_capital: "New Delhi",
     country_population: 1352642280,
     country_world_share: 17.7,
