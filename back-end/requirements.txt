@@ -1,2 +1,12 @@
 flask
+flask-restful
+SQLAlchemy
+requests
+flask-cors
+flask-SQLAlchemy
+flask-marshmallow
+flask-restless
+marshmallow-sqlalchemy
+gunicorn
 black
+selenium
