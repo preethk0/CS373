@@ -1,25 +1,9 @@
 import React from "react";
 import FoodAndTourismData from "./FoodAndTourismData";
 import * as Bootstrap from "react-bootstrap";
+import MaterialTable from "material-table";
 
 const FoodAndTourismAll = ({}) => {
-  const getFoodAndTourism = (country) => {
-    const FoodAndTourism = FoodAndTourismData[country];
-    return (
-      <tr key={FoodAndTourism.id}>
-        <td>
-          <a href={"/foodandtourism/" + country}>
-            {FoodAndTourism.country_name}
-          </a>
-        </td>
-        <td>{FoodAndTourism.main_vegetable}</td>
-        <td>{FoodAndTourism.number_of_tourists.toLocaleString()}</td>
-        <td>{FoodAndTourism.revenue_from_tourism.toLocaleString()}</td>
-        <td>{FoodAndTourism.average_temperature}</td>
-      </tr>
-    );
-  };
-
   return (
     <div className="mainPage">
       <h2 className="header">Food and Tourism</h2>
@@ -28,21 +12,30 @@ const FoodAndTourismAll = ({}) => {
         page will help you quickly locate a country and show you the food and
         landmarks you'll come across.
       </p>
-      <Bootstrap.Table table-bordered>
-        <thead>
-          <tr>
-            <th scope="col">Country</th>
-            <th scope="col">Main Vegetable</th>
-            <th scope="col">Number of Tourists</th>
-            <th scope="col">Tourism Revenue</th>
-            <th scope="col">Average Temperature</th>
-          </tr>
-        </thead>
-        <tbody>{Object.keys(FoodAndTourismData).map(getFoodAndTourism)}</tbody>
-      </Bootstrap.Table>
-      <footer>
-        <div>Countries displayed: {Object.keys(FoodAndTourismData).length}</div>
-      </footer>
+      <MaterialTable
+        style={{ width: "100%" }}
+        onRowClick={(_, data) =>
+          (window.location.href = "/foodandtourism/" + data.country_id)
+        }
+        columns={[
+          { title: "Country", field: "country_name" },
+          { title: "Main Vegetable", field: "main_vegetable" },
+          {
+            title: "Number of Tourists",
+            field: "number_of_tourists",
+          },
+          {
+            title: "Tourism Revenue",
+            field: "revenue_from_tourism",
+          },
+          {
+            title: "Average Temperature",
+            field: "average_temperature",
+          },
+        ]}
+        data={Object.values(FoodAndTourismData)}
+        title="Food and Tourism"
+      />
     </div>
   );
 };
