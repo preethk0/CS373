@@ -46,6 +46,8 @@ https://www.around-the-world.me/
 | Raphael | 15       | 15     |
 | Daniela | 15       | 13     |
 
+#### Phase 2:
+
 | Name    | Estimate | Actual |
 | ------- | -------- | ------ |
 | Mehul   | 25       |        |
