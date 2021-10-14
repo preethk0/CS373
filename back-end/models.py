@@ -28,13 +28,8 @@ class Geography(db.Model):
     country_longitude = db.Column(db.Float)
     country_continent = db.Column(db.String())
     country_region = db.Column(db.String())
-
-    def __init__(self, country_id="NaN", country_name="NaN", country_latitude=0.0, country_longitude=0.0, country_continent="NaN", country_region="NaN"):
-        self.country_id = country_id
-        self.country_name = country_name
-        self.country_latitude = country_latitude
-        self.country_longitude = country_longitude
-        self.country_continent = country_continent
-        self.country_region = country_region
+    country_land_area = db.Column(db.String())
+    country_water_area = db.Column(db.String())
+    country_water_percent = db.Column(db.String())
 
 # Define Food and Tourism table/data model
