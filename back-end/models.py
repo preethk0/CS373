@@ -9,26 +9,16 @@ class Demographics(db.Model):
     country_id = db.Column(db.String(), primary_key=True)
     country_name = db.Column(db.String())
     country_flag = db.Column(db.String())
+    country_flag_emoji = db.Column(db.String())
     country_capital = db.Column(db.String())
     country_population = db.Column(db.Integer)
     country_languages = db.Column(db.PickleType)
     country_currency = db.Column(db.String())
     country_calling_code = db.Column(db.String())
     country_domain = db.Column(db.String())
+    country_cities = db.Column(db.Integer)
     country_states = db.Column(db.Integer)
-
-    def __init__(self, country_id="NaN", country_name="NaN", country_flag="NaN", country_capital="NaN", country_population=0, country_languages=[], country_currency="NaN", country_calling_code="NaN", country_domain="NaN", country_states=0):
-        self.country_id = country_id
-        self.country_name = country_name
-        self.country_flag = country_flag
-        self.country_captial = country_capital
-        self.country_population = country_population
-        self.country_languages = country_languages
-        self.country_currency = country_currency
-        self.country_calling_code = country_calling_code
-        self.country_domain = country_domain
-        self.country_states = country_states
-
+    country_income_level = db.Column(db.String())
 
 # Define Geography table/data model
 class Geography(db.Model):

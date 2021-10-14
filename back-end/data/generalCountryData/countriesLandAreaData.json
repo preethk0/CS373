@@ -1,0 +1,1364 @@
+[
+  {
+    "rank": 1,
+    "country": "Russia",
+    "area2020": 17098250,
+    "area": 17098242
+  },
+  {
+    "rank": 2,
+    "country": "Canada",
+    "area2020": 9879750,
+    "area": 9984670
+  },
+  {
+    "rank": 3,
+    "country": "United States",
+    "area2020": 9831510,
+    "area": 9372610
+  },
+  {
+    "rank": 4,
+    "country": "China",
+    "area2020": 9600013,
+    "area": 9706961
+  },
+  {
+    "rank": 5,
+    "country": "Brazil",
+    "area2020": 8515770,
+    "area": 8515767
+  },
+  {
+    "rank": 6,
+    "country": "Australia",
+    "area2020": 7741220,
+    "area": 7692024
+  },
+  {
+    "rank": 7,
+    "country": "India",
+    "area2020": 3287260,
+    "area": 3287590
+  },
+  {
+    "rank": 8,
+    "country": "Argentina",
+    "area2020": 2780400,
+    "area": 2780400
+  },
+  {
+    "rank": 9,
+    "country": "Kazakhstan",
+    "area2020": 2724902,
+    "area": 2724900
+  },
+  {
+    "rank": 10,
+    "country": "Algeria",
+    "area2020": 2381741,
+    "area": 2381741
+  },
+  {
+    "rank": 11,
+    "country": "DR Congo",
+    "area2020": 2344860,
+    "area": 2344858
+  },
+  {
+    "rank": 12,
+    "country": "Saudi Arabia",
+    "area2020": 2149690,
+    "area": 2149690
+  },
+  {
+    "rank": 13,
+    "country": "Mexico",
+    "area2020": 1964375,
+    "area": 1964375
+  },
+  {
+    "rank": 14,
+    "country": "Indonesia",
+    "area2020": "1916862.2000",
+    "area": 1904569
+  },
+  {
+    "rank": 15,
+    "country": "Sudan",
+    "area2020": "1854105.4050",
+    "area": 1886068
+  },
+  {
+    "rank": 16,
+    "country": "Libya",
+    "area2020": 1759540,
+    "area": 1759540
+  },
+  {
+    "rank": 17,
+    "country": "Iran",
+    "area2020": 1745150,
+    "area": 1648195
+  },
+  {
+    "rank": 18,
+    "country": "Mongolia",
+    "area2020": 1564116,
+    "area": 1564110
+  },
+  {
+    "rank": 19,
+    "country": "Peru",
+    "area2020": 1285220,
+    "area": 1285216
+  },
+  {
+    "rank": 20,
+    "country": "Chad",
+    "area2020": 1284000,
+    "area": 1284000
+  },
+  {
+    "rank": 21,
+    "country": "Niger",
+    "area2020": 1267000,
+    "area": 1267000
+  },
+  {
+    "rank": 22,
+    "country": "Angola",
+    "area2020": 1246700,
+    "area": 1246700
+  },
+  {
+    "rank": 23,
+    "country": "Mali",
+    "area2020": 1240190,
+    "area": 1240192
+  },
+  {
+    "rank": 24,
+    "country": "South Africa",
+    "area2020": 1219090,
+    "area": 1221037
+  },
+  {
+    "rank": 25,
+    "country": "Colombia",
+    "area2020": 1141750,
+    "area": 1141748
+  },
+  {
+    "rank": 26,
+    "country": "Ethiopia",
+    "area2020": "1136242.4970",
+    "area": 1104300
+  },
+  {
+    "rank": 27,
+    "country": "Bolivia",
+    "area2020": 1098580,
+    "area": 1098581
+  },
+  {
+    "rank": 28,
+    "country": "Mauritania",
+    "area2020": 1030700,
+    "area": 1030700
+  },
+  {
+    "rank": 29,
+    "country": "Egypt",
+    "area2020": 1001450,
+    "area": 1002450
+  },
+  {
+    "rank": 30,
+    "country": "Tanzania",
+    "area2020": 947300,
+    "area": 945087
+  },
+  {
+    "rank": 31,
+    "country": "Nigeria",
+    "area2020": 923770,
+    "area": 923768
+  },
+  {
+    "rank": 32,
+    "country": "Venezuela",
+    "area2020": 912050,
+    "area": 916445
+  },
+  {
+    "rank": 33,
+    "country": "Namibia",
+    "area2020": 824290,
+    "area": 825615
+  },
+  {
+    "rank": 34,
+    "country": "Mozambique",
+    "area2020": 799380,
+    "area": 801590
+  },
+  {
+    "rank": 35,
+    "country": "Pakistan",
+    "area2020": 796100,
+    "area": 881912
+  },
+  {
+    "rank": 36,
+    "country": "Turkey",
+    "area2020": 785350,
+    "area": 783562
+  },
+  {
+    "rank": 37,
+    "country": "Chile",
+    "area2020": 756700,
+    "area": 756102
+  },
+  {
+    "rank": 38,
+    "country": "Zambia",
+    "area2020": 752610,
+    "area": 752612
+  },
+  {
+    "rank": 39,
+    "country": "Myanmar",
+    "area2020": 676590,
+    "area": 676578
+  },
+  {
+    "rank": 40,
+    "country": "Afghanistan",
+    "area2020": 652860,
+    "area": 652230
+  },
+  {
+    "rank": 41,
+    "country": "South Sudan",
+    "area2020": 646883,
+    "area": 619745
+  },
+  {
+    "rank": 42,
+    "country": "Somalia",
+    "area2020": 637660,
+    "area": 637657
+  },
+  {
+    "rank": 43,
+    "country": "Norway",
+    "area2020": 625218,
+    "area": 323802
+  },
+  {
+    "rank": 44,
+    "country": "Central African Republic",
+    "area2020": 622980,
+    "area": 622984
+  },
+  {
+    "rank": 45,
+    "country": "Ukraine",
+    "area2020": 603550,
+    "area": 603500
+  },
+  {
+    "rank": 46,
+    "country": "Madagascar",
+    "area2020": 587295,
+    "area": 587041
+  },
+  {
+    "rank": 47,
+    "country": "Botswana",
+    "area2020": 581730,
+    "area": 582000
+  },
+  {
+    "rank": 48,
+    "country": "Kenya",
+    "area2020": 580370,
+    "area": 580367
+  },
+  {
+    "rank": 49,
+    "country": "France",
+    "area2020": 549087,
+    "area": 551695
+  },
+  {
+    "rank": 50,
+    "country": "Sweden",
+    "area2020": "528861.0600",
+    "area": 450295
+  },
+  {
+    "rank": 51,
+    "country": "Yemen",
+    "area2020": 527970,
+    "area": 527968
+  },
+  {
+    "rank": 52,
+    "country": "Thailand",
+    "area2020": 513120,
+    "area": 513120
+  },
+  {
+    "rank": 53,
+    "country": "Spain",
+    "area2020": "505952.7960",
+    "area": 505992
+  },
+  {
+    "rank": 54,
+    "country": "Turkmenistan",
+    "area2020": 488100,
+    "area": 488100
+  },
+  {
+    "rank": 55,
+    "country": "Cameroon",
+    "area2020": 475440,
+    "area": 475442
+  },
+  {
+    "rank": 56,
+    "country": "Papua New Guinea",
+    "area2020": 462840,
+    "area": 462840
+  },
+  {
+    "rank": 57,
+    "country": "Uzbekistan",
+    "area2020": 448924,
+    "area": 447400
+  },
+  {
+    "rank": 58,
+    "country": "Morocco",
+    "area2020": 446550,
+    "area": 446550
+  },
+  {
+    "rank": 59,
+    "country": "Iraq",
+    "area2020": 435052,
+    "area": 438317
+  },
+  {
+    "rank": 60,
+    "country": "Greenland",
+    "area2020": 410450,
+    "area": 2166086
+  },
+  {
+    "rank": 61,
+    "country": "Paraguay",
+    "area2020": 406752,
+    "area": 406752
+  },
+  {
+    "rank": 62,
+    "country": "Zimbabwe",
+    "area2020": 390760,
+    "area": 390757
+  },
+  {
+    "rank": 63,
+    "country": "Japan",
+    "area2020": 377974,
+    "area": 377930
+  },
+  {
+    "rank": 64,
+    "country": "Germany",
+    "area2020": 357580,
+    "area": 357114
+  },
+  {
+    "rank": 65,
+    "country": "Republic of the Congo",
+    "area2020": 342000,
+    "area": 342000
+  },
+  {
+    "rank": 66,
+    "country": "Finland",
+    "area2020": 338460,
+    "area": 338424
+  },
+  {
+    "rank": 67,
+    "country": "Vietnam",
+    "area2020": 331310,
+    "area": 331212
+  },
+  {
+    "rank": 68,
+    "country": "Malaysia",
+    "area2020": "330241.2000",
+    "area": 330803
+  },
+  {
+    "rank": 69,
+    "country": "Ivory Coast",
+    "area2020": 322460,
+    "area": 322463
+  },
+  {
+    "rank": 70,
+    "country": "Poland",
+    "area2020": 312690,
+    "area": 312679
+  },
+  {
+    "rank": 71,
+    "country": "Oman",
+    "area2020": 309500,
+    "area": 309500
+  },
+  {
+    "rank": 72,
+    "country": "Italy",
+    "area2020": 302068,
+    "area": 301336
+  },
+  {
+    "rank": 73,
+    "country": "Philippines",
+    "area2020": 300000,
+    "area": 342353
+  },
+  {
+    "rank": 74,
+    "country": "Burkina Faso",
+    "area2020": 274220,
+    "area": 272967
+  },
+  {
+    "rank": 75,
+    "country": "New Zealand",
+    "area2020": 267710,
+    "area": 270467
+  },
+  {
+    "rank": 76,
+    "country": "Gabon",
+    "area2020": 267670,
+    "area": 267668
+  },
+  {
+    "rank": 77,
+    "country": "Western Sahara",
+    "area2020": 266000,
+    "area": 266000
+  },
+  {
+    "rank": 78,
+    "country": "Ecuador",
+    "area2020": 256370,
+    "area": 276841
+  },
+  {
+    "rank": 79,
+    "country": "Guinea",
+    "area2020": 245860,
+    "area": 245857
+  },
+  {
+    "rank": 80,
+    "country": "United Kingdom",
+    "area2020": 243610,
+    "area": 242900
+  },
+  {
+    "rank": 81,
+    "country": "Uganda",
+    "area2020": 241550,
+    "area": 241550
+  },
+  {
+    "rank": 82,
+    "country": "Ghana",
+    "area2020": 238530,
+    "area": 238533
+  },
+  {
+    "rank": 83,
+    "country": "Romania",
+    "area2020": 238400,
+    "area": 238391
+  },
+  {
+    "rank": 84,
+    "country": "Laos",
+    "area2020": 236800,
+    "area": 236800
+  },
+  {
+    "rank": 85,
+    "country": "Guyana",
+    "area2020": 214970,
+    "area": 214969
+  },
+  {
+    "rank": 86,
+    "country": "Belarus",
+    "area2020": 207600,
+    "area": 207600
+  },
+  {
+    "rank": 87,
+    "country": "Kyrgyzstan",
+    "area2020": 199949,
+    "area": 199951
+  },
+  {
+    "rank": 88,
+    "country": "Senegal",
+    "area2020": 196710,
+    "area": 196722
+  },
+  {
+    "rank": 89,
+    "country": "Syria",
+    "area2020": 185180,
+    "area": 185180
+  },
+  {
+    "rank": 90,
+    "country": "Cambodia",
+    "area2020": 181040,
+    "area": 181035
+  },
+  {
+    "rank": 91,
+    "country": "Uruguay",
+    "area2020": 176220,
+    "area": 181034
+  },
+  {
+    "rank": 92,
+    "country": "Suriname",
+    "area2020": 163820,
+    "area": 163820
+  },
+  {
+    "rank": 93,
+    "country": "Tunisia",
+    "area2020": 163610,
+    "area": 163610
+  },
+  {
+    "rank": 94,
+    "country": "Bangladesh",
+    "area2020": 147570,
+    "area": 147570
+  },
+  {
+    "rank": 95,
+    "country": "Nepal",
+    "area2020": 147180,
+    "area": 147181
+  },
+  {
+    "rank": 96,
+    "country": "Tajikistan",
+    "area2020": 141380,
+    "area": 143100
+  },
+  {
+    "rank": 97,
+    "country": "Greece",
+    "area2020": 131960,
+    "area": 131990
+  },
+  {
+    "rank": 98,
+    "country": "Nicaragua",
+    "area2020": 130370,
+    "area": 130373
+  },
+  {
+    "rank": 99,
+    "country": "Eritrea",
+    "area2020": "121765.8170",
+    "area": 117600
+  },
+  {
+    "rank": 100,
+    "country": "North Korea",
+    "area2020": 120540,
+    "area": 120538
+  },
+  {
+    "rank": 101,
+    "country": "Malawi",
+    "area2020": 118480,
+    "area": 118484
+  },
+  {
+    "rank": 102,
+    "country": "Benin",
+    "area2020": 114760,
+    "area": 112622
+  },
+  {
+    "rank": 103,
+    "country": "Honduras",
+    "area2020": 112490,
+    "area": 112492
+  },
+  {
+    "rank": 104,
+    "country": "Liberia",
+    "area2020": 111370,
+    "area": 111369
+  },
+  {
+    "rank": 105,
+    "country": "Bulgaria",
+    "area2020": 111000,
+    "area": 110879
+  },
+  {
+    "rank": 106,
+    "country": "Cuba",
+    "area2020": 109880,
+    "area": 109884
+  },
+  {
+    "rank": 107,
+    "country": "Guatemala",
+    "area2020": 108890,
+    "area": 108889
+  },
+  {
+    "rank": 108,
+    "country": "Iceland",
+    "area2020": 103000,
+    "area": 103000
+  },
+  {
+    "rank": 109,
+    "country": "South Korea",
+    "area2020": 100400,
+    "area": 100210
+  },
+  {
+    "rank": 110,
+    "country": "United Arab Emirates",
+    "area2020": "98647.9000",
+    "area": 83600
+  },
+  {
+    "rank": 111,
+    "country": "Hungary",
+    "area2020": 93030,
+    "area": 93028
+  },
+  {
+    "rank": 112,
+    "country": "Portugal",
+    "area2020": 92230,
+    "area": 92090
+  },
+  {
+    "rank": 113,
+    "country": "Jordan",
+    "area2020": 89318,
+    "area": 89342
+  },
+  {
+    "rank": 114,
+    "country": "Serbia",
+    "area2020": 88360,
+    "area": 88361
+  },
+  {
+    "rank": 115,
+    "country": "Croatia",
+    "area2020": 88073,
+    "area": 56594
+  },
+  {
+    "rank": 116,
+    "country": "Azerbaijan",
+    "area2020": 86600,
+    "area": 86600
+  },
+  {
+    "rank": 117,
+    "country": "Austria",
+    "area2020": 83879,
+    "area": 83871
+  },
+  {
+    "rank": 118,
+    "country": "Panama",
+    "area2020": 75320,
+    "area": 75417
+  },
+  {
+    "rank": 119,
+    "country": "Sierra Leone",
+    "area2020": 72300,
+    "area": 71740
+  },
+  {
+    "rank": 120,
+    "country": "Ireland",
+    "area2020": 70280,
+    "area": 70273
+  },
+  {
+    "rank": 121,
+    "country": "Georgia",
+    "area2020": 69700,
+    "area": 69700
+  },
+  {
+    "rank": 122,
+    "country": "Sri Lanka",
+    "area2020": 65610,
+    "area": 65610
+  },
+  {
+    "rank": 123,
+    "country": "Lithuania",
+    "area2020": 65290,
+    "area": 65300
+  },
+  {
+    "rank": 124,
+    "country": "Latvia",
+    "area2020": 64594,
+    "area": 64559
+  },
+  {
+    "rank": 125,
+    "country": "Togo",
+    "area2020": 56790,
+    "area": 56785
+  },
+  {
+    "rank": 126,
+    "country": "Bosnia and Herzegovina",
+    "area2020": 51210,
+    "area": 51209
+  },
+  {
+    "rank": 127,
+    "country": "Costa Rica",
+    "area2020": 51100,
+    "area": 51100
+  },
+  {
+    "rank": 128,
+    "country": "Slovakia",
+    "area2020": 49030,
+    "area": 49037
+  },
+  {
+    "rank": 129,
+    "country": "Dominican Republic",
+    "area2020": 48670,
+    "area": 48671
+  },
+  {
+    "rank": 130,
+    "country": "Estonia",
+    "area2020": 45340,
+    "area": 45227
+  },
+  {
+    "rank": 131,
+    "country": "Denmark",
+    "area2020": 42920,
+    "area": 43094
+  },
+  {
+    "rank": 132,
+    "country": "Netherlands",
+    "area2020": 41540,
+    "area": 41850
+  },
+  {
+    "rank": 133,
+    "country": "Switzerland",
+    "area2020": "41290.3900",
+    "area": 41284
+  },
+  {
+    "rank": 134,
+    "country": "Bhutan",
+    "area2020": 38390,
+    "area": 38394
+  },
+  {
+    "rank": 135,
+    "country": "Guinea-Bissau",
+    "area2020": 36130,
+    "area": 36125
+  },
+  {
+    "rank": 136,
+    "country": "Taiwan",
+    "area2020": 35960,
+    "area": 36193
+  },
+  {
+    "rank": 137,
+    "country": "Moldova",
+    "area2020": 33850,
+    "area": 33846
+  },
+  {
+    "rank": 138,
+    "country": "Belgium",
+    "area2020": 30530,
+    "area": 30528
+  },
+  {
+    "rank": 139,
+    "country": "Lesotho",
+    "area2020": 30360,
+    "area": 30355
+  },
+  {
+    "rank": 140,
+    "country": "Armenia",
+    "area2020": 29740,
+    "area": 29743
+  },
+  {
+    "rank": 141,
+    "country": "Solomon Islands",
+    "area2020": 28900,
+    "area": 28896
+  },
+  {
+    "rank": 142,
+    "country": "Albania",
+    "area2020": 28750,
+    "area": 28748
+  },
+  {
+    "rank": 143,
+    "country": "Equatorial Guinea",
+    "area2020": 28050,
+    "area": 28051
+  },
+  {
+    "rank": 144,
+    "country": "Burundi",
+    "area2020": 27830,
+    "area": 27834
+  },
+  {
+    "rank": 145,
+    "country": "Haiti",
+    "area2020": 27750,
+    "area": 27750
+  },
+  {
+    "rank": 146,
+    "country": "Rwanda",
+    "area2020": 26340,
+    "area": 26338
+  },
+  {
+    "rank": 147,
+    "country": "North Macedonia",
+    "area2020": 25710,
+    "area": 25713
+  },
+  {
+    "rank": 148,
+    "country": "Djibouti",
+    "area2020": 23200,
+    "area": 23200
+  },
+  {
+    "rank": 149,
+    "country": "Belize",
+    "area2020": 22970,
+    "area": 22966
+  },
+  {
+    "rank": 150,
+    "country": "Israel",
+    "area2020": 22070,
+    "area": 20770
+  },
+  {
+    "rank": 151,
+    "country": "El Salvador",
+    "area2020": 21040,
+    "area": 21041
+  },
+  {
+    "rank": 152,
+    "country": "Slovenia",
+    "area2020": 20480,
+    "area": 20273
+  },
+  {
+    "rank": 153,
+    "country": "New Caledonia",
+    "area2020": 18580,
+    "area": 18575
+  },
+  {
+    "rank": 154,
+    "country": "Fiji",
+    "area2020": 18270,
+    "area": 18272
+  },
+  {
+    "rank": 155,
+    "country": "Kuwait",
+    "area2020": 17820,
+    "area": 17818
+  },
+  {
+    "rank": 156,
+    "country": "Eswatini",
+    "area2020": 17360,
+    "area": 17364
+  },
+  {
+    "rank": 157,
+    "country": "Timor-Leste",
+    "area2020": 14870,
+    "area": 14874
+  },
+  {
+    "rank": 158,
+    "country": "Bahamas",
+    "area2020": 13880,
+    "area": 13943
+  },
+  {
+    "rank": 159,
+    "country": "Montenegro",
+    "area2020": 13810,
+    "area": 13812
+  },
+  {
+    "rank": 160,
+    "country": "Vanuatu",
+    "area2020": 12190,
+    "area": 12189
+  },
+  {
+    "rank": 161,
+    "country": "Falkland Islands",
+    "area2020": 12170,
+    "area": 12173
+  },
+  {
+    "rank": 162,
+    "country": "Qatar",
+    "area2020": 11490,
+    "area": 11586
+  },
+  {
+    "rank": 163,
+    "country": "Gambia",
+    "area2020": 11300,
+    "area": 10689
+  },
+  {
+    "rank": 164,
+    "country": "Jamaica",
+    "area2020": 10990,
+    "area": 10991
+  },
+  {
+    "rank": 165,
+    "country": "Lebanon",
+    "area2020": 10450,
+    "area": 10452
+  },
+  {
+    "rank": 166,
+    "country": "Cyprus",
+    "area2020": 9250,
+    "area": 9251
+  },
+  {
+    "rank": 167,
+    "country": "Puerto Rico",
+    "area2020": 8870,
+    "area": 8870
+  },
+  {
+    "rank": 168,
+    "country": "Palestine",
+    "area2020": 6020,
+    "area": 6220
+  },
+  {
+    "rank": 169,
+    "country": "Brunei",
+    "area2020": 5770,
+    "area": 5765
+  },
+  {
+    "rank": 170,
+    "country": "Trinidad and Tobago",
+    "area2020": 5130,
+    "area": 5130
+  },
+  {
+    "rank": 171,
+    "country": "Bermuda",
+    "area2020": 4290,
+    "area": 54
+  },
+  {
+    "rank": 172,
+    "country": "French Polynesia",
+    "area2020": 3471,
+    "area": 4167
+  },
+  {
+    "rank": 173,
+    "country": "Samoa",
+    "area2020": 2840,
+    "area": 2842
+  },
+  {
+    "rank": 174,
+    "country": "Luxembourg",
+    "area2020": 2590,
+    "area": 2586
+  },
+  {
+    "rank": 175,
+    "country": "Reunion",
+    "area2020": 2520,
+    "area": 2511
+  },
+  {
+    "rank": 176,
+    "country": "Mauritius",
+    "area2020": 2040,
+    "area": 2040
+  },
+  {
+    "rank": 177,
+    "country": "Comoros",
+    "area2020": 1861,
+    "area": 1862
+  },
+  {
+    "rank": 178,
+    "country": "Guadeloupe",
+    "area2020": 1630,
+    "area": 1628
+  },
+  {
+    "rank": 179,
+    "country": "Faroe Islands",
+    "area2020": 1396,
+    "area": 1393
+  },
+  {
+    "rank": 180,
+    "country": "Martinique",
+    "area2020": 1130,
+    "area": 1128
+  },
+  {
+    "rank": 181,
+    "country": "Hong Kong",
+    "area2020": 1110,
+    "area": 1104
+  },
+  {
+    "rank": 182,
+    "country": "Sao Tome and Principe",
+    "area2020": 960,
+    "area": 964
+  },
+  {
+    "rank": 183,
+    "country": "Turks and Caicos Islands",
+    "area2020": 950,
+    "area": 948
+  },
+  {
+    "rank": 184,
+    "country": "Kiribati",
+    "area2020": 810,
+    "area": 811
+  },
+  {
+    "rank": 185,
+    "country": "Bahrain",
+    "area2020": 783,
+    "area": 765
+  },
+  {
+    "rank": 187,
+    "country": "Dominica",
+    "area2020": 750,
+    "area": 751
+  },
+  {
+    "rank": 186,
+    "country": "Tonga",
+    "area2020": 750,
+    "area": 747
+  },
+  {
+    "rank": 188,
+    "country": "Singapore",
+    "area2020": 726,
+    "area": 710
+  },
+  {
+    "rank": 189,
+    "country": "Micronesia",
+    "area2020": 700,
+    "area": 702
+  },
+  {
+    "rank": 190,
+    "country": "Saint Lucia",
+    "area2020": 620,
+    "area": 616
+  },
+  {
+    "rank": 191,
+    "country": "Isle of Man",
+    "area2020": 570,
+    "area": 572
+  },
+  {
+    "rank": 192,
+    "country": "Guam",
+    "area2020": 540,
+    "area": 549
+  },
+  {
+    "rank": 193,
+    "country": "Andorra",
+    "area2020": 470,
+    "area": 468
+  },
+  {
+    "rank": 196,
+    "country": "Palau",
+    "area2020": 460,
+    "area": 459
+  },
+  {
+    "rank": 195,
+    "country": "Northern Mariana Islands",
+    "area2020": 460,
+    "area": 464
+  },
+  {
+    "rank": 194,
+    "country": "Seychelles",
+    "area2020": 460,
+    "area": 452
+  },
+  {
+    "rank": 197,
+    "country": "Antigua and Barbuda",
+    "area2020": 440,
+    "area": 442
+  },
+  {
+    "rank": 198,
+    "country": "Barbados",
+    "area2020": 430,
+    "area": 430
+  },
+  {
+    "rank": 199,
+    "country": "Saint Vincent and the Grenadines",
+    "area2020": 390,
+    "area": 389
+  },
+  {
+    "rank": 200,
+    "country": "Mayotte",
+    "area2020": 374,
+    "area": 374
+  },
+  {
+    "rank": 201,
+    "country": "United States Virgin Islands",
+    "area2020": 350,
+    "area": 347
+  },
+  {
+    "rank": 202,
+    "country": "Grenada",
+    "area2020": 340,
+    "area": 344
+  },
+  {
+    "rank": 203,
+    "country": "Malta",
+    "area2020": 320,
+    "area": 316
+  },
+  {
+    "rank": 204,
+    "country": "Maldives",
+    "area2020": 300,
+    "area": 300
+  },
+  {
+    "rank": 205,
+    "country": "Cayman Islands",
+    "area2020": 264,
+    "area": 264
+  },
+  {
+    "rank": 207,
+    "country": "Niue",
+    "area2020": 260,
+    "area": 260
+  },
+  {
+    "rank": 206,
+    "country": "Saint Kitts and Nevis",
+    "area2020": 260,
+    "area": 261
+  },
+  {
+    "rank": 209,
+    "country": "Saint Pierre and Miquelon",
+    "area2020": 240,
+    "area": 242
+  },
+  {
+    "rank": 208,
+    "country": "Cook Islands",
+    "area2020": 240,
+    "area": 236
+  },
+  {
+    "rank": 210,
+    "country": "American Samoa",
+    "area2020": 200,
+    "area": 199
+  },
+  {
+    "rank": 212,
+    "country": "Marshall Islands",
+    "area2020": 180,
+    "area": 181
+  },
+  {
+    "rank": 211,
+    "country": "Aruba",
+    "area2020": 180,
+    "area": 180
+  },
+  {
+    "rank": 213,
+    "country": "Liechtenstein",
+    "area2020": 160,
+    "area": 160
+  },
+  {
+    "rank": 214,
+    "country": "British Virgin Islands",
+    "area2020": 150,
+    "area": 151
+  },
+  {
+    "rank": 215,
+    "country": "Wallis and Futuna",
+    "area2020": 140,
+    "area": 142
+  },
+  {
+    "rank": 216,
+    "country": "Montserrat",
+    "area2020": 100,
+    "area": 102
+  },
+  {
+    "rank": 217,
+    "country": "Anguilla",
+    "area2020": 90,
+    "area": 91
+  },
+  {
+    "rank": 218,
+    "country": "Monaco",
+    "area2020": "74.9200",
+    "area": 2
+  },
+  {
+    "rank": 219,
+    "country": "San Marino",
+    "area2020": 60,
+    "area": 61
+  },
+  {
+    "rank": 220,
+    "country": "Saint Martin",
+    "area2020": 50,
+    "area": 53
+  },
+  {
+    "rank": 221,
+    "country": "Sint Maarten",
+    "area2020": 34,
+    "area": 34
+  },
+  {
+    "rank": 222,
+    "country": "Macau",
+    "area2020": "32.9000",
+    "area": 30
+  },
+  {
+    "rank": 223,
+    "country": "Tuvalu",
+    "area2020": 30,
+    "area": 26
+  },
+  {
+    "rank": 225,
+    "country": "Saint Barthelemy",
+    "area2020": 20,
+    "area": 21
+  },
+  {
+    "rank": 224,
+    "country": "Nauru",
+    "area2020": 20,
+    "area": 21
+  },
+  {
+    "rank": 227,
+    "country": "Tokelau",
+    "area2020": 10,
+    "area": 12
+  },
+  {
+    "rank": 226,
+    "country": "Gibraltar",
+    "area2020": 10,
+    "area": 6
+  }
+]
