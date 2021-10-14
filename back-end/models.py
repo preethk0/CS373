@@ -28,6 +28,7 @@ class Geography(db.Model):
     country_longitude = db.Column(db.Float)
     country_continent = db.Column(db.String())
     country_region = db.Column(db.String())
+    country_adjacent_countries = db.Column(db.PickleType)
     country_land_area = db.Column(db.String())
     country_water_area = db.Column(db.String())
     country_water_percent = db.Column(db.String())
