@@ -1,11 +1,15 @@
 from flask_sqlalchemy import SQLAlchemy
+from main import db, app
+from flask_marshmallow import Marshmallow
+from marshmallow import fields
 
-db = SQLAlchemy()
+ma = Marshmallow(app)
 
 ###### MODELS ######
 
 # Define Demographics table/data model
 class Demographics(db.Model):
+    __tablename__ = "demographics"
     country_id = db.Column(db.String(), primary_key=True)
     country_name = db.Column(db.String())
     country_flag = db.Column(db.String())
@@ -22,6 +26,7 @@ class Demographics(db.Model):
 
 # Define Geography table/data model
 class Geography(db.Model):
+    __tablename__ = "geography"
     country_id = db.Column(db.String(), primary_key=True)
     country_name = db.Column(db.String())
     country_latitude = db.Column(db.Float)
@@ -34,3 +39,24 @@ class Geography(db.Model):
     country_water_percent = db.Column(db.String())
 
 # Define Food and Tourism table/data model
+
+
+# Schemas for each model
+class DemographicsSchema(ma.Schema):
+    country_id = fields.Str(required=True)
+    country_name = fields.Str(required=True)
+    country_flag = fields.Str(required=True)
+    country_flag_emoji = fields.Str(required=True)
+    country_capital = fields.Str(required=True)
+    country_population = fields.Int(required=True)
+    country_languages = fields.Str(required=True)
+    country_currency = fields.Str(required=True)
+    country_calling_code = fields.Str(required=True)
+    country_domain = fields.Str(required=True)
+    country_cities = fields.Int(required=True)
+    country_states = fields.Int(required=True)
+    country_income_level = fields.Str(required=True)
+
+with app.app_context():
+    db.create_all()
+    db.session.commit()

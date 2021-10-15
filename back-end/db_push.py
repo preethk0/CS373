@@ -1,6 +1,7 @@
 import os
 import json
 from models import Demographics, Geography
+from main import db
 
 with open('data/generalCountryData/codeToCountry.json', 'r') as file:
     code_to_country_data = json.load(file)
@@ -26,6 +27,7 @@ def populate_demographics():
         with open(individual_files_dir + '/' + file_name, 'r') as file:
             country_dem_data = json.load(file)
             add_demographics(country_dem_data)
+    db.session.commit()
 
 def add_demographics(country_ind_data):
     country_code = country_ind_data['isoAlpha2']
@@ -53,6 +55,8 @@ def add_demographics(country_ind_data):
                 "country_income_level": country_ind_data['wbIncomeLevel']['value']
             }
             demographics_db_instance = Demographics(**country_dem_obj)
+            db.session.add(demographics_db_instance)
+
 
 def populate_geography():
     # do something
@@ -73,3 +77,4 @@ def add_food_and_tourism():
 if __name__ == "__main__":
     print("Populating DB...")
     populate_demographics()
+    print("Done")
