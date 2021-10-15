@@ -20,6 +20,18 @@ with open('data/generalCountryData/countriesStatesData.json', 'r') as file:
 with open('data/generalCountryData/countriesCitiesData.json', 'r') as file:
     countries_cities_data = json.load(file)
 
+with open('data/generalCountryData/countriesLocationData.json', 'r') as file:
+    countries_location_data = json.load(file)
+
+with open('data/generalCountryData/countriesNeighborsData.json', 'r') as file:
+    countries_neighbors_data = json.load(file)
+
+with open('data/generalCountryData/countriesAreaData.json', 'r') as file:
+    countries_area_data = json.load(file)
+
+with open('data/generalCountryData/countriesLandAreaData.json', 'r') as file:
+    countries_land_area_data = json.load(file)
+
 def populate_demographics():
     individual_files_dir = 'data/individualCountryData'
     for file_name in os.listdir(individual_files_dir):
@@ -55,12 +67,33 @@ def add_demographics(country_ind_data):
             demographics_db_instance = Demographics(**country_dem_obj)
 
 def populate_geography():
-    # do something
-    print()
+    individual_files_dir = 'data/individualCountryData'
+    for file_name in os.listdir(individual_files_dir):
+        with open(individual_files_dir + '/' + file_name, 'r') as file:
+            country_geo_data = json.load(file)
+            add_geography(country_geo_data)
 
-def add_geography():
-    # do something
-    print()
+def add_geography(country_ind_data):
+    country_code = country_ind_data['isoAlpha2']
+    country_name = code_to_country_data[country_code] if country_code in code_to_country_data else ""
+    if country_name:
+        country_location_data = list(filter(lambda country: country['alpha2Code'] == country_code, countries_location_data['data']))
+        country_neighbors_data = list(filter(lambda country: country['alpha2Code'] == country_code, countries_neighbors_data['data']))
+        country_area_data = list(filter(lambda country: country['alpha2Code'] == country_code, countries_area_data['data']))
+        if country_location_data and country_neighbors_data and country_area_data:
+            country_geo_obj = {
+                "country_id": country_code,
+                "country_name": country_name,
+                "country_latitude": country_location_data[0]['lat'],
+                "country_longitude": country_location_data[0]['long'],
+                "country_continent": country_ind_data['continents']['continent'],
+                "country_region": country_ind_data['wbRegion']['value'],
+                "country_adjacent_countries": country_neighbors_data[0]['country_border_names'],
+                "country_land_area": country_area_data[0]['land_area'],
+                "country_water_area": country_area_data[0]['water_area'],
+                "country_water_percent": country_area_data[0]['water_percent']
+            }
+            geography_db_instance = Geography(**country_geo_obj)
 
 def populate_food_and_tourism():
     # do something
