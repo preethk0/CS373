@@ -41,7 +41,7 @@ const getGitLabStatistics = async () => {
   });
 
   issuesData.forEach((issue, idx) => {
-    if (issue.state === "closed" && Boolean(issue.assignees)) {
+    if (Boolean(issue.assignees)) {
       issue.assignees.forEach((assignee) => {
         if (assignee.name in membersData) {
           membersData[assignee.name].issues += 1;
