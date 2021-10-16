@@ -1,5 +1,5 @@
 from flask_sqlalchemy import SQLAlchemy
-from main import db, app
+from app import db, app
 from flask_marshmallow import Marshmallow
 from marshmallow import fields
 
@@ -39,9 +39,13 @@ class Geography(db.Model):
     country_water_percent = db.Column(db.String())
 
 # Define Food and Tourism table/data model
+class FoodAndTourism(db.Model):
+    __tablename__ = "foodandtourism"
+    country_id = db.Column(db.String(), primary_key=True)
+    country_name = db.Column(db.String())
 
 
-# Schemas for each model
+###### MODEL SCHEMAS ######
 class DemographicsSchema(ma.Schema):
     country_id = fields.Str(required=True)
     country_name = fields.Str(required=True)
@@ -69,12 +73,18 @@ class GeographySchema(ma.Schema):
     country_water_area = fields.Str(required=True)
     country_water_percent = fields.Str(required=True)
 
+class FoodAndTourismSchema(ma.Schema):
+    country_id = fields.Str(required=True)
+    country_name = fields.Str(required=True)
 
 demographics_schema = DemographicsSchema()
 all_demographics_schema = DemographicsSchema(many=True)
 
 geography_schema = GeographySchema()
 all_geography_schema = GeographySchema(many=True)
+
+foodandtourism_schema = FoodAndTourismSchema()
+all_foodandtourism_schema = FoodAndTourismSchema(many=True)
 
 with app.app_context():
     db.create_all()

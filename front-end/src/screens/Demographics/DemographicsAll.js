@@ -8,9 +8,7 @@ const DemographicsAll = ({}) => {
   const [{ data, loading, error }] = useAxios("/api/demographics");
 
   useEffect(() => {
-    console.log("yooo");
     const demographicsResult = data;
-    console.log(data);
     if (demographicsResult) {
       console.log(demographicsResult);
     }

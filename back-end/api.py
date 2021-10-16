@@ -1,5 +1,5 @@
 from models import Demographics, Geography, demographics_schema, all_demographics_schema, geography_schema, all_geography_schema
-from main import app, db
+from app import app, db
 from flask import Response, json, request, jsonify, render_template
 
 @app.route("/")

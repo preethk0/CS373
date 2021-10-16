@@ -1,7 +1,7 @@
 import os
 import json
 from models import Demographics, Geography
-from main import db
+from app import db
 
 with open('data/generalCountryData/codeToCountry.json', 'r') as file:
     code_to_country_data = json.load(file)
