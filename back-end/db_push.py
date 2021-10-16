@@ -76,21 +76,22 @@ def populate_geography():
         with open(individual_files_dir + '/' + file_name, 'r') as file:
             country_geo_data = json.load(file)
             add_geography(country_geo_data)
+    db.session.commit()
 
 def add_geography(country_ind_data):
     country_code = country_ind_data['isoAlpha2']
     country_name = code_to_country_data[country_code] if country_code in code_to_country_data else ""
     if country_name:
-        country_location_data = list(filter(lambda country: country['alpha2Code'] == country_code, countries_location_data['data']))
-        country_neighbors_data = list(filter(lambda country: country['alpha2Code'] == country_code, countries_neighbors_data['data']))
-        country_area_data = list(filter(lambda country: country['alpha2Code'] == country_code, countries_area_data['data']))
+        country_location_data = list(filter(lambda country: country['name'] == country_name, countries_location_data['data']))
+        country_neighbors_data = list(filter(lambda country: country['country_code'] == country_code, countries_neighbors_data))
+        country_area_data = list(filter(lambda country: country['country'].strip() == country_name, countries_area_data))
         if country_location_data and country_neighbors_data and country_area_data:
             country_geo_obj = {
                 "country_id": country_code,
                 "country_name": country_name,
                 "country_latitude": country_location_data[0]['lat'],
                 "country_longitude": country_location_data[0]['long'],
-                "country_continent": country_ind_data['continents']['continent'],
+                "country_continent": country_ind_data['continents'][0]['continent'] if len(country_ind_data['continents'][0]) > 0 else "",
                 "country_region": country_ind_data['wbRegion']['value'],
                 "country_adjacent_countries": country_neighbors_data[0]['country_border_names'],
                 "country_land_area": country_area_data[0]['land_area'],
@@ -98,6 +99,7 @@ def add_geography(country_ind_data):
                 "country_water_percent": country_area_data[0]['water_percent']
             }
             geography_db_instance = Geography(**country_geo_obj)
+            db.session.add(geography_db_instance)
 
 def populate_food_and_tourism():
     # do something
@@ -109,5 +111,5 @@ def add_food_and_tourism():
 
 if __name__ == "__main__":
     print("Populating DB...")
-    populate_demographics()
+    populate_geography()
     print("Done")

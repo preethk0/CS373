@@ -57,6 +57,25 @@ class DemographicsSchema(ma.Schema):
     country_states = fields.Int(required=True)
     country_income_level = fields.Str(required=True)
 
+class GeographySchema(ma.Schema):
+    country_id = fields.Str(required=True)
+    country_name = fields.Str(required=True)
+    country_latitude = fields.Float(required=True)
+    country_longitude = fields.Float(required=True)
+    country_continent = fields.Str(required=True)
+    country_region = fields.Str(required=True)
+    country_adjacent_countries = fields.Str(required=True)
+    country_land_area = fields.Str(required=True)
+    country_water_area = fields.Str(required=True)
+    country_water_percent = fields.Str(required=True)
+
+
+demographics_schema = DemographicsSchema()
+all_demographics_schema = DemographicsSchema(many=True)
+
+geography_schema = GeographySchema()
+all_geography_schema = GeographySchema(many=True)
+
 with app.app_context():
     db.create_all()
     db.session.commit()

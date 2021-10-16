@@ -24,16 +24,3 @@ app.config.from_mapping(
 )
 
 db = SQLAlchemy(app)
-    
-# db.create_all()
-
-# APIS
-
-# API 1: http://api.countrylayer.com/v2/all?access_key=dffc936e64bb09079cd726042ec3457b 
-# (result in countriesBasicData.json file above - has topLevelDomain, capital, two/three letter country code, country name, calling code, region and alternate spellings)
-
-# API 2: https://api.bigdatacloud.net/data/country-info?code=us&localityLanguage=en&key=48c93ba0b7c24371aa0f78e62f1668d5 
-# (have to change the code=___, giving 2 letter country code as parameter - has languages, currency, region/continent, income level, calling code, countryFlagEmoji)
-
-# API 3: https://documenter.getpostman.com/view/1134062/T1LJjU52 
-# (has bunch of different API calls - has population data, capital, flag, cities, states, currencies etc.)
