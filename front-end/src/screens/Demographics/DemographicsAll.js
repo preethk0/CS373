@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import DemographicsData from "./DemographicsData";
 import "./DemographicsAll.css";
 import CountryCard from "../../components/Cards/CountryCard";
+import useAxios from "axios-hooks";
 
 const DemographicsAll = ({}) => {
+  const [{ data, loading, error }] = useAxios("/api/demographics");
+
+  useEffect(() => {
+    const demographicsResult = data;
+    if (demographicsResult) {
+      console.log(demographicsResult);
+    }
+  });
+
   return (
     <div className="mainPage">
       <h2 className="header">Demographics</h2>

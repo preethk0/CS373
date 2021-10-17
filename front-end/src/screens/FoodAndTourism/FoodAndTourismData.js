@@ -1,6 +1,6 @@
 const FoodAndTourismData = {
   USA: {
-    country_id: 1,
+    country_id: "USA",
     country_name: "United States of America",
     main_dishes: ["Cheeseburgers", "Pizza", "Hot Dog"],
     main_dish_photo:
@@ -15,7 +15,7 @@ const FoodAndTourismData = {
     average_temperature: 72.7,
   },
   China: {
-    country_id: 2,
+    country_id: "China",
     country_name: "China",
     main_dishes: ["Hotpot", "Sichuan Pork", "Dumplings"],
     main_dish_photo:
@@ -34,7 +34,7 @@ const FoodAndTourismData = {
     average_temperature: 73,
   },
   India: {
-    country_id: 3,
+    country_id: "India",
     country_name: "India",
     main_dishes: ["Butter Chicken", "Chana Masala"],
     main_dish_photo:

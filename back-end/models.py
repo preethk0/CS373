@@ -1,50 +1,91 @@
 from flask_sqlalchemy import SQLAlchemy
+from app import db, app
+from flask_marshmallow import Marshmallow
+from marshmallow import fields
 
-db = SQLAlchemy()
+ma = Marshmallow(app)
 
 ###### MODELS ######
 
 # Define Demographics table/data model
 class Demographics(db.Model):
+    __tablename__ = "demographics"
     country_id = db.Column(db.String(), primary_key=True)
     country_name = db.Column(db.String())
     country_flag = db.Column(db.String())
+    country_flag_emoji = db.Column(db.String())
     country_capital = db.Column(db.String())
     country_population = db.Column(db.Integer)
     country_languages = db.Column(db.PickleType)
     country_currency = db.Column(db.String())
     country_calling_code = db.Column(db.String())
     country_domain = db.Column(db.String())
+    country_cities = db.Column(db.Integer)
     country_states = db.Column(db.Integer)
-
-    def __init__(self, country_id="NaN", country_name="NaN", country_flag="NaN", country_capital="NaN", country_population=0, country_languages=[], country_currency="NaN", country_calling_code="NaN", country_domain="NaN", country_states=0):
-        self.country_id = country_id
-        self.country_name = country_name
-        self.country_flag = country_flag
-        self.country_captial = country_capital
-        self.country_population = country_population
-        self.country_languages = country_languages
-        self.country_currency = country_currency
-        self.country_calling_code = country_calling_code
-        self.country_domain = country_domain
-        self.country_states = country_states
-
+    country_income_level = db.Column(db.String())
 
 # Define Geography table/data model
 class Geography(db.Model):
+    __tablename__ = "geography"
     country_id = db.Column(db.String(), primary_key=True)
     country_name = db.Column(db.String())
     country_latitude = db.Column(db.Float)
     country_longitude = db.Column(db.Float)
     country_continent = db.Column(db.String())
     country_region = db.Column(db.String())
-
-    def __init__(self, country_id="NaN", country_name="NaN", country_latitude=0.0, country_longitude=0.0, country_continent="NaN", country_region="NaN"):
-        self.country_id = country_id
-        self.country_name = country_name
-        self.country_latitude = country_latitude
-        self.country_longitude = country_longitude
-        self.country_continent = country_continent
-        self.country_region = country_region
+    country_adjacent_countries = db.Column(db.PickleType)
+    country_land_area = db.Column(db.String())
+    country_water_area = db.Column(db.String())
+    country_water_percent = db.Column(db.String())
 
 # Define Food and Tourism table/data model
+class FoodAndTourism(db.Model):
+    __tablename__ = "foodandtourism"
+    country_id = db.Column(db.String(), primary_key=True)
+    country_name = db.Column(db.String())
+
+
+###### MODEL SCHEMAS ######
+class DemographicsSchema(ma.Schema):
+    country_id = fields.Str(required=True)
+    country_name = fields.Str(required=True)
+    country_flag = fields.Str(required=True)
+    country_flag_emoji = fields.Str(required=True)
+    country_capital = fields.Str(required=True)
+    country_population = fields.Int(required=True)
+    country_languages = fields.Str(required=True)
+    country_currency = fields.Str(required=True)
+    country_calling_code = fields.Str(required=True)
+    country_domain = fields.Str(required=True)
+    country_cities = fields.Int(required=True)
+    country_states = fields.Int(required=True)
+    country_income_level = fields.Str(required=True)
+
+class GeographySchema(ma.Schema):
+    country_id = fields.Str(required=True)
+    country_name = fields.Str(required=True)
+    country_latitude = fields.Float(required=True)
+    country_longitude = fields.Float(required=True)
+    country_continent = fields.Str(required=True)
+    country_region = fields.Str(required=True)
+    country_adjacent_countries = fields.Str(required=True)
+    country_land_area = fields.Str(required=True)
+    country_water_area = fields.Str(required=True)
+    country_water_percent = fields.Str(required=True)
+
+class FoodAndTourismSchema(ma.Schema):
+    country_id = fields.Str(required=True)
+    country_name = fields.Str(required=True)
+
+demographics_schema = DemographicsSchema()
+all_demographics_schema = DemographicsSchema(many=True)
+
+geography_schema = GeographySchema()
+all_geography_schema = GeographySchema(many=True)
+
+foodandtourism_schema = FoodAndTourismSchema()
+all_foodandtourism_schema = FoodAndTourismSchema(many=True)
+
+with app.app_context():
+    db.create_all()
+    db.session.commit()
