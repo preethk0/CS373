@@ -1,5 +1,4 @@
 import os
-
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import create_engine, Column, String, Integer
@@ -39,9 +38,10 @@ db.create_all()
 # API 3: https://documenter.getpostman.com/view/1134062/T1LJjU52 
 # (has bunch of different API calls - has population data, capital, flag, cities, states, currencies etc.)
 
-
-
 # a simple page that says hello
 @app.route('/hello')
 def hello():
     return 'Hello, World!'
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=True)
