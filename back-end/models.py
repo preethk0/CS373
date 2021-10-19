@@ -43,6 +43,18 @@ class FoodAndTourism(db.Model):
     __tablename__ = "foodandtourism"
     country_id = db.Column(db.String(), primary_key=True)
     country_name = db.Column(db.String())
+    country_income_level = db.Column(db.String())
+    country_main_dishes = db.Column(db.PickleType)
+    country_agricultural_exports = db.Column(db.String())
+    country_main_attraction = db.Column(db.String())
+    country_main_attraction_image_src = db.Column(db.String())
+    country_tourism_video_src = db.Column(db.String())
+    country_number_of_tourists = db.Column(db.Float)
+    country_tourism_revenue = db.Column(db.Float)
+    country_tourism_percent_GDP = db.Column(db.Float)
+    country_coldest_month_temp = db.Column(db.Float)
+    country_warmest_month_temp = db.Column(db.Float)
+
 
 
 ###### MODEL SCHEMAS ######
