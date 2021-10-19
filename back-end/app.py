@@ -25,7 +25,7 @@ app.config.from_mapping(
 
 db = SQLAlchemy(app)
     
-db.create_all()
+# db.create_all()
 
 # APIS
 

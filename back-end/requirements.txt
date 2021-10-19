@@ -10,4 +10,5 @@ marshmallow-sqlalchemy
 gunicorn
 black
 selenium
+python-dotenv
 uWSGI==2.0.19.1
