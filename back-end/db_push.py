@@ -163,4 +163,5 @@ def add_food_and_tourism(country_ind_data):
 if __name__ == "__main__":
     print("Populating DB...")
     populate_geography()
+    populate_food_and_tourism()
     print("Done")
