@@ -1,0 +1,1178 @@
+[
+    {
+        "country": "Mali",
+        "avg_temp": 28.83,
+        "coldest_temp": 19.4,
+        "hottest_temp": 34.6
+    },
+    {
+        "country": "Burkina Faso",
+        "avg_temp": 28.71,
+        "coldest_temp": 22.9,
+        "hottest_temp": 33.9
+    },
+    {
+        "country": "Senegal",
+        "avg_temp": 28.65,
+        "coldest_temp": 23.3,
+        "hottest_temp": 32.8
+    },
+    {
+        "country": "Tuvalu",
+        "avg_temp": 28.45,
+        "coldest_temp": 27.1,
+        "hottest_temp": 29.6
+    },
+    {
+        "country": "Djibouti",
+        "avg_temp": 28.38,
+        "coldest_temp": 22.7,
+        "hottest_temp": 34.1
+    },
+    {
+        "country": "Mauritania",
+        "avg_temp": 28.34,
+        "coldest_temp": 19.1,
+        "hottest_temp": 34.5
+    },
+    {
+        "country": "Bahrain",
+        "avg_temp": 28.23,
+        "coldest_temp": 13.8,
+        "hottest_temp": 39.6
+    },
+    {
+        "country": "Palau",
+        "avg_temp": 28.04,
+        "coldest_temp": 26.7,
+        "hottest_temp": 29.3
+    },
+    {
+        "country": "Qatar",
+        "avg_temp": 28.02,
+        "coldest_temp": 15.1,
+        "hottest_temp": 37.8
+    },
+    {
+        "country": "Gambia",
+        "avg_temp": 27.97,
+        "coldest_temp": 23.3,
+        "hottest_temp": 31.3
+    },
+    {
+        "country": "Benin",
+        "avg_temp": 27.93,
+        "coldest_temp": 24.9,
+        "hottest_temp": 31.9
+    },
+    {
+        "country": "Marshall Islands",
+        "avg_temp": 27.93,
+        "coldest_temp": 26.6,
+        "hottest_temp": 29.0
+    },
+    {
+        "country": "Niger",
+        "avg_temp": 27.83,
+        "coldest_temp": 17.1,
+        "hottest_temp": 34.6
+    },
+    {
+        "country": "Maldives",
+        "avg_temp": 27.8,
+        "coldest_temp": 27.2,
+        "hottest_temp": 28.9
+    },
+    {
+        "country": "Sudan",
+        "avg_temp": 27.74,
+        "coldest_temp": 18.7,
+        "hottest_temp": 33.2
+    },
+    {
+        "country": "South Sudan",
+        "avg_temp": 27.72,
+        "coldest_temp": 25.0,
+        "hottest_temp": 31.8
+    },
+    {
+        "country": "Ghana",
+        "avg_temp": 27.68,
+        "coldest_temp": 25.0,
+        "hottest_temp": 31.1
+    },
+    {
+        "country": "Northern Mariana Islands",
+        "avg_temp": 27.64,
+        "coldest_temp": 25.9,
+        "hottest_temp": 30.0
+    },
+    {
+        "country": "United Arab Emirates",
+        "avg_temp": 27.63,
+        "coldest_temp": 16.5,
+        "hottest_temp": 35.7
+    },
+    {
+        "country": "Singapore",
+        "avg_temp": 27.6,
+        "coldest_temp": 26.1,
+        "hottest_temp": 29.3
+    },
+    {
+        "country": "Samoa",
+        "avg_temp": 27.59,
+        "coldest_temp": 25.8,
+        "hottest_temp": 29.5
+    },
+    {
+        "country": "Seychelles",
+        "avg_temp": 27.55,
+        "coldest_temp": 25.5,
+        "hottest_temp": 29.4
+    },
+    {
+        "country": "Cambodia",
+        "avg_temp": 27.51,
+        "coldest_temp": 23.3,
+        "hottest_temp": 31.0
+    },
+    {
+        "country": "Kiribati",
+        "avg_temp": 27.49,
+        "coldest_temp": 27.2,
+        "hottest_temp": 27.8
+    },
+    {
+        "country": "Guinea-Bissau",
+        "avg_temp": 27.43,
+        "coldest_temp": 23.4,
+        "hottest_temp": 31.1
+    },
+    {
+        "country": "Saint Vincent and the Grenadines",
+        "avg_temp": 27.42,
+        "coldest_temp": 25.0,
+        "hottest_temp": 29.1
+    },
+    {
+        "country": "Togo",
+        "avg_temp": 27.38,
+        "coldest_temp": 24.4,
+        "hottest_temp": 30.9
+    },
+    {
+        "country": "Chad",
+        "avg_temp": 27.37,
+        "coldest_temp": 18.9,
+        "hottest_temp": 32.7
+    },
+    {
+        "country": "Sri Lanka",
+        "avg_temp": 27.28,
+        "coldest_temp": 25.0,
+        "hottest_temp": 29.3
+    },
+    {
+        "country": "Grenada",
+        "avg_temp": 27.24,
+        "coldest_temp": 25.0,
+        "hottest_temp": 28.9
+    },
+    {
+        "country": "Nigeria",
+        "avg_temp": 27.24,
+        "coldest_temp": 23.2,
+        "hottest_temp": 31.5
+    },
+    {
+        "country": "Somalia",
+        "avg_temp": 27.09,
+        "coldest_temp": 24.8,
+        "hottest_temp": 29.3
+    },
+    {
+        "country": "Eritrea",
+        "avg_temp": 26.92,
+        "coldest_temp": 20.3,
+        "hottest_temp": 31.1
+    },
+    {
+        "country": "Thailand",
+        "avg_temp": 26.79,
+        "coldest_temp": 21.4,
+        "hottest_temp": 31.2
+    },
+    {
+        "country": "C\u00f4te d\u2019Ivoire",
+        "avg_temp": 26.76,
+        "coldest_temp": 24.3,
+        "hottest_temp": 30.3
+    },
+    {
+        "country": "Barbados",
+        "avg_temp": 26.73,
+        "coldest_temp": 24.9,
+        "hottest_temp": 28.1
+    },
+    {
+        "country": "Micronesia (Federated States of)",
+        "avg_temp": 26.65,
+        "coldest_temp": 25.4,
+        "hottest_temp": 27.7
+    },
+    {
+        "country": "Antigua and Barbuda",
+        "avg_temp": 26.61,
+        "coldest_temp": 24.3,
+        "hottest_temp": 28.3
+    },
+    {
+        "country": "Brunei Darussalam",
+        "avg_temp": 26.56,
+        "coldest_temp": 25.0,
+        "hottest_temp": 28.0
+    },
+    {
+        "country": "Sierra Leone",
+        "avg_temp": 26.54,
+        "coldest_temp": 24.3,
+        "hottest_temp": 29.4
+    },
+    {
+        "country": "Trinidad and Tobago",
+        "avg_temp": 26.37,
+        "coldest_temp": 24.6,
+        "hottest_temp": 27.9
+    },
+    {
+        "country": "Saint Lucia",
+        "avg_temp": 26.34,
+        "coldest_temp": 24.2,
+        "hottest_temp": 28.0
+    },
+    {
+        "country": "Kuwait",
+        "avg_temp": 26.18,
+        "coldest_temp": 10.0,
+        "hottest_temp": 39.0
+    },
+    {
+        "country": "Guinea",
+        "avg_temp": 26.14,
+        "coldest_temp": 23.4,
+        "hottest_temp": 30.1
+    },
+    {
+        "country": "Indonesia",
+        "avg_temp": 26.14,
+        "coldest_temp": 25.4,
+        "hottest_temp": 26.9
+    },
+    {
+        "country": "Guyana",
+        "avg_temp": 26.12,
+        "coldest_temp": 24.5,
+        "hottest_temp": 28.1
+    },
+    {
+        "country": "Suriname",
+        "avg_temp": 26.07,
+        "coldest_temp": 24.3,
+        "hottest_temp": 28.0
+    },
+    {
+        "country": "Oman",
+        "avg_temp": 26.04,
+        "coldest_temp": 18.9,
+        "hottest_temp": 31.4
+    },
+    {
+        "country": "Venezuela (Bolivarian Republic of)",
+        "avg_temp": 25.86,
+        "coldest_temp": 24.3,
+        "hottest_temp": 27.9
+    },
+    {
+        "country": "Cuba",
+        "avg_temp": 25.83,
+        "coldest_temp": 20.0,
+        "hottest_temp": 28.6
+    },
+    {
+        "country": "Philippines",
+        "avg_temp": 25.82,
+        "coldest_temp": 23.6,
+        "hottest_temp": 27.8
+    },
+    {
+        "country": "Malaysia",
+        "avg_temp": 25.75,
+        "coldest_temp": 24.5,
+        "hottest_temp": 27.2
+    },
+    {
+        "country": "Liberia",
+        "avg_temp": 25.69,
+        "coldest_temp": 23.8,
+        "hottest_temp": 28.2
+    },
+    {
+        "country": "Solomon Islands",
+        "avg_temp": 25.61,
+        "coldest_temp": 24.5,
+        "hottest_temp": 26.5
+    },
+    {
+        "country": "Belize",
+        "avg_temp": 25.59,
+        "coldest_temp": 21.4,
+        "hottest_temp": 28.4
+    },
+    {
+        "country": "Bangladesh",
+        "avg_temp": 25.53,
+        "coldest_temp": 17.1,
+        "hottest_temp": 29.7
+    },
+    {
+        "country": "Brazil",
+        "avg_temp": 25.51,
+        "coldest_temp": 22.7,
+        "hottest_temp": 27.2
+    },
+    {
+        "country": "Saudi Arabia",
+        "avg_temp": 25.47,
+        "coldest_temp": 13.7,
+        "hottest_temp": 34.3
+    },
+    {
+        "country": "Panama",
+        "avg_temp": 25.4,
+        "coldest_temp": 23.7,
+        "hottest_temp": 27.2
+    },
+    {
+        "country": "Gabon",
+        "avg_temp": 25.36,
+        "coldest_temp": 22.4,
+        "hottest_temp": 27.3
+    },
+    {
+        "country": "Central African Republic",
+        "avg_temp": 25.31,
+        "coldest_temp": 23.0,
+        "hottest_temp": 28.4
+    },
+    {
+        "country": "Nicaragua",
+        "avg_temp": 25.29,
+        "coldest_temp": 22.9,
+        "hottest_temp": 27.3
+    },
+    {
+        "country": "El Salvador",
+        "avg_temp": 25.24,
+        "coldest_temp": 22.5,
+        "hottest_temp": 27.9
+    },
+    {
+        "country": "Haiti",
+        "avg_temp": 25.13,
+        "coldest_temp": 22.3,
+        "hottest_temp": 27.5
+    },
+    {
+        "country": "Saint Kitts and Nevis",
+        "avg_temp": 25.11,
+        "coldest_temp": 22.6,
+        "hottest_temp": 27.0
+    },
+    {
+        "country": "Kenya",
+        "avg_temp": 25.09,
+        "coldest_temp": 22.9,
+        "hottest_temp": 28.0
+    },
+    {
+        "country": "Papua New Guinea",
+        "avg_temp": 25.08,
+        "coldest_temp": 23.7,
+        "hottest_temp": 26.2
+    },
+    {
+        "country": "Bahamas",
+        "avg_temp": 25.06,
+        "coldest_temp": 17.2,
+        "hottest_temp": 29.3
+    },
+    {
+        "country": "Timor-Leste",
+        "avg_temp": 24.99,
+        "coldest_temp": 22.4,
+        "hottest_temp": 26.7
+    },
+    {
+        "country": "Jamaica",
+        "avg_temp": 24.97,
+        "coldest_temp": 21.7,
+        "hottest_temp": 27.1
+    },
+    {
+        "country": "Puerto Rico",
+        "avg_temp": 24.93,
+        "coldest_temp": 22.1,
+        "hottest_temp": 27.1
+    },
+    {
+        "country": "Cameroon",
+        "avg_temp": 24.87,
+        "coldest_temp": 22.9,
+        "hottest_temp": 27.9
+    },
+    {
+        "country": "Congo",
+        "avg_temp": 24.85,
+        "coldest_temp": 22.4,
+        "hottest_temp": 26.8
+    },
+    {
+        "country": "Costa Rica",
+        "avg_temp": 24.85,
+        "coldest_temp": 22.9,
+        "hottest_temp": 26.8
+    },
+    {
+        "country": "Colombia",
+        "avg_temp": 24.79,
+        "coldest_temp": 23.5,
+        "hottest_temp": 26.6
+    },
+    {
+        "country": "India",
+        "avg_temp": 24.68,
+        "coldest_temp": 16.3,
+        "hottest_temp": 31.1
+    },
+    {
+        "country": "Viet Nam",
+        "avg_temp": 24.62,
+        "coldest_temp": 18.4,
+        "hottest_temp": 28.5
+    },
+    {
+        "country": "Tonga",
+        "avg_temp": 24.58,
+        "coldest_temp": 21.5,
+        "hottest_temp": 28.1
+    },
+    {
+        "country": "Equatorial Guinea",
+        "avg_temp": 24.54,
+        "coldest_temp": 22.3,
+        "hottest_temp": 26.6
+    },
+    {
+        "country": "Comoros",
+        "avg_temp": 24.52,
+        "coldest_temp": 21.7,
+        "hottest_temp": 26.6
+    },
+    {
+        "country": "Democratic Republic of the Congo",
+        "avg_temp": 24.36,
+        "coldest_temp": 22.5,
+        "hottest_temp": 25.6
+    },
+    {
+        "country": "Mozambique",
+        "avg_temp": 24.33,
+        "coldest_temp": 19.4,
+        "hottest_temp": 27.7
+    },
+    {
+        "country": "Fiji",
+        "avg_temp": 24.3,
+        "coldest_temp": 21.0,
+        "hottest_temp": 26.6
+    },
+    {
+        "country": "Dominican Republic",
+        "avg_temp": 24.19,
+        "coldest_temp": 21.2,
+        "hottest_temp": 26.7
+    },
+    {
+        "country": "Vanuatu",
+        "avg_temp": 24.03,
+        "coldest_temp": 21.7,
+        "hottest_temp": 26.2
+    },
+    {
+        "country": "Honduras",
+        "avg_temp": 23.99,
+        "coldest_temp": 20.8,
+        "hottest_temp": 26.3
+    },
+    {
+        "country": "Lao People's Democratic Republic",
+        "avg_temp": 23.74,
+        "coldest_temp": 17.4,
+        "hottest_temp": 27.6
+    },
+    {
+        "country": "Paraguay",
+        "avg_temp": 23.73,
+        "coldest_temp": 15.0,
+        "hottest_temp": 28.9
+    },
+    {
+        "country": "Mauritius",
+        "avg_temp": 23.69,
+        "coldest_temp": 20.0,
+        "hottest_temp": 27.1
+    },
+    {
+        "country": "Guatemala",
+        "avg_temp": 23.67,
+        "coldest_temp": 20.2,
+        "hottest_temp": 26.3
+    },
+    {
+        "country": "Yemen",
+        "avg_temp": 23.63,
+        "coldest_temp": 17.9,
+        "hottest_temp": 29.1
+    },
+    {
+        "country": "Myanmar",
+        "avg_temp": 23.36,
+        "coldest_temp": 17.3,
+        "hottest_temp": 27.3
+    },
+    {
+        "country": "Uganda",
+        "avg_temp": 23.34,
+        "coldest_temp": 21.5,
+        "hottest_temp": 26.0
+    },
+    {
+        "country": "Cabo Verde",
+        "avg_temp": 23.23,
+        "coldest_temp": 19.6,
+        "hottest_temp": 26.3
+    },
+    {
+        "country": "Algeria",
+        "avg_temp": 23.22,
+        "coldest_temp": 10.9,
+        "hottest_temp": 34.1
+    },
+    {
+        "country": "Sao Tome and Principe",
+        "avg_temp": 23.2,
+        "coldest_temp": 20.4,
+        "hottest_temp": 25.2
+    },
+    {
+        "country": "Ethiopia",
+        "avg_temp": 23.04,
+        "coldest_temp": 20.0,
+        "hottest_temp": 26.3
+    },
+    {
+        "country": "Egypt",
+        "avg_temp": 23.0,
+        "coldest_temp": 11.9,
+        "hottest_temp": 31.6
+    },
+    {
+        "country": "United Republic of Tanzania",
+        "avg_temp": 22.86,
+        "coldest_temp": 20.1,
+        "hottest_temp": 24.8
+    },
+    {
+        "country": "Madagascar",
+        "avg_temp": 22.65,
+        "coldest_temp": 18.4,
+        "hottest_temp": 25.5
+    },
+    {
+        "country": "Libya",
+        "avg_temp": 22.64,
+        "coldest_temp": 11.5,
+        "hottest_temp": 32.0
+    },
+    {
+        "country": "Iraq",
+        "avg_temp": 22.58,
+        "coldest_temp": 5.4,
+        "hottest_temp": 35.8
+    },
+    {
+        "country": "Malawi",
+        "avg_temp": 22.51,
+        "coldest_temp": 17.7,
+        "hottest_temp": 26.6
+    },
+    {
+        "country": "Dominica",
+        "avg_temp": 22.48,
+        "coldest_temp": 20.3,
+        "hottest_temp": 24.2
+    },
+    {
+        "country": "Zambia",
+        "avg_temp": 22.27,
+        "coldest_temp": 17.0,
+        "hottest_temp": 26.7
+    },
+    {
+        "country": "New Caledonia",
+        "avg_temp": 22.24,
+        "coldest_temp": 18.1,
+        "hottest_temp": 26.5
+    },
+    {
+        "country": "Botswana",
+        "avg_temp": 22.22,
+        "coldest_temp": 13.4,
+        "hottest_temp": 28.2
+    },
+    {
+        "country": "Australia",
+        "avg_temp": 21.94,
+        "coldest_temp": 13.2,
+        "hottest_temp": 29.9
+    },
+    {
+        "country": "Angola",
+        "avg_temp": 21.83,
+        "coldest_temp": 18.0,
+        "hottest_temp": 24.4
+    },
+    {
+        "country": "Zimbabwe",
+        "avg_temp": 21.83,
+        "coldest_temp": 15.2,
+        "hottest_temp": 26.4
+    },
+    {
+        "country": "Ecuador",
+        "avg_temp": 21.65,
+        "coldest_temp": 19.8,
+        "hottest_temp": 23.5
+    },
+    {
+        "country": "Mexico",
+        "avg_temp": 21.31,
+        "coldest_temp": 14.1,
+        "hottest_temp": 26.8
+    },
+    {
+        "country": "Bolivia (Plurinational State of)",
+        "avg_temp": 20.95,
+        "coldest_temp": 16.2,
+        "hottest_temp": 24.0
+    },
+    {
+        "country": "Eswatini",
+        "avg_temp": 20.79,
+        "coldest_temp": 14.4,
+        "hottest_temp": 25.8
+    },
+    {
+        "country": "Pakistan",
+        "avg_temp": 20.75,
+        "coldest_temp": 7.3,
+        "hottest_temp": 30.4
+    },
+    {
+        "country": "Burundi",
+        "avg_temp": 20.68,
+        "coldest_temp": 18.9,
+        "hottest_temp": 22.6
+    },
+    {
+        "country": "Namibia",
+        "avg_temp": 20.56,
+        "coldest_temp": 13.5,
+        "hottest_temp": 26.1
+    },
+    {
+        "country": "Israel",
+        "avg_temp": 20.51,
+        "coldest_temp": 9.4,
+        "hottest_temp": 29.3
+    },
+    {
+        "country": "Tunisia",
+        "avg_temp": 20.34,
+        "coldest_temp": 8.7,
+        "hottest_temp": 32.1
+    },
+    {
+        "country": "Peru",
+        "avg_temp": 19.7,
+        "coldest_temp": 17.6,
+        "hottest_temp": 21.7
+    },
+    {
+        "country": "Cyprus",
+        "avg_temp": 19.63,
+        "coldest_temp": 7.4,
+        "hottest_temp": 30.5
+    },
+    {
+        "country": "Malta",
+        "avg_temp": 19.61,
+        "coldest_temp": 10.4,
+        "hottest_temp": 29.2
+    },
+    {
+        "country": "Jordan",
+        "avg_temp": 19.42,
+        "coldest_temp": 6.0,
+        "hottest_temp": 29.9
+    },
+    {
+        "country": "Rwanda",
+        "avg_temp": 19.41,
+        "coldest_temp": 17.6,
+        "hottest_temp": 20.7
+    },
+    {
+        "country": "Syrian Arab Republic",
+        "avg_temp": 18.58,
+        "coldest_temp": 3.2,
+        "hottest_temp": 31.6
+    },
+    {
+        "country": "South Africa",
+        "avg_temp": 18.28,
+        "coldest_temp": 9.7,
+        "hottest_temp": 24.9
+    },
+    {
+        "country": "Morocco",
+        "avg_temp": 18.04,
+        "coldest_temp": 8.2,
+        "hottest_temp": 28.6
+    },
+    {
+        "country": "Uruguay",
+        "avg_temp": 17.93,
+        "coldest_temp": 8.8,
+        "hottest_temp": 25.8
+    },
+    {
+        "country": "Iran (Islamic Republic of)",
+        "avg_temp": 17.86,
+        "coldest_temp": -0.1,
+        "hottest_temp": 31.3
+    },
+    {
+        "country": "Turkmenistan",
+        "avg_temp": 16.14,
+        "coldest_temp": -6.8,
+        "hottest_temp": 32.4
+    },
+    {
+        "country": "Lebanon",
+        "avg_temp": 16.0,
+        "coldest_temp": 3.5,
+        "hottest_temp": 26.4
+    },
+    {
+        "country": "Portugal",
+        "avg_temp": 15.62,
+        "coldest_temp": 7.3,
+        "hottest_temp": 24.4
+    },
+    {
+        "country": "Argentina",
+        "avg_temp": 14.55,
+        "coldest_temp": 5.2,
+        "hottest_temp": 22.5
+    },
+    {
+        "country": "Greece",
+        "avg_temp": 14.24,
+        "coldest_temp": 2.2,
+        "hottest_temp": 25.6
+    },
+    {
+        "country": "Monaco",
+        "avg_temp": 13.95,
+        "coldest_temp": 3.4,
+        "hottest_temp": 24.6
+    },
+    {
+        "country": "Spain",
+        "avg_temp": 13.93,
+        "coldest_temp": 4.2,
+        "hottest_temp": 24.6
+    },
+    {
+        "country": "Afghanistan",
+        "avg_temp": 13.57,
+        "coldest_temp": -4.0,
+        "hottest_temp": 27.1
+    },
+    {
+        "country": "Uzbekistan",
+        "avg_temp": 13.34,
+        "coldest_temp": -11.6,
+        "hottest_temp": 30.6
+    },
+    {
+        "country": "Nepal",
+        "avg_temp": 13.21,
+        "coldest_temp": 2.7,
+        "hottest_temp": 20.8
+    },
+    {
+        "country": "Azerbaijan",
+        "avg_temp": 12.93,
+        "coldest_temp": -5.2,
+        "hottest_temp": 27.8
+    },
+    {
+        "country": "Italy",
+        "avg_temp": 12.81,
+        "coldest_temp": 1.7,
+        "hottest_temp": 24.2
+    },
+    {
+        "country": "Lesotho",
+        "avg_temp": 12.65,
+        "coldest_temp": 4.6,
+        "hottest_temp": 19.0
+    },
+    {
+        "country": "Albania",
+        "avg_temp": 12.03,
+        "coldest_temp": -0.6,
+        "hottest_temp": 23.6
+    },
+    {
+        "country": "Bhutan",
+        "avg_temp": 11.98,
+        "coldest_temp": 2.3,
+        "hottest_temp": 18.6
+    },
+    {
+        "country": "France",
+        "avg_temp": 11.69,
+        "coldest_temp": 1.0,
+        "hottest_temp": 22.8
+    },
+    {
+        "country": "Croatia",
+        "avg_temp": 11.66,
+        "coldest_temp": -2.8,
+        "hottest_temp": 23.8
+    },
+    {
+        "country": "Turkey",
+        "avg_temp": 11.66,
+        "coldest_temp": -3.5,
+        "hottest_temp": 24.6
+    },
+    {
+        "country": "Republic of Korea",
+        "avg_temp": 11.4,
+        "coldest_temp": -6.7,
+        "hottest_temp": 26.5
+    },
+    {
+        "country": "Bulgaria",
+        "avg_temp": 11.31,
+        "coldest_temp": -4.0,
+        "hottest_temp": 23.8
+    },
+    {
+        "country": "Serbia",
+        "avg_temp": 11.28,
+        "coldest_temp": -4.8,
+        "hottest_temp": 23.9
+    },
+    {
+        "country": "Hungary",
+        "avg_temp": 11.15,
+        "coldest_temp": -5.2,
+        "hottest_temp": 23.9
+    },
+    {
+        "country": "Japan",
+        "avg_temp": 11.13,
+        "coldest_temp": -2.2,
+        "hottest_temp": 25.3
+    },
+    {
+        "country": "Belgium",
+        "avg_temp": 10.68,
+        "coldest_temp": -1.1,
+        "hottest_temp": 21.6
+    },
+    {
+        "country": "Republic of Moldova",
+        "avg_temp": 10.66,
+        "coldest_temp": -7.4,
+        "hottest_temp": 24.8
+    },
+    {
+        "country": "North Macedonia",
+        "avg_temp": 10.64,
+        "coldest_temp": -3.9,
+        "hottest_temp": 22.9
+    },
+    {
+        "country": "Netherlands",
+        "avg_temp": 10.4,
+        "coldest_temp": -1.0,
+        "hottest_temp": 21.0
+    },
+    {
+        "country": "Bosnia and Herzegovina",
+        "avg_temp": 10.24,
+        "coldest_temp": -4.2,
+        "hottest_temp": 22.6
+    },
+    {
+        "country": "New Zealand",
+        "avg_temp": 10.11,
+        "coldest_temp": 3.6,
+        "hottest_temp": 17.3
+    },
+    {
+        "country": "Luxembourg",
+        "avg_temp": 10.02,
+        "coldest_temp": -2.7,
+        "hottest_temp": 22.1
+    },
+    {
+        "country": "Romania",
+        "avg_temp": 9.86,
+        "coldest_temp": -6.5,
+        "hottest_temp": 22.6
+    },
+    {
+        "country": "Ireland",
+        "avg_temp": 9.67,
+        "coldest_temp": 1.8,
+        "hottest_temp": 17.2
+    },
+    {
+        "country": "Germany",
+        "avg_temp": 9.63,
+        "coldest_temp": -3.6,
+        "hottest_temp": 21.7
+    },
+    {
+        "country": "Slovenia",
+        "avg_temp": 9.58,
+        "coldest_temp": -4.1,
+        "hottest_temp": 21.7
+    },
+    {
+        "country": "Ukraine",
+        "avg_temp": 9.25,
+        "coldest_temp": -9.3,
+        "hottest_temp": 23.7
+    },
+    {
+        "country": "Montenegro",
+        "avg_temp": 9.19,
+        "coldest_temp": -4.8,
+        "hottest_temp": 21.6
+    },
+    {
+        "country": "Andorra",
+        "avg_temp": 9.18,
+        "coldest_temp": -2.1,
+        "hottest_temp": 20.6
+    },
+    {
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "avg_temp": 9.07,
+        "coldest_temp": 0.1,
+        "hottest_temp": 17.2
+    },
+    {
+        "country": "Poland",
+        "avg_temp": 8.85,
+        "coldest_temp": -6.7,
+        "hottest_temp": 21.3
+    },
+    {
+        "country": "Denmark",
+        "avg_temp": 8.76,
+        "coldest_temp": -3.9,
+        "hottest_temp": 19.7
+    },
+    {
+        "country": "Czechia",
+        "avg_temp": 8.73,
+        "coldest_temp": -5.8,
+        "hottest_temp": 21.2
+    },
+    {
+        "country": "Chile",
+        "avg_temp": 8.71,
+        "coldest_temp": 2.7,
+        "hottest_temp": 14.1
+    },
+    {
+        "country": "Slovakia",
+        "avg_temp": 8.34,
+        "coldest_temp": -7.2,
+        "hottest_temp": 20.9
+    },
+    {
+        "country": "Georgia",
+        "avg_temp": 7.67,
+        "coldest_temp": -10.6,
+        "hottest_temp": 21.6
+    },
+    {
+        "country": "United States of America",
+        "avg_temp": 7.63,
+        "coldest_temp": -6.9,
+        "hottest_temp": 21.4
+    },
+    {
+        "country": "Belarus",
+        "avg_temp": 7.5,
+        "coldest_temp": -11.3,
+        "hottest_temp": 21.7
+    },
+    {
+        "country": "Lithuania",
+        "avg_temp": 7.43,
+        "coldest_temp": -10.6,
+        "hottest_temp": 21.2
+    },
+    {
+        "country": "Austria",
+        "avg_temp": 7.25,
+        "coldest_temp": -6.0,
+        "hottest_temp": 19.2
+    },
+    {
+        "country": "Armenia",
+        "avg_temp": 7.15,
+        "coldest_temp": -13.3,
+        "hottest_temp": 22.7
+    },
+    {
+        "country": "China",
+        "avg_temp": 7.1,
+        "coldest_temp": -10.5,
+        "hottest_temp": 21.0
+    },
+    {
+        "country": "Kazakhstan",
+        "avg_temp": 6.91,
+        "coldest_temp": -18.0,
+        "hottest_temp": 25.5
+    },
+    {
+        "country": "Latvia",
+        "avg_temp": 6.86,
+        "coldest_temp": -10.9,
+        "hottest_temp": 21.0
+    },
+    {
+        "country": "Liechtenstein",
+        "avg_temp": 6.71,
+        "coldest_temp": -5.7,
+        "hottest_temp": 18.4
+    },
+    {
+        "country": "Faroe Islands",
+        "avg_temp": 6.52,
+        "coldest_temp": 1.4,
+        "hottest_temp": 12.5
+    },
+    {
+        "country": "Estonia",
+        "avg_temp": 6.31,
+        "coldest_temp": -12.0,
+        "hottest_temp": 21.1
+    },
+    {
+        "country": "Democratic People's Republic of Korea",
+        "avg_temp": 6.19,
+        "coldest_temp": -15.3,
+        "hottest_temp": 23.1
+    },
+    {
+        "country": "Switzerland",
+        "avg_temp": 6.08,
+        "coldest_temp": -6.0,
+        "hottest_temp": 17.7
+    },
+    {
+        "country": "Tajikistan",
+        "avg_temp": 3.75,
+        "coldest_temp": -14.9,
+        "hottest_temp": 17.9
+    },
+    {
+        "country": "Sweden",
+        "avg_temp": 2.62,
+        "coldest_temp": -12.9,
+        "hottest_temp": 17.3
+    },
+    {
+        "country": "Finland",
+        "avg_temp": 2.52,
+        "coldest_temp": -16.1,
+        "hottest_temp": 19.1
+    },
+    {
+        "country": "Iceland",
+        "avg_temp": 2.31,
+        "coldest_temp": -6.0,
+        "hottest_temp": 10.8
+    },
+    {
+        "country": "Kyrgyzstan",
+        "avg_temp": 2.22,
+        "coldest_temp": -19.3,
+        "hottest_temp": 17.5
+    },
+    {
+        "country": "Norway",
+        "avg_temp": 1.78,
+        "coldest_temp": -12.0,
+        "hottest_temp": 15.2
+    },
+    {
+        "country": "Mongolia",
+        "avg_temp": 0.67,
+        "coldest_temp": -25.7,
+        "hottest_temp": 20.7
+    },
+    {
+        "country": "Russian Federation",
+        "avg_temp": -5.16,
+        "coldest_temp": -29.7,
+        "hottest_temp": 16.1
+    },
+    {
+        "country": "Canada",
+        "avg_temp": -6.36,
+        "coldest_temp": -27.6,
+        "hottest_temp": 12.8
+    },
+    {
+        "country": "Greenland",
+        "avg_temp": -17.18,
+        "coldest_temp": -30.4,
+        "hottest_temp": -1.5
+    }
+]

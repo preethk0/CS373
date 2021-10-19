@@ -1,0 +1,892 @@
+[
+    {
+        "country": "United States of America",
+        "tourism_income": 210747000000,
+        "percentage_of_GDP": 1.1
+    },
+    {
+        "country": "Spain",
+        "tourism_income": 67964000000,
+        "percentage_of_GDP": 5.2
+    },
+    {
+        "country": "France",
+        "tourism_income": 60681000000,
+        "percentage_of_GDP": 2.3
+    },
+    {
+        "country": "Thailand",
+        "tourism_income": 57477000000,
+        "percentage_of_GDP": 12.6
+    },
+    {
+        "country": "United Kingdom",
+        "tourism_income": 51211000000,
+        "percentage_of_GDP": 2.0
+    },
+    {
+        "country": "Italy",
+        "tourism_income": 44233000000,
+        "percentage_of_GDP": 2.3
+    },
+    {
+        "country": "Australia",
+        "tourism_income": 41732000000,
+        "percentage_of_GDP": 3.2
+    },
+    {
+        "country": "Germany",
+        "tourism_income": 39823000000,
+        "percentage_of_GDP": 1.1
+    },
+    {
+        "country": "Japan",
+        "tourism_income": 34054000000,
+        "percentage_of_GDP": 0.7
+    },
+    {
+        "country": "China",
+        "tourism_income": 32617000000,
+        "percentage_of_GDP": 0.27
+    },
+    {
+        "country": "India",
+        "tourism_income": 27365000000,
+        "percentage_of_GDP": 1.1
+    },
+    {
+        "country": "Turkey",
+        "tourism_income": 22478000000,
+        "percentage_of_GDP": 2.6
+    },
+    {
+        "country": "Mexico",
+        "tourism_income": 21333000000,
+        "percentage_of_GDP": 1.9
+    },
+    {
+        "country": "United Arab Emirates",
+        "tourism_income": 21048000000,
+        "percentage_of_GDP": 5.5
+    },
+    {
+        "country": "Austria",
+        "tourism_income": 20400000000,
+        "percentage_of_GDP": 4.9
+    },
+    {
+        "country": "Canada",
+        "tourism_income": 20328000000,
+        "percentage_of_GDP": 1.2
+    },
+    {
+        "country": "Singapore",
+        "tourism_income": 19707000000,
+        "percentage_of_GDP": 6.1
+    },
+    {
+        "country": "Malaysia",
+        "tourism_income": 18323000000,
+        "percentage_of_GDP": 5.8
+    },
+    {
+        "country": "Portugal",
+        "tourism_income": 17119000000,
+        "percentage_of_GDP": 7.9
+    },
+    {
+        "country": "Switzerland",
+        "tourism_income": 17003000000,
+        "percentage_of_GDP": 2.5
+    },
+    {
+        "country": "Greece",
+        "tourism_income": 16528000000,
+        "percentage_of_GDP": 8.3
+    },
+    {
+        "country": "The Netherlands",
+        "tourism_income": 15867000000,
+        "percentage_of_GDP": 1.9
+    },
+    {
+        "country": "Sweden",
+        "tourism_income": 14142000000,
+        "percentage_of_GDP": 2.6
+    },
+    {
+        "country": "South Korea",
+        "tourism_income": 13427000000,
+        "percentage_of_GDP": 0.88
+    },
+    {
+        "country": "Poland",
+        "tourism_income": 12772000000,
+        "percentage_of_GDP": 2.4
+    },
+    {
+        "country": "Indonesia",
+        "tourism_income": 12520000000,
+        "percentage_of_GDP": 1.2
+    },
+    {
+        "country": "Belgium",
+        "tourism_income": 12197000000,
+        "percentage_of_GDP": 2.5
+    },
+    {
+        "country": "Saudi Arabia",
+        "tourism_income": 12056000000,
+        "percentage_of_GDP": 1.8
+    },
+    {
+        "country": "Croatia",
+        "tourism_income": 10924000000,
+        "percentage_of_GDP": 19.9
+    },
+    {
+        "country": "New Zealand",
+        "tourism_income": 10285000000,
+        "percentage_of_GDP": 5.0
+    },
+    {
+        "country": "Russian Federation",
+        "tourism_income": 8945000000,
+        "percentage_of_GDP": 0.57
+    },
+    {
+        "country": "Vietnam",
+        "tourism_income": 8861000000,
+        "percentage_of_GDP": 4.0
+    },
+    {
+        "country": "South Africa",
+        "tourism_income": 8818000000,
+        "percentage_of_GDP": 2.5
+    },
+    {
+        "country": "Egypt",
+        "tourism_income": 7775000000,
+        "percentage_of_GDP": 3.3
+    },
+    {
+        "country": "Lebanon",
+        "tourism_income": 7611000000,
+        "percentage_of_GDP": 14.7
+    },
+    {
+        "country": "Morocco",
+        "tourism_income": 7417000000,
+        "percentage_of_GDP": 6.8
+    },
+    {
+        "country": "Denmark",
+        "tourism_income": 7394000000,
+        "percentage_of_GDP": 2.3
+    },
+    {
+        "country": "Philippines",
+        "tourism_income": 6986000000,
+        "percentage_of_GDP": 2.2
+    },
+    {
+        "country": "Czech Republic",
+        "tourism_income": 6932000000,
+        "percentage_of_GDP": 3.2
+    },
+    {
+        "country": "Israel",
+        "tourism_income": 6821000000,
+        "percentage_of_GDP": 1.9
+    },
+    {
+        "country": "Syria",
+        "tourism_income": 6190000000,
+        "percentage_of_GDP": 15.3
+    },
+    {
+        "country": "Hungary",
+        "tourism_income": 6170000000,
+        "percentage_of_GDP": 4.4
+    },
+    {
+        "country": "Qatar",
+        "tourism_income": 5971000000,
+        "percentage_of_GDP": 3.6
+    },
+    {
+        "country": "Brazil",
+        "tourism_income": 5809000000,
+        "percentage_of_GDP": 0.28
+    },
+    {
+        "country": "Ireland",
+        "tourism_income": 5585000000,
+        "percentage_of_GDP": 1.7
+    },
+    {
+        "country": "Norway",
+        "tourism_income": 5400000000,
+        "percentage_of_GDP": 1.4
+    },
+    {
+        "country": "Argentina",
+        "tourism_income": 5060000000,
+        "percentage_of_GDP": 0.79
+    },
+    {
+        "country": "Colombia",
+        "tourism_income": 4821000000,
+        "percentage_of_GDP": 1.6
+    },
+    {
+        "country": "Jordan",
+        "tourism_income": 4639000000,
+        "percentage_of_GDP": 11.6
+    },
+    {
+        "country": "Luxembourg",
+        "tourism_income": 4521000000,
+        "percentage_of_GDP": 7.2
+    },
+    {
+        "country": "Panama",
+        "tourism_income": 4452000000,
+        "percentage_of_GDP": 7.2
+    },
+    {
+        "country": "Bulgaria",
+        "tourism_income": 4045000000,
+        "percentage_of_GDP": 7.1
+    },
+    {
+        "country": "Sri Lanka",
+        "tourism_income": 3925000000,
+        "percentage_of_GDP": 4.5
+    },
+    {
+        "country": "Costa Rica",
+        "tourism_income": 3876000000,
+        "percentage_of_GDP": 6.8
+    },
+    {
+        "country": "Iran",
+        "tourism_income": 3713000000,
+        "percentage_of_GDP": 0.84
+    },
+    {
+        "country": "Peru",
+        "tourism_income": 3710000000,
+        "percentage_of_GDP": 1.8
+    },
+    {
+        "country": "Bahrain",
+        "tourism_income": 3642000000,
+        "percentage_of_GDP": 10.3
+    },
+    {
+        "country": "Cambodia",
+        "tourism_income": 3636000000,
+        "percentage_of_GDP": 16.4
+    },
+    {
+        "country": "Chile",
+        "tourism_income": 3634000000,
+        "percentage_of_GDP": 1.3
+    },
+    {
+        "country": "Cyprus",
+        "tourism_income": 3128000000,
+        "percentage_of_GDP": 14.4
+    },
+    {
+        "country": "Iceland",
+        "tourism_income": 3025000000,
+        "percentage_of_GDP": 12.7
+    },
+    {
+        "country": "Azerbaijan",
+        "tourism_income": 3012000000,
+        "percentage_of_GDP": 7.4
+    },
+    {
+        "country": "Finland",
+        "tourism_income": 2982000000,
+        "percentage_of_GDP": 1.2
+    },
+    {
+        "country": "Slovakia",
+        "tourism_income": 2923000000,
+        "percentage_of_GDP": 3.1
+    },
+    {
+        "country": "Cuba",
+        "tourism_income": 2907000000,
+        "percentage_of_GDP": 3.3
+    },
+    {
+        "country": "Georgia",
+        "tourism_income": 2751000000,
+        "percentage_of_GDP": 18.1
+    },
+    {
+        "country": "Slovenia",
+        "tourism_income": 2750000000,
+        "percentage_of_GDP": 5.6
+    },
+    {
+        "country": "Maldives",
+        "tourism_income": 2742000000,
+        "percentage_of_GDP": 59.6
+    },
+    {
+        "country": "The Bahamas",
+        "tourism_income": 2577000000,
+        "percentage_of_GDP": 21.2
+    },
+    {
+        "country": "Nigeria",
+        "tourism_income": 2549000000,
+        "percentage_of_GDP": 0.68
+    },
+    {
+        "country": "Uruguay",
+        "tourism_income": 2540000000,
+        "percentage_of_GDP": 4.5
+    },
+    {
+        "country": "Jamaica",
+        "tourism_income": 2539000000,
+        "percentage_of_GDP": 17.2
+    },
+    {
+        "country": "Romania",
+        "tourism_income": 2527000000,
+        "percentage_of_GDP": 1.2
+    },
+    {
+        "country": "Iraq",
+        "tourism_income": 2423000000,
+        "percentage_of_GDP": 1.2
+    },
+    {
+        "country": "Tanzania",
+        "tourism_income": 2339000000,
+        "percentage_of_GDP": 4.5
+    },
+    {
+        "country": "Myanmar",
+        "tourism_income": 2260000000,
+        "percentage_of_GDP": 3.3
+    },
+    {
+        "country": "Albania",
+        "tourism_income": 1929000000,
+        "percentage_of_GDP": 14.8
+    },
+    {
+        "country": "Kazakhstan",
+        "tourism_income": 1781000000,
+        "percentage_of_GDP": 1.1
+    },
+    {
+        "country": "Mauritius",
+        "tourism_income": 1748000000,
+        "percentage_of_GDP": 13.1
+    },
+    {
+        "country": "Oman",
+        "tourism_income": 1725000000,
+        "percentage_of_GDP": 2.4
+    },
+    {
+        "country": "Malta",
+        "tourism_income": 1723000000,
+        "percentage_of_GDP": 13.7
+    },
+    {
+        "country": "Ecuador",
+        "tourism_income": 1657000000,
+        "percentage_of_GDP": 1.6
+    },
+    {
+        "country": "Estonia",
+        "tourism_income": 1628000000,
+        "percentage_of_GDP": 6.3
+    },
+    {
+        "country": "Guatemala",
+        "tourism_income": 1566000000,
+        "percentage_of_GDP": 2.1
+    },
+    {
+        "country": "Serbia",
+        "tourism_income": 1346000000,
+        "percentage_of_GDP": 3.2
+    },
+    {
+        "country": "Tunisia",
+        "tourism_income": 1299000000,
+        "percentage_of_GDP": 3.2
+    },
+    {
+        "country": "Lithuania",
+        "tourism_income": 1299000000,
+        "percentage_of_GDP": 2.8
+    },
+    {
+        "country": "Ukraine",
+        "tourism_income": 1261000000,
+        "percentage_of_GDP": 1.1
+    },
+    {
+        "country": "Yemen",
+        "tourism_income": 1161000000,
+        "percentage_of_GDP": 6.4
+    },
+    {
+        "country": "Armenia",
+        "tourism_income": 1120000000,
+        "percentage_of_GDP": 9.7
+    },
+    {
+        "country": "Barbados",
+        "tourism_income": 1082000000,
+        "percentage_of_GDP": 22.6
+    },
+    {
+        "country": "Montenegro",
+        "tourism_income": 1041000000,
+        "percentage_of_GDP": 21.8
+    },
+    {
+        "country": "Sudan",
+        "tourism_income": 1029000000,
+        "percentage_of_GDP": 0.88
+    },
+    {
+        "country": "Kenya",
+        "tourism_income": 926000000,
+        "percentage_of_GDP": 1.2
+    },
+    {
+        "country": "Uganda",
+        "tourism_income": 918000000,
+        "percentage_of_GDP": 3.5
+    },
+    {
+        "country": "Zimbabwe",
+        "tourism_income": 890000000,
+        "percentage_of_GDP": 5.0
+    },
+    {
+        "country": "Latvia",
+        "tourism_income": 885000000,
+        "percentage_of_GDP": 2.9
+    },
+    {
+        "country": "Fiji",
+        "tourism_income": 885000000,
+        "percentage_of_GDP": 17.5
+    },
+    {
+        "country": "El Salvador",
+        "tourism_income": 873000000,
+        "percentage_of_GDP": 3.5
+    },
+    {
+        "country": "Ghana",
+        "tourism_income": 850000000,
+        "percentage_of_GDP": 1.8
+    },
+    {
+        "country": "Nicaragua",
+        "tourism_income": 841000000,
+        "percentage_of_GDP": 6.1
+    },
+    {
+        "country": "Bosnia and Herzegovina",
+        "tourism_income": 826000000,
+        "percentage_of_GDP": 4.5
+    },
+    {
+        "country": "Belarus",
+        "tourism_income": 790000000,
+        "percentage_of_GDP": 1.5
+    },
+    {
+        "country": "Bolivia",
+        "tourism_income": 784000000,
+        "percentage_of_GDP": 2.1
+    },
+    {
+        "country": "Madagascar",
+        "tourism_income": 750000000,
+        "percentage_of_GDP": 6.5
+    },
+    {
+        "country": "Honduras",
+        "tourism_income": 715000000,
+        "percentage_of_GDP": 3.1
+    },
+    {
+        "country": "Botswana",
+        "tourism_income": 704000000,
+        "percentage_of_GDP": 4.0
+    },
+    {
+        "country": "Cayman Islands",
+        "tourism_income": 686000000,
+        "percentage_of_GDP": 21.4
+    },
+    {
+        "country": "Zambia",
+        "tourism_income": 653000000,
+        "percentage_of_GDP": 2.5
+    },
+    {
+        "country": "Laos",
+        "tourism_income": 648000000,
+        "percentage_of_GDP": 3.8
+    },
+    {
+        "country": "Nepal",
+        "tourism_income": 630000000,
+        "percentage_of_GDP": 2.6
+    },
+    {
+        "country": "Angola",
+        "tourism_income": 623000000,
+        "percentage_of_GDP": 0.5
+    },
+    {
+        "country": "Paraguay",
+        "tourism_income": 603000000,
+        "percentage_of_GDP": 2.0
+    },
+    {
+        "country": "Bermuda",
+        "tourism_income": 513000000,
+        "percentage_of_GDP": 9.2
+    },
+    {
+        "country": "Cameroon",
+        "tourism_income": 505000000,
+        "percentage_of_GDP": 1.5
+    },
+    {
+        "country": "Haiti",
+        "tourism_income": 504000000,
+        "percentage_of_GDP": 6.0
+    },
+    {
+        "country": "Seychelles",
+        "tourism_income": 483000000,
+        "percentage_of_GDP": 32.5
+    },
+    {
+        "country": "Trinidad and Tobago",
+        "tourism_income": 475000000,
+        "percentage_of_GDP": 2.1
+    },
+    {
+        "country": "Venezuela",
+        "tourism_income": 473000000,
+        "percentage_of_GDP": 0.098
+    },
+    {
+        "country": "Senegal",
+        "tourism_income": 453000000,
+        "percentage_of_GDP": 2.8
+    },
+    {
+        "country": "Grenada",
+        "tourism_income": 448000000,
+        "percentage_of_GDP": 40.0
+    },
+    {
+        "country": "Rwanda",
+        "tourism_income": 438000000,
+        "percentage_of_GDP": 4.8
+    },
+    {
+        "country": "Cape Verde",
+        "tourism_income": 436000000,
+        "percentage_of_GDP": 24.9
+    },
+    {
+        "country": "Ethiopia",
+        "tourism_income": 434000000,
+        "percentage_of_GDP": 0.54
+    },
+    {
+        "country": "Kyrgyzstan",
+        "tourism_income": 429000000,
+        "percentage_of_GDP": 5.7
+    },
+    {
+        "country": "Belize",
+        "tourism_income": 426000000,
+        "percentage_of_GDP": 23.2
+    },
+    {
+        "country": "Saint Lucia",
+        "tourism_income": 404000000,
+        "percentage_of_GDP": 23.6
+    },
+    {
+        "country": "Mongolia",
+        "tourism_income": 396000000,
+        "percentage_of_GDP": 3.4
+    },
+    {
+        "country": "C\u00f4te d'Ivoire",
+        "tourism_income": 379000000,
+        "percentage_of_GDP": 0.94
+    },
+    {
+        "country": "Pakistan",
+        "tourism_income": 352000000,
+        "percentage_of_GDP": 0.12
+    },
+    {
+        "country": "Bangladesh",
+        "tourism_income": 337000000,
+        "percentage_of_GDP": 0.13
+    },
+    {
+        "country": "Antigua and Barbuda",
+        "tourism_income": 332000000,
+        "percentage_of_GDP": 21.7
+    },
+    {
+        "country": "Kuwait",
+        "tourism_income": 313000000,
+        "percentage_of_GDP": 0.26
+    },
+    {
+        "country": "Palestinian Territories",
+        "tourism_income": 225000000,
+        "percentage_of_GDP": 1.6
+    },
+    {
+        "country": "Vanuatu",
+        "tourism_income": 217000000,
+        "percentage_of_GDP": 25.1
+    },
+    {
+        "country": "Algeria",
+        "tourism_income": 209000000,
+        "percentage_of_GDP": 0.12
+    },
+    {
+        "country": "Mali",
+        "tourism_income": 200000000,
+        "percentage_of_GDP": 1.3
+    },
+    {
+        "country": "Namibia",
+        "tourism_income": 188000000,
+        "percentage_of_GDP": 1.4
+    },
+    {
+        "country": "Cook Islands",
+        "tourism_income": 179000000,
+        "percentage_of_GDP": null
+    },
+    {
+        "country": "Samoa",
+        "tourism_income": 165000000,
+        "percentage_of_GDP": 19.3
+    },
+    {
+        "country": "Mozambique",
+        "tourism_income": 151000000,
+        "percentage_of_GDP": 1.2
+    },
+    {
+        "country": "Brunei",
+        "tourism_income": 144000000,
+        "percentage_of_GDP": 1.2
+    },
+    {
+        "country": "Palau",
+        "tourism_income": 141000000,
+        "percentage_of_GDP": 48.4
+    },
+    {
+        "country": "Dominica",
+        "tourism_income": 132000000,
+        "percentage_of_GDP": 23.5
+    },
+    {
+        "country": "Anguilla",
+        "tourism_income": 130000000,
+        "percentage_of_GDP": null
+    },
+    {
+        "country": "Benin",
+        "tourism_income": 123000000,
+        "percentage_of_GDP": 1.3
+    },
+    {
+        "country": "Burkina Faso",
+        "tourism_income": 122000000,
+        "percentage_of_GDP": 0.95
+    },
+    {
+        "country": "Uzbekistan",
+        "tourism_income": 121000000,
+        "percentage_of_GDP": 0.25
+    },
+    {
+        "country": "Gambia",
+        "tourism_income": 116000000,
+        "percentage_of_GDP": 11.4
+    },
+    {
+        "country": "Guyana",
+        "tourism_income": 104000000,
+        "percentage_of_GDP": 2.8
+    },
+    {
+        "country": "Bhutan",
+        "tourism_income": 103000000,
+        "percentage_of_GDP": 4.1
+    },
+    {
+        "country": "Niger",
+        "tourism_income": 77000000,
+        "percentage_of_GDP": 0.95
+    },
+    {
+        "country": "East Timor",
+        "tourism_income": 73000000,
+        "percentage_of_GDP": 2.5
+    },
+    {
+        "country": "Solomon Islands",
+        "tourism_income": 67000000,
+        "percentage_of_GDP": 5.1
+    },
+    {
+        "country": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+        "tourism_income": 66000000,
+        "percentage_of_GDP": 16.9
+    },
+    {
+        "country": "Togo",
+        "tourism_income": 66000000,
+        "percentage_of_GDP": 1.4
+    },
+    {
+        "country": "Libya",
+        "tourism_income": 60000000,
+        "percentage_of_GDP": 0.12
+    },
+    {
+        "country": "Eritrea",
+        "tourism_income": 48000000,
+        "percentage_of_GDP": 1.8
+    },
+    {
+        "country": "Suriname",
+        "tourism_income": 46000000,
+        "percentage_of_GDP": 1.4
+    },
+    {
+        "country": "Sierra Leone",
+        "tourism_income": 41000000,
+        "percentage_of_GDP": 1.1
+    },
+    {
+        "country": "Comoros",
+        "tourism_income": 35000000,
+        "percentage_of_GDP": 5.4
+    },
+    {
+        "country": "Djibouti",
+        "tourism_income": 33000000,
+        "percentage_of_GDP": 1.8
+    },
+    {
+        "country": "Malawi",
+        "tourism_income": 31000000,
+        "percentage_of_GDP": 0.49
+    },
+    {
+        "country": "Congo-Brazzaville",
+        "tourism_income": 27000000,
+        "percentage_of_GDP": 0.31
+    },
+    {
+        "country": "Tonga",
+        "tourism_income": 27000000,
+        "percentage_of_GDP": 6.3
+    },
+    {
+        "country": "Lesotho",
+        "tourism_income": 23000000,
+        "percentage_of_GDP": 0.87
+    },
+    {
+        "country": "Mauritania",
+        "tourism_income": 23000000,
+        "percentage_of_GDP": 0.46
+    },
+    {
+        "country": "Guinea-Bissau",
+        "tourism_income": 19000000,
+        "percentage_of_GDP": 1.4
+    },
+    {
+        "country": "Guinea",
+        "tourism_income": 16000000,
+        "percentage_of_GDP": 0.15
+    },
+    {
+        "country": "Swaziland",
+        "tourism_income": 13000000,
+        "percentage_of_GDP": 0.29
+    },
+    {
+        "country": "Montserrat",
+        "tourism_income": 9000000,
+        "percentage_of_GDP": null
+    },
+    {
+        "country": "Tajikistan",
+        "tourism_income": 8000000,
+        "percentage_of_GDP": 0.11
+    },
+    {
+        "country": "Marshall Islands",
+        "tourism_income": 5000000,
+        "percentage_of_GDP": 2.5
+    },
+    {
+        "country": "Kiribati",
+        "tourism_income": 3000000,
+        "percentage_of_GDP": 1.5
+    },
+    {
+        "country": "Burundi",
+        "tourism_income": 2000000,
+        "percentage_of_GDP": 0.058
+    },
+    {
+        "country": "Niue",
+        "tourism_income": 2000000,
+        "percentage_of_GDP": null
+    },
+    {
+        "country": "Tuvalu",
+        "tourism_income": 2000000,
+        "percentage_of_GDP": 5.0
+    },
+    {
+        "country": "Papua New Guinea",
+        "tourism_income": 1000000,
+        "percentage_of_GDP": 0.00474
+    }
+]

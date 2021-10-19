@@ -1,0 +1,598 @@
+[
+    {
+        "country": "Afghanistan",
+        "main_dish": [
+            "Kabuli Pulao"
+        ]
+    },
+    {
+        "country": "Algeria",
+        "main_dish": [
+            "Couscous"
+        ]
+    },
+    {
+        "country": "Australia",
+        "main_dish": [
+            "Meat Pie"
+        ]
+    },
+    {
+        "country": "Austria",
+        "main_dish": [
+            "Wiener Schnitzel"
+        ]
+    },
+    {
+        "country": "Azerbaijan",
+        "main_dish": [
+            "Plov"
+        ]
+    },
+    {
+        "country": "Bangladesh",
+        "main_dish": [
+            "Fish and Rice"
+        ]
+    },
+    {
+        "country": "Belgium",
+        "main_dish": [
+            "Moules-frites"
+        ]
+    },
+    {
+        "country": "Belize",
+        "main_dish": [
+            "Belizean Rice and Beans"
+        ]
+    },
+    {
+        "country": "Bosnia & Herzegovina",
+        "main_dish": [
+            "\u0106evapi"
+        ]
+    },
+    {
+        "country": "Brazil",
+        "main_dish": [
+            "Feijoada"
+        ]
+    },
+    {
+        "country": "Canada",
+        "main_dish": [
+            "Poutine"
+        ]
+    },
+    {
+        "country": "Chile",
+        "main_dish": [
+            "Pastel de Choclo"
+        ]
+    },
+    {
+        "country": "China",
+        "main_dish": [
+            "Peking Duck"
+        ]
+    },
+    {
+        "country": "Costa Rica",
+        "main_dish": [
+            "Gallo Pinto"
+        ]
+    },
+    {
+        "country": "Cuba",
+        "main_dish": [
+            "Ropa Vieja"
+        ]
+    },
+    {
+        "country": "Denmark",
+        "main_dish": [
+            "Frikadeller"
+        ]
+    },
+    {
+        "country": "Ecuador",
+        "main_dish": [
+            "Ceviche"
+        ]
+    },
+    {
+        "country": "Equatorial Guinea",
+        "main_dish": [
+            "Succotash"
+        ]
+    },
+    {
+        "country": "France",
+        "main_dish": [
+            "Cr\u00eape"
+        ]
+    },
+    {
+        "country": "Georgia",
+        "main_dish": [
+            "Khachapuri"
+        ]
+    },
+    {
+        "country": "Germany",
+        "main_dish": [
+            "Sauerbraten"
+        ]
+    },
+    {
+        "country": "Greece",
+        "main_dish": [
+            "Moussaka"
+        ]
+    },
+    {
+        "country": "Hungary",
+        "main_dish": [
+            "Goulash"
+        ]
+    },
+    {
+        "country": "Indonesia",
+        "main_dish": [
+            "Nasi Goreng"
+        ]
+    },
+    {
+        "country": "Iran",
+        "main_dish": [
+            "Chelo Kebab"
+        ]
+    },
+    {
+        "country": "Ireland",
+        "main_dish": [
+            "Irish Stew"
+        ]
+    },
+    {
+        "country": "Israel",
+        "main_dish": [
+            "Falafel"
+        ]
+    },
+    {
+        "country": "Ivory Coast",
+        "main_dish": [
+            "Aloco"
+        ]
+    },
+    {
+        "country": "Laos",
+        "main_dish": [
+            "Larb"
+        ]
+    },
+    {
+        "country": "Latvia",
+        "main_dish": [
+            "Grey Peas, Bacon, and Onion"
+        ]
+    },
+    {
+        "country": "Lebanon",
+        "main_dish": [
+            "Kibbeh"
+        ]
+    },
+    {
+        "country": "Malaysia",
+        "main_dish": [
+            "Nasi Lemak"
+        ]
+    },
+    {
+        "country": "Mauritius",
+        "main_dish": [
+            "Dholl Puri"
+        ]
+    },
+    {
+        "country": "Mexico",
+        "main_dish": [
+            "Taco"
+        ]
+    },
+    {
+        "country": "Monaco",
+        "main_dish": [
+            "Barbagiuan"
+        ]
+    },
+    {
+        "country": "Moldova",
+        "main_dish": [
+            "M\u0103m\u0103lig\u0103"
+        ]
+    },
+    {
+        "country": "Morocco",
+        "main_dish": [
+            "Tagine"
+        ]
+    },
+    {
+        "country": "Nepal",
+        "main_dish": [
+            "Dal Bhaath"
+        ]
+    },
+    {
+        "country": "Netherlands",
+        "main_dish": [
+            "Stamppot"
+        ]
+    },
+    {
+        "country": "New Zealand",
+        "main_dish": [
+            "Pavlova"
+        ]
+    },
+    {
+        "country": "Nicaragua",
+        "main_dish": [
+            "Gallo Pinto"
+        ]
+    },
+    {
+        "country": "North Korea",
+        "main_dish": [
+            "Kimchi"
+        ]
+    },
+    {
+        "country": "Peru",
+        "main_dish": [
+            "Ceviche"
+        ]
+    },
+    {
+        "country": "Philippines",
+        "main_dish": [
+            "Chicken Adobo"
+        ]
+    },
+    {
+        "country": "Poland",
+        "main_dish": [
+            "Bigos"
+        ]
+    },
+    {
+        "country": "Russia",
+        "main_dish": [
+            "Pelmeni"
+        ]
+    },
+    {
+        "country": "Scotland",
+        "main_dish": [
+            "Haggis"
+        ]
+    },
+    {
+        "country": "Singapore",
+        "main_dish": [
+            "Hainanese Chicken Rice"
+        ]
+    },
+    {
+        "country": "Spain",
+        "main_dish": [
+            "Paella"
+        ]
+    },
+    {
+        "country": "Sri Lanka",
+        "main_dish": [
+            "Rice and Curry"
+        ]
+    },
+    {
+        "country": "Sweden",
+        "main_dish": [
+            "Swedish Meatballs"
+        ]
+    },
+    {
+        "country": "Switzerland",
+        "main_dish": [
+            "R\u00f6sti"
+        ]
+    },
+    {
+        "country": "Syria",
+        "main_dish": [
+            "Kibbeh"
+        ]
+    },
+    {
+        "country": "Taiwan",
+        "main_dish": [
+            "Beef Noodle Soup"
+        ]
+    },
+    {
+        "country": "Thailand",
+        "main_dish": [
+            "Pad Thai"
+        ]
+    },
+    {
+        "country": "Tunisia",
+        "main_dish": [
+            "Couscous"
+        ]
+    },
+    {
+        "country": "Turkey",
+        "main_dish": [
+            "D\u00f6ner Kebab"
+        ]
+    },
+    {
+        "country": "Ukraine",
+        "main_dish": [
+            "Borscht"
+        ]
+    },
+    {
+        "country": "United Arab Emirates",
+        "main_dish": [
+            "Shawarma"
+        ]
+    },
+    {
+        "country": "United States of America",
+        "main_dish": [
+            "Hamburger",
+            "Hot Dog",
+            "Mac \u2018n\u2019 Cheese"
+        ]
+    },
+    {
+        "country": "Uzbekistan",
+        "main_dish": [
+            "Plov"
+        ]
+    },
+    {
+        "country": "Vietnam",
+        "main_dish": [
+            "Pho"
+        ]
+    },
+    {
+        "country": "Bahamas",
+        "main_dish": [
+            "Crack Conch with Peas and Rice"
+        ]
+    },
+    {
+        "country": "Bahrain",
+        "main_dish": [
+            "Chicken Machboos"
+        ]
+    },
+    {
+        "country": "Barbados",
+        "main_dish": [
+            "Cou Cou and Flying Fish"
+        ]
+    },
+    {
+        "country": "Benin",
+        "main_dish": [
+            "Kuli Kuli"
+        ]
+    },
+    {
+        "country": "Bhutan",
+        "main_dish": [
+            "Ema Datshi"
+        ]
+    },
+    {
+        "country": "Brunei",
+        "main_dish": [
+            "Ambuyat"
+        ]
+    },
+    {
+        "country": "Cambodia",
+        "main_dish": [
+            "Amok Trey"
+        ]
+    },
+    {
+        "country": "Cameroon",
+        "main_dish": [
+            "Ndol\u00e9"
+        ]
+    },
+    {
+        "country": "Cape Verde",
+        "main_dish": [
+            "Cachupa"
+        ]
+    },
+    {
+        "country": "Colombia",
+        "main_dish": [
+            "Bandeja Paisa"
+        ]
+    },
+    {
+        "country": "Comoros",
+        "main_dish": [
+            "Langouste a la Vanille"
+        ]
+    },
+    {
+        "country": "Dominican Republic",
+        "main_dish": [
+            "La Bandera"
+        ]
+    },
+    {
+        "country": "Egypt",
+        "main_dish": [
+            "Kushari"
+        ]
+    },
+    {
+        "country": "Estonia",
+        "main_dish": [
+            "Verivorst"
+        ]
+    },
+    {
+        "country": "Ghana",
+        "main_dish": [
+            "Fufu"
+        ]
+    },
+    {
+        "country": "Guyana",
+        "main_dish": [
+            "Pepperpot"
+        ]
+    },
+    {
+        "country": "Haiti",
+        "main_dish": [
+            "Fried Pork with Rice and Beans"
+        ]
+    },
+    {
+        "country": "Honduras",
+        "main_dish": [
+            "Plato Tipico de Honduras"
+        ]
+    },
+    {
+        "country": "Hong Kong",
+        "main_dish": [
+            "Dim Sums"
+        ]
+    },
+    {
+        "country": "Iceland",
+        "main_dish": [
+            "H\u00e1karl"
+        ]
+    },
+    {
+        "country": "Jordan",
+        "main_dish": [
+            "Mansaf"
+        ]
+    },
+    {
+        "country": "Kazakhstan",
+        "main_dish": [
+            "Beshbarmak"
+        ]
+    },
+    {
+        "country": "Kenya",
+        "main_dish": [
+            "Ugali"
+        ]
+    },
+    {
+        "country": "Kuwait",
+        "main_dish": [
+            "Machboos"
+        ]
+    },
+    {
+        "country": "Lesotho",
+        "main_dish": [
+            "Papa"
+        ]
+    },
+    {
+        "country": "Libya",
+        "main_dish": [
+            "Cuscus Bil-Bosla"
+        ]
+    },
+    {
+        "country": "Liechtenstein",
+        "main_dish": [
+            "K\u00e4skn\u00f6pfle"
+        ]
+    },
+    {
+        "country": "Luxembourg",
+        "main_dish": [
+            "Judd mat Gaardebounen"
+        ]
+    },
+    {
+        "country": "Madagascar",
+        "main_dish": [
+            "Romazava"
+        ]
+    },
+    {
+        "country": "Norway",
+        "main_dish": [
+            "Farikal"
+        ]
+    },
+    {
+        "country": "Pakistan",
+        "main_dish": [
+            "Nihari"
+        ]
+    },
+    {
+        "country": "Portugal",
+        "main_dish": [
+            "Bacalhau"
+        ]
+    },
+    {
+        "country": "Senegal",
+        "main_dish": [
+            "Thieboudienne"
+        ]
+    },
+    {
+        "country": "Slovakia",
+        "main_dish": [
+            "Bryndzov\u00e9 halu\u0161ky"
+        ]
+    },
+    {
+        "country": "Uganda",
+        "main_dish": [
+            "Matoke"
+        ]
+    },
+    {
+        "country": "Venezuela",
+        "main_dish": [
+            "Pabell\u00f3n criollo"
+        ]
+    },
+    {
+        "country": "Yemen",
+        "main_dish": [
+            "Saltah"
+        ]
+    }
+]
