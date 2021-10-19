@@ -76,6 +76,19 @@ class GeographySchema(ma.Schema):
 class FoodAndTourismSchema(ma.Schema):
     country_id = fields.Str(required=True)
     country_name = fields.Str(required=True)
+    country_income_level = fields.Str(required=True)
+    country_main_dishes = fields.Str(required=True)
+    country_agricultural_exports = fields.Str(required=True)
+    country_main_attraction = fields.Str(required=True)
+    country_main_attraction_image_src = fields.Str(required=True)
+    country_tourism_video_src = fields.Str(required=True)
+    country_number_of_tourists = fields.Float(required=True)
+    country_tourism_revenue = fields.Float(required=True)
+    country_tourism_percent_GDP = fields.Float(required=True)
+    country_coldest_month_temp = fields.Float(required=True)
+    country_warmest_month_temp = fields.Float(required=True)
+
+
 
 demographics_schema = DemographicsSchema()
 all_demographics_schema = DemographicsSchema(many=True)
