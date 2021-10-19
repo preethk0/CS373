@@ -127,7 +127,7 @@ def populate_food_and_tourism():
     for file_name in os.listdir(individual_files_dir):
         with open(individual_files_dir + '/' + file_name, 'r') as file:
             country_food_and_tourism_data = json.load(file)
-            add_geography(country_food_and_tourism_data)
+            add_food_and_tourism(country_food_and_tourism_data)
     db.session.commit()
 
 def add_food_and_tourism(country_ind_data):
