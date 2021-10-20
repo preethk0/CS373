@@ -90,7 +90,7 @@ def add_demographics(country_ind_data):
                 "country_states": len(country_states_data[0]['states']),
                 "country_domain": country_basic_data[0]['topLevelDomain'][0],
                 "country_income_level": country_ind_data['wbIncomeLevel']['value'],
-                "country_demographics_video_src": "https://www.youtube.com/watch?v=" + country_demographics_video_data[0]['items'][0]['id']['videoID'] if len(country_demographics_video_data[0]['items']) > 0 else "",
+                "country_demographics_video_src": "https://www.youtube.com/watch?v=" + country_demographics_video_data[0]['items'][0]['id']['videoId'] if len(country_demographics_video_data[0]['items']) > 0 else ""
             }
             demographics_db_instance = Demographics(**country_dem_obj)
             db.session.add(demographics_db_instance)

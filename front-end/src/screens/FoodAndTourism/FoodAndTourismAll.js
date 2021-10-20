@@ -1,9 +1,21 @@
-import React from "react";
-import FoodAndTourismData from "./FoodAndTourismData";
-import * as Bootstrap from "react-bootstrap";
+import React, { useEffect, useState } from "react";
 import MaterialTable from "material-table";
+import useAxios from "axios-hooks";
 
 const FoodAndTourismAll = ({}) => {
+  const [foodAndTourismData, setFoodAndTourismData] = useState([]);
+
+  const [{ data, loading, error }] = useAxios(
+    "http://api.around-the-world.me/foodandtourism"
+  );
+
+  useEffect(() => {
+    const foodAndTourismResult = data;
+    if (foodAndTourismResult) {
+      setFoodAndTourismData(foodAndTourismResult);
+    }
+  }, [data]);
+
   return (
     <div className="mainPage">
       <h2 className="header">Food and Tourism</h2>
@@ -19,21 +31,17 @@ const FoodAndTourismAll = ({}) => {
         }
         columns={[
           { title: "Country", field: "country_name" },
-          { title: "Main Vegetable", field: "main_vegetable" },
+          { title: "Main Attraction", field: "country_main_attraction" },
           {
             title: "Number of Tourists",
-            field: "number_of_tourists",
+            field: "country_number_of_tourists",
           },
           {
             title: "Tourism Revenue",
-            field: "revenue_from_tourism",
-          },
-          {
-            title: "Average Temperature",
-            field: "average_temperature",
+            field: "country_tourism_revenue",
           },
         ]}
-        data={Object.values(FoodAndTourismData)}
+        data={foodAndTourismData}
         title="Food and Tourism"
       />
     </div>

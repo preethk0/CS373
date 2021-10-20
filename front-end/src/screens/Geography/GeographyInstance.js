@@ -1,13 +1,11 @@
 import React from "react";
 import GoogleMapReact from "google-map-react";
 import "./GeographyInstance.css";
-import GeographyData from "./GeographyData";
 import { useParams } from "react-router";
 
 const GeographyInstance = ({}) => {
   const { country } = useParams();
-  console.log(country);
-  const data = GeographyData[country];
+  const data = {};
 
   const defaultProps = {
     center: {
