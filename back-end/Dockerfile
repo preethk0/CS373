@@ -1,9 +1,6 @@
 FROM ubuntu:latest
 ENV DEBIAN_FRONTEND=noninteractive
 
-# https://forums.docker.com/t/hash-sum-mismatch-writing-more-data-as-expected/45940/3
-# Uncomment this line and follow this if you have the same issue
-
 RUN apt-get update -y
 RUN apt-get install -y python3
 RUN apt-get install -y python3-pip python3-dev build-essential vim

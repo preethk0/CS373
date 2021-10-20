@@ -2,19 +2,17 @@
 import os
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy import create_engine, Column, String, Integer
-import urllib
-import json
 from dotenv import load_dotenv
 
+# Create and configure the app
 
-# create and configure the app
 app = Flask(
     __name__,
     static_folder="../frontend/build/static",
     template_folder="../frontend/build",
 )
 
+load_dotenv()
 app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("AWS_DB_KEY")
 app.debug = True
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False

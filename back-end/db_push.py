@@ -1,7 +1,7 @@
 import os
 import json
 from models import Demographics, Geography, FoodAndTourism
-from app import db
+from init import db
 
 with open('data/generalCountryData/codeToCountry.json', 'r') as file:
     code_to_country_data = json.load(file)
@@ -36,7 +36,7 @@ with open('data/generalCountryData/countriesLandAreaData.json', 'r') as file:
 with open('data/generalCountryData/countriesMainDishesData.json', 'r') as file:
     countries_main_dishes_data = json.load(file)
 
-with open('data/generalCountryData/countriesTopAgriculturalExport.json', 'r') as file:
+with open('data/generalCountryData/countriesTopAgriculturalExportData.json', 'r') as file:
     countries_top_agricultural_export_data = json.load(file)
 
 with open('data/generalCountryData/countriesTourismIncomeData.json', 'r') as file:
@@ -150,7 +150,7 @@ def add_food_and_tourism(country_ind_data):
                 "country_agricultural_exports": country_top_agricultural_export_data[0]['topCommodity'],
                 "country_main_attraction": country_tourist_attractions_data[0]['attraction'],
                 "country_main_attraction_image_src": country_tourist_attractions_data[0]['attraction_image'],
-                "country_tourism_video_src": country_tourism_video_data[0]['items']['snippet']['thumbnails']['high']['url'],
+                "country_tourism_video_src": country_tourism_video_data[0]['items'][0]['snippet']['thumbnails']['high']['url'],
                 "country_number_of_tourists": country_tourist_arrivals_data[0]['tourists'],
                 "country_tourism_revenue": country_tourism_income_data[0]['tourism_income'],
                 "country_tourism_percent_GDP": country_tourism_income_data[0]['percentage_of_GDP'],
@@ -162,6 +162,7 @@ def add_food_and_tourism(country_ind_data):
 
 if __name__ == "__main__":
     print("Populating DB...")
-    populate_geography()
-    populate_food_and_tourism()
+    # populate_demographics()
+    # populate_geography()
+    # populate_food_and_tourism()
     print("Done")
