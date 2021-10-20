@@ -1,5 +1,5 @@
 from flask_sqlalchemy import SQLAlchemy
-from app import db, app
+from init import db, app
 from flask_marshmallow import Marshmallow
 from marshmallow import fields
 
@@ -86,6 +86,6 @@ all_geography_schema = GeographySchema(many=True)
 foodandtourism_schema = FoodAndTourismSchema()
 all_foodandtourism_schema = FoodAndTourismSchema(many=True)
 
-with app.app_context():
-    db.create_all()
-    db.session.commit()
+# with app.app_context():
+#     db.create_all()
+#     db.session.commit()

@@ -1,47 +1,27 @@
-import os
-from flask import Flask
+from flask import jsonify
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import create_engine, Column, String, Integer
-import urllib
-import json
-from dotenv import load_dotenv
-
-
-# create and configure the app
-app = Flask(
-    __name__,
-    static_folder="../frontend/build/static",
-    template_folder="../frontend/build",
-)
-
-app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("AWS_DB_KEY")
-app.debug = True
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-
-app.config.from_mapping(
-    SECRET_KEY='dev',
-    DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
-)
-
-db = SQLAlchemy(app)
-    
-# db.create_all()
-
-# APIS
-
-# API 1: http://api.countrylayer.com/v2/all?access_key=dffc936e64bb09079cd726042ec3457b 
-# (result in countriesBasicData.json file above - has topLevelDomain, capital, two/three letter country code, country name, calling code, region and alternate spellings)
-
-# API 2: https://api.bigdatacloud.net/data/country-info?code=us&localityLanguage=en&key=48c93ba0b7c24371aa0f78e62f1668d5 
-# (have to change the code=___, giving 2 letter country code as parameter - has languages, currency, region/continent, income level, calling code, countryFlagEmoji)
-
-# API 3: https://documenter.getpostman.com/view/1134062/T1LJjU52 
-# (has bunch of different API calls - has population data, capital, flag, cities, states, currencies etc.)
+from models import Demographics, Geography, demographics_schema, all_demographics_schema, geography_schema, all_geography_schema
+from init import app, db
 
 # a simple page that says hello
-@app.route('/hello')
-def hello():
-    return 'Hello, World!'
+@app.route("/")
+def hello_world():
+    return '<img src="https://i.kym-cdn.com/photos/images/original/001/211/814/a1c.jpg" alt="cowboy" />'
+
+# Retrieve demographics data for all countries
+@app.route("/demographics", methods=["GET"])
+def get_all_demographics():
+    all_demographics = Demographics.query.all()
+    result = all_demographics_schema.dump(all_demographics)
+    return jsonify({"demographics": result})
+
+# Retrieve demographics data for country with specific country-id
+@app.route("/demographics/<id>", methods=["GET"])
+def get_demographics(id):
+    country_demographics = Demographics.query.get(id)
+    result = demographics_schema.dump(country_demographics)
+    return jsonify({"result": result})
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)

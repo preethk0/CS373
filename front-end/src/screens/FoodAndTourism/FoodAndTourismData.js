@@ -19,7 +19,7 @@ const FoodAndTourismData = {
     country_name: "China",
     main_dishes: ["Hotpot", "Sichuan Pork", "Dumplings"],
     main_dish_photo:
-      "https://upload.wikimedia.org/wikipedia/commons/3/3a/Xiao_Long_Bao_dumplings.jpg",
+      "https://www.listchallenges.com/f/items/126a37ed-1abb-4f84-b74a-e188cb1d0e79.jpg",
     main_fruit: "Kiwi",
     main_vegetable: "Bok Choy",
     main_attractions: [
