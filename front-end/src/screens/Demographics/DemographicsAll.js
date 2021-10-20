@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import DemographicsData from "./DemographicsData";
 import "./DemographicsAll.css";
 import CountryCard from "../../components/Cards/CountryCard";
+import useAxios from "axios-hooks";
+import axios from "axios";
 
 const DemographicsAll = ({}) => {
+  const [{ data, loading, error }] = useAxios(
+    "http://127.0.0.1:5000/demographics"
+  );
+
+  useEffect(() => {
+    const demographicsResult = data;
+    console.log(data);
+    console.log("he");
+    if (demographicsResult) {
+      console.log(demographicsResult);
+    }
+  }, [loading]);
+
   return (
     <div className="mainPage">
       <h2 className="header">Demographics</h2>

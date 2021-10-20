@@ -1,0 +1,786 @@
+[
+  {
+    "country": "China",
+    "topCommodity": "Garlic"
+  },
+  {
+    "country": "India",
+    "topCommodity": "Rice"
+  },
+  {
+    "country": "United States",
+    "topCommodity": "Soybeans"
+  },
+  {
+    "country": "Indonesia",
+    "topCommodity": "Palm oil"
+  },
+  {
+    "country": "Pakistan",
+    "topCommodity": "Rice"
+  },
+  {
+    "country": "Brazil",
+    "topCommodity": "Soybeans"
+  },
+  {
+    "country": "Nigeria",
+    "topCommodity": "Cocoa beans"
+  },
+  {
+    "country": "Bangladesh",
+    "topCommodity": "Jute"
+  },
+  {
+    "country": "Russia",
+    "topCommodity": "Wheat"
+  },
+  {
+    "country": "Mexico",
+    "topCommodity": "Beer of barley"
+  },
+  {
+    "country": "Japan",
+    "topCommodity": "Flour, wheat"
+  },
+  {
+    "country": "Ethiopia",
+    "topCommodity": "Sesame seed"
+  },
+  {
+    "country": "Philippines",
+    "topCommodity": "Bananas"
+  },
+  {
+    "country": "Egypt",
+    "topCommodity": "Oranges"
+  },
+  {
+    "country": "Vietnam",
+    "topCommodity": "Rice"
+  },
+  {
+    "country": "DR Congo",
+    "topCommodity": "Bran, wheat"
+  },
+  {
+    "country": "Turkey",
+    "topCommodity": "Flour, wheat"
+  },
+  {
+    "country": "Iran",
+    "topCommodity": "Watermelons"
+  },
+  {
+    "country": "Germany",
+    "topCommodity": "Wheat"
+  },
+  {
+    "country": "Thailand",
+    "topCommodity": "Rice"
+  },
+  {
+    "country": "United Kingdom",
+    "topCommodity": "Beverages, distilled alcoholic"
+  },
+  {
+    "country": "France",
+    "topCommodity": "Wheat"
+  },
+  {
+    "country": "Tanzania",
+    "topCommodity": "Cashew nuts"
+  },
+  {
+    "country": "Italy",
+    "topCommodity": "Tomatoes"
+  },
+  {
+    "country": "South Africa",
+    "topCommodity": "Maize"
+  },
+  {
+    "country": "Kenya",
+    "topCommodity": "Tea"
+  },
+  {
+    "country": "Myanmar",
+    "topCommodity": "Refined sugar"
+  },
+  {
+    "country": "South Korea",
+    "topCommodity": "Beverages, non-alcoholic"
+  },
+  {
+    "country": "Colombia",
+    "topCommodity": "Bananas"
+  },
+  {
+    "country": "Uganda",
+    "topCommodity": "Maize"
+  },
+  {
+    "country": "Spain",
+    "topCommodity": "Wine"
+  },
+  {
+    "country": "Argentina",
+    "topCommodity": "Cake, soybeans"
+  },
+  {
+    "country": "Sudan",
+    "topCommodity": "Sesame seed"
+  },
+  {
+    "country": "Algeria",
+    "topCommodity": "Refined sugar"
+  },
+  {
+    "country": "Ukraine",
+    "topCommodity": "Maize"
+  },
+  {
+    "country": "Iraq",
+    "topCommodity": "Dates"
+  },
+  {
+    "country": "Afghanistan",
+    "topCommodity": "Grapes"
+  },
+  {
+    "country": "Canada",
+    "topCommodity": "Wheat"
+  },
+  {
+    "country": "Poland",
+    "topCommodity": "Wheat"
+  },
+  {
+    "country": "Morocco",
+    "topCommodity": "Tomatoes"
+  },
+  {
+    "country": "Saudi Arabia",
+    "topCommodity": "Refined sugar"
+  },
+  {
+    "country": "Uzbekistan",
+    "topCommodity": "Grapes"
+  },
+  {
+    "country": "Angola",
+    "topCommodity": "Bran, wheat"
+  },
+  {
+    "country": "Peru",
+    "topCommodity": "Grapes"
+  },
+  {
+    "country": "Malaysia",
+    "topCommodity": "Palm oil"
+  },
+  {
+    "country": "Mozambique",
+    "topCommodity": "Raw sugar"
+  },
+  {
+    "country": "Ghana",
+    "topCommodity": "Cocoa beans"
+  },
+  {
+    "country": "Yemen",
+    "topCommodity": "Onions, dry"
+  },
+  {
+    "country": "Nepal",
+    "topCommodity": "Fruit juice"
+  },
+  {
+    "country": "Venezuela",
+    "topCommodity": "Sesame seed"
+  },
+  {
+    "country": "Madagascar",
+    "topCommodity": "Beans"
+  },
+  {
+    "country": "Cameroon",
+    "topCommodity": "Bananas"
+  },
+  {
+    "country": "North Korea",
+    "topCommodity": "Nuts"
+  },
+  {
+    "country": "Australia",
+    "topCommodity": "Wheat"
+  },
+  {
+    "country": "Taiwan",
+    "topCommodity": "Bran, wheat"
+  },
+  {
+    "country": "Sri Lanka",
+    "topCommodity": "Fiber crops"
+  },
+  {
+    "country": "Burkina Faso",
+    "topCommodity": "Karite nuts"
+  },
+  {
+    "country": "Mali",
+    "topCommodity": "Cotton lint"
+  },
+  {
+    "country": "Malawi",
+    "topCommodity": "Tobacco"
+  },
+  {
+    "country": "Chile",
+    "topCommodity": "Apples"
+  },
+  {
+    "country": "Romania",
+    "topCommodity": "Wheat"
+  },
+  {
+    "country": "Kazakhstan",
+    "topCommodity": "Wheat"
+  },
+  {
+    "country": "Zambia",
+    "topCommodity": "Maize"
+  },
+  {
+    "country": "Syria",
+    "topCommodity": "Anise, badian, fennel, coriander"
+  },
+  {
+    "country": "Guatemala",
+    "topCommodity": "Bananas"
+  },
+  {
+    "country": "Ecuador",
+    "topCommodity": "Bananas"
+  },
+  {
+    "country": "Senegal",
+    "topCommodity": "Rice"
+  },
+  {
+    "country": "Netherlands",
+    "topCommodity": "Cake, soybeans"
+  },
+  {
+    "country": "Cambodia",
+    "topCommodity": "Rice"
+  },
+  {
+    "country": "Chad",
+    "topCommodity": "Sesame seed"
+  },
+  {
+    "country": "Somalia",
+    "topCommodity": "Sesame seed"
+  },
+  {
+    "country": "Zimbabwe",
+    "topCommodity": "Tobacco"
+  },
+  {
+    "country": "Guinea",
+    "topCommodity": "Cashew nuts"
+  },
+  {
+    "country": "Rwanda",
+    "topCommodity": "Flour, wheat"
+  },
+  {
+    "country": "Benin",
+    "topCommodity": "Cotton lint"
+  },
+  {
+    "country": "Burundi",
+    "topCommodity": "Flour, wheat"
+  },
+  {
+    "country": "Tunisia",
+    "topCommodity": "Refined sugar"
+  },
+  {
+    "country": "Bolivia",
+    "topCommodity": "Cake, soybeans"
+  },
+  {
+    "country": "Belgium",
+    "topCommodity": "Potatoes, frozen"
+  },
+  {
+    "country": "Haiti",
+    "topCommodity": "Mangoes"
+  },
+  {
+    "country": "South Sudan",
+    "topCommodity": "Sesame seed"
+  },
+  {
+    "country": "Cuba",
+    "topCommodity": "Raw sugar"
+  },
+  {
+    "country": "Dominican Republic",
+    "topCommodity": "Raw sugar"
+  },
+  {
+    "country": "Czech Republic",
+    "topCommodity": "Wheat"
+  },
+  {
+    "country": "Greece",
+    "topCommodity": "Fruit"
+  },
+  {
+    "country": "Jordan",
+    "topCommodity": "Tomatoes"
+  },
+  {
+    "country": "Azerbaijan",
+    "topCommodity": "Tomatoes"
+  },
+  {
+    "country": "Portugal",
+    "topCommodity": "Wine"
+  },
+  {
+    "country": "Sweden",
+    "topCommodity": "Wheat"
+  },
+  {
+    "country": "Honduras",
+    "topCommodity": "Bananas"
+  },
+  {
+    "country": "United Arab Emirates",
+    "topCommodity": "Refined sugar"
+  },
+  {
+    "country": "Tajikistan",
+    "topCommodity": "Onions, dry"
+  },
+  {
+    "country": "Hungary",
+    "topCommodity": "Maize"
+  },
+  {
+    "country": "Belarus",
+    "topCommodity": "Refined sugar"
+  },
+  {
+    "country": "Papua New Guinea",
+    "topCommodity": "Palm oil"
+  },
+  {
+    "country": "Austria",
+    "topCommodity": "Wheat"
+  },
+  {
+    "country": "Israel",
+    "topCommodity": "Potatoes"
+  },
+  {
+    "country": "Switzerland",
+    "topCommodity": "Beverages, non-alcoholic"
+  },
+  {
+    "country": "Serbia",
+    "topCommodity": "Maize"
+  },
+  {
+    "country": "Togo",
+    "topCommodity": "Cotton lint"
+  },
+  {
+    "country": "Sierra Leone",
+    "topCommodity": "Cocoa beans"
+  },
+  {
+    "country": "Hong Kong",
+    "topCommodity": "Meat, chicken"
+  },
+  {
+    "country": "Laos",
+    "topCommodity": "Casava"
+  },
+  {
+    "country": "Paraguay",
+    "topCommodity": "Soybeans"
+  },
+  {
+    "country": "Libya",
+    "topCommodity": "Wheat"
+  },
+  {
+    "country": "Bulgaria",
+    "topCommodity": "Wheat"
+  },
+  {
+    "country": "Lebanon",
+    "topCommodity": "Potatoes"
+  },
+  {
+    "country": "Nicaragua",
+    "topCommodity": "Raw sugar"
+  },
+  {
+    "country": "Kyrgyzstan",
+    "topCommodity": "Beans"
+  },
+  {
+    "country": "El Salvador",
+    "topCommodity": "Raw sugar"
+  },
+  {
+    "country": "Turkmenistan",
+    "topCommodity": "Cotton lint"
+  },
+  {
+    "country": "Singapore",
+    "topCommodity": "Food prep, flour, malt extract"
+  },
+  {
+    "country": "Denmark",
+    "topCommodity": "Barley"
+  },
+  {
+    "country": "Republic of the Congo",
+    "topCommodity": "Bran, wheat"
+  },
+  {
+    "country": "Finland",
+    "topCommodity": "Oats"
+  },
+  {
+    "country": "Norway",
+    "topCommodity": "Cake, soybeans"
+  },
+  {
+    "country": "Slovakia",
+    "topCommodity": "Wheat"
+  },
+  {
+    "country": "Oman",
+    "topCommodity": "Flour, wheat"
+  },
+  {
+    "country": "Palestine",
+    "topCommodity": "Potatoes"
+  },
+  {
+    "country": "Liberia",
+    "topCommodity": "Rubber, natural, dry"
+  },
+  {
+    "country": "Costa Rica",
+    "topCommodity": "Bananas"
+  },
+  {
+    "country": "Ireland",
+    "topCommodity": "Meat, cattle, boneless (beef & veal)"
+  },
+  {
+    "country": "Central African Republic",
+    "topCommodity": "Cotton lint"
+  },
+  {
+    "country": "New Zealand",
+    "topCommodity": "Milk, whole, dried"
+  },
+  {
+    "country": "Mauritania",
+    "topCommodity": "Meal, meat"
+  },
+  {
+    "country": "Panama",
+    "topCommodity": "Bananas"
+  },
+  {
+    "country": "Kuwait",
+    "topCommodity": "Flour, wheat"
+  },
+  {
+    "country": "Croatia",
+    "topCommodity": "Maize"
+  },
+  {
+    "country": "Georgia",
+    "topCommodity": "Potatoes"
+  },
+  {
+    "country": "Eritrea",
+    "topCommodity": "Beans"
+  },
+  {
+    "country": "Uruguay",
+    "topCommodity": "Soybeans"
+  },
+  {
+    "country": "Mongolia",
+    "topCommodity": "Horse meat"
+  },
+  {
+    "country": "Bosnia and Herzegovina",
+    "topCommodity": "Flour, wheat"
+  },
+  {
+    "country": "Jamaica",
+    "topCommodity": "Raw sugar"
+  },
+  {
+    "country": "Armenia",
+    "topCommodity": "Tomatoes"
+  },
+  {
+    "country": "Qatar",
+    "topCommodity": "Waters, ice, etc."
+  },
+  {
+    "country": "Albania",
+    "topCommodity": "Tomatoes"
+  },
+  {
+    "country": "Lithuania",
+    "topCommodity": "Wheat"
+  },
+  {
+    "country": "Namibia",
+    "topCommodity": "Beer of barley"
+  },
+  {
+    "country": "Gambia",
+    "topCommodity": "Cashew nuts"
+  },
+  {
+    "country": "Botswana",
+    "topCommodity": "Meat, cattle boneless (beef & veal)"
+  },
+  {
+    "country": "Gabon",
+    "topCommodity": "Bran, wheat"
+  },
+  {
+    "country": "Lesotho",
+    "topCommodity": "Flour, wheat"
+  },
+  {
+    "country": "North Macedonia",
+    "topCommodity": "Wine"
+  },
+  {
+    "country": "Slovenia",
+    "topCommodity": "Cake, soybeans"
+  },
+  {
+    "country": "Guinea-Bissau",
+    "topCommodity": "Cashew nuts"
+  },
+  {
+    "country": "Latvia",
+    "topCommodity": "Wheat"
+  },
+  {
+    "country": "Bahrain",
+    "topCommodity": "Sugar refined"
+  },
+  {
+    "country": "Equatorial Guinea",
+    "topCommodity": "Cocoa beans"
+  },
+  {
+    "country": "Trinidad and Tobago",
+    "topCommodity": "Beverages, non-alcoholic"
+  },
+  {
+    "country": "Timor-Leste",
+    "topCommodity": "Coffee"
+  },
+  {
+    "country": "Estonia",
+    "topCommodity": "Wheat"
+  },
+  {
+    "country": "Mauritius",
+    "topCommodity": "Refined sugar"
+  },
+  {
+    "country": "Cyprus",
+    "topCommodity": "Potatoes"
+  },
+  {
+    "country": "Eswatini",
+    "topCommodity": "Raw sugar"
+  },
+  {
+    "country": "Djibouti",
+    "topCommodity": "Refined sugar"
+  },
+  {
+    "country": "Fiji",
+    "topCommodity": "Raw sugar"
+  },
+  {
+    "country": "Comoros",
+    "topCommodity": "Cloves"
+  },
+  {
+    "country": "Guyana",
+    "topCommodity": "Raw sugar"
+  },
+  {
+    "country": "Bhutan",
+    "topCommodity": "Potatoes"
+  },
+  {
+    "country": "Solomon Islands",
+    "topCommodity": "Palm oil"
+  },
+  {
+    "country": "Luxembourg",
+    "topCommodity": "Milk"
+  },
+  {
+    "country": "Montenegro",
+    "topCommodity": "Beer of barley"
+  },
+  {
+    "country": "Suriname",
+    "topCommodity": "Rice"
+  },
+  {
+    "country": "Maldives",
+    "topCommodity": "Nuts"
+  },
+  {
+    "country": "Malta",
+    "topCommodity": "Wheat"
+  },
+  {
+    "country": "Belize",
+    "topCommodity": "Raw sugar"
+  },
+  {
+    "country": "Bahamas",
+    "topCommodity": "Soybeans"
+  },
+  {
+    "country": "Iceland",
+    "topCommodity": "Meat, sheep"
+  },
+  {
+    "country": "Vanuatu",
+    "topCommodity": "Copra"
+  },
+  {
+    "country": "New Caledonia",
+    "topCommodity": "Pumpkins, squash, and gourds"
+  },
+  {
+    "country": "Barbados",
+    "topCommodity": "Raw sugar"
+  },
+  {
+    "country": "French Polynesia",
+    "topCommodity": "Coconut oil"
+  },
+  {
+    "country": "Sao Tome and Principe",
+    "topCommodity": "Cocoa beans"
+  },
+  {
+    "country": "Samoa",
+    "topCommodity": "Beer of barley"
+  },
+  {
+    "country": "Saint Lucia",
+    "topCommodity": "Bananas"
+  },
+  {
+    "country": "Guam",
+    "topCommodity": "Refined sugar"
+  },
+  {
+    "country": "Kiribati",
+    "topCommodity": "Copra"
+  },
+  {
+    "country": "Grenada",
+    "topCommodity": "Flour, wheat"
+  },
+  {
+    "country": "Saint Vincent and the Grenadines",
+    "topCommodity": "Flour, wheat"
+  },
+  {
+    "country": "Aruba",
+    "topCommodity": "Rice"
+  },
+  {
+    "country": "Tonga",
+    "topCommodity": "Pumpkins, squash, and gourds"
+  },
+  {
+    "country": "Seychelles",
+    "topCommodity": "Cigarettes"
+  },
+  {
+    "country": "Antigua and Barbuda",
+    "topCommodity": "Waters, ice, etc."
+  },
+  {
+    "country": "Dominica",
+    "topCommodity": "Cocoa beans"
+  },
+  {
+    "country": "Cayman Islands",
+    "topCommodity": "Meat, chicken"
+  },
+  {
+    "country": "Bermuda",
+    "topCommodity": "Waters, ice, etc."
+  },
+  {
+    "country": "Saint Kitts and Nevis",
+    "topCommodity": "Beer of barley"
+  },
+  {
+    "country": "Faroe Islands",
+    "topCommodity": "Sheep skin and wool"
+  },
+  {
+    "country": "British Virgin Islands",
+    "topCommodity": "Beet pulp"
+  },
+  {
+    "country": "Cook Islands",
+    "topCommodity": "Fruit"
+  },
+  {
+    "country": "Tuvalu",
+    "topCommodity": "Macaroni"
+  },
+  {
+    "country": "Nauru",
+    "topCommodity": "Whey, dry"
+  },
+  {
+    "country": "Saint Pierre and Miquelon",
+    "topCommodity": "Pastry"
+  },
+  {
+    "country": "Falkland Islands",
+    "topCommodity": "Wool"
+  },
+  {
+    "country": "Niue",
+    "topCommodity": "Fruit juice"
+  }
+]
