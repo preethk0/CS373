@@ -1,6 +1,6 @@
 import os
 import json
-from models import Demographics, Geography
+from models import Demographics, Geography, FoodAndTourism
 from app import db
 
 with open('data/generalCountryData/codeToCountry.json', 'r') as file:
@@ -32,6 +32,27 @@ with open('data/generalCountryData/countriesAreaData.json', 'r') as file:
 
 with open('data/generalCountryData/countriesLandAreaData.json', 'r') as file:
     countries_land_area_data = json.load(file)
+
+with open('data/generalCountryData/countriesMainDishesData.json', 'r') as file:
+    countries_main_dishes_data = json.load(file)
+
+with open('data/generalCountryData/countriesTopAgriculturalExport.json', 'r') as file:
+    countries_top_agricultural_export_data = json.load(file)
+
+with open('data/generalCountryData/countriesTourismIncomeData.json', 'r') as file:
+    countries_tourism_income_data = json.load(file)
+
+with open('data/generalCountryData/countriesTouristArrivalsData.json', 'r') as file:
+    countries_tourist_arrivals_data = json.load(file)
+
+with open('data/generalCountryData/countriesTouristAttractionsData.json', 'r') as file:
+    countries_tourist_attractions_data = json.load(file)
+
+with open('data/generalCountryData/countriesTourismYoutubeData.json', 'r') as file:
+    countries_tourism_videos_data = json.load(file)
+
+with open('data/generalCountryData/countriesTemperaturesData.json', 'r') as file:
+    countries_temperatures_data = json.load(file)
 
 def populate_demographics():
     individual_files_dir = 'data/individualCountryData'
@@ -102,14 +123,45 @@ def add_geography(country_ind_data):
             db.session.add(geography_db_instance)
 
 def populate_food_and_tourism():
-    # do something
-    print()
+    individual_files_dir = 'data/individualCountryData'
+    for file_name in os.listdir(individual_files_dir):
+        with open(individual_files_dir + '/' + file_name, 'r') as file:
+            country_food_and_tourism_data = json.load(file)
+            add_food_and_tourism(country_food_and_tourism_data)
+    db.session.commit()
 
-def add_food_and_tourism():
-    # do something
-    print()
+def add_food_and_tourism(country_ind_data):
+    country_code = country_ind_data['isoAlpha2']
+    country_name = code_to_country_data[country_code] if country_code in code_to_country_data else ""
+    if country_name:
+        country_main_dishes_data = list(filter(lambda country: country['country'] == country_name, countries_main_dishes_data))
+        country_top_agricultural_export_data = list(filter(lambda country: country['country'] == country_name, countries_top_agricultural_export_data))
+        country_tourism_income_data = list(filter(lambda country: country['country'] == country_name, countries_tourism_income_data))
+        country_tourist_arrivals_data = list(filter(lambda country: country['country'] == country_name, countries_tourist_arrivals_data))
+        country_tourist_attractions_data = list(filter(lambda country: country['country'] == country_name, countries_tourist_attractions_data))
+        country_tourism_video_data = list(filter(lambda country: country['countryCode'] == country_code, countries_tourism_videos_data))
+        country_temperatures_data = list(filter(lambda country: country['country'] == country_name, countries_temperatures_data))
+        if country_main_dishes_data and country_top_agricultural_export_data and country_tourism_income_data and country_tourist_arrivals_data and country_tourist_attractions_data and country_tourism_video_data and country_temperatures_data:
+            country_food_and_tourism_obj = {
+                "country_id": country_code,
+                "country_name": country_name,
+                "country_income_level": country_ind_data['wbIncomeLevel']['value'],
+                "country_main_dishes": country_main_dishes_data[0]['main_dish'],
+                "country_agricultural_exports": country_top_agricultural_export_data[0]['topCommodity'],
+                "country_main_attraction": country_tourist_attractions_data[0]['attraction'],
+                "country_main_attraction_image_src": country_tourist_attractions_data[0]['attraction_image'],
+                "country_tourism_video_src": country_tourism_video_data[0]['items']['snippet']['thumbnails']['high']['url'],
+                "country_number_of_tourists": country_tourist_arrivals_data[0]['tourists'],
+                "country_tourism_revenue": country_tourism_income_data[0]['tourism_income'],
+                "country_tourism_percent_GDP": country_tourism_income_data[0]['percentage_of_GDP'],
+                "country_coldest_month_temp": country_temperatures_data[0]['coldest_temp'],
+                "country_warmest_month_temp": country_temperatures_data[0]['hottest_temp']
+            }
+            food_and_tourism_db_instance = FoodAndTourism(**country_food_and_tourism_obj)
+            db.session.add(food_and_tourism_db_instance)
 
 if __name__ == "__main__":
     print("Populating DB...")
     populate_geography()
+    populate_food_and_tourism()
     print("Done")
