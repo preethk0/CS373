@@ -156,7 +156,7 @@ def add_food_and_tourism(country_ind_data):
                 "country_agricultural_exports": country_top_agricultural_export_data[0]['topCommodity'],
                 "country_main_attraction": country_tourist_attractions_data[0]['attraction'],
                 "country_main_attraction_image_src": country_tourist_attractions_data[0]['attraction_image'],
-                "country_tourism_video_src": "https://www.youtube.com/watch?v=" + country_tourism_video_data[0]['items'][0]['id']['videoID'],
+                "country_tourism_video_src": "https://www.youtube.com/watch?v=" + country_tourism_video_data[0]['items'][0]['id']['videoId'] if len(country_tourism_video_data[0]['items']) > 0 else "",
                 "country_number_of_tourists": country_tourist_arrivals_data[0]['tourists'],
                 "country_tourism_revenue": country_tourism_income_data[0]['tourism_income'],
                 "country_tourism_percent_GDP": country_tourism_income_data[0]['percentage_of_GDP'],
@@ -168,7 +168,7 @@ def add_food_and_tourism(country_ind_data):
 
 if __name__ == "__main__":
     print("Populating DB...")
-    populate_demographics()
+    # populate_demographics()
     # populate_geography()
-    # populate_food_and_tourism()
+    populate_food_and_tourism()
     print("Done")
