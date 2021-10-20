@@ -288,7 +288,7 @@
         "hottest_temp": 31.4
     },
     {
-        "country": "Venezuela (Bolivarian Republic of)",
+        "country": "Venezuela",
         "avg_temp": 25.86,
         "coldest_temp": 24.3,
         "hottest_temp": 27.9
@@ -456,7 +456,7 @@
         "hottest_temp": 31.1
     },
     {
-        "country": "Viet Nam",
+        "country": "Vietnam",
         "avg_temp": 24.62,
         "coldest_temp": 18.4,
         "hottest_temp": 28.5
@@ -588,7 +588,7 @@
         "hottest_temp": 31.6
     },
     {
-        "country": "United Republic of Tanzania",
+        "country": "Tanzania",
         "avg_temp": 22.86,
         "coldest_temp": 20.1,
         "hottest_temp": 24.8
@@ -672,7 +672,7 @@
         "hottest_temp": 26.8
     },
     {
-        "country": "Bolivia (Plurinational State of)",
+        "country": "Bolivia",
         "avg_temp": 20.95,
         "coldest_temp": 16.2,
         "hottest_temp": 24.0
@@ -744,7 +744,7 @@
         "hottest_temp": 20.7
     },
     {
-        "country": "Syrian Arab Republic",
+        "country": "Syria",
         "avg_temp": 18.58,
         "coldest_temp": 3.2,
         "hottest_temp": 31.6
@@ -768,7 +768,7 @@
         "hottest_temp": 25.8
     },
     {
-        "country": "Iran (Islamic Republic of)",
+        "country": "Iran",
         "avg_temp": 17.86,
         "coldest_temp": -0.1,
         "hottest_temp": 31.3
@@ -882,7 +882,7 @@
         "hottest_temp": 24.6
     },
     {
-        "country": "Republic of Korea",
+        "country": "South Korea",
         "avg_temp": 11.4,
         "coldest_temp": -6.7,
         "hottest_temp": 26.5
@@ -996,7 +996,7 @@
         "hottest_temp": 20.6
     },
     {
-        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "country": "United Kingdom",
         "avg_temp": 9.07,
         "coldest_temp": 0.1,
         "hottest_temp": 17.2
@@ -1038,7 +1038,7 @@
         "hottest_temp": 21.6
     },
     {
-        "country": "United States of America",
+        "country": "United States",
         "avg_temp": 7.63,
         "coldest_temp": -6.9,
         "hottest_temp": 21.4
@@ -1104,7 +1104,7 @@
         "hottest_temp": 21.1
     },
     {
-        "country": "Democratic People's Republic of Korea",
+        "country": "North Korea",
         "avg_temp": 6.19,
         "coldest_temp": -15.3,
         "hottest_temp": 23.1
@@ -1158,7 +1158,7 @@
         "hottest_temp": 20.7
     },
     {
-        "country": "Russian Federation",
+        "country": "Russia",
         "avg_temp": -5.16,
         "coldest_temp": -29.7,
         "hottest_temp": 16.1

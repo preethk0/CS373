@@ -60,7 +60,7 @@
         "year": 2017
     },
     {
-        "country": "Hong Kong SAR, China",
+        "country": "China",
         "tourists": 27884000.0,
         "year": 2017
     },
@@ -92,11 +92,6 @@
     {
         "country": "Netherlands",
         "tourists": 17924000.0,
-        "year": 2017
-    },
-    {
-        "country": "Macao SAR, China",
-        "tourists": 17255000.0,
         "year": 2017
     },
     {
@@ -135,7 +130,7 @@
         "year": 2017
     },
     {
-        "country": "Korea",
+        "country": "South Korea",
         "tourists": 13336000.0,
         "year": 2017
     },
@@ -295,7 +290,7 @@
         "year": 2017
     },
     {
-        "country": "Kyrgyz Republic",
+        "country": "Kyrgyzstan",
         "tourists": 4568000.0,
         "year": 2017
     },
@@ -350,7 +345,7 @@
         "year": 2017
     },
     {
-        "country": "Lao PDR",
+        "country": "Laos",
         "tourists": 3257000.0,
         "year": 2017
     },
@@ -700,7 +695,7 @@
         "year": 2017
     },
     {
-        "country": "Dem. Rep. Congo",
+        "country": "Congo",
         "tourists": 351000.0,
         "year": 2016
     },

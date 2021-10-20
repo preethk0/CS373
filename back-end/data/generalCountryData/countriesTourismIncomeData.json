@@ -150,7 +150,7 @@
         "percentage_of_GDP": 5.0
     },
     {
-        "country": "Russian Federation",
+        "country": "Russia",
         "tourism_income": 8945000000,
         "percentage_of_GDP": 0.57
     },
@@ -340,7 +340,7 @@
         "percentage_of_GDP": 59.6
     },
     {
-        "country": "The Bahamas",
+        "country": "Bahamas",
         "tourism_income": 2577000000,
         "percentage_of_GDP": 21.2
     },
@@ -815,7 +815,7 @@
         "percentage_of_GDP": 0.49
     },
     {
-        "country": "Congo-Brazzaville",
+        "country": "Democratic Republic of the Congo",
         "tourism_income": 27000000,
         "percentage_of_GDP": 0.31
     },

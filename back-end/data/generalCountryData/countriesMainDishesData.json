@@ -1,598 +1,2240 @@
 [
     {
         "country": "Afghanistan",
-        "main_dish": [
-            "Kabuli Pulao"
+        "main_dishes": [
+            "Afghanistan -Kabuli Pulao"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/c6b07960-a108-46de-86d1-57bb023bbd2f.jpg"
+        ]
+    },
+    {
+        "country": "Albania",
+        "main_dishes": [
+            "Tav\u00eb Kosi"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/a5220e30-4f0e-4fbb-89ca-9c4cb7e89deb.jpg"
         ]
     },
     {
         "country": "Algeria",
-        "main_dish": [
-            "Couscous"
+        "main_dishes": [
+            "Couscous",
+            "Chakhchoukha"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/9f526b93-91ad-4c7d-a5bf-d6490e3ca66a.jpg",
+            "https://www.listchallenges.com/f/items/83aa2847-b80a-429c-82cd-d44c260bf4a0.jpg"
+        ]
+    },
+    {
+        "country": "Andorra",
+        "main_dishes": [
+            "Escudella (Andorra)"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/a144928a-24a5-40bb-961f-ba50d3b8e045.jpg"
+        ]
+    },
+    {
+        "country": "Angola",
+        "main_dishes": [
+            "Angola- Muamba De Galinha"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/a7e777d3-a838-44b2-bfa3-66b80f7fe184.jpg"
+        ]
+    },
+    {
+        "country": "Antigua and Barbuda",
+        "main_dishes": [
+            "Pepperpot",
+            "Antigua and Barbuda- Fungee and Pepperpot"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/717473f2-30e2-4d2b-93ce-b28d7e2b677f.jpg",
+            "https://www.listchallenges.com/f/items/d7b91193-3159-496f-aa20-d3a527205d5d.jpg"
+        ]
+    },
+    {
+        "country": "Argentina",
+        "main_dishes": [
+            "Asado - Argentina",
+            "Empanada",
+            "Locro",
+            "Milanesa",
+            "Chorip\u00e1n"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/ea47f5fb-3202-4862-bf78-fa812bb8333b.jpg",
+            "https://www.listchallenges.com/f/items/7753d1d4-5ba8-4a9a-87e9-1c7cee75ccda.jpg",
+            "https://www.listchallenges.com/f/items/6c2b5cbd-890c-4c25-8e31-6b88c6962935.jpg",
+            "https://www.listchallenges.com/f/items/338754dd-03dd-4bc1-b53d-3036059e5043.jpg",
+            "https://www.listchallenges.com/f/items/7b30ef4d-3071-405c-bd3d-d49dc482ed7e.jpg"
+        ]
+    },
+    {
+        "country": "Armenia",
+        "main_dishes": [
+            "Khash",
+            "Harissa",
+            "Dolma",
+            "Armenia - Khorovats",
+            "Aruba",
+            "Keshi Yena (Stuffed Cheese)"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/aea961da-95e8-426b-890d-72f5268d25be.jpg",
+            "https://www.listchallenges.com/f/items/27dfb3cf-b672-484e-b532-92d14b8ea042.jpg",
+            "https://www.listchallenges.com/f/items/51a3c2c5-0bbb-43ec-97ef-543365397e58.jpg",
+            "https://www.listchallenges.com/f/items/4b768292-af58-40a1-b541-04efd1ca28de.jpg",
+            "https://www.listchallenges.com/f/items/518f57da-9962-4b44-a52d-b75b21c19fd4.jpg",
+            "https://www.listchallenges.com/f/items/3211b4e0-f422-42fd-840c-0a9aeceb93f1.jpg"
         ]
     },
     {
         "country": "Australia",
-        "main_dish": [
-            "Meat Pie"
+        "main_dishes": [
+            "Vegemite on Toast",
+            "Australian Meat Pie",
+            "Roast Lamb"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/871cd399-9d30-4247-a888-3887798e69d3.jpg",
+            "https://www.listchallenges.com/f/items/6ac626b7-9b7a-430b-a249-27f3e4104381.jpg",
+            "https://www.listchallenges.com/f/items/e4cd6f0c-a45c-4c18-a900-34e252656a93.jpg"
         ]
     },
     {
         "country": "Austria",
-        "main_dish": [
-            "Wiener Schnitzel"
+        "main_dishes": [
+            "Wiener Schnitzel (Austria)"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/34c67013-da03-4f68-8c76-d8d9d391b133.jpg"
         ]
     },
     {
         "country": "Azerbaijan",
-        "main_dish": [
-            "Plov"
-        ]
-    },
-    {
-        "country": "Bangladesh",
-        "main_dish": [
-            "Fish and Rice"
-        ]
-    },
-    {
-        "country": "Belgium",
-        "main_dish": [
-            "Moules-frites"
-        ]
-    },
-    {
-        "country": "Belize",
-        "main_dish": [
-            "Belizean Rice and Beans"
-        ]
-    },
-    {
-        "country": "Bosnia & Herzegovina",
-        "main_dish": [
-            "\u0106evapi"
-        ]
-    },
-    {
-        "country": "Brazil",
-        "main_dish": [
-            "Feijoada"
-        ]
-    },
-    {
-        "country": "Canada",
-        "main_dish": [
-            "Poutine"
-        ]
-    },
-    {
-        "country": "Chile",
-        "main_dish": [
-            "Pastel de Choclo"
-        ]
-    },
-    {
-        "country": "China",
-        "main_dish": [
-            "Peking Duck"
-        ]
-    },
-    {
-        "country": "Costa Rica",
-        "main_dish": [
-            "Gallo Pinto"
-        ]
-    },
-    {
-        "country": "Cuba",
-        "main_dish": [
-            "Ropa Vieja"
-        ]
-    },
-    {
-        "country": "Denmark",
-        "main_dish": [
-            "Frikadeller"
-        ]
-    },
-    {
-        "country": "Ecuador",
-        "main_dish": [
-            "Ceviche"
-        ]
-    },
-    {
-        "country": "Equatorial Guinea",
-        "main_dish": [
-            "Succotash"
-        ]
-    },
-    {
-        "country": "France",
-        "main_dish": [
-            "Cr\u00eape"
-        ]
-    },
-    {
-        "country": "Georgia",
-        "main_dish": [
-            "Khachapuri"
-        ]
-    },
-    {
-        "country": "Germany",
-        "main_dish": [
-            "Sauerbraten"
-        ]
-    },
-    {
-        "country": "Greece",
-        "main_dish": [
-            "Moussaka"
-        ]
-    },
-    {
-        "country": "Hungary",
-        "main_dish": [
-            "Goulash"
-        ]
-    },
-    {
-        "country": "Indonesia",
-        "main_dish": [
-            "Nasi Goreng"
-        ]
-    },
-    {
-        "country": "Iran",
-        "main_dish": [
-            "Chelo Kebab"
-        ]
-    },
-    {
-        "country": "Ireland",
-        "main_dish": [
-            "Irish Stew"
-        ]
-    },
-    {
-        "country": "Israel",
-        "main_dish": [
-            "Falafel"
-        ]
-    },
-    {
-        "country": "Ivory Coast",
-        "main_dish": [
-            "Aloco"
-        ]
-    },
-    {
-        "country": "Laos",
-        "main_dish": [
-            "Larb"
-        ]
-    },
-    {
-        "country": "Latvia",
-        "main_dish": [
-            "Grey Peas, Bacon, and Onion"
-        ]
-    },
-    {
-        "country": "Lebanon",
-        "main_dish": [
-            "Kibbeh"
-        ]
-    },
-    {
-        "country": "Malaysia",
-        "main_dish": [
-            "Nasi Lemak"
-        ]
-    },
-    {
-        "country": "Mauritius",
-        "main_dish": [
-            "Dholl Puri"
-        ]
-    },
-    {
-        "country": "Mexico",
-        "main_dish": [
-            "Taco"
-        ]
-    },
-    {
-        "country": "Monaco",
-        "main_dish": [
-            "Barbagiuan"
-        ]
-    },
-    {
-        "country": "Moldova",
-        "main_dish": [
-            "M\u0103m\u0103lig\u0103"
-        ]
-    },
-    {
-        "country": "Morocco",
-        "main_dish": [
-            "Tagine"
-        ]
-    },
-    {
-        "country": "Nepal",
-        "main_dish": [
-            "Dal Bhaath"
-        ]
-    },
-    {
-        "country": "Netherlands",
-        "main_dish": [
-            "Stamppot"
-        ]
-    },
-    {
-        "country": "New Zealand",
-        "main_dish": [
-            "Pavlova"
-        ]
-    },
-    {
-        "country": "Nicaragua",
-        "main_dish": [
-            "Gallo Pinto"
-        ]
-    },
-    {
-        "country": "North Korea",
-        "main_dish": [
-            "Kimchi"
-        ]
-    },
-    {
-        "country": "Peru",
-        "main_dish": [
-            "Ceviche"
-        ]
-    },
-    {
-        "country": "Philippines",
-        "main_dish": [
-            "Chicken Adobo"
-        ]
-    },
-    {
-        "country": "Poland",
-        "main_dish": [
-            "Bigos"
-        ]
-    },
-    {
-        "country": "Russia",
-        "main_dish": [
-            "Pelmeni"
-        ]
-    },
-    {
-        "country": "Scotland",
-        "main_dish": [
-            "Haggis"
-        ]
-    },
-    {
-        "country": "Singapore",
-        "main_dish": [
-            "Hainanese Chicken Rice"
-        ]
-    },
-    {
-        "country": "Spain",
-        "main_dish": [
-            "Paella"
-        ]
-    },
-    {
-        "country": "Sri Lanka",
-        "main_dish": [
-            "Rice and Curry"
-        ]
-    },
-    {
-        "country": "Sweden",
-        "main_dish": [
-            "Swedish Meatballs"
-        ]
-    },
-    {
-        "country": "Switzerland",
-        "main_dish": [
-            "R\u00f6sti"
-        ]
-    },
-    {
-        "country": "Syria",
-        "main_dish": [
-            "Kibbeh"
-        ]
-    },
-    {
-        "country": "Taiwan",
-        "main_dish": [
-            "Beef Noodle Soup"
-        ]
-    },
-    {
-        "country": "Thailand",
-        "main_dish": [
-            "Pad Thai"
-        ]
-    },
-    {
-        "country": "Tunisia",
-        "main_dish": [
-            "Couscous"
-        ]
-    },
-    {
-        "country": "Turkey",
-        "main_dish": [
-            "D\u00f6ner Kebab"
-        ]
-    },
-    {
-        "country": "Ukraine",
-        "main_dish": [
-            "Borscht"
-        ]
-    },
-    {
-        "country": "United Arab Emirates",
-        "main_dish": [
-            "Shawarma"
-        ]
-    },
-    {
-        "country": "United States of America",
-        "main_dish": [
-            "Hamburger",
-            "Hot Dog",
-            "Mac \u2018n\u2019 Cheese"
-        ]
-    },
-    {
-        "country": "Uzbekistan",
-        "main_dish": [
-            "Plov"
-        ]
-    },
-    {
-        "country": "Vietnam",
-        "main_dish": [
-            "Pho"
+        "main_dishes": [
+            "Dolmas",
+            "Qutab (Azerbaijan)"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/4516b07d-7d0b-40e1-be6f-afe533fae23e.jpg",
+            "https://www.listchallenges.com/f/items/073272ce-b61a-448b-b591-b65682b48b10.jpg"
         ]
     },
     {
         "country": "Bahamas",
-        "main_dish": [
-            "Crack Conch with Peas and Rice"
+        "main_dishes": [
+            "Bahamas- Crack Conch With Peas and Rice"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/d34b0de4-d6e3-49f1-86df-6a8cf654113a.jpg"
         ]
     },
     {
         "country": "Bahrain",
-        "main_dish": [
-            "Chicken Machboos"
+        "main_dishes": [
+            "Bahrain- Chicken Machboos"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/5bffae54-1ad0-465c-b1f7-9dd4bd33cd17.jpg"
+        ]
+    },
+    {
+        "country": "Bangladesh",
+        "main_dishes": [
+            "Rice and Ilish",
+            "Shorshe Ilish",
+            "Machh Bhaja/ Plain Fried Fish",
+            "Begun Diye Eelish Machher Jhol/ Hilsa Curry With Brinjal",
+            "Bhuna",
+            "Bangladesh - Chicken Korma"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/0b70f129-ec73-4a47-93cd-56da373f7e4b.jpg",
+            "https://www.listchallenges.com/f/items/09d32f78-97da-4c68-8a36-7850b3dbec75.jpg",
+            "https://www.listchallenges.com/f/items/20e7e44d-7ec9-4c2e-a5e0-2763295187c1.jpg",
+            "https://www.listchallenges.com/f/items/f5b201b0-0be9-4096-b9fc-d4a2ad54c4d2.jpg",
+            "https://www.listchallenges.com/f/items/1be5baa6-282d-4caa-a6b6-d30e9d41b1d2.jpg",
+            "https://www.listchallenges.com/f/items/104e8fa4-9302-4939-8db4-e52b15b88b09.jpg"
         ]
     },
     {
         "country": "Barbados",
-        "main_dish": [
-            "Cou Cou and Flying Fish"
+        "main_dishes": [
+            "Barbados- Cou-Cou and Flying Fish"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/918fdfb7-d2d2-4087-bc46-651e7dc4970a.jpg"
+        ]
+    },
+    {
+        "country": "Belarus",
+        "main_dishes": [
+            "Belarus- Draniki"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/ae130716-1ec7-47ec-803e-d3055c3d2bbd.jpg"
+        ]
+    },
+    {
+        "country": "Belgium",
+        "main_dishes": [
+            "Moules-Frites - Belgium",
+            "Belgian Waffle"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/d01b1bef-6979-44da-84e9-2dd5ceda06f8.jpg",
+            "https://www.listchallenges.com/f/items/0037aeed-585d-4bd9-8b85-bf483c398134.jpg"
+        ]
+    },
+    {
+        "country": "Belize",
+        "main_dishes": [
+            "Boil Up - Belize",
+            "Fry Jacks"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/99068ae5-254e-4432-ab55-f89dce2f71fe.jpg",
+            "https://www.listchallenges.com/f/items/3fb97fd3-39e3-4314-b548-844d5fa7c3b3.jpg"
         ]
     },
     {
         "country": "Benin",
-        "main_dish": [
-            "Kuli Kuli"
+        "main_dishes": [
+            "Benin- Kuli Kuli"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/d020d764-04c8-4c30-a8f9-6f7d4aa254e7.jpg"
+        ]
+    },
+    {
+        "country": "Bermuda",
+        "main_dishes": [
+            "Bermuda- Fish Chowder"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/20ee7b12-1f28-4fb4-8e21-4f2393117acf.jpg"
         ]
     },
     {
         "country": "Bhutan",
-        "main_dish": [
-            "Ema Datshi"
+        "main_dishes": [
+            "Bhutan- Ema Datshi"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/4193e0f1-4d4d-4037-a405-1526a7ed7076.jpg"
+        ]
+    },
+    {
+        "country": "Bolivia",
+        "main_dishes": [
+            "Salte\u00f1as Bolivianas"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/78ae236f-a040-495e-b969-95d50a28d7a0.jpg"
+        ]
+    },
+    {
+        "country": "Bosnia and Herzegovina",
+        "main_dishes": [
+            "Bosnian Pot",
+            "\u0106evapi"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/e62c3a48-d153-471e-bf75-50889a17a3e7.jpg",
+            "https://www.listchallenges.com/f/items/408db417-0dab-41b9-a4e0-59f2ed960360.jpg"
+        ]
+    },
+    {
+        "country": "Botswana",
+        "main_dishes": [
+            "Botswana- Seswaa"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/2c9b2305-58e0-422f-9192-1c42d9d55e57.jpg"
+        ]
+    },
+    {
+        "country": "Brazil",
+        "main_dishes": [
+            "Feijoada - Brazil"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/50dde4a7-c837-4080-b9c7-3145676c12f5.jpg"
         ]
     },
     {
         "country": "Brunei",
-        "main_dish": [
-            "Ambuyat"
+        "main_dishes": [
+            "Brunei- Ambuyat"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/41108661-af78-4b38-8718-6316096aa861.jpg"
+        ]
+    },
+    {
+        "country": "Bulgaria",
+        "main_dishes": [
+            "Bulgaria - Banitsa",
+            "Bob Chorba",
+            "Shopska Salad"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/575f460a-dbbe-4712-aa52-e5e4a1c68088.jpg",
+            "https://www.listchallenges.com/f/items/809cddcb-35ff-4bf3-8c88-4ce058589b14.jpg",
+            "https://www.listchallenges.com/f/items/ccdf5166-2b0a-4e60-b0cc-fb223c16fc10.jpg"
+        ]
+    },
+    {
+        "country": "Burkina Faso",
+        "main_dishes": [
+            "Burkina Faso- Riz Gras"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/d30e86c2-14e9-4827-b734-50d786bf6bc2.jpg"
+        ]
+    },
+    {
+        "country": "Burundi",
+        "main_dishes": [
+            "Boko Boko Harees- Burundi"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/ce1ba73c-27cb-4e76-9b00-cd5237a6b380.jpg"
         ]
     },
     {
         "country": "Cambodia",
-        "main_dish": [
-            "Amok Trey"
+        "main_dishes": [
+            "Cambodia- Amok Trey",
+            "Samlor Kako, Cambodia"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/de61ddc1-7657-4f7b-a327-38c169383bcb.jpg",
+            "https://www.listchallenges.com/f/items/5f949715-305d-4dce-8729-0ddca82bc972.jpg"
         ]
     },
     {
         "country": "Cameroon",
-        "main_dish": [
+        "main_dishes": [
             "Ndol\u00e9"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/05dba597-04cf-4538-9f8a-10288e54389a.jpg"
+        ]
+    },
+    {
+        "country": "Canada",
+        "main_dishes": [
+            "Poutine",
+            "Nanaimo Bar",
+            "Butter Tarts",
+            "Tourti\u00e8re",
+            "Peameal Bacon"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/2c729724-215c-4760-a4ed-4abb824c38ac.jpg",
+            "https://www.listchallenges.com/f/items/50dd37a9-9ad2-4944-8e18-b074ba2aa6d0.jpg",
+            "https://www.listchallenges.com/f/items/d390cae1-2e6a-4fe4-ae96-69997624cab6.jpg",
+            "https://www.listchallenges.com/f/items/518c531a-fe28-4de2-94d1-7865e49a75e2.jpg",
+            "https://www.listchallenges.com/f/items/5b29be80-356d-4a97-b683-f2b2345c0f34.jpg"
         ]
     },
     {
         "country": "Cape Verde",
-        "main_dish": [
-            "Cachupa"
+        "main_dishes": [
+            "Cabo Verde - Cachupa"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/73626b28-fdac-4337-ba45-f1e74f59b22a.jpg"
+        ]
+    },
+    {
+        "country": "Central African Republic",
+        "main_dishes": [
+            "Cassava Fufu",
+            "Peanut Soup"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/40fc552e-40d0-43a3-91f0-7b670f9c8d4f.jpg",
+            "https://www.listchallenges.com/f/items/a8aed1cf-6dde-45a1-9934-2c9c4f0fdc9e.jpg"
+        ]
+    },
+    {
+        "country": "Chad",
+        "main_dishes": [
+            "Boule (Millet Porridge)"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/eddb9864-6c96-42f8-a603-6c4e1efeef1d.jpg"
+        ]
+    },
+    {
+        "country": "Chile",
+        "main_dishes": [
+            "Empanada",
+            "Chile- Pastel De Choclo"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/9e0993c8-a88c-4ddc-af34-64bee242d145.jpg",
+            "https://www.listchallenges.com/f/items/d4b418d4-6292-448a-8fa5-ceaac083165b.jpg"
+        ]
+    },
+    {
+        "country": "China",
+        "main_dishes": [
+            "China- Peking Duck",
+            "Chinese Noodles",
+            "Fried Rice",
+            "Dumplings",
+            "Mao's Family Style Red Braised Pork"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/31694186-bbfe-47fd-88b0-edc7c91854d8.jpg",
+            "https://www.listchallenges.com/f/items/fe2ad318-c2c7-4530-84c1-844094e1271c.jpg",
+            "https://www.listchallenges.com/f/items/f40f918c-9af3-491c-afd7-8aa231401ee7.jpg",
+            "https://www.listchallenges.com/f/items/60f78c7b-bf9f-407a-945d-7822953f85c4.jpg",
+            "https://www.listchallenges.com/f/items/c02a7990-bfa1-449c-9e28-0ac2bc6f9042.jpg"
         ]
     },
     {
         "country": "Colombia",
-        "main_dish": [
-            "Bandeja Paisa"
+        "main_dishes": [
+            "Sancocho",
+            "Ajiaco",
+            "Colombia- Bandeja Paisa"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/29bef3c8-e699-4ddd-8459-503bbf8c74d8.jpg",
+            "https://www.listchallenges.com/f/items/49315cab-6395-4cf9-a86b-c2a0ef88a89a.jpg",
+            "https://www.listchallenges.com/f/items/b186fd2c-f455-4bd2-8b3c-6a734c263689.jpg"
         ]
     },
     {
         "country": "Comoros",
-        "main_dish": [
-            "Langouste a la Vanille"
+        "main_dishes": [
+            "Comoros- Langouste a La Vanille"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/2d93081a-58f3-4674-a296-d113e7e4be43.jpg"
+        ]
+    },
+    {
+        "country": "Costa Rica",
+        "main_dishes": [
+            "Costa Rica- Gallo Pinto"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/08af38a7-2d09-4601-b150-745552667161.jpg"
+        ]
+    },
+    {
+        "country": "Croatia",
+        "main_dishes": [
+            "Zagorski Strukli",
+            "Mlinci"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/b98c78e6-4866-4678-9bf7-2c87038f4951.jpg",
+            "https://www.listchallenges.com/f/items/290462c5-7a5e-4156-83be-70d1b3918444.jpg"
+        ]
+    },
+    {
+        "country": "Croatia - Brudet",
+        "main_dishes": [
+            "Kulen",
+            "Istrian Stew"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/f064035a-cbb1-4837-9078-4273e548b514.jpg",
+            "https://www.listchallenges.com/f/items/a800cab0-9201-47d9-afd0-dd78545b8dce.jpg"
+        ]
+    },
+    {
+        "country": "Cuba",
+        "main_dishes": [
+            "Ropa Vieja",
+            "Moros Y Cristianos"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/8c4a2453-6954-4238-894e-dea2d2d2cf30.jpg",
+            "https://www.listchallenges.com/f/items/44c681ff-077b-46d7-a2f9-9ea1de978391.jpg"
+        ]
+    },
+    {
+        "country": "Cyprus",
+        "main_dishes": [
+            "Souvla"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/3a60b5fd-ea59-4569-a136-a7155f4f9408.jpg"
+        ]
+    },
+    {
+        "country": "Czech Republic",
+        "main_dishes": [
+            "Vep\u0159o Knedlo Zelo (Roast Pork With Dumplings and Sauerkraut)",
+            "Sv\u00ed\u010dkov\u00e1"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/535c7573-f92d-481e-b1bd-d1a23d8fa9b6.jpg",
+            "https://www.listchallenges.com/f/items/fd34ed23-5b8c-4b4d-8a8d-e6df52707e6a.jpg"
+        ]
+    },
+    {
+        "country": "Democratic Republic of the Congo",
+        "main_dishes": [
+            "Poulet \u00c0 La Moamb\u00e9"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/cae83b4a-44e9-492f-9dff-dacbaf22377b.jpg"
+        ]
+    },
+    {
+        "country": "Denmark",
+        "main_dishes": [
+            "Denmark - Stegt Fl\u00e6sk",
+            "B\u00f8fsandwich",
+            "Denmark- Frikadeller",
+            "Sm\u00f8rrebr\u00f8d"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/accb9ab4-f258-4b34-be41-2117f7bcc8a0.jpg",
+            "https://www.listchallenges.com/f/items/6ddf7e67-5be2-4a9d-b598-765995ed096f.jpg",
+            "https://www.listchallenges.com/f/items/faf6680e-8ba8-48c9-aa8f-2948938512c5.jpg",
+            "https://www.listchallenges.com/f/items/347103cb-8fdc-4f1c-aeb7-5f6f40b36c2d.jpg"
+        ]
+    },
+    {
+        "country": "Djibouti",
+        "main_dishes": [
+            "Djibouti- Skoudehkaris"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/8a02cf84-a6cf-46a7-8c89-662127da2bfa.jpg"
+        ]
+    },
+    {
+        "country": "Dominica",
+        "main_dishes": [
+            "Dominica- Mountain Chicken (Frog)",
+            "Fish Broth - Dominica"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/e5b5744e-a77c-4780-aa2e-db2eb351f43d.jpg",
+            "https://www.listchallenges.com/f/items/efeccff4-2034-4a83-afe4-30e9eaff0251.jpg"
         ]
     },
     {
         "country": "Dominican Republic",
-        "main_dish": [
-            "La Bandera"
+        "main_dishes": [
+            "Dominican Republic- La Bandera",
+            "Sancocho"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/22ff1d09-bbb9-4d0f-9c97-27135ab551ed.jpg",
+            "https://www.listchallenges.com/f/items/30560d02-a1d6-4c2a-b2ea-ab2189a04028.jpg"
+        ]
+    },
+    {
+        "country": "East Timor",
+        "main_dishes": [
+            "Timor-Leste - Ikan Pepes"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/20b23f3e-a1a8-4856-9fb6-d3522ef83363.jpg"
+        ]
+    },
+    {
+        "country": "Ecuador",
+        "main_dishes": [
+            "Ecuador - Encebollado",
+            "Fritada - Ecuador",
+            "Guatitas",
+            "Ceviche"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/ecd3d96d-8a21-4573-b95f-e24d726330e6.jpg",
+            "https://www.listchallenges.com/f/items/fefcc166-5e9e-498d-afb8-123d85e4ead4.jpg",
+            "https://www.listchallenges.com/f/items/b41b059c-bbef-4187-bedd-2850955e7d48.jpg",
+            "https://www.listchallenges.com/f/items/cdbfb023-7252-47ad-b307-9f6ebf738660.jpg"
         ]
     },
     {
         "country": "Egypt",
-        "main_dish": [
-            "Kushari"
+        "main_dishes": [
+            "Ful Medames",
+            "Kushari",
+            "Molokhia - Egypt",
+            "Falafel"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/aab8e3ea-cc3b-498d-890a-da46779373fd.jpg",
+            "https://www.listchallenges.com/f/items/203b099f-f5b6-48bb-ad3e-6aa480737dd2.jpg",
+            "https://www.listchallenges.com/f/items/102b21c1-3b6e-4b89-988b-1ab775ecb618.jpg",
+            "https://www.listchallenges.com/f/items/c2558e55-ab3a-4833-8b56-540f3d688435.jpg"
+        ]
+    },
+    {
+        "country": "El Salvador",
+        "main_dishes": [
+            "Pupusas"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/aeb0381e-482b-4895-b191-999264ed7724.jpg"
+        ]
+    },
+    {
+        "country": "Equatorial Guinea",
+        "main_dishes": [
+            "Equatorial Guinea - Succotash",
+            "Peppersoup"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/6515372b-3100-4ce8-ad7e-744abc2b6840.jpg",
+            "https://www.listchallenges.com/f/items/556cbe49-d2f9-48c1-9926-15badd9ab064.jpg"
+        ]
+    },
+    {
+        "country": "Eritrea",
+        "main_dishes": [
+            "EritreA - Zigini",
+            "Injera",
+            "Gored Gored"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/757a2a9a-26c6-4089-801b-186db0772093.jpg",
+            "https://www.listchallenges.com/f/items/2c7f7a59-1920-4034-b686-26931b5dc5c7.jpg",
+            "https://www.listchallenges.com/f/items/a886e89d-6d73-4ce3-b378-075ba9339b59.jpg"
         ]
     },
     {
         "country": "Estonia",
-        "main_dish": [
-            "Verivorst"
+        "main_dishes": [
+            "Estonia - Verivorst",
+            "Mulgikapsad (Sauerkraut Stew)"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/b5bab999-e9ec-407d-a036-70a393288a2d.jpg",
+            "https://www.listchallenges.com/f/items/81e479a8-7ffa-45d4-9271-05a2ff588092.jpg"
         ]
     },
     {
+        "country": "Ethiopia",
+        "main_dishes": [
+            "Kitfo",
+            "Doro Wat",
+            "Injera"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/32484a5d-681c-43b3-b509-d1743d9ba9b0.jpg",
+            "https://www.listchallenges.com/f/items/c7ec7744-8e95-4137-b20b-d79dc99db05e.jpg",
+            "https://www.listchallenges.com/f/items/e3295ce3-4f26-4fc1-b62f-b98b863f8981.jpg"
+        ]
+    },
+    {
+        "country": "Fiji",
+        "main_dishes": [
+            "Fiji - Kokoda"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/7eb02cdc-bdf4-494b-bed3-9650db4e3199.jpg"
+        ]
+    },
+    {
+        "country": "Finland",
+        "main_dishes": [
+            "Finland - Karjalanpaisti",
+            "M\u00e4mmi",
+            "Saut\u00e9ed Reindeer, Finnish Style"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/ebe05fa4-1235-45aa-9606-83023c90be4d.jpg",
+            "https://www.listchallenges.com/f/items/73805113-465c-40a1-9a88-bc0af31dfc7e.jpg",
+            "https://www.listchallenges.com/f/items/c0be732b-c071-4ed6-aaaf-65c751a798ed.jpg"
+        ]
+    },
+    {
+        "country": "France",
+        "main_dishes": [
+            "Crepe",
+            "France - Pot-Au-Feu",
+            "Macarons",
+            "Croissant",
+            "Coq Au Vin",
+            "Cassoulet",
+            "Bouillabaisse"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/d0718bf7-63f8-41dd-8dcc-e67bebd8c61f.jpg",
+            "https://www.listchallenges.com/f/items/cce5a6e7-3f7f-49c2-8855-410eb56e0421.jpg",
+            "https://www.listchallenges.com/f/items/20c854a6-fb14-4662-9a82-241c420ed2a0.jpg",
+            "https://www.listchallenges.com/f/items/646b5f95-2f91-404d-b3f6-7d62cc84f217.jpg",
+            "https://www.listchallenges.com/f/items/6cda9cae-d707-429a-9b6a-6d51ecb80439.jpg",
+            "https://www.listchallenges.com/f/items/57df75d7-a060-475f-9db9-9a99c33307b6.jpg",
+            "https://www.listchallenges.com/f/items/e2c16a08-cae9-46be-8f51-a5d3ffa7add5.jpg"
+        ]
+    },
+    {
+        "country": "Gabon",
+        "main_dishes": [
+            "Gabon - Poulet Nyembwe"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/b11c4f65-5bb6-4fc5-b1a2-e80ae5bfa16f.jpg"
+        ]
+    },
+    {
+        "country": "The Gambia",
+        "main_dishes": [
+            "Gambia - Benachin",
+            "Domoda (Gambia)"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/53ddba4e-aa27-45a5-8d30-6512adb6bbac.jpg",
+            "https://www.listchallenges.com/f/items/fabff6fd-223b-46bc-bf91-f57417cc9cdb.jpg"
+        ]
+    },
+    {
+        "country": "Georgia",
+        "main_dishes": [
+            "Khachapuri - Georgia",
+            "Khinkali (Georgia)"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/00b8caf5-4765-4369-ae19-f3d714408c01.jpg",
+            "https://www.listchallenges.com/f/items/e0b4df92-8420-4237-bb0c-4481dcbd32ff.jpg"
+        ]
+    },
+    {
+        "country": "Germany",
+        "main_dishes": [
+            "Germany - Sauerbraten",
+            "Bratwurst",
+            "Eisbein (Ham Hock)"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/f8cc563e-64d8-48b0-997f-5c9ce42a8601.jpg",
+            "https://www.listchallenges.com/f/items/f9bc92b6-4963-4d41-b9c9-6e7d804fddcd.jpg",
+            "https://www.listchallenges.com/f/items/12923bea-5662-4401-b0d8-5bdfde2e11de.jpg"
+        ]
+    },
+    {
+        "country": "Sauerkraut",
+        "main_dishes": [],
+        "main_dishes_images": []
+    },
+    {
         "country": "Ghana",
-        "main_dish": [
-            "Fufu"
+        "main_dishes": [
+            "Fufu",
+            "Ghana - Banku",
+            "Jollof Rice"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/847bb945-37b6-4727-bde3-28b2c57281d8.jpg",
+            "https://www.listchallenges.com/f/items/085cb376-d607-4082-a48a-932eef13e42d.jpg",
+            "https://www.listchallenges.com/f/items/5203f1eb-efba-4668-afdc-db31bf8bc456.jpg"
+        ]
+    },
+    {
+        "country": "Gibraltar",
+        "main_dishes": [
+            "Profiteroles"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/12582210-9494-41d8-9ebc-bd29bf1dd715.jpg"
+        ]
+    },
+    {
+        "country": "Greece",
+        "main_dishes": [
+            "Gyros (Greece)",
+            "Moussaka",
+            "Souvlaki",
+            "Magiritsa - Greece",
+            "Kokoretsi",
+            "Greece - Fasolada"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/7519acaf-afe1-44b9-b7ed-abb26ffb656f.jpg",
+            "https://www.listchallenges.com/f/items/f2a0bdc4-bb18-4c36-8376-903e5813b9c9.jpg",
+            "https://www.listchallenges.com/f/items/2a69287d-803b-45f8-9dbe-b198db551da7.jpg",
+            "https://www.listchallenges.com/f/items/acb3b8d8-b78e-4f2a-af00-133bb3a1a416.jpg",
+            "https://www.listchallenges.com/f/items/6ac18122-bdb1-4de7-84b9-2b775de3a11a.jpg",
+            "https://www.listchallenges.com/f/items/0206cadc-9975-4922-ad51-49cc2d54530b.jpg"
+        ]
+    },
+    {
+        "country": "Grenada",
+        "main_dishes": [
+            "Grenada - Oil Down"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/5c0abdb6-aaf8-4667-ae04-c49b0e21fdea.jpg"
+        ]
+    },
+    {
+        "country": "Guatemala",
+        "main_dishes": [
+            "Guatemala - Fiambre",
+            "Pepian - Guatemala"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/e0185f29-a36c-41a0-b2c6-03d13c01d992.jpg",
+            "https://www.listchallenges.com/f/items/2edead5f-e053-49b7-9d0f-f002445725bc.jpg"
+        ]
+    },
+    {
+        "country": "Guinea",
+        "main_dishes": [
+            "Guinea - Poulet Yassa",
+            "Guinea-Bissau",
+            "Guinea-Bissau - Jollof Rice"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/5748b639-31d6-40a4-ba12-5eb49ac07b38.jpg",
+            "https://www.listchallenges.com/f/items/57485b53-5b96-49ae-8209-0ba525cbe2d3.jpg",
+            "https://www.listchallenges.com/f/items/63a9187b-cfe0-4a96-9b2b-4bd6bf7cb1e6.jpg"
         ]
     },
     {
         "country": "Guyana",
-        "main_dish": [
-            "Pepperpot"
+        "main_dishes": [
+            "Guyana - Pepperpot",
+            "Cook-Up Rice - Guyana",
+            "Roti and Curry Plate"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/efc88146-640e-475b-a128-d08f0b3eb322.jpg",
+            "https://www.listchallenges.com/f/items/61d3788b-b4b1-42ad-b04a-961f6ea09cb0.jpg",
+            "https://www.listchallenges.com/f/items/b814733e-b595-4f15-b3aa-f00deb7b226d.jpg"
         ]
     },
     {
         "country": "Haiti",
-        "main_dish": [
-            "Fried Pork with Rice and Beans"
+        "main_dishes": [
+            "Haiti - Red Beans and Rice",
+            "Diri Ak Djon Djon - Haiti"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/c6856612-b307-43a2-8746-fa28b9a86001.jpg",
+            "https://www.listchallenges.com/f/items/f1f86845-fff7-49d2-b3bc-a199d18ebab8.jpg"
         ]
     },
     {
         "country": "Honduras",
-        "main_dish": [
-            "Plato Tipico de Honduras"
+        "main_dishes": [
+            "Honduras - Baleada",
+            "Carne Asada",
+            "Sopa De Caracol (Conch Soup) - Honduras"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/ad850931-8f95-4e2f-99b9-779004d19d10.jpg",
+            "https://www.listchallenges.com/f/items/03d0bb1f-673f-4fc1-801f-2fd55c3d812d.jpg",
+            "https://www.listchallenges.com/f/items/f6dbe574-9205-4876-ace6-d92210457920.jpg"
         ]
     },
     {
-        "country": "Hong Kong",
-        "main_dish": [
-            "Dim Sums"
+        "country": "Hungary",
+        "main_dishes": [
+            "Guly\u00e1s (Goulash Soup)",
+            "Chicken Paprikash",
+            "Lecs\u00f3 (Hungarian Dish Made of Stewed Onion, Tomato, Served by Scrambled Eggs, Rice, or 'Galuska'.)"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/0ba58975-0682-4dd4-a795-8263deed76c9.jpg",
+            "https://www.listchallenges.com/f/items/39e0ecb9-628d-4ab8-99f5-0b6bfd22d0b2.jpg",
+            "https://www.listchallenges.com/f/items/60bc2f08-1ddd-4e7d-8b45-fe4f147fdaa6.jpg"
         ]
     },
     {
         "country": "Iceland",
-        "main_dish": [
-            "H\u00e1karl"
+        "main_dishes": [
+            "Iceland - H\u00e1karl"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/99ca2033-4add-4a9f-b1d2-d71fd1b2d99f.jpg"
+        ]
+    },
+    {
+        "country": "\u00deorramatur - Iceland",
+        "main_dishes": [],
+        "main_dishes_images": []
+    },
+    {
+        "country": "India",
+        "main_dishes": [
+            "Samosa",
+            "Tandoori Chicken - India",
+            "Vindaloo",
+            "Dal Makhani",
+            "Rogan Josh"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/1c71c549-0e97-4ba5-86cf-7b9bba483e56.jpg",
+            "https://www.listchallenges.com/f/items/d082ec54-722d-4e19-bb3c-1b054aff9436.jpg",
+            "https://www.listchallenges.com/f/items/d15d6a63-35c9-4e0d-93c8-d7f22389540e.jpg",
+            "https://www.listchallenges.com/f/items/642d7903-f8a8-491c-a61b-a922cce580ee.jpg",
+            "https://www.listchallenges.com/f/items/03bbfcb1-59f5-4e9e-bbed-435da2b2649c.jpg"
+        ]
+    },
+    {
+        "country": "Indonesia",
+        "main_dishes": [
+            "Soto",
+            "Rendang",
+            "Sate",
+            "Nasi Goreng, Indonesia",
+            "Gado-Gado, Indonesia",
+            "Indonesia - Tumpeng"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/0017875a-48ea-4dac-b86e-cab5efc0cc23.jpg",
+            "https://www.listchallenges.com/f/items/9b2cccbe-6ff7-4798-91f0-768b96e9cd8b.jpg",
+            "https://www.listchallenges.com/f/items/11df3385-6109-4efa-ae39-ae774cc51afc.jpg",
+            "https://www.listchallenges.com/f/items/e6661034-c0e2-483e-aa69-fd85233e05e3.jpg",
+            "https://www.listchallenges.com/f/items/b7ad45da-c298-424d-8855-c08a49dd9175.jpg",
+            "https://www.listchallenges.com/f/items/9f8cdeb4-8d10-490d-a1ca-01423a773db3.jpg"
+        ]
+    },
+    {
+        "country": "Iran",
+        "main_dishes": [
+            "Abgoosht",
+            "Fesenjan (Chicken in Walnut & Pomegranate Sauce)",
+            "Iran - Chelo Kebap",
+            "Ghormeh Sabzi"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/22803101-5468-4000-a796-c603c6139bd8.jpg",
+            "https://www.listchallenges.com/f/items/51aec814-32cc-4fdb-9796-2950592fdb7c.jpg",
+            "https://www.listchallenges.com/f/items/0f404232-417e-4f0b-a25b-2e4b22e55c52.jpg",
+            "https://www.listchallenges.com/f/items/ba0ce2f7-9ca8-4c8f-8b00-9af0d13a1858.jpg"
+        ]
+    },
+    {
+        "country": "Iraq",
+        "main_dishes": [
+            "Dolma",
+            "Iraq - Masgouf",
+            "Quzi - Iraq",
+            "Kleicha"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/50ddafa5-d734-42bd-aebb-74945a884688.jpg",
+            "https://www.listchallenges.com/f/items/427930d2-bd7d-4026-954e-9339cb33b2b1.jpg",
+            "https://www.listchallenges.com/f/items/996b586a-d0df-450a-bb3b-876bfd1efa92.jpg",
+            "https://www.listchallenges.com/f/items/71abd8fc-d5ae-4318-ac96-c84d8df06407.jpg"
+        ]
+    },
+    {
+        "country": "Ireland",
+        "main_dishes": [
+            "Irish Stew",
+            "Ireland- Colcannon"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/1ea21319-3a6e-4c73-8525-6577878fe96b.jpg",
+            "https://www.listchallenges.com/f/items/3ae8732c-833b-4c1c-bfcb-69594403fef3.jpg"
+        ]
+    },
+    {
+        "country": "Israel",
+        "main_dishes": [
+            "Israel - Meorav Yerushalmi"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/8b43de8f-0537-484f-b9b9-e2f5661d28c1.jpg"
+        ]
+    },
+    {
+        "country": "Italy",
+        "main_dishes": [
+            "Pasta",
+            "Polenta",
+            "Pizza",
+            "Risotto"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/57fc372f-9ae7-44e7-b35d-68c8d5bd8df0.jpg",
+            "https://www.listchallenges.com/f/items/7c567625-4304-4bff-af1c-f8d527493512.jpg",
+            "https://www.listchallenges.com/f/items/cca86f06-8831-4385-ba5d-40e3a17df6c2.jpg",
+            "https://www.listchallenges.com/f/items/6d8a8108-ca93-4536-a910-fbc6c9eb41c1.jpg"
+        ]
+    },
+    {
+        "country": "Ivory Coast",
+        "main_dishes": [
+            "C\u00f4te D'ivoire- Fufu",
+            "C\u00f4te D'ivoire - Kedjenou"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/82f0708d-6303-495c-983d-aebbdee8fe4a.jpg",
+            "https://www.listchallenges.com/f/items/af42ba19-4e3b-4d0e-af96-562d724347b0.jpg"
+        ]
+    },
+    {
+        "country": "Jamaica",
+        "main_dishes": [
+            "Jamaica- Ackee and Saltfish",
+            "Jerk Chicken, Jamaica"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/d5415c6b-767c-469b-9215-02f811825268.jpg",
+            "https://www.listchallenges.com/f/items/d2966971-92c6-49ed-86e0-bcc457c40d84.jpg"
+        ]
+    },
+    {
+        "country": "Jamaican Patty",
+        "main_dishes": [
+            "Curry Goat"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/6191df7f-0688-48e6-8e79-77c90bc3b7dc.jpg"
+        ]
+    },
+    {
+        "country": "Japan",
+        "main_dishes": [
+            "Sushi",
+            "Japanese Curry",
+            "Ramen"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/b6472071-9af8-459f-b99c-80b831a07111.jpg",
+            "https://www.listchallenges.com/f/items/89791ea5-ee66-4632-8529-15469c60cc3c.jpg",
+            "https://www.listchallenges.com/f/items/f2d09608-ff78-4e56-bd56-6f4fca8b1a08.jpg"
         ]
     },
     {
         "country": "Jordan",
-        "main_dish": [
-            "Mansaf"
+        "main_dishes": [
+            "Jordan - Mansaf"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/15065d23-69f5-47d4-82f0-5e2a4d0b443d.jpg"
         ]
     },
     {
         "country": "Kazakhstan",
-        "main_dish": [
-            "Beshbarmak"
+        "main_dishes": [
+            "Kazakhstan - Beshbarmak",
+            "Shalgam"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/7e6c2739-30ca-4665-817b-7256e433be93.jpg",
+            "https://www.listchallenges.com/f/items/025e09cd-ec55-4ef9-9f89-7467916b1031.jpg"
         ]
     },
     {
         "country": "Kenya",
-        "main_dish": [
-            "Ugali"
+        "main_dishes": [
+            "Kenya - Ugali",
+            "Sukuma Wiki",
+            "Nyama Choma - Kenya"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/e0f2eb43-bb94-4eed-9f57-3bf872326c01.jpg",
+            "https://www.listchallenges.com/f/items/7e84a007-618f-454f-87b2-a2136f87cc3e.jpg",
+            "https://www.listchallenges.com/f/items/da37e6c7-3418-403c-b528-a7e49b8fcb99.jpg"
+        ]
+    },
+    {
+        "country": "Kiribati",
+        "main_dishes": [
+            "Kiribati - Palusami"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/fee08e75-f1b4-4bda-b8f8-a90f9c7aba39.jpg"
+        ]
+    },
+    {
+        "country": "Kosovo",
+        "main_dishes": [
+            "Tav\u00eb Prizreni - Kosovo"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/86b338cc-203c-4258-b676-72ac38eac4b6.jpg"
         ]
     },
     {
         "country": "Kuwait",
-        "main_dish": [
-            "Machboos"
+        "main_dishes": [
+            "Kuwait - Machboos"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/78f020c7-59c0-4f4c-823e-a65bd430fcf8.jpg"
+        ]
+    },
+    {
+        "country": "Kyrgyzstan",
+        "main_dishes": [
+            "Kyrgyzstan - Beshbarmak",
+            "Laghman",
+            "Kuurdak"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/50a1d69c-88fe-4983-87c1-8910c7dabd29.jpg",
+            "https://www.listchallenges.com/f/items/4f4e3f55-59f3-4c3d-a8b8-85607db7679d.jpg",
+            "https://www.listchallenges.com/f/items/27cc985b-22f0-4d1b-9197-77b07aea86d7.jpg"
+        ]
+    },
+    {
+        "country": "Laos",
+        "main_dishes": [
+            "Laos - Tum Mak Hoong",
+            "Larb With Sticky Rice - Laos"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/2fb09d7c-9306-4e26-9a74-91e0269dcc61.jpg",
+            "https://www.listchallenges.com/f/items/8c2264b8-d5c3-47fc-a05d-1c2714f132f5.jpg"
+        ]
+    },
+    {
+        "country": "Latvia",
+        "main_dishes": [
+            "Potato Pancake"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/61a89054-fd0e-4226-aa74-96653e9ce081.jpg"
+        ]
+    },
+    {
+        "country": "Lebanon",
+        "main_dishes": [
+            "Lebanon - Kibbeh",
+            "Tabbouleh, Lebanon"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/a8b648ac-0f14-46ed-86f6-5495a4216fe7.jpg",
+            "https://www.listchallenges.com/f/items/8177a2b8-1127-4fd6-b803-a52fa2b9cc52.jpg"
         ]
     },
     {
         "country": "Lesotho",
-        "main_dish": [
-            "Papa"
+        "main_dishes": [
+            "Chakalaka"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/1286c6d5-fa72-4afa-b26d-499c4df5a819.jpg"
+        ]
+    },
+    {
+        "country": "Liberia",
+        "main_dishes": [
+            "Liberia - Dumboy"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/0904e4bd-4a9b-4b8e-95e8-89cada9ff96d.jpg"
         ]
     },
     {
         "country": "Libya",
-        "main_dish": [
-            "Cuscus Bil-Bosla"
+        "main_dishes": [
+            "Libya - Bazin",
+            "Usban"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/9d121fff-31b5-4d16-86d4-e714f6b9ce82.jpg",
+            "https://www.listchallenges.com/f/items/ef33ac71-f236-4fb9-bc91-eae604a97700.jpg"
         ]
     },
     {
         "country": "Liechtenstein",
-        "main_dish": [
-            "K\u00e4skn\u00f6pfle"
+        "main_dishes": [
+            "Liechtenstein - K\u00e4skn\u00f6pfle"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/ca48ee0d-ee1c-4d9c-9788-89bda54e7e89.jpg"
+        ]
+    },
+    {
+        "country": "Lithuania",
+        "main_dishes": [
+            "Lithuania - Cepelinai"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/5cb72771-b503-4efe-96d6-b0eb64d69919.jpg"
         ]
     },
     {
         "country": "Luxembourg",
-        "main_dish": [
-            "Judd mat Gaardebounen"
+        "main_dishes": [
+            "Luxembourg - Judd Mat Gaardebounen"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/1c4bd836-bd04-4281-8851-46c4cf47e4ef.jpg"
+        ]
+    },
+    {
+        "country": "Macedonia",
+        "main_dishes": [
+            "Tav\u010de Grav\u010de"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/367e983e-7b57-4502-a756-27104f9f8fa4.jpg"
         ]
     },
     {
         "country": "Madagascar",
-        "main_dish": [
-            "Romazava"
+        "main_dishes": [
+            "Madagascar - Romazava"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/b526862e-2aed-4202-a5b0-189b6e1219fd.jpg"
+        ]
+    },
+    {
+        "country": "Malawi",
+        "main_dishes": [
+            "Malawi - Nshima"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/d60e5304-7fca-4c10-b327-c7dc44fd8865.jpg"
+        ]
+    },
+    {
+        "country": "Malaysia",
+        "main_dishes": [
+            "Nasi Lemak - Malaysia",
+            "Laksa, Malaysia",
+            "Roti Canai"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/721b21f9-23ee-4b6c-b769-59c2d1c0e010.jpg",
+            "https://www.listchallenges.com/f/items/5a7d1c3d-3364-4028-9484-09ab696d1682.jpg",
+            "https://www.listchallenges.com/f/items/282b4623-d0af-4717-8efd-d0cda8ec32bd.jpg"
+        ]
+    },
+    {
+        "country": "Maldives",
+        "main_dishes": [
+            "Maldives - Garudhiya"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/ffc56813-eb69-466d-99ac-9e40f001d79e.jpg"
+        ]
+    },
+    {
+        "country": "Mali",
+        "main_dishes": [
+            "Tiguadege Na - Mali",
+            "Mali - To Et Tokorodji"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/a1190a89-c9fa-45e5-93da-409b2b21acbe.jpg",
+            "https://www.listchallenges.com/f/items/fa092b35-afa6-43d5-8551-5fbe293eee99.jpg"
+        ]
+    },
+    {
+        "country": "Malta",
+        "main_dishes": [
+            "Pastizzi",
+            "Malta - Rabbit Stew"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/1234e1d6-a85e-46f8-a0e1-db0939d62f0c.jpg",
+            "https://www.listchallenges.com/f/items/785b0fef-cd18-4873-ac74-efc803628872.jpg"
+        ]
+    },
+    {
+        "country": "Marshall Islands",
+        "main_dishes": [
+            "Marshall Islands - Macadamia Nut Pie"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/f00651f1-3169-4832-9925-d5bc41dc7a9b.jpg"
+        ]
+    },
+    {
+        "country": "Mauritania",
+        "main_dishes": [
+            "Mauritania - Thieboudienne",
+            "Couscous"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/eb4194d8-7d69-4d9e-bb38-73b28484324c.jpg",
+            "https://www.listchallenges.com/f/items/cab1b5b6-02d3-4076-80ad-309831bd247d.jpg"
+        ]
+    },
+    {
+        "country": "Mauritius",
+        "main_dishes": [
+            "Mauritius - Octopus Curry",
+            "Rougaille - Mauritius",
+            "Gateau Piment - Mauritius"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/87b56e8d-70a4-4208-aa3d-055838089259.jpg",
+            "https://www.listchallenges.com/f/items/b08c2b46-1e01-4867-8d11-42f1d7b07f12.jpg",
+            "https://www.listchallenges.com/f/items/277cdedf-a60d-42c0-9210-8c4d476c5cff.jpg"
+        ]
+    },
+    {
+        "country": "Mexico",
+        "main_dishes": [
+            "Tacos",
+            "Mole Poblano, Mexico",
+            "Chiles En Nogada, Mexico"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/698b366d-82bb-4b8b-ac39-fe090ec34638.jpg",
+            "https://www.listchallenges.com/f/items/6cb59235-0bb3-4ac0-8e7e-8cba02144908.jpg",
+            "https://www.listchallenges.com/f/items/b82e58fa-0725-4048-a7ef-9c42d973fb10.jpg"
+        ]
+    },
+    {
+        "country": "Micronesia",
+        "main_dishes": [
+            "Fruit Bat Soup"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/5b90d4c9-38ce-4d05-a47e-d47bcb17b41f.jpg"
+        ]
+    },
+    {
+        "country": "M\u0103m\u0103lig\u0103",
+        "main_dishes": [
+            "Sarmale (Stuffed Cabbage Rolls)",
+            "Mici/Mititei"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/99b51c60-43c9-4d1e-a6d2-9a0454551a39.jpg",
+            "https://www.listchallenges.com/f/items/5dc62b91-e607-4902-99a3-be255b97bdfb.jpg"
+        ]
+    },
+    {
+        "country": "Monaco",
+        "main_dishes": [
+            "Barbaguian"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/c4f37b41-ba52-4f8e-9a10-256ddb971a73.jpg"
+        ]
+    },
+    {
+        "country": "Mongolia",
+        "main_dishes": [
+            "Mongolia - Buuz"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/c775bebf-05c3-4adb-9ca5-76be581d9af6.jpg"
+        ]
+    },
+    {
+        "country": "Montenegro",
+        "main_dishes": [
+            "Ka\u010damak",
+            "Ra\u0161tan"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/fb72ba26-95eb-4009-93e1-65c17211b1fc.jpg",
+            "https://www.listchallenges.com/f/items/5c02763c-df02-4c7d-b69c-1df0cbf4ac69.jpg"
+        ]
+    },
+    {
+        "country": "Montserrat",
+        "main_dishes": [
+            "Goat Water"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/a66b0c70-9c55-45c5-88c6-c4676cd66f6a.jpg"
+        ]
+    },
+    {
+        "country": "Morocco",
+        "main_dishes": [
+            "Couscous (Morocco)",
+            "Tagine, Morroco",
+            "Pastilla, Morroco"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/f104391e-39d4-48f5-9403-4cf9da9c1ff7.jpg",
+            "https://www.listchallenges.com/f/items/89585a00-f69f-40b1-888c-d118541ba3af.jpg",
+            "https://www.listchallenges.com/f/items/740768fb-c0c6-4c83-b3a4-5db7e26d6934.jpg"
+        ]
+    },
+    {
+        "country": "Mozambique",
+        "main_dishes": [
+            "Frango (Piri Piri Chicken) - Mozambique"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/37dabb9d-cb39-4ecf-9446-b394f8d72a2c.jpg"
+        ]
+    },
+    {
+        "country": "Myanmar",
+        "main_dishes": [
+            "Myanmar - Mohinga"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/46a24726-8656-4745-a6ec-e8d1b22cb05a.jpg"
+        ]
+    },
+    {
+        "country": "Namibia",
+        "main_dishes": [
+            "Braai"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/bba5b480-7b2a-414a-be72-9bcda0829cb6.jpg"
+        ]
+    },
+    {
+        "country": "Nauru",
+        "main_dishes": [
+            "Nauru - Coconut Fish"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/e0b7e1bb-1730-44f8-a396-64602a46a9f2.jpg"
+        ]
+    },
+    {
+        "country": "Nepal",
+        "main_dishes": [
+            "Nepal - Dal Bhat"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/7874bc51-7a40-4390-833f-9648d6ee3d9f.jpg"
+        ]
+    },
+    {
+        "country": "Netherlands",
+        "main_dishes": [
+            "Netherlands - Stamppot"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/d2148ddd-4b09-45b4-afe5-3668a0be6c6e.jpg"
+        ]
+    },
+    {
+        "country": "New Zealand",
+        "main_dishes": [
+            "New Zealand - Bacon and Egg Pie",
+            "Roast Lamb, New Zealand",
+            "Pavlova"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/60bb05b7-0326-4065-ad63-f194f2636118.jpg",
+            "https://www.listchallenges.com/f/items/b5a9d221-04b5-4d5d-92fe-659fd24b4f06.jpg",
+            "https://www.listchallenges.com/f/items/aa04f6c8-3622-496b-864b-369cd303b2a1.jpg"
+        ]
+    },
+    {
+        "country": "Nicaragua",
+        "main_dishes": [
+            "Nicaragua - Gallo Pinto"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/952a64f9-94b2-491a-9a30-d8f2ff54e85e.jpg"
+        ]
+    },
+    {
+        "country": "Niger",
+        "main_dishes": [
+            "Niger - Djerma Stew",
+            "Jollof Rice"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/2440cba0-a71a-4a74-b5d5-872859949356.jpg",
+            "https://www.listchallenges.com/f/items/e8f9e218-0103-4b45-91b1-2bcfd0ed220b.jpg"
+        ]
+    },
+    {
+        "country": "Nigeria",
+        "main_dishes": [
+            "Fufu",
+            "Egusi Soup"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/1333f361-143a-482b-82ca-66a33280166a.jpg",
+            "https://www.listchallenges.com/f/items/2816f431-956d-44d8-909c-7ac4970434e2.jpg"
+        ]
+    },
+    {
+        "country": "North Korea",
+        "main_dishes": [
+            "Kimchi",
+            "Naengmyeon",
+            "Bulgogi",
+            "North Korea - Bosintang"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/ec0c957b-158b-419e-ba15-7bb27b688088.jpg",
+            "https://www.listchallenges.com/f/items/58f48aa8-e7b4-49e0-941e-85bd71f76135.jpg",
+            "https://www.listchallenges.com/f/items/8cdb4acf-1928-4827-9df4-1152e0b42721.jpg",
+            "https://www.listchallenges.com/f/items/f49a0f67-6f8c-40c7-a3bf-a3e2dc98a906.jpg"
         ]
     },
     {
         "country": "Norway",
-        "main_dish": [
-            "Farikal"
+        "main_dishes": [
+            "Norway - F\u00e5rik\u00e5l"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/f72ff157-7748-441c-851a-4e2a12ec22dc.jpg"
+        ]
+    },
+    {
+        "country": "Oman",
+        "main_dishes": [
+            "Oman - Shuwa"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/04fe7b95-790f-4ec9-bd18-3de60039bf22.jpg"
         ]
     },
     {
         "country": "Pakistan",
-        "main_dish": [
+        "main_dishes": [
+            "Seekh Kebab",
+            "Pakistan - Biryani",
             "Nihari"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/e8a5a407-44c5-4d4e-8b6c-b772ebc12193.jpg",
+            "https://www.listchallenges.com/f/items/7e0efcc1-d5fd-4aa7-8118-899e2f230265.jpg",
+            "https://www.listchallenges.com/f/items/a6c03b34-808b-4293-aca3-3491c1a1150b.jpg"
+        ]
+    },
+    {
+        "country": "Palau",
+        "main_dishes": [
+            "Bat Soup"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/e139936e-542d-4811-8919-8e58a34549eb.jpg"
+        ]
+    },
+    {
+        "country": "Palestine",
+        "main_dishes": [
+            "Arab Salad",
+            "Falafel",
+            "Mujaddara",
+            "Palestine - Musakhan",
+            "Hummus"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/eb6534b7-d59b-4d66-a764-21a76e7144f5.jpg",
+            "https://www.listchallenges.com/f/items/40fdc814-8f5b-4938-b2f0-7203616ac9ab.jpg",
+            "https://www.listchallenges.com/f/items/2af9d366-b7b0-4cea-bef6-54724aa65578.jpg",
+            "https://www.listchallenges.com/f/items/0f2203a6-6cbb-498d-a78c-8b2c8246f171.jpg",
+            "https://www.listchallenges.com/f/items/571a567e-d951-4e5a-a6b4-1151106dbb5f.jpg"
+        ]
+    },
+    {
+        "country": "Panama",
+        "main_dishes": [
+            "Panama - Sancocho De Gallina"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/ab66c7bf-85f5-42db-a908-3c74ca493c08.jpg"
+        ]
+    },
+    {
+        "country": "Papua New Guinea",
+        "main_dishes": [
+            "Papua New Guinea - Mumu"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/81f76e1b-8106-450c-870a-edd5e6ff377f.jpg"
+        ]
+    },
+    {
+        "country": "Paraguay",
+        "main_dishes": [
+            "Sopa Paraguaya"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/e6943815-21f3-47e1-9d58-7fa27b3e03f0.jpg"
+        ]
+    },
+    {
+        "country": "Peru",
+        "main_dishes": [
+            "Peru - Ceviche"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/d8f32885-186a-4b3a-bb27-7f0de8e13546.jpg"
+        ]
+    },
+    {
+        "country": "Philippines",
+        "main_dishes": [
+            "Adobo - Philippines",
+            "Sinigang, Philipines"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/e708ee20-6b50-4e43-ba75-52adb9213913.jpg",
+            "https://www.listchallenges.com/f/items/99239aa8-2447-4e62-b146-dc7e6df5f117.jpg"
+        ]
+    },
+    {
+        "country": "Poland",
+        "main_dishes": [
+            "Bigos",
+            "Pierogi",
+            "Kotlet Schabowy",
+            "\u017burek",
+            "Go\u0142\u0105bki"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/99b8d276-a4d8-4684-b3fc-622cbddd2fef.jpg",
+            "https://www.listchallenges.com/f/items/5edd908c-dfd4-4734-ac24-f4fdf782e84c.jpg",
+            "https://www.listchallenges.com/f/items/1daef8d5-2154-40f1-bdbb-c78941140968.jpg",
+            "https://www.listchallenges.com/f/items/2d5cb9fa-f508-4309-8c26-c09ada4527b9.jpg",
+            "https://www.listchallenges.com/f/items/bcc76498-2ae4-45d9-aa3a-6fe10bce701b.jpg"
         ]
     },
     {
         "country": "Portugal",
-        "main_dish": [
-            "Bacalhau"
+        "main_dishes": [
+            "Cozido a Portuguesa"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/aeaabaa4-99f9-4720-a5a8-68c2101184ec.jpg"
+        ]
+    },
+    {
+        "country": "Bacalhau",
+        "main_dishes": [
+            "Francesinha - Portugal"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/84d4556f-d1fc-4bcf-a701-87e8c1f7c2d6.jpg"
+        ]
+    },
+    {
+        "country": "Qatar",
+        "main_dishes": [
+            "Qatar - Machboos"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/456cf8de-a6ee-4282-a441-7e9f3438deee.jpg"
+        ]
+    },
+    {
+        "country": "Republic of the Congo",
+        "main_dishes": [
+            "Poulet Moamb\u00e9",
+            "Poulet Yassa"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/25f899da-da45-4f97-9031-ee7e28cc817f.jpg",
+            "https://www.listchallenges.com/f/items/73c9c237-560b-4f9e-a43a-62d372fc8c70.jpg"
+        ]
+    },
+    {
+        "country": "Romania",
+        "main_dishes": [
+            "M\u0103m\u0103lig\u0103",
+            "Sarmale - Romania",
+            "Mici/Mititei (Grilled Minced Meat)"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/3023957d-319f-49f4-8362-483b0f008d78.jpg",
+            "https://www.listchallenges.com/f/items/5d7d44cf-2639-450e-8fd0-440b23288006.jpg",
+            "https://www.listchallenges.com/f/items/a82b9859-de3d-4e59-9d02-f0d529450317.jpg"
+        ]
+    },
+    {
+        "country": "Russia",
+        "main_dishes": [
+            "Pelmeni, Russia",
+            "Borscht (Russia)",
+            "Russia - Shchi",
+            "Kasha",
+            "Pirog",
+            "Pirozhki (Russia)"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/eeb41497-c20b-4407-bbb7-bc097a0f3719.jpg",
+            "https://www.listchallenges.com/f/items/23275a88-d400-4eb1-9b43-8e328b2da962.jpg",
+            "https://www.listchallenges.com/f/items/0d3cef44-a342-4357-ad81-9ce6cb1967c1.jpg",
+            "https://www.listchallenges.com/f/items/01062c16-4272-4d14-909d-187de2dc89a3.jpg",
+            "https://www.listchallenges.com/f/items/c8450156-3ae6-4788-94b5-7cc0b46456d4.jpg",
+            "https://www.listchallenges.com/f/items/cb20f12c-127f-4a18-8709-275a82d49de1.jpg"
+        ]
+    },
+    {
+        "country": "Rwanda",
+        "main_dishes": [
+            "Ugali"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/55512452-663c-4e54-9420-36daf8af46fd.jpg"
+        ]
+    },
+    {
+        "country": "Saint Kitts and Nevis",
+        "main_dishes": [
+            "Saint Kitts and Nevis - Saltfish"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/04eeb1bc-e3a0-431f-bb39-43ec3ccf813e.jpg"
+        ]
+    },
+    {
+        "country": "Saint Lucia",
+        "main_dishes": [
+            "Saint Lucia - Green Fig and Saltfish",
+            "Saint Vincent and the Grenadines",
+            "Saint Vincent and the Grenadines - Roasted Breadfruit and Fried Jack Fish"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/0af820d2-6cc8-4e2b-9e16-fb421e6e0730.jpg",
+            "https://www.listchallenges.com/f/items/4eb51c1e-086c-4045-858f-7394db1b2e24.jpg",
+            "https://www.listchallenges.com/f/items/1b89e778-dcad-48c3-8df2-7b5c2930286e.jpg"
+        ]
+    },
+    {
+        "country": "Samoa",
+        "main_dishes": [
+            "Samoa - Palusami"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/b0de45b4-7c6b-43f7-98de-54d7c48700b4.jpg"
+        ]
+    },
+    {
+        "country": "San Marino",
+        "main_dishes": [
+            "San Marino - Torta Tre Monti"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/dd9432cd-606d-4c38-9603-2f546ec10f2e.jpg"
+        ]
+    },
+    {
+        "country": "Sao Tome and Principe",
+        "main_dishes": [
+            "S\u00e3o Tom\u00e9 and Pr\u00edncipe - Palm Oil and Stew"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/2fe86142-27eb-4f8a-b628-cb7fd827539f.jpg"
+        ]
+    },
+    {
+        "country": "Saudi Arabia",
+        "main_dishes": [
+            "Kabsah - Saudi Arabia",
+            "Saleeg"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/80c01947-c9d0-4258-8446-241592edacd4.jpg",
+            "https://www.listchallenges.com/f/items/25d37e04-975c-4d9b-a232-0acee93837f8.jpg"
         ]
     },
     {
         "country": "Senegal",
-        "main_dish": [
-            "Thieboudienne"
+        "main_dishes": [
+            "Senegal - Thieboudienne",
+            "Poulet Yassa"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/fc2e91f6-6ecd-42d2-ab9f-49fd0ea64a4a.jpg",
+            "https://www.listchallenges.com/f/items/16f91ae4-5166-4143-a203-bf5dc4528115.jpg"
+        ]
+    },
+    {
+        "country": "Serbia",
+        "main_dishes": [
+            "\u0106evap\u010di\u0107i (Grilled Minced Meat Sausages) - Serbia"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/e7c34cdf-51e0-49cf-b2a8-ed54f904cbda.jpg"
+        ]
+    },
+    {
+        "country": "Pljeskavica (Meat Patty) - Serbia",
+        "main_dishes": [
+            "Ra\u017enji\u0107i",
+            "Gibanica Pastry",
+            "Ajvar",
+            "Pasulj",
+            "Punjena Paprika"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/404b1578-d431-4704-9085-f7af69b7cfcd.jpg",
+            "https://www.listchallenges.com/f/items/c6302b3f-369d-495d-b5f1-667006e102a3.jpg",
+            "https://www.listchallenges.com/f/items/64e46512-7531-4349-b858-9a5369febd3e.jpg",
+            "https://www.listchallenges.com/f/items/dfd2a92b-b3be-4fb3-8cef-5dddbc3657ab.jpg",
+            "https://www.listchallenges.com/f/items/bc808713-2413-41e6-9363-33346dea9ab8.jpg"
+        ]
+    },
+    {
+        "country": "Sarma",
+        "main_dishes": [
+            "Fisherman's Soup"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/518c6a78-d4f7-4841-81e2-6fac2f0c3465.jpg"
+        ]
+    },
+    {
+        "country": "Seychelles",
+        "main_dishes": [
+            "Seychelles - Fruit Bat Soup"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/3cf2e24e-e354-4773-91d2-784207c4e833.jpg"
+        ]
+    },
+    {
+        "country": "Sierra Leone",
+        "main_dishes": [
+            "Sierra Leone - Cassava Leaves"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/c525b23c-d0ef-490e-bd67-3acc0caf2ba6.jpg"
+        ]
+    },
+    {
+        "country": "Singapore",
+        "main_dishes": [
+            "Singapore - Chilli Crab",
+            "Singapore Hainanese Chicken Rice"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/cfac2e10-cac0-4920-8c56-c8235ec31398.jpg",
+            "https://www.listchallenges.com/f/items/67cae911-c250-4424-9a27-3d6c9a00083b.jpg"
         ]
     },
     {
         "country": "Slovakia",
-        "main_dish": [
-            "Bryndzov\u00e9 halu\u0161ky"
+        "main_dishes": [
+            "Bryndzov\u00e9 Halu\u0161ky"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/897ee593-6eca-4330-b65c-77c818e6dbfd.jpg"
+        ]
+    },
+    {
+        "country": "Slovenia",
+        "main_dishes": [
+            "Slovenia - Ajdovi \u017dganci",
+            "Belokranjska Povitica",
+            "Obara - Slovenia"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/bed31763-8515-4514-9a10-4754455868fe.jpg",
+            "https://www.listchallenges.com/f/items/caf2aca8-529c-4bb8-b269-08eeed0cc4a0.jpg",
+            "https://www.listchallenges.com/f/items/4c86eb1e-bc37-40af-9887-2a89eb543fec.jpg"
+        ]
+    },
+    {
+        "country": "Solomon Islands",
+        "main_dishes": [
+            "Poi"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/237d726d-d9d9-494c-9aa8-7718a52e19e4.jpg"
+        ]
+    },
+    {
+        "country": "Somalia",
+        "main_dishes": [
+            "Canjeero",
+            "Goat Stew",
+            "Somalia - Lahoh"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/15623197-7a88-4a63-b5a2-1c9c8eb955a4.jpg",
+            "https://www.listchallenges.com/f/items/132be417-c197-4ee3-b379-c3dc5469bd91.jpg",
+            "https://www.listchallenges.com/f/items/1ce35070-3d64-438b-8d17-6cfd2eb2c308.jpg"
+        ]
+    },
+    {
+        "country": "South Africa",
+        "main_dishes": [
+            "South Africa - Bobotie"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/32584963-2bbe-4db9-a5ec-ea99aa60e44f.jpg"
+        ]
+    },
+    {
+        "country": "South Korea",
+        "main_dishes": [
+            "Kimchi",
+            "Bulgogi",
+            "South Korea - Bibimbap",
+            "Galbi",
+            "Budaejjigae"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/c79bf6d7-de61-4c66-9f0f-d4cb0d848add.jpg",
+            "https://www.listchallenges.com/f/items/af4f2bc2-6183-4c45-b10c-a2335f82fab7.jpg",
+            "https://www.listchallenges.com/f/items/4438430e-5e57-46ab-9fb0-24c1c614dd1b.jpg",
+            "https://www.listchallenges.com/f/items/83f4f662-5914-4d50-a23c-724cd278d886.jpg",
+            "https://www.listchallenges.com/f/items/2f4ef839-47ef-4e4d-bcf3-e4db38d0117c.jpg"
+        ]
+    },
+    {
+        "country": "South Sudan",
+        "main_dishes": [
+            "Kisra"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/06b12bc7-f85e-4004-8e48-627a72d9bd57.jpg"
+        ]
+    },
+    {
+        "country": "Spain",
+        "main_dishes": [
+            "Spain - Tortilla Espa\u00f1ola"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/93be9410-fef0-456e-b777-46681b76a3ac.jpg"
+        ]
+    },
+    {
+        "country": "Sri Lanka - Rice and Curry",
+        "main_dishes": [
+            "Kottu",
+            "Kiribath"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/d4607388-9ee8-49eb-9fe1-bceb909f5821.jpg",
+            "https://www.listchallenges.com/f/items/fcf7c6d3-6de1-4e8c-a3d8-73f7dd6f673a.jpg"
+        ]
+    },
+    {
+        "country": "Sudan",
+        "main_dishes": [
+            "Sudan - Ful Medames",
+            "Suriname",
+            "Pom",
+            "Roti and Curry"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/0649434f-eab3-45df-8afc-1c62566fa070.jpg",
+            "https://www.listchallenges.com/f/items/3478ef9d-700e-4878-8be9-faaeb2b2c63d.jpg",
+            "https://www.listchallenges.com/f/items/d808439a-80fa-4f5e-a614-ada2986077eb.jpg",
+            "https://www.listchallenges.com/f/items/08b3fa6e-623f-461f-99f4-e7bab522d6bf.jpg"
+        ]
+    },
+    {
+        "country": "Swaziland",
+        "main_dishes": [
+            "Swaziland - Karoo Roast Ostrich Steak"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/7a94d4bc-1dde-4640-adbd-560dce36ced6.jpg"
+        ]
+    },
+    {
+        "country": "Sweden",
+        "main_dishes": [
+            "K\u00f6ttbullar (Meatballs)",
+            "Kr\u00e4ftskiva (Crayfish Party)",
+            "Sweden - Surstr\u00f6mming",
+            "Ostkaka"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/d93a3278-0380-4194-bb6d-a8eaff002791.jpg",
+            "https://www.listchallenges.com/f/items/22c11df3-b2e8-47f3-9cc4-01dd774fc166.jpg",
+            "https://www.listchallenges.com/f/items/7c3b02a2-41bd-4110-91d1-137865fc6ff7.jpg",
+            "https://www.listchallenges.com/f/items/e783f2f2-9433-4d0f-b11d-25c6ac97e9ea.jpg"
+        ]
+    },
+    {
+        "country": "Switzerland",
+        "main_dishes": [
+            "Cervelat",
+            "Fondue",
+            "Switzerland - R\u00f6sti"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/85b9d343-2525-42a8-9662-406b0b94b971.jpg",
+            "https://www.listchallenges.com/f/items/81cfeec3-afe7-4cb0-acf9-52864601a52a.jpg",
+            "https://www.listchallenges.com/f/items/c456f11f-dabf-4463-8c12-8773bc622756.jpg"
+        ]
+    },
+    {
+        "country": "Syria",
+        "main_dishes": [
+            "Syria - Kibbeh"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/36d2f274-c9f6-46d8-a770-77be71d22840.jpg"
+        ]
+    },
+    {
+        "country": "Taiwan",
+        "main_dishes": [
+            "Taiwan - Beef Noodle Soup",
+            "Minced Pork Rice - Taiwan"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/e6ae8cb8-cef2-41b7-b2b0-f5ba0a445086.jpg",
+            "https://www.listchallenges.com/f/items/3f1f2c02-d90b-4843-b54f-bd4948dc3da2.jpg"
+        ]
+    },
+    {
+        "country": "Tajikistan",
+        "main_dishes": [
+            "O'sh (Pilaf) - Tajikistan"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/216c8c2c-2bd2-457f-a78c-9c428815fa96.jpg"
+        ]
+    },
+    {
+        "country": "Tanzania",
+        "main_dishes": [
+            "Tanzania - Ugali"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/52541de0-0a41-4f29-afdc-c553a9a0e8e4.jpg"
+        ]
+    },
+    {
+        "country": "Thailand",
+        "main_dishes": [
+            "Pad Thai",
+            "Thailand - Tom Yum",
+            "Som Tam - Thailand",
+            "Togo",
+            "Ablo"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/52cfe7cd-f87b-41c6-a74a-391bf73c6a1d.jpg",
+            "https://www.listchallenges.com/f/items/9c1a4438-ada5-4f26-b781-e3e006d20399.jpg",
+            "https://www.listchallenges.com/f/items/81ed9f48-d97b-4ff2-94d3-1c81c37c465f.jpg",
+            "https://www.listchallenges.com/f/items/d6db152c-4547-407c-92d6-ee968311a15b.jpg",
+            "https://www.listchallenges.com/f/items/7e091b91-063b-4d78-9545-1618e038b89f.jpg"
+        ]
+    },
+    {
+        "country": "Tonga",
+        "main_dishes": [
+            "Lu Pulu - Tonga"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/f0f57fdb-586c-4c5b-9cff-f33012891a7e.jpg"
+        ]
+    },
+    {
+        "country": "Trinidad and Tobago",
+        "main_dishes": [
+            "Callaloo",
+            "Doubles",
+            "Aloo Pie"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/0d2329ab-0437-4da5-ba53-02c221ba86c0.jpg",
+            "https://www.listchallenges.com/f/items/7f03cc36-d041-4e2c-afda-2783584a79eb.jpg",
+            "https://www.listchallenges.com/f/items/7563c857-d4ef-40f4-a884-c666a693ec1d.jpg"
+        ]
+    },
+    {
+        "country": "Roti and Curry",
+        "main_dishes": [],
+        "main_dishes_images": []
+    },
+    {
+        "country": "Tunisia",
+        "main_dishes": [
+            "Couscous",
+            "Tunisia - Kabkabou"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/40803a30-f7fa-4ddf-926b-9f1729a01da3.jpg",
+            "https://www.listchallenges.com/f/items/6cf78992-2d3b-47e9-a5e8-2fa79e023ab8.jpg"
+        ]
+    },
+    {
+        "country": "Turkey",
+        "main_dishes": [
+            "Turkey - D\u00f6ner",
+            "Kuru Fasulye With Pilav - Turkey"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/23922a2b-d195-4411-bccf-13c8462c7ee2.jpg",
+            "https://www.listchallenges.com/f/items/f7e7c5f5-0696-46ed-b785-03181e469494.jpg"
+        ]
+    },
+    {
+        "country": "Turkmenistan",
+        "main_dishes": [
+            "Turkmenistan - Palaw"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/e82b95f2-ca96-420b-850b-cbe5ad5f41b8.jpg"
+        ]
+    },
+    {
+        "country": "Tuvalu",
+        "main_dishes": [
+            "Tuvalu - Pulaka"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/26e8a419-43f1-4489-ad9b-9dfe092bb17c.jpg"
         ]
     },
     {
         "country": "Uganda",
-        "main_dish": [
-            "Matoke"
+        "main_dishes": [
+            "Uganda - Matoke"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/f86c93f9-ca6e-4e07-8c04-ddc5be9824a9.jpg"
+        ]
+    },
+    {
+        "country": "UKraine",
+        "main_dishes": [
+            "UKraine - Borscht",
+            "Varenyky - UKraine"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/776c4f4b-2fc0-4a61-b1f6-907bc5a38969.jpg",
+            "https://www.listchallenges.com/f/items/3ec46f93-58f0-43ca-b610-586475805ff1.jpg"
+        ]
+    },
+    {
+        "country": "United Arab Emirates",
+        "main_dishes": [
+            "UAE - Biryani"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/6117a7d0-be42-4e98-97fc-514709d19c24.jpg"
+        ]
+    },
+    {
+        "country": "United Kingdom",
+        "main_dishes": [
+            "Fish and Chips",
+            "Chicken Tikka Masala",
+            "Sunday Roast",
+            "Have a Full English Breakfast",
+            "Jelly and Ice Cream"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/741adafd-c88c-4d68-9894-9a5eb2f620b4.jpg",
+            "https://www.listchallenges.com/f/items/9406a0ed-5ef6-47dd-8e94-54ac6a4c0858.jpg",
+            "https://www.listchallenges.com/f/items/c3db2c36-8c21-4781-935a-734fed96a80a.jpg",
+            "https://www.listchallenges.com/f/items/c5d2ff28-ad44-4cef-9b2f-ab3beb8847ba.jpg",
+            "https://www.listchallenges.com/f/items/2af3e6c8-f000-42cc-b3c5-1ef2d82b588c.jpg"
+        ]
+    },
+    {
+        "country": "United States",
+        "main_dishes": [
+            "Apple Pie",
+            "Hamburger",
+            "Brownies"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/de6fa648-c131-4fe5-b7b3-93aba37f8393.jpg",
+            "https://www.listchallenges.com/f/items/36ec53cb-095e-4de5-85ef-2e55fb463f78.jpg",
+            "https://www.listchallenges.com/f/items/cf38abce-ea05-4b8c-835f-df6712586580.jpg"
+        ]
+    },
+    {
+        "country": "Uruguay",
+        "main_dishes": [
+            "Asado",
+            "Uruguay - Chivito"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/8aec4667-a495-4bc6-9403-28536244e310.jpg",
+            "https://www.listchallenges.com/f/items/ee1b8e11-5ea5-4107-8031-755bd48a1060.jpg"
+        ]
+    },
+    {
+        "country": "Uzbekistan",
+        "main_dishes": [
+            "Plov"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/38de1972-a160-425d-b15e-a92f00845630.jpg"
+        ]
+    },
+    {
+        "country": "Vanuatu",
+        "main_dishes": [
+            "Vanuatu - Lap Lap"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/77ef4fec-cf48-439e-812b-76fdc8d4765c.jpg"
+        ]
+    },
+    {
+        "country": "Vatican City",
+        "main_dishes": [
+            "Fettuccine Alla Papalina"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/670af2b3-0dfe-4350-b554-018115f5a3fa.jpg"
         ]
     },
     {
         "country": "Venezuela",
-        "main_dish": [
-            "Pabell\u00f3n criollo"
+        "main_dishes": [
+            "Pabellon Criollo - Venezuela"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/b2102810-e0a9-4bb1-9c5b-d779b6004913.jpg"
+        ]
+    },
+    {
+        "country": "Ph\u1edf",
+        "main_dishes": [
+            "B\u00fan B\u00f2 Hu\u1ebf",
+            "B\u00f2 Kho",
+            "G\u1ecfi Cu\u1ed1n (Summer Rolls)",
+            "B\u00e1nh X\u00e8o",
+            "B\u00e1nh B\u00e8o"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/960fd25c-1ce2-4028-9133-aafff72b3ee5.jpg",
+            "https://www.listchallenges.com/f/items/e9ffa6ca-174e-40ea-80a8-34fe600b481e.jpg",
+            "https://www.listchallenges.com/f/items/4b6aff77-add3-4195-835a-289cc11a20fb.jpg",
+            "https://www.listchallenges.com/f/items/6a897516-9473-415e-a272-d7c26c22d2b6.jpg",
+            "https://www.listchallenges.com/f/items/ca4c19b5-38a0-4425-9914-128ef611ea42.jpg"
         ]
     },
     {
         "country": "Yemen",
-        "main_dish": [
-            "Saltah"
+        "main_dishes": [
+            "\u0643\u0628\u0633\u0629 Kabsa",
+            "Haneeth",
+            "Yemen - Saltah",
+            "Mandi"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/7837a97b-8626-4bc3-9784-ec2eae343c13.jpg",
+            "https://www.listchallenges.com/f/items/c8a1577d-86a5-40d4-b140-4352c0da82d4.jpg",
+            "https://www.listchallenges.com/f/items/e4dfe8f0-c601-4768-ab04-d67a14a217b1.jpg",
+            "https://www.listchallenges.com/f/items/061ce567-14c0-40a0-a51c-8d7419d0278c.jpg"
+        ]
+    },
+    {
+        "country": "Zambia",
+        "main_dishes": [
+            "Zambia - Nshima"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/b98847a4-e15a-472d-8d7f-b9640aa40b77.jpg"
+        ]
+    },
+    {
+        "country": "Zimbabwe",
+        "main_dishes": [
+            "Zimbabwe - Sadza"
+        ],
+        "main_dishes_images": [
+            "https://www.listchallenges.com/f/items/2dbc7338-5705-4317-850e-11094f31aecf.jpg"
         ]
     }
 ]
