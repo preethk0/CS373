@@ -23,6 +23,7 @@ class Demographics(db.Model):
     country_cities = db.Column(db.Integer)
     country_states = db.Column(db.Integer)
     country_income_level = db.Column(db.String())
+    country_demographics_video_src = db.Column(db.String())
 
 # Define Geography table/data model
 class Geography(db.Model):
@@ -45,6 +46,7 @@ class FoodAndTourism(db.Model):
     country_name = db.Column(db.String())
     country_income_level = db.Column(db.String())
     country_main_dishes = db.Column(db.PickleType)
+    country_main_dishes_images = db.Column(db.PickleType)
     country_agricultural_exports = db.Column(db.String())
     country_main_attraction = db.Column(db.String())
     country_main_attraction_image_src = db.Column(db.String())
@@ -70,6 +72,7 @@ class DemographicsSchema(ma.Schema):
     country_cities = fields.Int(required=True)
     country_states = fields.Int(required=True)
     country_income_level = fields.Str(required=True)
+    country_demographics_video_src = fields.Str(required=True)
 
 class GeographySchema(ma.Schema):
     country_id = fields.Str(required=True)
@@ -88,6 +91,7 @@ class FoodAndTourismSchema(ma.Schema):
     country_name = fields.Str(required=True)
     country_income_level = fields.Str(required=True)
     country_main_dishes = fields.Str(required=True)
+    country_main_dishes_images = fields.Str(required=True)
     country_agricultural_exports = fields.Str(required=True)
     country_main_attraction = fields.Str(required=True)
     country_main_attraction_image_src = fields.Str(required=True)
