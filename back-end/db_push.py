@@ -90,7 +90,7 @@ def add_demographics(country_ind_data):
                 "country_states": len(country_states_data[0]['states']),
                 "country_domain": country_basic_data[0]['topLevelDomain'][0],
                 "country_income_level": country_ind_data['wbIncomeLevel']['value'],
-                "country_demographics_video_src": country_demographics_video_data[0]['items'][0]['snippet']['thumbnails']['high']['url'] if len(country_demographics_video_data[0]['items']) > 0 else "",
+                "country_demographics_video_src": "https://www.youtube.com/watch?v=" + country_demographics_video_data[0]['items'][0]['id']['videoID'] if len(country_demographics_video_data[0]['items']) > 0 else "",
             }
             demographics_db_instance = Demographics(**country_dem_obj)
             db.session.add(demographics_db_instance)
@@ -156,7 +156,7 @@ def add_food_and_tourism(country_ind_data):
                 "country_agricultural_exports": country_top_agricultural_export_data[0]['topCommodity'],
                 "country_main_attraction": country_tourist_attractions_data[0]['attraction'],
                 "country_main_attraction_image_src": country_tourist_attractions_data[0]['attraction_image'],
-                "country_tourism_video_src": country_tourism_video_data[0]['items'][0]['snippet']['thumbnails']['high']['url'],
+                "country_tourism_video_src": "https://www.youtube.com/watch?v=" + country_tourism_video_data[0]['items'][0]['id']['videoID'],
                 "country_number_of_tourists": country_tourist_arrivals_data[0]['tourists'],
                 "country_tourism_revenue": country_tourism_income_data[0]['tourism_income'],
                 "country_tourism_percent_GDP": country_tourism_income_data[0]['percentage_of_GDP'],
