@@ -11,7 +11,7 @@ const GeographyData = {
     country_water_area: "3,830 (1,480)",
     country_water_percent: "2.6",
     country_topography_image:
-      "https://www.worldofmaps.net/typo3temp/images/topographische-karte-nepal.jpg",
+      "http://i.imgur.com/pb2gy.jpg?1",
   },
   CN: {
     country_adjacent_countries:
@@ -26,7 +26,7 @@ const GeographyData = {
     country_water_area: "270,550 (104,460)",
     country_water_percent: "2.82",
     country_topography_image:
-      "http://www.vidiani.com/maps/maps_of_asia/maps_of_china/topographical_map_of_china.jpg",
+      "https://www.mapsland.com/maps/asia/china/large-china-topographical-map-in-english.jpg",
   },
   IN: {
     country_adjacent_countries:
@@ -41,7 +41,7 @@ const GeographyData = {
     country_water_area: "314,073 (121,264)",
     country_water_percent: "9.55",
     country_topography_image:
-      "http://www.vidiani.com/maps/maps_of_asia/maps_of_india/detailed_topographical_map_of_india.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/af/India_topo_big.jpg",
   },
 };
 
