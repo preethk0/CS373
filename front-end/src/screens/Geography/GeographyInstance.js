@@ -94,7 +94,7 @@ const GeographyInstance = ({}) => {
                   </p>
                   <br />
                 </div>
-                <h3 className="subTitle">Area</h3>
+                <h3 className="subTitle" style={{marginTop: -30}}>Area</h3>
                 <div className="area">
                   <text>
                     <b>
@@ -143,8 +143,8 @@ const GeographyInstance = ({}) => {
                 ></GoogleMapReact>
                 <img
                   src={data.country_topography_image}
-                  width="550"
-                  height="300"
+                  width="575"
+                  height="325"
                   style={{ marginTop: 15, marginRight: 25, marginBottom: 20 }}
                 />
               </div>
