@@ -15,6 +15,7 @@ const DemographicsData = {
     country_name: "Nepal",
     country_population: 28087871,
     country_states: 19,
+    countries_with_similar_pop: "['Yemen', 'Venezuela']",
   },
   CN: {
     country_calling_code: "86",
@@ -32,6 +33,7 @@ const DemographicsData = {
     country_name: "China",
     country_population: 1392730000,
     country_states: 34,
+    countries_with_similar_pop: "['India']",
   },
   IN: {
     country_calling_code: "91",
@@ -49,6 +51,7 @@ const DemographicsData = {
     country_name: "India",
     country_population: 1352617328,
     country_states: 37,
+    countries_with_similar_pop: "['China']",
   },
 };
 
