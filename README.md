@@ -12,7 +12,7 @@
 
 | Phase   | Git SHA                                  |
 | ------- | ---------------------------------------- |
-| Phase 1 | aa4f409c153ea378de9fb9abbb6dca290e27e628 |
+| Phase 1 | d52abf5c98883a2be8086a49b70a2af0f1886d7b |
 | Phase 2 |                                          |
 | Phase 3 |                                          |
 | Phase 4 |                                          |
