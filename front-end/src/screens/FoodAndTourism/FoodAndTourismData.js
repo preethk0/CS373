@@ -16,6 +16,10 @@ const FoodAndTourismData = {
     country_tourism_revenue: 630000000.0,
     country_tourism_video_src: "https://www.youtube.com/embed/xGFdIZ4nrWQ",
     country_warmest_month_temp: 20.8,
+    similar_tourist_countries: {
+      Pakistan: 966000,
+      Ethiopia: 933000,
+    },
   },
   CN: {
     country_agricultural_exports: "Garlic",
@@ -35,6 +39,10 @@ const FoodAndTourismData = {
     country_tourism_revenue: 32617000000.0,
     country_tourism_video_src: "https://www.youtube.com/embed/tBNkeXmq4IQ",
     country_warmest_month_temp: 21.0,
+    similar_tourist_countries: {
+      "United States": 76941000,
+      Italy: 58253000,
+    },
   },
   IN: {
     country_agricultural_exports: "Rice",
@@ -54,6 +62,10 @@ const FoodAndTourismData = {
     country_tourism_revenue: 27365000000.0,
     country_tourism_video_src: "https://www.youtube.com/embed/IgAnj6r1O48",
     country_warmest_month_temp: 31.1,
+    similar_tourist_countries: {
+      Croatia: 15593000,
+      Portugal: 15432000,
+    },
   },
 };
 
