@@ -3,7 +3,7 @@ import DemographicsData from "./DemographicsData";
 import { useParams } from "react-router";
 import "./DemographicsInstance.css";
 import { convertStringArrayToArray } from "../../utils";
-import countryToCode from "../../countryToCode";
+import codeToCountry from "../../codeToCountry";
 
 const DemographicsInstance = ({}) => {
   const { country: country_id } = useParams();
@@ -100,9 +100,12 @@ const DemographicsInstance = ({}) => {
             <p class="card-text">
               <b>Countries with similar population: </b>
               {countriesWithSimilarPopulation.map((country, idx) => {
-                if (country in countryToCode)
+                const countryCodeAndCountry = Object.entries(
+                  codeToCountry
+                ).filter(([_, val]) => val == country);
+                if (countryCodeAndCountry.length > 0)
                   return (
-                    <a href={"/geography/" + countryToCode[country]}>
+                    <a href={"/geography/" + countryCodeAndCountry[0][0]}>
                       {country}
                       {idx < countriesWithSimilarPopulation.length - 1 && ", "}
                     </a>
