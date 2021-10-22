@@ -122,7 +122,7 @@ const GeographyInstance = ({}) => {
                   <a href={"/demographics/" + country}>
                     {"Basic Info and Demographics"}
                   </a>{" "}
-                  of this country
+                  of this country!
                 </text>
                 <br />
                 <text>
@@ -130,7 +130,7 @@ const GeographyInstance = ({}) => {
                   <a href={"/foodandtourism/" + country}>
                     {"Food and Tourism"}
                   </a>{" "}
-                  of this country
+                  of this country!
                 </text>
               </div>
               <div style={{ height: "40vh", width: "81%", marginTop: -65 }}>
