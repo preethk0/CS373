@@ -3,11 +3,17 @@ import GoogleMapReact from "google-map-react";
 import "./GeographyInstance.css";
 import GeographyData from "./GeographyData";
 import { useParams } from "react-router";
+import { convertStringArrayToArray } from "../../utils";
+import codeToCountry from "../../codeToCountry";
 
 const GeographyInstance = ({}) => {
   const { country } = useParams();
-  console.log(country);
+  
   const data = GeographyData[country];
+
+  const country_neighbors = data
+  ? convertStringArrayToArray(data.country_adjacent_countries)
+  : null;
 
   const defaultProps = {
     center: {
@@ -25,19 +31,16 @@ const GeographyInstance = ({}) => {
           <a href={"/geography/"}>{"View All"}</a>
         </text>
       </div>
+      {!data ? (
+        <div style={{ marginTop: 40, marginLeft: 70 }}>
+          Data for this model instance is not present in Phase 1, will be
+          present in the next phase.
+        </div>
+      ) : (
       <div className="instancePage">
         <h1 className="countryName">{data.country_name}</h1>
         <div className="allInfo">
-          <div style={{ height: "50vh", width: "100%" }}>
-            <GoogleMapReact
-              bootstrapURLKeys={{
-                key: "AIzaSyBTg1SVCHYOg71DzgOow9G1iYuEw3jtJQ4",
-              }}
-              defaultCenter={defaultProps.center}
-              defaultZoom={defaultProps.zoom}
-            ></GoogleMapReact>
-          </div>
-          <div className="actualData">
+        <div className="actualData">
             <h3 className="subTitle">Location</h3>
             <div className="location">
               <text>
@@ -53,29 +56,29 @@ const GeographyInstance = ({}) => {
                 <b>Region:</b> {data.country_region}
               </text>
             </div>
-            <h3 className="subTitle">Adjacent Countries and Oceans</h3>
+            <h3 className="subTitle">Adjacent Countries</h3>
             <div className="adjacent">
               <text>
-                <b>Countries:</b> {data.country_adjacent_countries.join(", ")}
+                {country_neighbors.join(", ")}
               </text>{" "}
               <br />
-              <text>
-                <b>Oceans:</b> {data.country_adjacent_oceans.join(", ")}
-              </text>
             </div>
             <h3 className="subTitle">Area</h3>
             <div className="area">
               <text>
-                <b>Area:</b> {data.country_land_area}
+                <b>Land Area in km<sup>2</sup> (mi<sup>2</sup>):</b> {data.country_land_area}
               </text>{" "}
               <br />
               <text>
-                <b>Water:</b> {data.country_water_area}
+                <b>Water Area in km<sup>2</sup> (mi<sup>2</sup>):</b> {data.country_water_area}
+              </text>
+              <br />
+              <text>
+                <b>Water Percent:</b> {data.country_water_percent}
               </text>
             </div>
           </div>
-        </div>
-        <div className="linksToModules">
+          <div className="linksToModules">
           <h4> Interested to learn more about {data.country_name}?</h4>
           <text>
             Check out the{" "}
@@ -91,7 +94,26 @@ const GeographyInstance = ({}) => {
             this country
           </text>
         </div>
+        <div style={{ height: "40vh", width: "81%", marginTop:-65 }}>
+            <GoogleMapReact
+              bootstrapURLKeys={{
+                key: "AIzaSyBTg1SVCHYOg71DzgOow9G1iYuEw3jtJQ4",
+              }}
+              defaultCenter={defaultProps.center}
+              defaultZoom={defaultProps.zoom}
+            ></GoogleMapReact>
+             <img
+              src={data.country_topography_image}
+              width="550"
+              height="300"
+              style={{ marginTop:15, marginRight: 25, marginBottom:20 }}
+              />
+        </div>
+    
+          
+        </div>
       </div>
+      )}
     </div>
   );
 };

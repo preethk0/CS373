@@ -42,7 +42,7 @@
   
   .location {
     display: grid;
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(2, 300px);
     grid-column-gap: 0px;
   }
 
@@ -50,4 +50,5 @@
     font-size: medium;
     padding-top: 20px;
   }
+
   
