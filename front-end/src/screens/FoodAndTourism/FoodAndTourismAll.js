@@ -12,10 +12,10 @@ const FoodAndTourismAll = ({}) => {
             {FoodAndTourism.country_name}
           </a>
         </td>
-        <td>{FoodAndTourism.main_vegetable}</td>
-        <td>{FoodAndTourism.number_of_tourists.toLocaleString()}</td>
-        <td>{FoodAndTourism.revenue_from_tourism.toLocaleString()}</td>
-        <td>{FoodAndTourism.average_temperature}</td>
+        <td>{FoodAndTourism.country_main_attraction}</td>
+        <td>{FoodAndTourism.country_number_of_tourists.toLocaleString()}</td>
+        <td>${FoodAndTourism.country_tourism_revenue.toLocaleString()}</td>
+        <td>{FoodAndTourism.country_tourism_percent_GDP}%</td>
       </tr>
     );
   };
@@ -32,10 +32,10 @@ const FoodAndTourismAll = ({}) => {
         <thead>
           <tr>
             <th scope="col">Country</th>
-            <th scope="col">Main Vegetable</th>
+            <th scope="col">Main Attraction</th>
             <th scope="col">Number of Tourists</th>
             <th scope="col">Tourism Revenue</th>
-            <th scope="col">Average Temperature</th>
+            <th scope="col">Tourism as Percent of GDP</th>
           </tr>
         </thead>
         <tbody>{Object.keys(FoodAndTourismData).map(getFoodAndTourism)}</tbody>
