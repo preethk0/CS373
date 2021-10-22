@@ -1,54 +1,51 @@
-
 .fullPage {
-    background-color: rgb(241, 241, 241);
+  background-color: rgb(241, 241, 241);
 }
 
 .subNavBar {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    padding: 20px 80px;
-    box-sizing: content-box;
-    background-color: rgb(241, 241, 241);
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 20px 80px;
+  box-sizing: content-box;
+  background-color: rgb(241, 241, 241);
 }
 
 .instancePage {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    padding: 30px 80px;
-    padding-left: 150px;
-    box-sizing: content-box;
-    background-color: rgb(255, 255, 255);
-  }
-  
-  .countryName {
-    font-weight: bold;
-    padding-top: 10px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 30px 80px;
+  padding-left: 70px;
+  box-sizing: content-box;
+  background-color: rgb(255, 255, 255);
+}
 
-  .allInfo {
-    font-size: large;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 40px;
-  }
+.countryName {
+  font-weight: bold;
+  padding-top: 10px;
+}
 
-  .subTitle {
-    font-weight: bold;
-    font-size: xx-large;
-    padding-top: 20px;
-  }
-  
-  .location {
-    display: grid;
-    grid-template-columns: repeat(2, 300px);
-    grid-column-gap: 0px;
-  }
+.allInfo {
+  font-size: large;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 40px;
+}
 
-  .linksToModules{
-    font-size: medium;
-    padding-top: 20px;
-  }
+.subTitle {
+  font-weight: bold;
+  font-size: xx-large;
+  padding-top: 20px;
+}
 
-  
+.location {
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  grid-column-gap: 0px;
+}
+
+.linksToModules {
+  font-size: medium;
+  padding-top: 20px;
+}
