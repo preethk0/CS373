@@ -26,7 +26,7 @@ const GeographyData = {
     country_water_area: "270,550 (104,460)",
     country_water_percent: "2.82",
     country_topography_image:
-      "http://www.china-tour.cn/images/National-Geography/China-Topography-Map.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/2c/ChinaGeography.png",
   },
   IN: {
     country_adjacent_countries:
