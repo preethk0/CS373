@@ -26,7 +26,7 @@ const GeographyData = {
     country_water_area: "270,550 (104,460)",
     country_water_percent: "2.82",
     country_topography_image:
-      "https://www.mapsland.com/maps/asia/china/large-china-topographical-map-in-english.jpg",
+      "http://www.china-tour.cn/images/National-Geography/China-Topography-Map.jpg",
   },
   IN: {
     country_adjacent_countries:
@@ -41,7 +41,7 @@ const GeographyData = {
     country_water_area: "314,073 (121,264)",
     country_water_percent: "9.55",
     country_topography_image:
-      "https://upload.wikimedia.org/wikipedia/commons/a/af/India_topo_big.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/India_topo_big.jpg/1200px-India_topo_big.jpg",
   },
 };
 
