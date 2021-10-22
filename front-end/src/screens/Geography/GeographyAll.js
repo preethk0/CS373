@@ -33,7 +33,7 @@ const GeographyAll = ({}) => {
           },
         ]}
         data={Object.values(GeographyData)}
-        title="Food and Tourism"
+        title="Geography"
       />
     </div>
   );
