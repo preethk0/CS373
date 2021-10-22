@@ -1,41 +1,48 @@
 const GeographyData = {
-    USA: {
-        country_id: 1,
-        country_name: "United States of America",
-        country_longitude: -95.7129,
-        country_latitude: 37.0902,
-        country_continent: "America",
-        country_region: "North America",
-        country_land_area: "3,531,905 sq mi",
-        country_water_area: "4.66%",
-        country_adjacent_oceans: ["Atlantic Ocean", "Pacific Ocean"],
-        country_adjacent_countries: ["Canada", "Mexico"]
-    },
-    China: {
-        country_id: 2,
-        country_name: "China",
-        country_longitude: 104.1954,
-        country_latitude: 35.8617,
-        country_continent: "Asia",
-        country_region: "East Asia",
-        country_land_area: "3,705,407 sq mi",
-        country_water_area: "2.8%",
-        country_adjacent_oceans: ["Pacific Ocean"],
-        country_adjacent_countries: ["Mongolia", "Kazakhstan", "North Korea", "Russia", "Kyrgyzstan", "Tajikistan", "Afghanistan", "Pakistan", "India", "Nepal", "Bhutan", "Myanmar", "Laos", "Vietnam"]
-    },
-    India: {
-        country_id: 3,
-        country_name: "India",
-        country_longitude: 78.9629,
-        country_latitude: 20.5937,
-        country_continent: "Asia",
-        country_region: "South Asia",
-        country_land_area: "1,269,219 sq mi",
-        country_water_area: "9.6%",
-        country_adjacent_oceans: ["Indian Ocean"],
-        country_adjacent_countries: ["China", "Bhutan", "Nepal", "Pakistan", "Bangladesh", "Myanmar"]
-    },
-  };
-  
-  export default GeographyData;
-  
+  NP: {
+    country_adjacent_countries: "['India', 'China']",
+    country_continent: "Asia",
+    country_id: "NP",
+    country_land_area: "143,351 (55,348)",
+    country_latitude: 28.0,
+    country_longitude: 84.0,
+    country_name: "Nepal",
+    country_region: "South Asia",
+    country_water_area: "3,830 (1,480)",
+    country_water_percent: "2.6",
+    country_topography_image:
+      "https://www.worldofmaps.net/typo3temp/images/topographische-karte-nepal.jpg",
+  },
+  CN: {
+    country_adjacent_countries:
+      "['Bhutan', 'Hong Kong', 'India', 'Kazakhstan', 'North Korea', 'Kyrgyzstan', 'Laos', 'Macao', 'Mongolia', 'Myanmar', 'Nepal', 'Pakistan', 'Russia', 'Tajikistan', 'Vietnam']",
+    country_continent: "Asia",
+    country_id: "CN",
+    country_land_area: "9,326,410 (3,600,950)",
+    country_latitude: 35.0,
+    country_longitude: 105.0,
+    country_name: "China",
+    country_region: "East Asia & Pacific",
+    country_water_area: "270,550 (104,460)",
+    country_water_percent: "2.82",
+    country_topography_image:
+      "http://www.vidiani.com/maps/maps_of_asia/maps_of_china/topographical_map_of_china.jpg",
+  },
+  IN: {
+    country_adjacent_countries:
+      "['Bangladesh', 'Bhutan', 'China', 'Myanmar', 'Nepal', 'Pakistan']",
+    country_continent: "Asia",
+    country_id: "IN",
+    country_land_area: "2,973,190 (1,147,960)",
+    country_latitude: 20.0,
+    country_longitude: 77.0,
+    country_name: "India",
+    country_region: "South Asia",
+    country_water_area: "314,073 (121,264)",
+    country_water_percent: "9.55",
+    country_topography_image:
+      "http://www.vidiani.com/maps/maps_of_asia/maps_of_india/detailed_topographical_map_of_india.jpg",
+  },
+};
+
+export default GeographyData;

@@ -1,6 +1,5 @@
 import React from "react";
 import FoodAndTourismData from "./FoodAndTourismData";
-import * as Bootstrap from "react-bootstrap";
 import MaterialTable from "material-table";
 
 const FoodAndTourismAll = ({}) => {
@@ -19,18 +18,18 @@ const FoodAndTourismAll = ({}) => {
         }
         columns={[
           { title: "Country", field: "country_name" },
-          { title: "Main Vegetable", field: "main_vegetable" },
+          { title: "Main Attraction", field: "country_main_attraction" },
           {
             title: "Number of Tourists",
-            field: "number_of_tourists",
+            field: "country_number_of_tourists",
           },
           {
             title: "Tourism Revenue",
-            field: "revenue_from_tourism",
+            field: "country_tourism_revenue",
           },
           {
-            title: "Average Temperature",
-            field: "average_temperature",
+            title: "Income Level",
+            field: "country_income_level",
           },
         ]}
         data={Object.values(FoodAndTourismData)}

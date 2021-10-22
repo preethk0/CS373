@@ -1,23 +1,8 @@
 import React from "react";
 import GeographyData from "./GeographyData";
-import * as Bootstrap from "react-bootstrap";
+import MaterialTable from "material-table";
 
 const GeographyAll = ({}) => {
-  const getGeography = (country) => {
-    const geography = GeographyData[country];
-    return (
-      <tr key={geography.id}>
-        <td>
-          <a href={"/geography/" + country}>{geography.country_name}</a>
-        </td>
-        <td>{geography.country_longitude}</td>
-        <td>{geography.country_latitude}</td>
-        <td>{geography.country_continent}</td>
-        <td>{geography.country_region}</td>
-      </tr>
-    );
-  };
-
   return (
     <div className="mainPage">
       <h2 className="header">Geography</h2>
@@ -26,21 +11,30 @@ const GeographyAll = ({}) => {
         country you're interested in and show you some basic geographical
         information.
       </p>
-      <Bootstrap.Table table-bordered>
-        <thead>
-          <tr>
-            <th scope="col">Country</th>
-            <th scope="col">Longitude</th>
-            <th scope="col">Latitude</th>
-            <th scope="col">Continent</th>
-            <th scope="col">Region</th>
-          </tr>
-        </thead>
-        <tbody>{Object.keys(GeographyData).map(getGeography)}</tbody>
-      </Bootstrap.Table>
-      <footer>
-        <div>Countries displayed: {Object.keys(GeographyData).length}</div>
-      </footer>
+      <MaterialTable
+        style={{ width: "100%" }}
+        onRowClick={(_, data) =>
+          (window.location.href = "/geography/" + data.country_id)
+        }
+        columns={[
+          { title: "Country", field: "country_name" },
+          { title: "Longitude", field: "country_longitude" },
+          {
+            title: "Latitude",
+            field: "country_latitude",
+          },
+          {
+            title: "Continent",
+            field: "country_continent",
+          },
+          {
+            title: "Region",
+            field: "country_region",
+          },
+        ]}
+        data={Object.values(GeographyData)}
+        title="Geography"
+      />
     </div>
   );
 };
