@@ -38,6 +38,7 @@ class Geography(db.Model):
     country_land_area = db.Column(db.String())
     country_water_area = db.Column(db.String())
     country_water_percent = db.Column(db.String())
+    country_topography_image = db.Column(db.String())
 
 # Define Food and Tourism table/data model
 class FoodAndTourism(db.Model):
@@ -85,6 +86,7 @@ class GeographySchema(ma.Schema):
     country_land_area = fields.Str(required=True)
     country_water_area = fields.Str(required=True)
     country_water_percent = fields.Str(required=True)
+    country_topography_image = fields.Str(required=True)
 
 class FoodAndTourismSchema(ma.Schema):
     country_id = fields.Str(required=True)
