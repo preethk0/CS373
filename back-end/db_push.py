@@ -102,8 +102,8 @@ def add_demographics(country_ind_data):
                 "country_domain": country_basic_data[0]['topLevelDomain'][0],
                 "country_income_level": country_ind_data['wbIncomeLevel']['value'],
                 "country_demographics_video_src": "https://www.youtube.com/embed/" + country_demographics_video_data[0]['items'][0]['id']['videoId'] if len(country_demographics_video_data[0]['items']) > 0 else "",
-                "country_GDP": country_GDP_data[0]['GDP'],
-                "country_GDP_per_capita": country_GDP_per_capita_data[0]['GDP_per_capita'],
+                "country_GDP": country_GDP_data[0]['GDP'] if len(country_GDP_data) > 0 else 0,
+                "country_GDP_per_capita": country_GDP_per_capita_data[0]['GDP_per_capita'] if len(country_GDP_per_capita_data) > 0 else 0,
             }
             demographics_db_instance = Demographics(**country_dem_obj)
             db.session.add(demographics_db_instance)
@@ -184,6 +184,6 @@ def add_food_and_tourism(country_ind_data):
 if __name__ == "__main__":
     print("Populating DB...")
     populate_demographics()
-    populate_geography()
-    populate_food_and_tourism()
+    # populate_geography()
+    # populate_food_and_tourism()
     print("Done")
