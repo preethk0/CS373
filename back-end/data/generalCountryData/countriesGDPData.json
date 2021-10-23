@@ -1,0 +1,778 @@
+[
+    {
+        "country": "United States",
+        "GDP": "$20,544,343,456,937"
+    },
+    {
+        "country": "China",
+        "GDP": "$13,608,151,864,638"
+    },
+    {
+        "country": "Japan",
+        "GDP": "$4,971,323,079,772"
+    },
+    {
+        "country": "Germany",
+        "GDP": "$3,947,620,162,503"
+    },
+    {
+        "country": "United Kingdom",
+        "GDP": "$2,855,296,731,522"
+    },
+    {
+        "country": "France",
+        "GDP": "$2,777,535,239,278"
+    },
+    {
+        "country": "India",
+        "GDP": "$2,718,732,231,258"
+    },
+    {
+        "country": "Italy",
+        "GDP": "$2,083,864,259,623"
+    },
+    {
+        "country": "Brazil",
+        "GDP": "$1,868,626,087,908"
+    },
+    {
+        "country": "Canada",
+        "GDP": "$1,713,341,704,877"
+    },
+    {
+        "country": "Russia",
+        "GDP": "$1,657,554,647,150"
+    },
+    {
+        "country": "South Korea",
+        "GDP": "$1,619,423,701,170"
+    },
+    {
+        "country": "Australia",
+        "GDP": "$1,433,904,348,500"
+    },
+    {
+        "country": "Spain",
+        "GDP": "$1,419,041,949,910"
+    },
+    {
+        "country": "Mexico",
+        "GDP": "$1,220,699,479,846"
+    },
+    {
+        "country": "Indonesia",
+        "GDP": "$1,042,173,300,626"
+    },
+    {
+        "country": "Netherlands",
+        "GDP": "$913,658,465,709"
+    },
+    {
+        "country": "Saudi Arabia",
+        "GDP": "$786,521,831,572"
+    },
+    {
+        "country": "Turkey",
+        "GDP": "$771,350,330,455"
+    },
+    {
+        "country": "Switzerland",
+        "GDP": "$705,140,354,166"
+    },
+    {
+        "country": "Poland",
+        "GDP": "$585,663,814,824"
+    },
+    {
+        "country": "Sweden",
+        "GDP": "$556,086,488,937"
+    },
+    {
+        "country": "Belgium",
+        "GDP": "$542,761,092,103"
+    },
+    {
+        "country": "Argentina",
+        "GDP": "$519,871,519,808"
+    },
+    {
+        "country": "Thailand",
+        "GDP": "$504,992,757,705"
+    },
+    {
+        "country": "Austria",
+        "GDP": "$455,285,818,035"
+    },
+    {
+        "country": "Norway",
+        "GDP": "$434,166,615,432"
+    },
+    {
+        "country": "United Arab Emirates",
+        "GDP": "$414,178,942,592"
+    },
+    {
+        "country": "Nigeria",
+        "GDP": "$397,269,616,081"
+    },
+    {
+        "country": "Ireland",
+        "GDP": "$382,487,490,532"
+    },
+    {
+        "country": "Israel",
+        "GDP": "$370,587,977,154"
+    },
+    {
+        "country": "South Africa",
+        "GDP": "$368,288,939,768"
+    },
+    {
+        "country": "Singapore",
+        "GDP": "$364,156,657,770"
+    },
+    {
+        "country": "China",
+        "GDP": "$362,682,018,243"
+    },
+    {
+        "country": "Malaysia",
+        "GDP": "$358,581,943,446"
+    },
+    {
+        "country": "Denmark",
+        "GDP": "$355,675,329,086"
+    },
+    {
+        "country": "Colombia",
+        "GDP": "$331,047,040,088"
+    },
+    {
+        "country": "Philippines",
+        "GDP": "$330,910,343,611"
+    },
+    {
+        "country": "Pakistan",
+        "GDP": "$314,588,210,501"
+    },
+    {
+        "country": "Chile",
+        "GDP": "$298,231,133,533"
+    },
+    {
+        "country": "Finland",
+        "GDP": "$276,743,120,516"
+    },
+    {
+        "country": "Bangladesh",
+        "GDP": "$274,024,958,966"
+    },
+    {
+        "country": "Egypt",
+        "GDP": "$250,894,760,351"
+    },
+    {
+        "country": "Czechia",
+        "GDP": "$245,225,882,903"
+    },
+    {
+        "country": "Vietnam",
+        "GDP": "$245,213,686,369"
+    },
+    {
+        "country": "Portugal",
+        "GDP": "$240,674,524,464"
+    },
+    {
+        "country": "Romania",
+        "GDP": "$239,552,516,744"
+    },
+    {
+        "country": "Iraq",
+        "GDP": "$224,228,010,478"
+    },
+    {
+        "country": "Peru",
+        "GDP": "$222,044,970,486"
+    },
+    {
+        "country": "Greece",
+        "GDP": "$218,031,844,584"
+    },
+    {
+        "country": "New Zealand",
+        "GDP": "$204,923,917,869"
+    },
+    {
+        "country": "Qatar",
+        "GDP": "$191,362,087,912"
+    },
+    {
+        "country": "Kazakhstan",
+        "GDP": "$179,339,994,859"
+    },
+    {
+        "country": "Algeria",
+        "GDP": "$173,757,952,824"
+    },
+    {
+        "country": "Hungary",
+        "GDP": "$157,882,912,778"
+    },
+    {
+        "country": "Kuwait",
+        "GDP": "$140,645,364,238"
+    },
+    {
+        "country": "Ukraine",
+        "GDP": "$130,832,374,405"
+    },
+    {
+        "country": "Morocco",
+        "GDP": "$117,921,394,402"
+    },
+    {
+        "country": "Ecuador",
+        "GDP": "$108,398,058,000"
+    },
+    {
+        "country": "Slovakia",
+        "GDP": "$105,904,632,156"
+    },
+    {
+        "country": "Angola",
+        "GDP": "$105,750,987,619"
+    },
+    {
+        "country": "Puerto Rico",
+        "GDP": "$101,130,900,000"
+    },
+    {
+        "country": "Cuba",
+        "GDP": "$100,023,000,000"
+    },
+    {
+        "country": "Sri Lanka",
+        "GDP": "$88,900,770,858"
+    },
+    {
+        "country": "Kenya",
+        "GDP": "$87,908,262,520"
+    },
+    {
+        "country": "Dominican Republic",
+        "GDP": "$85,555,390,387"
+    },
+    {
+        "country": "Ethiopia",
+        "GDP": "$84,355,604,753"
+    },
+    {
+        "country": "Oman",
+        "GDP": "$79,276,723,017"
+    },
+    {
+        "country": "Guatemala",
+        "GDP": "$78,460,447,920"
+    },
+    {
+        "country": "Myanmar",
+        "GDP": "$71,214,803,378"
+    },
+    {
+        "country": "Luxembourg",
+        "GDP": "$70,885,325,883"
+    },
+    {
+        "country": "Ghana",
+        "GDP": "$65,556,464,048"
+    },
+    {
+        "country": "Bulgaria",
+        "GDP": "$65,132,951,116"
+    },
+    {
+        "country": "Panama",
+        "GDP": "$65,055,100,000"
+    },
+    {
+        "country": "Croatia",
+        "GDP": "$60,971,699,315"
+    },
+    {
+        "country": "Costa Rica",
+        "GDP": "$60,130,106,116"
+    },
+    {
+        "country": "Belarus",
+        "GDP": "$59,662,495,092"
+    },
+    {
+        "country": "Uruguay",
+        "GDP": "$59,596,885,024"
+    },
+    {
+        "country": "Tanzania",
+        "GDP": "$58,001,200,572"
+    },
+    {
+        "country": "Lebanon",
+        "GDP": "$56,639,155,556"
+    },
+    {
+        "country": "China, Macao Special Administrative Region",
+        "GDP": "$55,084,050,790"
+    },
+    {
+        "country": "Slovenia",
+        "GDP": "$54,007,972,106"
+    },
+    {
+        "country": "Lithuania",
+        "GDP": "$53,429,066,429"
+    },
+    {
+        "country": "Serbia",
+        "GDP": "$50,597,289,147"
+    },
+    {
+        "country": "Uzbekistan",
+        "GDP": "$50,499,921,558"
+    },
+    {
+        "country": "Libya",
+        "GDP": "$48,364,208,571"
+    },
+    {
+        "country": "Congo",
+        "GDP": "$47,227,535,291"
+    },
+    {
+        "country": "Azerbaijan",
+        "GDP": "$46,939,529,412"
+    },
+    {
+        "country": "C\u00f4te d\u2019Ivoire",
+        "GDP": "$43,007,047,822"
+    },
+    {
+        "country": "Jordan",
+        "GDP": "$42,231,295,775"
+    },
+    {
+        "country": "Sudan",
+        "GDP": "$40,851,536,134"
+    },
+    {
+        "country": "Turkmenistan",
+        "GDP": "$40,761,142,857"
+    },
+    {
+        "country": "Paraguay",
+        "GDP": "$40,496,953,779"
+    },
+    {
+        "country": "Bolivia",
+        "GDP": "$40,287,647,757"
+    },
+    {
+        "country": "Tunisia",
+        "GDP": "$39,871,132,268"
+    },
+    {
+        "country": "Cameroon",
+        "GDP": "$38,675,205,293"
+    },
+    {
+        "country": "Bahrain",
+        "GDP": "$37,746,196,809"
+    },
+    {
+        "country": "Latvia",
+        "GDP": "$34,409,229,178"
+    },
+    {
+        "country": "Zimbabwe",
+        "GDP": "$31,000,519,447"
+    },
+    {
+        "country": "Estonia",
+        "GDP": "$30,732,144,529"
+    },
+    {
+        "country": "Nepal",
+        "GDP": "$29,040,398,982"
+    },
+    {
+        "country": "Uganda",
+        "GDP": "$27,461,440,192"
+    },
+    {
+        "country": "Yemen",
+        "GDP": "$26,914,402,224"
+    },
+    {
+        "country": "Zambia",
+        "GDP": "$26,720,073,436"
+    },
+    {
+        "country": "El Salvador",
+        "GDP": "$26,057,000,000"
+    },
+    {
+        "country": "Iceland",
+        "GDP": "$25,878,475,760"
+    },
+    {
+        "country": "Cyprus",
+        "GDP": "$24,961,988,663"
+    },
+    {
+        "country": "Cambodia",
+        "GDP": "$24,542,474,061"
+    },
+    {
+        "country": "Senegal",
+        "GDP": "$24,129,599,552"
+    },
+    {
+        "country": "Honduras",
+        "GDP": "$23,969,890,431"
+    },
+    {
+        "country": "Trinidad and Tobago",
+        "GDP": "$23,808,146,748"
+    },
+    {
+        "country": "Papua New Guinea",
+        "GDP": "$23,497,607,690"
+    },
+    {
+        "country": "Bosnia and Herzegovina",
+        "GDP": "$20,161,865,419"
+    },
+    {
+        "country": "Afghanistan",
+        "GDP": "$19,362,969,582"
+    },
+    {
+        "country": "Botswana",
+        "GDP": "$18,616,018,903"
+    },
+    {
+        "country": "Laos",
+        "GDP": "$17,953,786,416"
+    },
+    {
+        "country": "Georgia",
+        "GDP": "$17,599,660,629"
+    },
+    {
+        "country": "Mali",
+        "GDP": "$17,163,432,832"
+    },
+    {
+        "country": "Gabon",
+        "GDP": "$16,853,589,311"
+    },
+    {
+        "country": "Jamaica",
+        "GDP": "$15,713,908,816"
+    },
+    {
+        "country": "Albania",
+        "GDP": "$15,102,500,898"
+    },
+    {
+        "country": "Mozambique",
+        "GDP": "$14,717,223,207"
+    },
+    {
+        "country": "Palestine",
+        "GDP": "$14,615,900,000"
+    },
+    {
+        "country": "Malta",
+        "GDP": "$14,553,422,929"
+    },
+    {
+        "country": "Namibia",
+        "GDP": "$14,521,711,634"
+    },
+    {
+        "country": "Mauritius",
+        "GDP": "$14,220,348,673"
+    },
+    {
+        "country": "Burkina Faso",
+        "GDP": "$14,124,775,069"
+    },
+    {
+        "country": "Madagascar",
+        "GDP": "$13,853,432,868"
+    },
+    {
+        "country": "Brunei Darussalam",
+        "GDP": "$13,567,351,175"
+    },
+    {
+        "country": "Equatorial Guinea",
+        "GDP": "$13,432,377,050"
+    },
+    {
+        "country": "Nicaragua",
+        "GDP": "$13,117,845,417"
+    },
+    {
+        "country": "Mongolia",
+        "GDP": "$13,066,749,138"
+    },
+    {
+        "country": "North Macedonia",
+        "GDP": "$12,672,131,053"
+    },
+    {
+        "country": "Armenia",
+        "GDP": "$12,433,089,919"
+    },
+    {
+        "country": "Bahamas",
+        "GDP": "$12,424,500,000"
+    },
+    {
+        "country": "Moldova",
+        "GDP": "$11,443,671,436"
+    },
+    {
+        "country": "Chad",
+        "GDP": "$11,273,115,239"
+    },
+    {
+        "country": "Congo",
+        "GDP": "$11,263,682,694"
+    },
+    {
+        "country": "Guinea",
+        "GDP": "$10,907,214,994"
+    },
+    {
+        "country": "Benin",
+        "GDP": "$10,354,274,635"
+    },
+    {
+        "country": "Haiti",
+        "GDP": "$9,658,721,169"
+    },
+    {
+        "country": "Rwanda",
+        "GDP": "$9,508,715,596"
+    },
+    {
+        "country": "Niger",
+        "GDP": "$9,290,938,457"
+    },
+    {
+        "country": "Kyrgyzstan",
+        "GDP": "$8,092,836,609"
+    },
+    {
+        "country": "Tajikistan",
+        "GDP": "$7,522,947,810"
+    },
+    {
+        "country": "Monaco",
+        "GDP": "$7,184,844,193"
+    },
+    {
+        "country": "Malawi",
+        "GDP": "$7,064,971,176"
+    },
+    {
+        "country": "Guam",
+        "GDP": "$5,920,000,000"
+    },
+    {
+        "country": "Fiji",
+        "GDP": "$5,536,759,659"
+    },
+    {
+        "country": "Montenegro",
+        "GDP": "$5,504,166,667"
+    },
+    {
+        "country": "Togo",
+        "GDP": "$5,358,722,983"
+    },
+    {
+        "country": "Maldives",
+        "GDP": "$5,327,457,150"
+    },
+    {
+        "country": "Mauritania",
+        "GDP": "$5,234,817,927"
+    },
+    {
+        "country": "Barbados",
+        "GDP": "$5,145,000,000"
+    },
+    {
+        "country": "Somalia",
+        "GDP": "$4,720,727,278"
+    },
+    {
+        "country": "Eswatini",
+        "GDP": "$4,710,618,472"
+    },
+    {
+        "country": "Sierra Leone",
+        "GDP": "$4,085,114,794"
+    },
+    {
+        "country": "Guyana",
+        "GDP": "$3,878,662,621"
+    },
+    {
+        "country": "Suriname",
+        "GDP": "$3,590,753,769"
+    },
+    {
+        "country": "Liberia",
+        "GDP": "$3,264,000,000"
+    },
+    {
+        "country": "Andorra",
+        "GDP": "$3,236,543,909"
+    },
+    {
+        "country": "Cura\u00e7ao",
+        "GDP": "$3,127,908,038"
+    },
+    {
+        "country": "Burundi",
+        "GDP": "$3,036,931,818"
+    },
+    {
+        "country": "Djibouti",
+        "GDP": "$2,955,912,228"
+    },
+    {
+        "country": "Lesotho",
+        "GDP": "$2,738,786,278"
+    },
+    {
+        "country": "Timor-Leste",
+        "GDP": "$2,581,000,000"
+    },
+    {
+        "country": "Bhutan",
+        "GDP": "$2,446,674,101"
+    },
+    {
+        "country": "Central African Republic",
+        "GDP": "$2,219,894,702"
+    },
+    {
+        "country": "Cabo Verde",
+        "GDP": "$1,976,814,277"
+    },
+    {
+        "country": "Saint Lucia",
+        "GDP": "$1,921,848,222"
+    },
+    {
+        "country": "Belize",
+        "GDP": "$1,871,203,164"
+    },
+    {
+        "country": "Gambia",
+        "GDP": "$1,632,823,199"
+    },
+    {
+        "country": "Antigua and Barbuda",
+        "GDP": "$1,610,574,074"
+    },
+    {
+        "country": "Seychelles",
+        "GDP": "$1,590,180,446"
+    },
+    {
+        "country": "Guinea-Bissau",
+        "GDP": "$1,458,156,026"
+    },
+    {
+        "country": "Solomon Islands",
+        "GDP": "$1,395,608,472"
+    },
+    {
+        "country": "Northern Mariana Islands",
+        "GDP": "$1,323,000,000"
+    },
+    {
+        "country": "Grenada",
+        "GDP": "$1,185,925,926"
+    },
+    {
+        "country": "Comoros",
+        "GDP": "$1,177,955,049"
+    },
+    {
+        "country": "Turks and Caicos Islands",
+        "GDP": "$1,022,312,010"
+    },
+    {
+        "country": "Saint Kitts and Nevis",
+        "GDP": "$1,010,822,222"
+    },
+    {
+        "country": "Vanuatu",
+        "GDP": "$914,301,119"
+    },
+    {
+        "country": "Samoa",
+        "GDP": "$820,491,798"
+    },
+    {
+        "country": "Saint Vincent and the Grenadines",
+        "GDP": "$811,300,000"
+    },
+    {
+        "country": "American Samoa",
+        "GDP": "$636,000,000"
+    },
+    {
+        "country": "Dominica",
+        "GDP": "$550,892,593"
+    },
+    {
+        "country": "Tonga",
+        "GDP": "$450,353,314"
+    },
+    {
+        "country": "Sao Tome and Principe",
+        "GDP": "$422,296,762"
+    },
+    {
+        "country": "Micronesia",
+        "GDP": "$401,932,279"
+    },
+    {
+        "country": "Palau",
+        "GDP": "$283,994,900"
+    },
+    {
+        "country": "Marshall Islands",
+        "GDP": "$221,278,000"
+    },
+    {
+        "country": "Kiribati",
+        "GDP": "$188,284,519"
+    },
+    {
+        "country": "Nauru",
+        "GDP": "$125,628,504"
+    },
+    {
+        "country": "Tuvalu",
+        "GDP": "$42,587,778"
+    }
+]
