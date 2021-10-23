@@ -27,6 +27,11 @@ const GeographyAll = ({}) => {
       {data.length > 0 ? (
         <MaterialTable
           style={{ width: "100%" }}
+          options={{
+            paging: true,
+            pageSize: 10,
+            pageSizeOptions: [],
+          }}
           onRowClick={(_, data) =>
             (window.location.href = "/geography/" + data.country_id)
           }

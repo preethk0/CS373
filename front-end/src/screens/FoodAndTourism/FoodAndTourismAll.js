@@ -28,6 +28,11 @@ const FoodAndTourismAll = ({}) => {
       {foodAndTourismData.length > 0 ? (
         <MaterialTable
           style={{ width: "100%" }}
+          options={{
+            paging: true,
+            pageSize: 10,
+            pageSizeOptions: [],
+          }}
           onRowClick={(_, data) =>
             (window.location.href = "/foodandtourism/" + data.country_id)
           }
