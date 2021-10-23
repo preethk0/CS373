@@ -24,6 +24,12 @@ with open('data/generalCountryData/countriesCitiesData.json', 'r') as file:
 with open('data/generalCountryData/countriesDemographicsYoutubeData.json', 'r') as file:
     countries_demographics_videos_data = json.load(file)
 
+with open('data/generalCountryData/countriesGDPData.json', 'r') as file:
+    countries_GDP_data = json.load(file)
+
+with open('data/generalCountryData/countriesGDPperCapitaData.json', 'r') as file:
+    countries_GDP_per_capita_data = json.load(file)
+
 with open('data/generalCountryData/countriesLocationData.json', 'r') as file:
     countries_location_data = json.load(file)
 
@@ -78,6 +84,8 @@ def add_demographics(country_ind_data):
         country_cities_data = list(filter(lambda country: country['country'] == country_name, countries_cities_data['data']))
         country_states_data = list(filter(lambda country: country['name'] == country_name, countries_states_data['data']))
         country_demographics_video_data = list(filter(lambda country: country['countryCode'] == country_code, countries_demographics_videos_data))
+        country_GDP_data = list(filter(lambda country: country['country'] == country_name, countries_GDP_data))
+        country_GDP_per_capita_data = list(filter(lambda country: country['country'] == country_name, countries_GDP_per_capita_data))
         if country_basic_data and country_flag_data and country_population_data and country_cities_data and country_states_data:
             country_dem_obj = {
                 "country_id": country_code,
@@ -93,7 +101,9 @@ def add_demographics(country_ind_data):
                 "country_states": len(country_states_data[0]['states']),
                 "country_domain": country_basic_data[0]['topLevelDomain'][0],
                 "country_income_level": country_ind_data['wbIncomeLevel']['value'],
-                "country_demographics_video_src": "https://www.youtube.com/embed/" + country_demographics_video_data[0]['items'][0]['id']['videoId'] if len(country_demographics_video_data[0]['items']) > 0 else ""
+                "country_demographics_video_src": "https://www.youtube.com/embed/" + country_demographics_video_data[0]['items'][0]['id']['videoId'] if len(country_demographics_video_data[0]['items']) > 0 else "",
+                "country_GDP": country_GDP_data[0]['GDP'],
+                "country_GDP_per_capita": country_GDP_per_capita_data[0]['GDP_per_capita'],
             }
             demographics_db_instance = Demographics(**country_dem_obj)
             db.session.add(demographics_db_instance)
@@ -173,7 +183,7 @@ def add_food_and_tourism(country_ind_data):
 
 if __name__ == "__main__":
     print("Populating DB...")
-    # populate_demographics()
+    populate_demographics()
     populate_geography()
     populate_food_and_tourism()
     print("Done")
