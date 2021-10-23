@@ -9,8 +9,14 @@ CFILES :=                                     \
 
 check: $(CFILES)
 
+format:
+	black ./back-end/*.py
+
 docker:
 	docker run -p 3000:3000 around-the-world
+
+backend-install:
+	python3 -m pip install -r ./back-end/requirements.txt
 
 frontend-install:
 	cd front-end/ && npm install
