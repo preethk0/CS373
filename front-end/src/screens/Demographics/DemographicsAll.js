@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./DemographicsAll.css";
 import CountryCard from "../../components/Cards/CountryCard";
 import useAxios from "axios-hooks";
+import { Spinner } from "react-bootstrap";
 
 const DemographicsAll = ({}) => {
   const [demographicsData, setDemographicsData] = useState([]);
@@ -25,11 +26,19 @@ const DemographicsAll = ({}) => {
         locate the country you're looking for and give you some basic
         information about it.
       </p>
-      <div className="cardGrid">
-        {demographicsData.map((country) => (
-          <CountryCard country={country} />
-        ))}
-      </div>
+      {demographicsData.length > 0 ? (
+        <div className="cardGrid">
+          {demographicsData.map((country) => (
+            <CountryCard country={country} />
+          ))}
+        </div>
+      ) : (
+        <Spinner
+          animation="border"
+          role="status"
+          style={{ marginTop: "15%", width: 60, height: 60 }}
+        />
+      )}
     </div>
   );
 };

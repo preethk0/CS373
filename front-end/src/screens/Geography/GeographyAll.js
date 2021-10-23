@@ -1,35 +1,20 @@
 import React, { useEffect, useState } from "react";
-import * as Bootstrap from "react-bootstrap";
+import MaterialTable from "material-table";
 import useAxios from "axios-hooks";
+import { Spinner } from "react-bootstrap";
 
 const GeographyAll = ({}) => {
-  const [geographyData, setGeographyData] = useState([]);
+  const [data, setData] = useState([]);
 
-  const [{ data, loading, error }] = useAxios(
+  const [{ data: geographyData, loading, error }] = useAxios(
     "http://api.around-the-world.me/geography"
   );
 
   useEffect(() => {
-    const geographyResult = data;
-    if (geographyResult) {
-      setGeographyData(geographyResult);
+    if (geographyData) {
+      setData(geographyData);
     }
-  }, [data]);
-
-  const getGeography = (country) => {
-    const country_id = country.country_id;
-    return (
-      <tr key={country_id}>
-        <td>
-          <a href={"/geography/" + country_id}>{country.country_name}</a>
-        </td>
-        <td>{country.country_longitude}</td>
-        <td>{country.country_latitude}</td>
-        <td>{country.country_continent}</td>
-        <td>{country.country_region}</td>
-      </tr>
-    );
-  };
+  }, [geographyData]);
 
   return (
     <div className="mainPage">
@@ -39,18 +24,38 @@ const GeographyAll = ({}) => {
         country you're interested in and show you some basic geographical
         information.
       </p>
-      <Bootstrap.Table table-bordered>
-        <thead>
-          <tr>
-            <th scope="col">Country</th>
-            <th scope="col">Longitude</th>
-            <th scope="col">Latitude</th>
-            <th scope="col">Continent</th>
-            <th scope="col">Region</th>
-          </tr>
-        </thead>
-        <tbody>{geographyData.map(getGeography)}</tbody>
-      </Bootstrap.Table>
+      {data.length > 0 ? (
+        <MaterialTable
+          style={{ width: "100%" }}
+          onRowClick={(_, data) =>
+            (window.location.href = "/geography/" + data.country_id)
+          }
+          columns={[
+            { title: "Country", field: "country_name" },
+            { title: "Longitude", field: "country_longitude" },
+            {
+              title: "Latitude",
+              field: "country_latitude",
+            },
+            {
+              title: "Continent",
+              field: "country_continent",
+            },
+            {
+              title: "Region",
+              field: "country_region",
+            },
+          ]}
+          data={data}
+          title="Geography"
+        />
+      ) : (
+        <Spinner
+          animation="border"
+          role="status"
+          style={{ marginTop: "15%", width: 60, height: 60 }}
+        />
+      )}
     </div>
   );
 };
