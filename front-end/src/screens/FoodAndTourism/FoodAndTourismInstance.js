@@ -4,6 +4,7 @@ import useAxios from "axios-hooks";
 import "./FoodAndTourismInstance.css";
 import { convertStringArrayToArray } from "../../utils";
 import codeToCountry from "../../codeToCountry";
+import { Spinner } from "react-bootstrap";
 
 const FoodAndTourismInstance = ({}) => {
   const { country } = useParams();
@@ -42,7 +43,7 @@ const FoodAndTourismInstance = ({}) => {
           Data for this model instance is not present in Phase 1, will be
           present in the next phase.
         </div>
-      ) : (
+      ) : Object.keys(data).length > 0 ? (
         <div
           class="row justify-content-center"
           style={{ marginLeft: 60, paddingBottom: 30, paddingTop: 20 }}
@@ -152,6 +153,12 @@ const FoodAndTourismInstance = ({}) => {
             </div> */}
           </div>
         </div>
+      ) : (
+        <Spinner
+          animation="border"
+          role="status"
+          style={{ marginTop: "15%", marginLeft: "48%", width: 60, height: 60 }}
+        />
       )}
     </>
   );

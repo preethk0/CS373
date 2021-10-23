@@ -5,6 +5,7 @@ import { useParams } from "react-router";
 import { convertStringArrayToArray } from "../../utils";
 import codeToCountry from "../../codeToCountry";
 import useAxios from "axios-hooks";
+import { Spinner } from "react-bootstrap";
 
 const GeographyInstance = ({}) => {
   const { country } = useParams();
@@ -44,7 +45,7 @@ const GeographyInstance = ({}) => {
             Data for this model instance is not present in Phase 1, will be
             present in the next phase.
           </div>
-        ) : (
+        ) : Object.keys(data).length > 0 ? (
           <div>
             <h1 className="countryName">{data.country_name}</h1>
             <div className="allInfo">
@@ -159,6 +160,17 @@ const GeographyInstance = ({}) => {
               </div>
             </div>
           </div>
+        ) : (
+          <Spinner
+            animation="border"
+            role="status"
+            style={{
+              marginTop: "15%",
+              marginLeft: "48%",
+              width: 60,
+              height: 60,
+            }}
+          />
         )}
       </div>
     </div>

@@ -4,6 +4,7 @@ import "./DemographicsInstance.css";
 import { convertStringArrayToArray } from "../../utils";
 import codeToCountry from "../../codeToCountry";
 import useAxios from "axios-hooks";
+import { Spinner } from "react-bootstrap";
 
 const DemographicsInstance = ({}) => {
   const { country: country_id } = useParams();
@@ -16,7 +17,6 @@ const DemographicsInstance = ({}) => {
 
   useEffect(() => {
     if (countryData) {
-      console.log(countryData);
       setData(countryData);
     }
   }, [countryData]);
@@ -24,9 +24,9 @@ const DemographicsInstance = ({}) => {
   const languages = data
     ? convertStringArrayToArray(data.country_languages)
     : null;
-  // const countriesWithSimilarPopulation = data
-  //   ? convertStringArrayToArray(data.countries_with_similar_pop)
-  //   : null;
+  const countriesWithSimilarPopulation = data
+    ? convertStringArrayToArray(data.countries_with_similar_pop)
+    : null;
 
   return (
     <>
@@ -41,7 +41,7 @@ const DemographicsInstance = ({}) => {
           Data for this model instance is not present in Phase 1, will be
           present in the next phase.
         </div>
-      ) : (
+      ) : Object.keys(data).length > 0 ? (
         <div
           class="row justify-content-center"
           style={{ marginLeft: 70, paddingBottom: 30 }}
@@ -109,7 +109,7 @@ const DemographicsInstance = ({}) => {
             </p>
             <p class="card-text">
               <b>Countries with similar population: </b>
-              {/* {countriesWithSimilarPopulation.map((country, idx) => {
+              {countriesWithSimilarPopulation.map((country, idx) => {
                 const countryCodeAndCountry = Object.entries(
                   codeToCountry
                 ).filter(([_, val]) => val == country);
@@ -126,7 +126,7 @@ const DemographicsInstance = ({}) => {
                     {idx < countriesWithSimilarPopulation.length - 1 && ", "}
                   </text>
                 );
-              })} */}
+              })}
             </p>
             <p
               style={{
@@ -145,6 +145,12 @@ const DemographicsInstance = ({}) => {
             />
           </div>
         </div>
+      ) : (
+        <Spinner
+          animation="border"
+          role="status"
+          style={{ marginTop: "15%", marginLeft: "48%", width: 60, height: 60 }}
+        />
       )}
     </>
   );

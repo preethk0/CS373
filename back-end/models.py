@@ -23,6 +23,7 @@ class Demographics(db.Model):
     country_cities = db.Column(db.Integer)
     country_states = db.Column(db.Integer)
     country_income_level = db.Column(db.String())
+    countries_with_similar_pop = db.Column(db.PickleType)
     country_demographics_video_src = db.Column(db.String())
 
 # Define Geography table/data model
@@ -73,6 +74,7 @@ class DemographicsSchema(ma.Schema):
     country_states = fields.Int(required=True)
     country_income_level = fields.Str(required=True)
     country_demographics_video_src = fields.Str(required=True)
+    countries_with_similar_pop = fields.Str(required=True)
 
 class GeographySchema(ma.Schema):
     country_id = fields.Str(required=True)
