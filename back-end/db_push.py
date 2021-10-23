@@ -175,5 +175,5 @@ if __name__ == "__main__":
     print("Populating DB...")
     # populate_demographics()
     populate_geography()
-    # populate_food_and_tourism()
+    populate_food_and_tourism()
     print("Done")
