@@ -102,6 +102,76 @@ export const toolsUsed = [
     description: "Domain name registrar",
     link: "https://www.namecheap.com/",
   },
+  {
+    name: "Flask",
+    photo: "https://miro.medium.com/max/800/1*Q5EUk28Xc3iCDoMSkrd1_w.png",
+    description: "Backend framework for API development",
+    link: "https://flask.palletsprojects.com/en/2.0.x/",
+  },
+  {
+    name: "PostgreSQL",
+    photo: "https://miro.medium.com/max/2000/1*115cqXTggxGeZq5m-yFnrw.png",
+    description: "Database management/storage",
+    link: "https://www.postgresql.org/",
+  },
+  {
+    name: "Black",
+    photo:
+      "https://res.cloudinary.com/practicaldev/image/fetch/s--B6r1hvay--/c_imagga_scale,f_auto,fl_progressive,h_720,q_auto,w_1280/https://dev-to-uploads.s3.amazonaws.com/i/6g60ujce9711gwwdid9m.png",
+    description: "Python code formatter",
+    link: "https://github.com/psf/black",
+  },
+  {
+    name: "Docker",
+    photo:
+      "https://www.cloudsavvyit.com/p/uploads/2021/04/075c8694.jpeg?width=1198&trim=1,1&bg-color=000&pad=1,1",
+    description: "Open source containerization platform",
+    link: "https://www.docker.com/",
+  },
+  {
+    name: "Selenium",
+    photo: "https://miro.medium.com/max/600/1*G_QFeh9HIrKGOdYOusc5UQ.jpeg",
+    description: "Tool for webscraping and automating web browsers",
+    link: "https://www.selenium.dev/",
+  },
+  {
+    name: "Jest",
+    photo: "https://miro.medium.com/max/300/1*veOyRtKTPeoqC_VlWNUc5Q.png",
+    description: "JavaScript testing framework",
+    link: "https://jestjs.io/",
+  },
+];
+
+export const apisUsed = [
+  {
+    name: "CountryLayer",
+    photo:
+      "https://www.programmableweb.com/sites/default/files/countrylayer.jpg",
+    description: "Used to get demographic information for countries",
+    link: "http://countrylayer.com/",
+  },
+  {
+    name: "Big Data Cloud",
+    photo:
+      "https://www.outsystems.com/Forge_BL/rest/ComponentThumbnail/GetURL_ComponentThumbnail?ProjectImageId=36534",
+    description: "Retrieve more demographic information for countries",
+    link: "https://www.bigdatacloud.com/",
+  },
+  {
+    name: "CountriesNow",
+    photo: "https://countriesnow.space/img/1.png",
+    description:
+      "Get information on cities, states, population and basic geography of countries",
+    link: "https://countriesnow.space/",
+  },
+  {
+    name: "Youtube Data API",
+    photo:
+      "https://www.logo.wine/a/logo/YouTube/YouTube-Icon-Full-Color-Logo.wine.svg",
+    description:
+      "Used for retrieving videos for country demographics and tourism",
+    link: "https://developers.google.com/youtube/v3",
+  },
 ];
 
 export const ourTools = [

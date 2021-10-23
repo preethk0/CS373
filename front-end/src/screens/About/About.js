@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import membersInfo, {
   toolsUsed,
   ourTools,
+  apisUsed,
   gitLabSpecialCases,
 } from "./AboutInformation";
 import "./About.css";
@@ -112,7 +113,11 @@ const About = ({}) => {
         ))}
       </div>
       <h1 className="header">APIs</h1>
-      <text style={{ fontSize: 25 }}>None as of right now!</text>
+      <div className="cardsGrid">
+        {apisUsed.map((api) => (
+          <ToolCard {...api} />
+        ))}
+      </div>
       <h1 className="header">Our Tools & Data</h1>
       <div className="cardsGrid">
         {ourTools.map((tool) => (
