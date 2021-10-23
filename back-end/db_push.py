@@ -87,6 +87,14 @@ def add_demographics(country_ind_data):
         country_GDP_data = list(filter(lambda country: country['country'] == country_name, countries_GDP_data))
         country_GDP_per_capita_data = list(filter(lambda country: country['country'] == country_name, countries_GDP_per_capita_data))
         if country_basic_data and country_flag_data and country_population_data and country_cities_data and country_states_data:
+            
+            countriesWithSimilarPopulation = []
+            indexOfCountry = countries_population_data['data'].index(country_population_data[0])
+            if indexOfCountry > 0:
+                countriesWithSimilarPopulation.append(countries_population_data['data'][indexOfCountry - 1]['country'])
+            if indexOfCountry < len(countries_population_data['data']) - 1:
+                countriesWithSimilarPopulation.append(countries_population_data['data'][indexOfCountry + 1]['country'])
+            
             country_dem_obj = {
                 "country_id": country_code,
                 "country_name": country_name,
@@ -103,6 +111,7 @@ def add_demographics(country_ind_data):
                 "country_income_level": country_ind_data['wbIncomeLevel']['value'],
                 "country_demographics_video_src": "https://www.youtube.com/embed/" + country_demographics_video_data[0]['items'][0]['id']['videoId'] if len(country_demographics_video_data[0]['items']) > 0 else "",
                 "country_GDP": country_GDP_data[0]['GDP'] if len(country_GDP_data) > 0 else 0,
+                "countries_with_similar_pop": countriesWithSimilarPopulation,
                 "country_GDP_per_capita": country_GDP_per_capita_data[0]['GDP_per_capita'] if len(country_GDP_per_capita_data) > 0 else 0,
             }
             demographics_db_instance = Demographics(**country_dem_obj)
@@ -184,6 +193,6 @@ def add_food_and_tourism(country_ind_data):
 if __name__ == "__main__":
     print("Populating DB...")
     populate_demographics()
-    # populate_geography()
-    # populate_food_and_tourism()
+    populate_geography()
+    populate_food_and_tourism()
     print("Done")

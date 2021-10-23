@@ -26,6 +26,7 @@ class Demographics(db.Model):
     country_demographics_video_src = db.Column(db.String())
     country_GDP = db.Column(db.String())
     country_GDP_per_capita = db.Column(db.String())
+    countries_with_similar_pop = db.Column(db.PickleType)
 
 # Define Geography table/data model
 class Geography(db.Model):
@@ -78,6 +79,7 @@ class DemographicsSchema(ma.Schema):
     country_demographics_video_src = fields.Str(required=True)
     country_GDP = fields.Str(required=True)
     country_GDP_per_capita = fields.Str(required=True)
+    countries_with_similar_pop = fields.Str(required=True)
 
 class GeographySchema(ma.Schema):
     country_id = fields.Str(required=True)
@@ -118,6 +120,6 @@ all_geography_schema = GeographySchema(many=True)
 foodandtourism_schema = FoodAndTourismSchema()
 all_foodandtourism_schema = FoodAndTourismSchema(many=True)
 
-# with app.app_context():
-#     db.create_all()
-#     db.session.commit()
+with app.app_context():
+    db.create_all()
+    db.session.commit()
