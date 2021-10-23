@@ -34,7 +34,7 @@
         ],
         "country_border_names": [
             "China",
-            "Iran (Islamic Republic of)",
+            "Iran",
             "Pakistan",
             "Tajikistan",
             "Turkmenistan",
@@ -77,7 +77,7 @@
         ],
         "country_border_names": [
             "Georgia",
-            "Iran (Islamic Republic of)",
+            "Iran",
             "Turkey"
         ]
     },
@@ -90,7 +90,7 @@
             "ZM"
         ],
         "country_border_names": [
-            "Congo (the Democratic Republic of the)",
+            "Congo",
             "Namibia",
             "Zambia"
         ]
@@ -106,7 +106,7 @@
             "UY"
         ],
         "country_border_names": [
-            "Bolivia (Plurinational State Of)",
+            "Bolivia",
             "Brazil",
             "Chile",
             "Paraguay",
@@ -170,8 +170,8 @@
         "country_border_names": [
             "Armenia",
             "Georgia",
-            "Iran (Islamic Republic of)",
-            "Russian Federation",
+            "Iran",
+            "Russia",
             "Turkey"
         ]
     },
@@ -256,9 +256,9 @@
             "TZ"
         ],
         "country_border_names": [
-            "Congo (the Democratic Republic of the)",
+            "Congo",
             "Rwanda",
-            "Tanzania (the United Republic of)"
+            "Tanzania"
         ]
     },
     {
@@ -330,7 +330,7 @@
         ],
         "country_border_names": [
             "Argentina",
-            "Bolivia (Plurinational State Of)",
+            "Bolivia",
             "Colombia",
             "French Guiana",
             "Guyana",
@@ -338,7 +338,7 @@
             "Peru",
             "Suriname",
             "Uruguay",
-            "Venezuela (Bolivarian Republic of)"
+            "Venezuela"
         ]
     },
     {
@@ -381,7 +381,7 @@
         "country_border_names": [
             "Lithuania",
             "Poland",
-            "Russian Federation",
+            "Russia",
             "Ukraine"
         ]
     },
@@ -402,7 +402,7 @@
             "US"
         ],
         "country_border_names": [
-            "United States of America"
+            "United States"
         ]
     },
     {
@@ -417,7 +417,7 @@
     },
     {
         "country_code": "CD",
-        "country_name": "Congo (the Democratic Republic of the)",
+        "country_name": "Congo",
         "country_border_codes": [
             "AO",
             "BI",
@@ -436,7 +436,7 @@
             "Congo",
             "Rwanda",
             "South Sudan",
-            "Tanzania (the United Republic of)",
+            "Tanzania",
             "Uganda",
             "Zambia"
         ]
@@ -454,7 +454,7 @@
         "country_border_names": [
             "Chad",
             "Congo",
-            "Congo (the Democratic Republic of the)",
+            "Congo",
             "South Sudan",
             "Sudan"
         ]
@@ -471,7 +471,7 @@
         "country_border_names": [
             "Cameroon",
             "Central African Republic",
-            "Congo (the Democratic Republic of the)",
+            "Congo",
             "Gabon"
         ]
     },
@@ -517,7 +517,7 @@
         ],
         "country_border_names": [
             "Argentina",
-            "Bolivia (Plurinational State Of)",
+            "Bolivia",
             "Peru"
         ]
     },
@@ -564,17 +564,17 @@
             "Hong Kong",
             "India",
             "Kazakhstan",
-            "Korea (Democratic People's Republic of)",
+            "North Korea",
             "Kyrgyzstan",
-            "Lao People's Democratic Republic",
+            "Laos",
             "Macao",
             "Mongolia",
             "Myanmar",
             "Nepal",
             "Pakistan",
-            "Russian Federation",
+            "Russia",
             "Tajikistan",
-            "Viet Nam"
+            "Vietnam"
         ]
     },
     {
@@ -590,7 +590,7 @@
             "Ecuador",
             "Panama",
             "Peru",
-            "Venezuela (Bolivarian Republic of)"
+            "Venezuela"
         ]
     },
     {
@@ -766,7 +766,7 @@
         ],
         "country_border_names": [
             "Latvia",
-            "Russian Federation"
+            "Russia"
         ]
     },
     {
@@ -779,7 +779,7 @@
         ],
         "country_border_names": [
             "Libya",
-            "Palestine, State of",
+            "Palestine",
             "Sudan"
         ]
     },
@@ -849,7 +849,7 @@
             "SE"
         ],
         "country_border_names": [
-            "Russian Federation",
+            "Russia",
             "Sweden"
         ]
     },
@@ -941,7 +941,7 @@
         "country_border_names": [
             "Armenia",
             "Azerbaijan",
-            "Russian Federation",
+            "Russia",
             "Turkey"
         ]
     },
@@ -1082,7 +1082,7 @@
         ],
         "country_border_names": [
             "Suriname",
-            "Venezuela (Bolivarian Republic of)"
+            "Venezuela"
         ]
     },
     {
@@ -1173,8 +1173,8 @@
             "Egypt",
             "Jordan",
             "Lebanon",
-            "Palestine, State of",
-            "Syrian Arab Republic"
+            "Palestine",
+            "Syria"
         ]
     },
     {
@@ -1209,17 +1209,17 @@
             "TR"
         ],
         "country_border_names": [
-            "Iran (Islamic Republic of)",
+            "Iran",
             "Jordan",
             "Kuwait",
             "Saudi Arabia",
-            "Syrian Arab Republic",
+            "Syria",
             "Turkey"
         ]
     },
     {
         "country_code": "IR",
-        "country_name": "Iran (Islamic Republic of)",
+        "country_name": "Iran",
         "country_border_codes": [
             "AM",
             "AZ",
@@ -1280,9 +1280,9 @@
         "country_border_names": [
             "Iraq",
             "Israel",
-            "Palestine, State of",
+            "Palestine",
             "Saudi Arabia",
-            "Syrian Arab Republic"
+            "Syria"
         ]
     },
     {
@@ -1299,7 +1299,7 @@
             "Ethiopia",
             "Somalia",
             "South Sudan",
-            "Tanzania (the United Republic of)",
+            "Tanzania",
             "Uganda"
         ]
     },
@@ -1326,7 +1326,7 @@
         ],
         "country_border_names": [
             "Thailand",
-            "Viet Nam"
+            "Vietnam"
         ]
     },
     {
@@ -1351,7 +1351,7 @@
     },
     {
         "country_code": "KP",
-        "country_name": "Korea (Democratic People's Republic of)",
+        "country_name": "North Korea",
         "country_border_codes": [
             "CN",
             "KR",
@@ -1359,8 +1359,8 @@
         ],
         "country_border_names": [
             "China",
-            "Korea (the Republic of)",
-            "Russian Federation"
+            "South Korea",
+            "Russia"
         ]
     },
     {
@@ -1388,14 +1388,14 @@
         "country_border_names": [
             "China",
             "Kyrgyzstan",
-            "Russian Federation",
+            "Russia",
             "Turkmenistan",
             "Uzbekistan"
         ]
     },
     {
         "country_code": "LA",
-        "country_name": "Lao People's Democratic Republic",
+        "country_name": "Laos",
         "country_border_codes": [
             "KH",
             "MM",
@@ -1406,7 +1406,7 @@
             "Cambodia",
             "Myanmar",
             "Thailand",
-            "Viet Nam"
+            "Vietnam"
         ]
     },
     {
@@ -1416,7 +1416,7 @@
             "SY"
         ],
         "country_border_names": [
-            "Syrian Arab Republic"
+            "Syria"
         ]
     },
     {
@@ -1468,7 +1468,7 @@
             "Belarus",
             "Latvia",
             "Poland",
-            "Russian Federation"
+            "Russia"
         ]
     },
     {
@@ -1494,7 +1494,7 @@
         "country_border_names": [
             "Estonia",
             "Lithuania",
-            "Russian Federation"
+            "Russia"
         ]
     },
     {
@@ -1529,7 +1529,7 @@
     },
     {
         "country_code": "MD",
-        "country_name": "Moldova (the Republic of)",
+        "country_name": "Moldova",
         "country_border_codes": [
             "RO",
             "UA"
@@ -1621,7 +1621,7 @@
         "country_border_names": [
             "China",
             "India",
-            "Lao People's Democratic Republic",
+            "Laos",
             "Thailand"
         ]
     },
@@ -1632,7 +1632,7 @@
             "RU"
         ],
         "country_border_names": [
-            "Russian Federation"
+            "Russia"
         ]
     },
     {
@@ -1721,7 +1721,7 @@
         ],
         "country_border_names": [
             "Mozambique",
-            "Tanzania (the United Republic of)",
+            "Tanzania",
             "Zambia"
         ]
     },
@@ -1734,7 +1734,7 @@
         ],
         "country_border_names": [
             "Guatemala",
-            "United States of America"
+            "United States"
         ]
     },
     {
@@ -1762,7 +1762,7 @@
         "country_border_names": [
             "Eswatini",
             "South Africa",
-            "Tanzania (the United Republic of)",
+            "Tanzania",
             "Zambia",
             "Zimbabwe"
         ]
@@ -1849,7 +1849,7 @@
             "SE"
         ],
         "country_border_names": [
-            "Russian Federation",
+            "Russia",
             "Sweden"
         ]
     },
@@ -1928,7 +1928,7 @@
             "EC"
         ],
         "country_border_names": [
-            "Bolivia (Plurinational State Of)",
+            "Bolivia",
             "Brazil",
             "Chile",
             "Colombia",
@@ -1968,7 +1968,7 @@
             "Afghanistan",
             "China",
             "India",
-            "Iran (Islamic Republic of)"
+            "Iran"
         ]
     },
     {
@@ -1986,7 +1986,7 @@
             "Czechia",
             "Germany",
             "Lithuania",
-            "Russian Federation",
+            "Russia",
             "Slovakia",
             "Ukraine"
         ]
@@ -2013,7 +2013,7 @@
     },
     {
         "country_code": "PS",
-        "country_name": "Palestine, State of",
+        "country_name": "Palestine",
         "country_border_codes": [
             "EG",
             "IL",
@@ -2045,7 +2045,7 @@
         ],
         "country_border_names": [
             "Argentina",
-            "Bolivia (Plurinational State Of)",
+            "Bolivia",
             "Brazil"
         ]
     },
@@ -2072,7 +2072,7 @@
         "country_border_names": [
             "Bulgaria",
             "Hungary",
-            "Moldova (the Republic of)",
+            "Moldova",
             "Serbia",
             "Ukraine"
         ]
@@ -2101,7 +2101,7 @@
     },
     {
         "country_code": "RU",
-        "country_name": "Russian Federation",
+        "country_name": "Russia",
         "country_border_codes": [
             "BY",
             "CN",
@@ -2124,7 +2124,7 @@
             "Finland",
             "Georgia",
             "Kazakhstan",
-            "Korea (Democratic People's Republic of)",
+            "North Korea",
             "Latvia",
             "Lithuania",
             "Mongolia",
@@ -2142,8 +2142,8 @@
             "UG"
         ],
         "country_border_names": [
-            "Congo (the Democratic Republic of the)",
-            "Tanzania (the United Republic of)",
+            "Congo",
+            "Tanzania",
             "Uganda"
         ]
     },
@@ -2294,7 +2294,7 @@
             "MR"
         ],
         "country_border_names": [
-            "Gambia (the)",
+            "Gambia",
             "Guinea",
             "Guinea-Bissau",
             "Mali",
@@ -2336,7 +2336,7 @@
             "UG"
         ],
         "country_border_names": [
-            "Congo (the Democratic Republic of the)",
+            "Congo",
             "Ethiopia",
             "Kenya",
             "Sudan",
@@ -2357,7 +2357,7 @@
     },
     {
         "country_code": "SY",
-        "country_name": "Syrian Arab Republic",
+        "country_name": "Syria",
         "country_border_codes": [
             "IQ",
             "IL",
@@ -2436,7 +2436,7 @@
             "MM"
         ],
         "country_border_names": [
-            "Lao People's Democratic Republic",
+            "Laos",
             "Malaysia",
             "Myanmar"
         ]
@@ -2476,7 +2476,7 @@
         ],
         "country_border_names": [
             "Afghanistan",
-            "Iran (Islamic Republic of)",
+            "Iran",
             "Kazakhstan",
             "Uzbekistan"
         ]
@@ -2520,9 +2520,9 @@
             "Bulgaria",
             "Georgia",
             "Greece",
-            "Iran (Islamic Republic of)",
+            "Iran",
             "Iraq",
-            "Syrian Arab Republic"
+            "Syria"
         ]
     },
     {
@@ -2537,7 +2537,7 @@
     },
     {
         "country_code": "TW",
-        "country_name": "Taiwan (Province of China)",
+        "country_name": "Taiwan",
         "country_border_codes": [
             ""
         ],
@@ -2547,7 +2547,7 @@
     },
     {
         "country_code": "TZ",
-        "country_name": "Tanzania (the United Republic of)",
+        "country_name": "Tanzania",
         "country_border_codes": [
             "BI",
             "CD",
@@ -2560,7 +2560,7 @@
         ],
         "country_border_names": [
             "Burundi",
-            "Congo (the Democratic Republic of the)",
+            "Congo",
             "Kenya",
             "Malawi",
             "Mozambique",
@@ -2582,10 +2582,10 @@
         ],
         "country_border_names": [
             "Hungary",
-            "Moldova (the Republic of)",
+            "Moldova",
             "Poland",
             "Romania",
-            "Russian Federation",
+            "Russia",
             "Slovakia"
         ]
     },
@@ -2602,12 +2602,12 @@
             "Kenya",
             "Rwanda",
             "South Sudan",
-            "Tanzania (the United Republic of)"
+            "Tanzania"
         ]
     },
     {
         "country_code": "US",
-        "country_name": "United States of America",
+        "country_name": "United States",
         "country_border_codes": [
             "CA",
             "MX"
@@ -2681,7 +2681,7 @@
     },
     {
         "country_code": "VN",
-        "country_name": "Viet Nam",
+        "country_name": "Vietnam",
         "country_border_codes": [
             "KH",
             "CN",
@@ -2690,7 +2690,7 @@
         "country_border_names": [
             "Cambodia",
             "China",
-            "Lao People's Democratic Republic"
+            "Laos"
         ]
     },
     {
@@ -2759,11 +2759,11 @@
         ],
         "country_border_names": [
             "Botswana",
-            "Congo (the Democratic Republic of the)",
+            "Congo",
             "Malawi",
             "Mozambique",
             "Namibia",
-            "Tanzania (the United Republic of)",
+            "Tanzania",
             "Zimbabwe"
         ]
     },
