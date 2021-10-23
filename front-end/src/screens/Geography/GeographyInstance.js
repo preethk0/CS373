@@ -11,7 +11,6 @@ const GeographyInstance = ({}) => {
   const { country } = useParams();
 
   const [data, setData] = useState({});
-  const [mapData, setMapData] = useState({ lat: 0, lng: 0 });
 
   const [{ data: countryData, loading, error }] = useAxios(
     `http://api.around-the-world.me/geography/${country}`
@@ -20,16 +19,21 @@ const GeographyInstance = ({}) => {
   useEffect(() => {
     if (countryData) {
       setData(countryData);
-      setMapData({
-        lat: data?.country_latitude ?? 0,
-        lng: data?.country_longitude ?? 0,
-      });
     }
   }, [countryData]);
 
   const country_neighbors = data
     ? convertStringArrayToArray(data.country_adjacent_countries)
     : null;
+
+    const defaultProps = {
+      center: {
+        lat: data?.country_latitude ?? 0,
+        lng: data?.country_longitude ?? 0,
+      },
+      zoom: 4,
+    };
+  
 
   return (
     <div className="fullPage">
@@ -148,7 +152,7 @@ const GeographyInstance = ({}) => {
                   bootstrapURLKeys={{
                     key: "AIzaSyBTg1SVCHYOg71DzgOow9G1iYuEw3jtJQ4",
                   }}
-                  defaultCenter={mapData}
+                  defaultCenter={{lat: data.country_latitude, lng: data.country_longitude}}
                   defaultZoom={4}
                 ></GoogleMapReact>
                 <img
