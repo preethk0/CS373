@@ -60,6 +60,7 @@ class FoodAndTourism(db.Model):
     country_tourism_percent_GDP = db.Column(db.Float)
     country_coldest_month_temp = db.Column(db.Float)
     country_warmest_month_temp = db.Column(db.Float)
+    country_similar_tourist_countries_data =  db.Column(db.PickleType)
 
 ###### MODEL SCHEMAS ######
 class DemographicsSchema(ma.Schema):
@@ -109,6 +110,7 @@ class FoodAndTourismSchema(ma.Schema):
     country_tourism_percent_GDP = fields.Float(required=True)
     country_coldest_month_temp = fields.Float(required=True)
     country_warmest_month_temp = fields.Float(required=True)
+    country_similar_tourist_countries_data = fields.Str(required=True)
 
 
 demographics_schema = DemographicsSchema()

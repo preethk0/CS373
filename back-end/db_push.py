@@ -66,6 +66,9 @@ with open('data/generalCountryData/countriesTourismYoutubeData.json', 'r') as fi
 with open('data/generalCountryData/countriesTemperaturesData.json', 'r') as file:
     countries_temperatures_data = json.load(file)
 
+with open('data/generalCountryData/countriesSimilarTouristCountriesData.json', 'r') as file:
+    countries_similar_tourist_countries_data = json.load(file)
+
 def populate_demographics():
     individual_files_dir = 'data/individualCountryData'
     for file_name in os.listdir(individual_files_dir):
@@ -170,6 +173,7 @@ def add_food_and_tourism(country_ind_data):
         country_tourist_attractions_data = list(filter(lambda country: country['country'] == country_name, countries_tourist_attractions_data))
         country_tourism_video_data = list(filter(lambda country: country['countryCode'] == country_code, countries_tourism_videos_data))
         country_temperatures_data = list(filter(lambda country: country['country'] == country_name, countries_temperatures_data))
+        country_similar_tourist_countries_data = list(filter(lambda country: country['country'] == country_name, countries_similar_tourist_countries_data))
         if country_main_dishes_data and country_top_agricultural_export_data and country_tourism_income_data and country_tourist_arrivals_data and country_tourist_attractions_data and country_tourism_video_data and country_temperatures_data:
             country_food_and_tourism_obj = {
                 "country_id": country_code,
@@ -185,7 +189,8 @@ def add_food_and_tourism(country_ind_data):
                 "country_tourism_revenue": country_tourism_income_data[0]['tourism_income'],
                 "country_tourism_percent_GDP": country_tourism_income_data[0]['percentage_of_GDP'],
                 "country_coldest_month_temp": country_temperatures_data[0]['coldest_temp'],
-                "country_warmest_month_temp": country_temperatures_data[0]['hottest_temp']
+                "country_warmest_month_temp": country_temperatures_data[0]['hottest_temp'],
+                "country_similar_tourist_countries_data": country_similar_tourist_countries_data[0]['similar_countries']
             }
             food_and_tourism_db_instance = FoodAndTourism(**country_food_and_tourism_obj)
             db.session.add(food_and_tourism_db_instance)
