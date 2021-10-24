@@ -38,15 +38,29 @@ const DemographicsAll = ({}) => {
               justifyContent: "center",
             }}
           >
-            <Pagination
-              defaultPage={1}
-              page={page}
-              onChange={(event, value) => setPage(value)}
-              count={Math.ceil(demographicsData.length / 9)}
-              variant="outlined"
-              color="primary"
-              style={{ alignSelf: "center" }}
-            />
+            <div>
+              <Pagination
+                defaultPage={1}
+                page={page}
+                onChange={(event, value) => setPage(value)}
+                count={Math.ceil(demographicsData.length / 9)}
+                variant="outlined"
+                color="primary"
+                style={{ alignSelf: "center" }}
+              />
+            </div>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              marginTop: 20,
+              flex: 1,
+              justifyContent: "center",
+            }}
+          >
+            Displaying {(page - 1) * 9 + 1}-
+            {Math.min(page * 9, demographicsData.length)} of{" "}
+            {demographicsData.length}
           </div>
           <div className="cardGrid">
             {demographicsData.slice((page - 1) * 9, page * 9).map((country) => (

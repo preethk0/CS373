@@ -38,6 +38,7 @@ const CountryCard = ({ country }) => {
           <div>Population: {formatNumbers(country.country_population)}</div>
           <div>Primary Language: {languages[0]}</div>
           <div>Number of states: {country.country_states}</div>
+          <div>Number of cities: {country.country_cities}</div>
         </div>
       </Card>
     </a>

@@ -100,6 +100,9 @@ const DemographicsInstance = ({}) => {
               <b>Number of states:</b> {data.country_states}
             </p>
             <p class="card-text">
+              <b>Number of cities:</b> {data.country_cities}
+            </p>
+            <p class="card-text">
               <b>Currency: </b>
               {data.country_currency}
             </p>
