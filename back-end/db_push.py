@@ -24,6 +24,12 @@ with open('data/generalCountryData/countriesCitiesData.json', 'r') as file:
 with open('data/generalCountryData/countriesDemographicsYoutubeData.json', 'r') as file:
     countries_demographics_videos_data = json.load(file)
 
+with open('data/generalCountryData/countriesGDPData.json', 'r') as file:
+    countries_GDP_data = json.load(file)
+
+with open('data/generalCountryData/countriesGDPperCapitaData.json', 'r') as file:
+    countries_GDP_per_capita_data = json.load(file)
+
 with open('data/generalCountryData/countriesLocationData.json', 'r') as file:
     countries_location_data = json.load(file)
 
@@ -35,6 +41,9 @@ with open('data/generalCountryData/countriesAreaData.json', 'r') as file:
 
 with open('data/generalCountryData/countriesLandAreaData.json', 'r') as file:
     countries_land_area_data = json.load(file)
+
+with open('data/generalCountryData/countriesTopographicMapData.json', 'r') as file:
+    countries_topographic_map_data = json.load(file)
 
 with open('data/generalCountryData/countriesMainDishesData.json', 'r') as file:
     countries_main_dishes_data = json.load(file)
@@ -75,7 +84,17 @@ def add_demographics(country_ind_data):
         country_cities_data = list(filter(lambda country: country['country'] == country_name, countries_cities_data['data']))
         country_states_data = list(filter(lambda country: country['name'] == country_name, countries_states_data['data']))
         country_demographics_video_data = list(filter(lambda country: country['countryCode'] == country_code, countries_demographics_videos_data))
+        country_GDP_data = list(filter(lambda country: country['country'] == country_name, countries_GDP_data))
+        country_GDP_per_capita_data = list(filter(lambda country: country['country'] == country_name, countries_GDP_per_capita_data))
         if country_basic_data and country_flag_data and country_population_data and country_cities_data and country_states_data:
+            
+            countriesWithSimilarPopulation = []
+            indexOfCountry = countries_population_data['data'].index(country_population_data[0])
+            if indexOfCountry > 0:
+                countriesWithSimilarPopulation.append(countries_population_data['data'][indexOfCountry - 1]['country'])
+            if indexOfCountry < len(countries_population_data['data']) - 1:
+                countriesWithSimilarPopulation.append(countries_population_data['data'][indexOfCountry + 1]['country'])
+            
             country_dem_obj = {
                 "country_id": country_code,
                 "country_name": country_name,
@@ -90,7 +109,10 @@ def add_demographics(country_ind_data):
                 "country_states": len(country_states_data[0]['states']),
                 "country_domain": country_basic_data[0]['topLevelDomain'][0],
                 "country_income_level": country_ind_data['wbIncomeLevel']['value'],
-                "country_demographics_video_src": "https://www.youtube.com/embed/" + country_demographics_video_data[0]['items'][0]['id']['videoId'] if len(country_demographics_video_data[0]['items']) > 0 else ""
+                "country_demographics_video_src": "https://www.youtube.com/embed/" + country_demographics_video_data[0]['items'][0]['id']['videoId'] if len(country_demographics_video_data[0]['items']) > 0 else "",
+                "country_GDP": country_GDP_data[0]['GDP'] if len(country_GDP_data) > 0 else 0,
+                "countries_with_similar_pop": countriesWithSimilarPopulation,
+                "country_GDP_per_capita": country_GDP_per_capita_data[0]['GDP_per_capita'] if len(country_GDP_per_capita_data) > 0 else 0,
             }
             demographics_db_instance = Demographics(**country_dem_obj)
             db.session.add(demographics_db_instance)
@@ -111,6 +133,7 @@ def add_geography(country_ind_data):
         country_location_data = list(filter(lambda country: country['name'] == country_name, countries_location_data['data']))
         country_neighbors_data = list(filter(lambda country: country['country_code'] == country_code, countries_neighbors_data))
         country_area_data = list(filter(lambda country: country['country'].strip() == country_name, countries_area_data))
+        country_topographic_map_data = list(filter(lambda country: country['countryCode'] == country_code, countries_topographic_map_data))
         if country_location_data and country_neighbors_data and country_area_data:
             country_geo_obj = {
                 "country_id": country_code,
@@ -122,7 +145,8 @@ def add_geography(country_ind_data):
                 "country_adjacent_countries": country_neighbors_data[0]['country_border_names'],
                 "country_land_area": country_area_data[0]['land_area'],
                 "country_water_area": country_area_data[0]['water_area'],
-                "country_water_percent": country_area_data[0]['water_percent']
+                "country_water_percent": country_area_data[0]['water_percent'],
+                "country_topography_image": country_topographic_map_data[0]['value'][0]['contentUrl']
             }
             geography_db_instance = Geography(**country_geo_obj)
             db.session.add(geography_db_instance)
@@ -169,6 +193,6 @@ def add_food_and_tourism(country_ind_data):
 if __name__ == "__main__":
     print("Populating DB...")
     populate_demographics()
-    # populate_geography()
-    # populate_food_and_tourism()
+    populate_geography()
+    populate_food_and_tourism()
     print("Done")
