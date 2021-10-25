@@ -23,7 +23,7 @@ selenium_tests:
   image: python:3.6-stretch
   stage: test
   before_script:
-    - pip install -r back-end/requirements.txt
+    - pip install -r front-end/gui_tests/requirements.txt
     - sudo apt-get install -y chromium-browser
   script:
     - chmod 755 front-end/gui_tests/chromedriver_linux
