@@ -12,10 +12,11 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"response must be valid and have a body\", function () {",
+							"pm.test(\"All demographics response must be valid, have a body and correct length\", function () {",
 							"     pm.response.to.be.ok;",
 							"     pm.response.to.be.withBody;",
 							"     pm.response.to.be.json;",
+							"     pm.expect(pm.response.json().length).to.equal(168);",
 							"});"
 						],
 						"type": "text/javascript"
@@ -47,10 +48,14 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"response must be valid and have a body\", function () {",
+							"pm.test(\"Demographics country response must be valid, have a body and have certain fields\", function () {",
 							"     pm.response.to.be.ok;",
 							"     pm.response.to.be.withBody;",
 							"     pm.response.to.be.json;",
+							"     pm.expect(pm.response.json()).to.have.property(\"country_population\");",
+							"     pm.expect(pm.response.json()).to.have.property(\"country_calling_code\");",
+							"     pm.expect(pm.response.json()).to.have.property(\"country_capital\");",
+							"     pm.expect(pm.response.json()).to.have.property(\"country_states\");",
 							"});"
 						],
 						"type": "text/javascript"
@@ -83,10 +88,11 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"response must be valid and have a body\", function () {",
+							"pm.test(\"All geography response must be valid, have a body and correct length\", function () {",
 							"     pm.response.to.be.ok;",
 							"     pm.response.to.be.withBody;",
 							"     pm.response.to.be.json;",
+							"     pm.expect(pm.response.json().length).to.equal(154);",
 							"});"
 						],
 						"type": "text/javascript"
@@ -118,10 +124,14 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"response must be valid and have a body\", function () {",
+							"pm.test(\"Geography country response must be valid, have a body and have certain fields\", function () {",
 							"     pm.response.to.be.ok;",
 							"     pm.response.to.be.withBody;",
 							"     pm.response.to.be.json;",
+							"     pm.expect(pm.response.json()).to.have.property(\"country_continent\");",
+							"     pm.expect(pm.response.json()).to.have.property(\"country_land_area\");",
+							"     pm.expect(pm.response.json()).to.have.property(\"country_latitude\");",
+							"     pm.expect(pm.response.json()).to.have.property(\"country_water_percent\");",
 							"});"
 						],
 						"type": "text/javascript"
@@ -154,10 +164,11 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"response must be valid and have a body\", function () {",
+							"pm.test(\"All food/tourism response must be valid, have a body and correct length\", function () {",
 							"     pm.response.to.be.ok;",
 							"     pm.response.to.be.withBody;",
 							"     pm.response.to.be.json;",
+							"     pm.expect(pm.response.json().length).to.equal(139);",
 							"});"
 						],
 						"type": "text/javascript"
@@ -189,10 +200,14 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"response must be valid and have a body\", function () {",
+							"pm.test(\"Food and Tourism country response must be valid, have a body and have certain fields\", function () {",
 							"     pm.response.to.be.ok;",
 							"     pm.response.to.be.withBody;",
 							"     pm.response.to.be.json;",
+							"     pm.expect(pm.response.json()).to.have.property(\"country_main_dishes\");",
+							"     pm.expect(pm.response.json()).to.have.property(\"country_income_level\");",
+							"     pm.expect(pm.response.json()).to.have.property(\"country_tourism_revenue\");",
+							"     pm.expect(pm.response.json()).to.have.property(\"country_main_attraction\");",
 							"});"
 						],
 						"type": "text/javascript"
