@@ -23,7 +23,8 @@ postman_tests:
 
 unit_tests:
   stage: test
+  before_script:
+    - pip install -r back-end/requirements.txt
   script:
     - cd back-end
-    - pip install requests
     - python tests.py
