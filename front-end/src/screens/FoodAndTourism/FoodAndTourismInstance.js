@@ -5,7 +5,8 @@ import "./FoodAndTourismInstance.css";
 import { convertStringArrayToArray } from "../../utils";
 import codeToCountry from "../../countryData/codeToCountry";
 import { Spinner } from "react-bootstrap";
-import { demographicCountryCodes } from "../../countryData/demographicsCountries";
+import { demographicCountryCodes,
+         demographicCountryNames} from "../../countryData/demographicsCountries";
 import { geographyCountryCodes } from "../../countryData/geographyCountries";
 
 const FoodAndTourismInstance = ({}) => {
@@ -27,6 +28,9 @@ const FoodAndTourismInstance = ({}) => {
   const main_dishes_images = convertStringArrayToArray(
     data.country_main_dishes_images
   );
+  const countriesWithSimilarTourists = data
+    ? convertStringArrayToArray(data.country_similar_tourist_countries_data)
+    : null;
   const tourism_video = (data.country_tourism_video_src || "").replace(
     "watch?v=",
     "embed/"
@@ -51,12 +55,16 @@ const FoodAndTourismInstance = ({}) => {
       ) : Object.keys(data).length > 0 ? (
         <div
           class="row justify-content-center"
-          style={{ marginLeft: 60, paddingBottom: 30, paddingTop: 20 }}
+          style={{ marginLeft: 60, paddingBottom: 30, paddingTop: 20, paddingRight: 60 }}
         >
           <h1 class="countryName">{data?.country_name}</h1>
           <div class="col" style={{ paddingLeft: 0 }}>
             <div class="card-body">
               <h3 class="card-title">Food</h3>
+              <p class="card-text">
+                <b>Main Agricultural Export: </b>{" "}
+                {data?.country_agricultural_exports ?? ""}
+              </p>
               <p class="card-text">
                 <b>Main Dishes: </b>
                 {main_dishes.join(", ")}
@@ -64,35 +72,9 @@ const FoodAndTourismInstance = ({}) => {
               {main_dishes_images.map((image, idx) => (
                 <img key={idx} src={image} className="foodImage" />
               ))}
-              <p class="card-text">
-                <b>Main Agricultural Export: </b>{" "}
-                {data?.country_agricultural_exports ?? ""}
-              </p>
             </div>
-            {(hasDemographics || hasGeography) && (
-              <div className="linksToModules" style={{ marginLeft: 10 }}>
-                <h4>Interested to learn more about {data?.country_name}?</h4>
-                {hasDemographics && (
-                  <div>
-                    <text>
-                      Check out the{" "}
-                      <a href={"/demographics/" + country}>{"Demographics"}</a>{" "}
-                      of this country!
-                    </text>
-                    <br />
-                  </div>
-                )}
-                {hasGeography && (
-                  <text>
-                    Check out the{" "}
-                    <a href={"/geography/" + country}>{"Geography"}</a> of this
-                    country!
-                  </text>
-                )}
-              </div>
-            )}
           </div>
-          <div class="col">
+          <div class="col-4">
             <div class="card-body">
               <h3 class="card-title">Tourism</h3>
               <p class="card-text">
@@ -104,9 +86,6 @@ const FoodAndTourismInstance = ({}) => {
                   src={data.country_main_attraction_image_src}
                   className="foodImage"
                 />
-              </p>
-              <p class="card-text">
-                <iframe width="500" height="300" src={tourism_video}></iframe>
               </p>
               <p class="card-text">
                 <b>Number of Tourists (per year): </b>
@@ -129,41 +108,62 @@ const FoodAndTourismInstance = ({}) => {
                 {data?.country_coldest_month_temp ?? 0} °C
               </p>
             </div>
-            {/* <div className="linksToModules" style={{ marginLeft: 10 }}>
-              <h4>
-                Wanna check out the demographics of countries with similar
-                tourist numbers?
-              </h4>
-              {Object.keys(data.similar_tourist_countries).map(
-                (country, idx) => {
-                  const countryCodeAndCountry = Object.entries(
-                    codeToCountry
-                  ).filter(([_, val]) => val == country);
-                  if (countryCodeAndCountry.length > 0)
-                    return (
-                      <div>
-                        <a
-                          href={"/demographics/" + countryCodeAndCountry[0][0]}
-                        >
-                          {country}
-                        </a>{" "}
-                        -{" "}
-                        {data.similar_tourist_countries[
-                          country
-                        ].toLocaleString()}{" "}
-                        annual tourists
-                      </div>
-                    );
+          </div>
+          <div class="col">
+            <div class="card-body">
+              <p class="card-text">
+                  <iframe width="500" height="300" src={tourism_video}></iframe>
+              </p>
+              {(hasDemographics || hasGeography) && (
+              <div className="linksToModules" style={{ marginLeft: 10 }}>
+                <h4>Interested to learn more about {data?.country_name}?</h4>
+                {hasDemographics && (
+                  <div>
+                    <text>
+                      Check out the{" "}
+                      <a href={"/demographics/" + country}>{"Demographics"}</a>{" "}
+                      of this country!
+                    </text>
+                    <br />
+                  </div>
+                )}
+                {hasGeography && (
+                  <text>
+                    Check out the{" "}
+                    <a href={"/geography/" + country}>{"Geography"}</a> of this
+                    country!
+                  </text>
+                )}
+              </div>
+            )}
+              <div className="linksToModules" style={{ marginLeft: 10 }}>
+                <h4>
+                  Wanna check out the demographics of countries with similar
+                  tourist numbers?
+                </h4>
+                {countriesWithSimilarTourists.map((country, idx) => {
+                const countryCodeAndCountry = Object.entries(
+                  codeToCountry
+                ).filter(([_, val]) => val == country);
+                if (
+                  countryCodeAndCountry.length > 0 &&
+                  demographicCountryNames.includes(country)
+                )
                   return (
-                    <div>
-                      {country} -{" "}
-                      {data.similar_tourist_countries[country].toLocaleString()}{" "}
-                      annual tourists
-                    </div>
+                    <a href={"/demographics/" + countryCodeAndCountry[0][0]}>
+                      {country}
+                      {idx < countriesWithSimilarTourists.length - 1 && ", "}
+                    </a>
                   );
-                }
-              )}
-            </div> */}
+                return (
+                  <text>
+                    {country}
+                    {idx < countriesWithSimilarTourists.length - 1 && ", "}
+                  </text>
+                );
+              })}
+              </div>
+            </div>
           </div>
         </div>
       ) : (
