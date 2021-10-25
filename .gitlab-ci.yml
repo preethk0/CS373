@@ -20,3 +20,9 @@ postman_tests:
   script:
     - newman --version
     - newman run Postman.json
+
+unit_tests:
+  stage: test
+  script:
+    - cd back-end
+    - python tests.py
