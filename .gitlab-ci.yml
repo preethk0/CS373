@@ -24,7 +24,6 @@ selenium_tests:
   stage: test
   before_script:
     - pip install -r front-end/gui_tests/requirements.txt
-    - sudo apt-get install -y chromium-browser
   script:
     - chmod 755 front-end/gui_tests/chromedriver_linux
     - python front-end/guitests.py
