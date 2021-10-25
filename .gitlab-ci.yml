@@ -22,4 +22,4 @@ jest_tests:
 selenium_tests:
   stage: test
   script:
-    - make selenium-tests
+    - python front-end/guitests.py
