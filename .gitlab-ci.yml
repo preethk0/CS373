@@ -13,6 +13,7 @@ build_app:
     - CI=false npm run-script build
 
 postman_tests:
+  image: python:3.6-stretch
   stage: test
   image:
     name: postman/newman_alpine33
