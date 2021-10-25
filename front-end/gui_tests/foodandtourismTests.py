@@ -13,7 +13,6 @@ import sys
 PATH = "chromedriver.exe"
 # PATH = "./front-end/gui_tests/chromedriver.exe"
 URL = "https://www.around-the-world.me/foodandtourism"
-# URL = "https://www.texasvotes.me/districts/view/"
 
 class TestFoodAndTourism(unittest.TestCase):
 
@@ -41,7 +40,7 @@ class TestFoodAndTourism(unittest.TestCase):
             print(ex)
             return
 
-        self.driver.find_elements_by_class_name('MuiTableCell-root MuiTableCell-head')[2].click()
+        self.driver.find_elements(By.CLASS_NAME, 'MuiTableCell-root MuiTableCell-head')[2].click()
         time.sleep(2)
 
         try:
@@ -52,9 +51,9 @@ class TestFoodAndTourism(unittest.TestCase):
             print(ex)
             return
 
-        self.driver.find_elements_by_class_name('MuiTableRow-root MuiTableRow-hover')[0].click()
+        self.driver.find_elements(By.CLASS_NAME, 'MuiTableRow-root MuiTableRow-hover')[0].click()
         time.sleep(2)
-        element = self.driver.find_elements_by_class_name('card-text')[3]
+        element = self.driver.find_elements(By.CLASS_NAME, 'card-text')[3]
         assert element.text == 'Number of Tourists (per year): 2,500'
 
     def testCountryInfo(self):
@@ -67,9 +66,9 @@ class TestFoodAndTourism(unittest.TestCase):
             print(ex)
             return
 
-        self.driver.find_elements_by_class_name('MuiTableRow-root MuiTableRow-hover')[3].click()
+        self.driver.find_elements(By.CLASS_NAME, 'MuiTableRow-root MuiTableRow-hover')[3].click()
         time.sleep(2)
-        element = self.driver.find_elements_by_class_name('card-text')[0]
+        element = self.driver.find_elements(By.CLASS_NAME, 'card-text')[0]
         assert element.text == 'Main Dishes: Fufu, Egusi Soup'
 
     def testTitles(self):
@@ -82,15 +81,27 @@ class TestFoodAndTourism(unittest.TestCase):
             print(ex)
             return
 
-        self.driver.find_elements_by_class_name('MuiTableRow-root MuiTableRow-hover')[0].click()
+        self.driver.find_elements(By.CLASS_NAME, 'MuiTableRow-root MuiTableRow-hover')[0].click()
         time.sleep(2)
-        element = self.driver.find_elements_by_tag_name('h3')[0]
+        element = self.driver.find_elements(By.TAG_NAME, 'h3')[0]
         assert element.text == 'Food'
-        element = self.driver.find_elements_by_tag_name('h3')[0]
+        element = self.driver.find_elements(By.TAG_NAME, 'h3')[1]
         assert element.text == 'Tourism'
 
-    def testSearch(self):
+    def testImages(self):
         self.driver.get(URL)
+        try:
+            a = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.CLASS_NAME, 'MuiTableRow-root MuiTableRow-hover'))
+            )
+        except Exception as ex:
+            print(ex)
+            return
+
+        self.driver.find_elements(By.CLASS_NAME, 'MuiTableRow-root MuiTableRow-hover')[9].click()
+        time.sleep(2)
+        elements = self.driver.find_elements(By.TAG_NAME, 'img')
+        assert len(elements) == 3
 
 if __name__ == "__main__":
     PATH = sys.argv[1]

@@ -13,7 +13,6 @@ import sys
 PATH = "chromedriver.exe"
 # PATH = "./front-end/gui_tests/chromedriver.exe"
 URL = "https://www.around-the-world.me/geography"
-# URL = "https://www.texasvotes.me/districts/view/"
 
 class TestGeography(unittest.TestCase):
 
@@ -41,7 +40,7 @@ class TestGeography(unittest.TestCase):
             print(ex)
             return
 
-        self.driver.find_elements_by_class_name('MuiTableCell-root MuiTableCell-head')[1].click()
+        self.driver.find_elements(By.CLASS_NAME, 'MuiTableCell-root MuiTableCell-head')[1].click()
         time.sleep(2)
 
         try:
@@ -52,9 +51,9 @@ class TestGeography(unittest.TestCase):
             print(ex)
             return
 
-        self.driver.find_elements_by_class_name('MuiTableRow-root MuiTableRow-hover')[0].click()
+        self.driver.find_elements(By.CLASS_NAME, 'MuiTableRow-root MuiTableRow-hover')[0].click()
         time.sleep(2)
-        element = self.driver.find_element_by_tag_name('h1')
+        element = self.driver.find_element(By.TAG_NAME, 'h1')
         assert element.text == 'Tonga'
 
     def testAdjacentCountries(self):
@@ -67,14 +66,14 @@ class TestGeography(unittest.TestCase):
             print(ex)
             return
 
-        self.driver.find_elements_by_class_name('MuiTableRow-root MuiTableRow-hover')[4].click()
+        self.driver.find_elements(By.CLASS_NAME, 'MuiTableRow-root MuiTableRow-hover')[4].click()
         time.sleep(2)
-        self.driver.find_elements_by_tag_name('a')[0].click()
+        self.driver.find_elements(By.TAG_NAME, 'a')[0].click()
         currentURL = self.driver.current_url
         assert currentURL == "https://www.around-the-world.me/foodandtourism/GT"
         self.driver.back()
 
-        self.driver.find_elements_by_tag_name('a')[1].click()
+        self.driver.find_elements(By.TAG_NAME, 'a')[1].click()
         currentURL = self.driver.current_url
         assert currentURL == "https://www.around-the-world.me/foodandtourism/HN"
         self.driver.back()
@@ -89,9 +88,9 @@ class TestGeography(unittest.TestCase):
             print(ex)
             return
 
-        self.driver.find_elements_by_class_name('MuiTableRow-root MuiTableRow-hover')[2].click()
+        self.driver.find_elements(By.CLASS_NAME, 'MuiTableRow-root MuiTableRow-hover')[2].click()
         time.sleep(2)
-        element = self.driver.find_element_by_class_name('location')
+        element = self.driver.find_element(By.CLASS_NAME, 'location')
         assert element.text == 'Latitude: 11.5 Longitude: 43 Continent: Africa Region: Middle East & North Africa'
 
 if __name__ == "__main__":
