@@ -25,4 +25,5 @@ unit_tests:
   stage: test
   script:
     - cd back-end
+    - pip install requests
     - python tests.py
