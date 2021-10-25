@@ -19,7 +19,7 @@ const membersInfo = {
     responsibilities: "Full-Stack",
     commits: 0,
     issues: 0,
-    tests: 0,
+    tests: 6,
   },
   "dany-torres": {
     name: "Daniela Torres Martinez",
@@ -37,7 +37,7 @@ const membersInfo = {
     responsibilities: "Front-End",
     commits: 0,
     issues: 0,
-    tests: 0,
+    tests: 7,
   },
   "Justin O Lee": {
     name: "Justin Lee",
@@ -46,7 +46,7 @@ const membersInfo = {
     responsibilities: "Front-End",
     commits: 0,
     issues: 0,
-    tests: 0,
+    tests: 12,
   },
   "Preeth Kanamangala": {
     name: "Preeth Kanamangala",
@@ -55,7 +55,7 @@ const membersInfo = {
     responsibilities: "Back-End",
     commits: 0,
     issues: 0,
-    tests: 0,
+    tests: 10,
   },
 };
 

@@ -28,9 +28,11 @@ const getGitLabStatistics = async () => {
   let totalIssues = issuesData.length;
   let membersData = membersInfo;
 
-  commitsData.forEach((contributor) => {
-    totalTests += membersData[contributor.name]?.tests ?? 0;
+  Object.values(membersData).forEach((member) => {
+    totalTests += member.tests;
+  });
 
+  commitsData.forEach((contributor) => {
     if (contributor.name in gitLabSpecialCases) {
       membersData[gitLabSpecialCases[contributor.name]].commits =
         contributor.commits;
