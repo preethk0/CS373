@@ -25,5 +25,5 @@ selenium_tests:
   before_script:
     - pip install -r back-end/requirements.txt
   script:
-    - sudo chmod 755 front-end/gui_tests/chromedriver_linux
+    - chmod 755 front-end/gui_tests/chromedriver_linux
     - python front-end/guitests.py
