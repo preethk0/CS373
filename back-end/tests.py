@@ -15,26 +15,8 @@ class Tests(TestCase):
         result = requests.get("https://api.around-the-world.me/demographics/US")
         assert result.status_code == 200
         jsonRes = result.json()
-        expected = {
-            "countries_with_similar_pop": "['Indonesia', 'Euro area']", 
-            "country_GDP": "$20,544,343,456,937", 
-            "country_GDP_per_capita": "$62,432.49", 
-            "country_calling_code": "1", 
-            "country_capital": "Washington, D.C.", 
-            "country_cities": 13718, 
-            "country_currency": "USD", 
-            "country_demographics_video_src": "https://www.youtube.com/embed/qtgyvfiu1cs", 
-            "country_domain": ".us", 
-            "country_flag": "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg", 
-            "country_flag_emoji": "🇺🇸", 
-            "country_id": "US", 
-            "country_income_level": "High income", 
-            "country_languages": "['English']", 
-            "country_name": "United States", 
-            "country_population": 326687501, 
-            "country_states": 66
-        }
-        assert jsonRes == expected
+        expected = 13718
+        assert jsonRes["country_cities"] == expected
 
     # Test all Geography
     def test3(self):
