@@ -22,5 +22,5 @@ jest_tests:
 selenium_tests:
   stage: test
   script:
-    - pip install selenium
+    - sudo pip3 install selenium
     - python front-end/guitests.py
