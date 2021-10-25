@@ -1,21 +1,40 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import "./DemographicsInstance.css";
 import { convertStringArrayToArray } from "../../utils";
-import codeToCountry from "../../codeToCountry";
-import DemographicsData from "./DemographicsData";
+import codeToCountry from "../../countryData/codeToCountry";
+import useAxios from "axios-hooks";
+import { Spinner } from "react-bootstrap";
+import {
+  geographyCountryCodes,
+  geographyCountryNames,
+} from "../../countryData/geographyCountries";
+import { foodAndTourismCountryCodes } from "../../countryData/foodAndTourismCountries";
 
 const DemographicsInstance = ({}) => {
   const { country: country_id } = useParams();
 
-  const data =
-    country_id in DemographicsData ? DemographicsData[country_id] : null;
+  const [data, setData] = useState({});
+
+  const [{ data: countryData, loading, error }] = useAxios(
+    `http://api.around-the-world.me/demographics/${country_id}`
+  );
+
+  useEffect(() => {
+    if (countryData) {
+      setData(countryData);
+    }
+  }, [countryData]);
+
   const languages = data
     ? convertStringArrayToArray(data.country_languages)
     : null;
   const countriesWithSimilarPopulation = data
     ? convertStringArrayToArray(data.countries_with_similar_pop)
     : null;
+
+  const hasGeography = geographyCountryCodes.includes(country_id);
+  const hasFoodAndTourism = foodAndTourismCountryCodes.includes(country_id);
 
   return (
     <>
@@ -30,7 +49,7 @@ const DemographicsInstance = ({}) => {
           Data for this model instance is not present in Phase 1, will be
           present in the next phase.
         </div>
-      ) : (
+      ) : Object.keys(data).length > 0 ? (
         <div
           class="row justify-content-center"
           style={{ marginLeft: 70, paddingBottom: 30 }}
@@ -48,22 +67,30 @@ const DemographicsInstance = ({}) => {
               height="400"
               style={{ marginLeft: -25 }}
             />
-            <div className="linksToModules">
-              <h4> Interested to learn more about {data.country_name}?</h4>
-              <text>
-                Check out the{" "}
-                <a href={"/geography/" + country_id}>{"Geography"}</a> of this
-                country!
-              </text>
-              <br />
-              <text>
-                Check out the{" "}
-                <a href={"/foodandtourism/" + country_id}>
-                  {"Food and Tourism"}
-                </a>{" "}
-                of this country!
-              </text>
-            </div>
+            {(hasGeography || hasFoodAndTourism) && (
+              <div className="linksToModules">
+                <h4> Interested to learn more about {data.country_name}?</h4>
+                {hasGeography && (
+                  <div>
+                    <text>
+                      Check out the{" "}
+                      <a href={"/geography/" + country_id}>{"Geography"}</a> of
+                      this country!
+                    </text>
+                    <br />
+                  </div>
+                )}
+                {hasFoodAndTourism && (
+                  <text>
+                    Check out the{" "}
+                    <a href={"/foodandtourism/" + country_id}>
+                      {"Food and Tourism"}
+                    </a>{" "}
+                    of this country!
+                  </text>
+                )}
+              </div>
+            )}
           </div>
           <div class="col">
             <p class="card-text">
@@ -72,15 +99,14 @@ const DemographicsInstance = ({}) => {
             </p>
             <p class="card-text">
               <b>Population: </b>
-              {data.country_population.toLocaleString()}
+              {data.country_population?.toLocaleString()}
             </p>
             <p class="card-text">
               <b>Languages: </b>
               {languages.join(", ")}
             </p>
             <p class="card-text">
-              <b>Calling Code: </b>
-              {data.country_calling_code}
+              <b>Calling Code: </b>+{data.country_calling_code}
             </p>
             <p class="card-text">
               <b>Top-level Domain: </b>
@@ -90,6 +116,9 @@ const DemographicsInstance = ({}) => {
               <b>Number of states:</b> {data.country_states}
             </p>
             <p class="card-text">
+              <b>Number of cities:</b> {data.country_cities}
+            </p>
+            <p class="card-text">
               <b>Currency: </b>
               {data.country_currency}
             </p>
@@ -97,13 +126,28 @@ const DemographicsInstance = ({}) => {
               <b>Income Level: </b>
               {data.country_income_level}
             </p>
+            {String(data.country_GDP) !== "0" && (
+              <p class="card-text">
+                <b>GDP: </b>
+                {data.country_GDP}
+              </p>
+            )}
+            {String(data.country_GDP_per_capita) !== "0" && (
+              <p class="card-text">
+                <b>GDP per capita: </b>
+                {data.country_GDP_per_capita}
+              </p>
+            )}
             <p class="card-text">
               <b>Countries with similar population: </b>
               {countriesWithSimilarPopulation.map((country, idx) => {
                 const countryCodeAndCountry = Object.entries(
                   codeToCountry
                 ).filter(([_, val]) => val == country);
-                if (countryCodeAndCountry.length > 0)
+                if (
+                  countryCodeAndCountry.length > 0 &&
+                  geographyCountryNames.includes(country)
+                )
                   return (
                     <a href={"/geography/" + countryCodeAndCountry[0][0]}>
                       {country}
@@ -135,6 +179,12 @@ const DemographicsInstance = ({}) => {
             />
           </div>
         </div>
+      ) : (
+        <Spinner
+          animation="border"
+          role="status"
+          style={{ marginTop: "15%", marginLeft: "48%", width: 60, height: 60 }}
+        />
       )}
     </>
   );

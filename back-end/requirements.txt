@@ -12,4 +12,5 @@ black
 selenium
 python-dotenv
 psycopg2-binary
+black
 uWSGI==2.0.19.1

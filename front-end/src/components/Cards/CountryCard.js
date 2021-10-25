@@ -1,17 +1,17 @@
 import React from "react";
 import { Card } from "antd";
 import "./Card.css";
-import DemographicsData from "../../screens/Demographics/DemographicsData";
 import { convertStringArrayToArray } from "../../utils";
 
-const CountryCard = ({ country: country_id }) => {
+const CountryCard = ({ country }) => {
   const formatNumbers = (number) => {
     return number.toLocaleString();
   };
 
-  const data = DemographicsData[country_id];
-
-  const languages = convertStringArrayToArray(data.country_languages);
+  const country_id = country.country_id;
+  const languages = country
+    ? convertStringArrayToArray(country.country_languages)
+    : null;
 
   return (
     <a href={"/demographics/" + country_id}>
@@ -20,7 +20,7 @@ const CountryCard = ({ country: country_id }) => {
         hoverable
         cover={
           <img
-            src={data.country_flag}
+            src={country.country_flag}
             style={{
               height: 200,
               width: 250,
@@ -31,13 +31,14 @@ const CountryCard = ({ country: country_id }) => {
         }
       >
         <Card.Meta
-          title={data.country_name}
-          description={data.country_capital}
+          title={country.country_name}
+          description={country.country_capital}
         />
         <div className="cardStatsSection">
-          <div>Population: {formatNumbers(data.country_population)}</div>
+          <div>Population: {formatNumbers(country.country_population)}</div>
           <div>Primary Language: {languages[0]}</div>
-          <div>Number of states: {data.country_states}</div>
+          <div>Number of states: {country.country_states}</div>
+          <div>Number of cities: {country.country_cities}</div>
         </div>
       </Card>
     </a>
