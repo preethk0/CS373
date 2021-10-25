@@ -24,7 +24,7 @@ selenium_tests:
   stage: test
   before_script:
     - pip install -r front-end/gui_tests/requirements.txt
-    - apt-get install -y -r front-end/gui_tests/chromerequirements.txt
+    - apt-get install -y front-end/gui_tests/chromerequirements.txt
   script:
     - chmod 755 front-end/gui_tests/chromedriver_linux
     - python front-end/guitests.py
