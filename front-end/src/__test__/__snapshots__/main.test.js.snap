@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Components Bio Card 1`] = `ShallowWrapper {}`;
+
+exports[`Render Components Country Card 1`] = `ShallowWrapper {}`;
+
+exports[`Render Components Model Card 1`] = `ShallowWrapper {}`;
+
+exports[`Render Components Nav Bar 1`] = `ShallowWrapper {}`;
+
+exports[`Render Components Stats Card 1`] = `ShallowWrapper {}`;
+
+exports[`Render Components Tool Card 1`] = `ShallowWrapper {}`;
