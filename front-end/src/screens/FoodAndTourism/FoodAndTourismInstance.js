@@ -17,7 +17,7 @@ const FoodAndTourismInstance = ({}) => {
   const [data, setData] = useState({});
 
   const [{ data: countryData, loading, error }] = useAxios(
-    `http://api.around-the-world.me/foodandtourism/${country}`
+    `https://api.around-the-world.me/foodandtourism/${country}`
   );
 
   useEffect(() => {

@@ -10,7 +10,7 @@ const DemographicsAll = ({}) => {
   const [page, setPage] = useState(1);
 
   const [{ data, loading, error }] = useAxios(
-    "http://api.around-the-world.me/demographics"
+    "https://api.around-the-world.me/demographics"
   );
 
   useEffect(() => {

@@ -15,7 +15,7 @@ const GeographyInstance = ({}) => {
   const [data, setData] = useState({});
 
   const [{ data: countryData, loading, error }] = useAxios(
-    `http://api.around-the-world.me/geography/${country}`
+    `https://api.around-the-world.me/geography/${country}`
   );
 
   useEffect(() => {

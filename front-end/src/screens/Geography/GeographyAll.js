@@ -7,7 +7,7 @@ const GeographyAll = ({}) => {
   const [data, setData] = useState([]);
 
   const [{ data: geographyData, loading, error }] = useAxios(
-    "http://api.around-the-world.me/geography"
+    "https://api.around-the-world.me/geography"
   );
 
   useEffect(() => {
