@@ -1,9 +1,22 @@
-import React, { useEffect } from "react";
-import DemographicsData from "./DemographicsData";
+import React, { useEffect, useState } from "react";
 import "./DemographicsAll.css";
 import CountryCard from "../../components/Cards/CountryCard";
+import useAxios from "axios-hooks";
 
 const DemographicsAll = ({}) => {
+  const [demographicsData, setDemographicsData] = useState([]);
+
+  const [{ data, loading, error }] = useAxios(
+    "http://api.around-the-world.me/demographics"
+  );
+
+  useEffect(() => {
+    const demographicsResult = data;
+    if (demographicsResult) {
+      setDemographicsData(demographicsResult);
+    }
+  }, [data]);
+
   return (
     <div className="mainPage">
       <h2 className="header">Demographics</h2>
@@ -13,13 +26,10 @@ const DemographicsAll = ({}) => {
         information about it.
       </p>
       <div className="cardGrid">
-        {Object.keys(DemographicsData).map((country) => (
+        {demographicsData.map((country) => (
           <CountryCard country={country} />
         ))}
       </div>
-      <footer>
-        <div>Countries displayed: {Object.keys(DemographicsData).length}</div>
-      </footer>
     </div>
   );
 };

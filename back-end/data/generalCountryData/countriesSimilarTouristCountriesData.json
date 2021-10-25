@@ -1,0 +1,1688 @@
+[
+    {
+        "country": "France",
+        "similar_countries": [
+            "Spain",
+            "United States"
+        ]
+    },
+    {
+        "country": "Spain",
+        "similar_countries": [
+            "France",
+            "United States",
+            "China"
+        ]
+    },
+    {
+        "country": "United States",
+        "similar_countries": [
+            "France",
+            "Spain",
+            "China",
+            "Italy"
+        ]
+    },
+    {
+        "country": "China",
+        "similar_countries": [
+            "Spain",
+            "United States",
+            "Italy",
+            "Mexico"
+        ]
+    },
+    {
+        "country": "Italy",
+        "similar_countries": [
+            "United States",
+            "China",
+            "Mexico",
+            "United Kingdom"
+        ]
+    },
+    {
+        "country": "Mexico",
+        "similar_countries": [
+            "China",
+            "Italy",
+            "United Kingdom",
+            "Turkey"
+        ]
+    },
+    {
+        "country": "United Kingdom",
+        "similar_countries": [
+            "Italy",
+            "Mexico",
+            "Turkey",
+            "Germany"
+        ]
+    },
+    {
+        "country": "Turkey",
+        "similar_countries": [
+            "Mexico",
+            "United Kingdom",
+            "Germany",
+            "Thailand"
+        ]
+    },
+    {
+        "country": "Germany",
+        "similar_countries": [
+            "United Kingdom",
+            "Turkey",
+            "Thailand",
+            "Austria"
+        ]
+    },
+    {
+        "country": "Thailand",
+        "similar_countries": [
+            "Turkey",
+            "Germany",
+            "Austria",
+            "Japan"
+        ]
+    },
+    {
+        "country": "Austria",
+        "similar_countries": [
+            "Germany",
+            "Thailand",
+            "Japan",
+            "Hong Kong"
+        ]
+    },
+    {
+        "country": "Japan",
+        "similar_countries": [
+            "Thailand",
+            "Austria",
+            "Hong Kong",
+            "Greece"
+        ]
+    },
+    {
+        "country": "Hong Kong",
+        "similar_countries": [
+            "Austria",
+            "Japan",
+            "Greece",
+            "Malaysia"
+        ]
+    },
+    {
+        "country": "Greece",
+        "similar_countries": [
+            "Japan",
+            "Hong Kong",
+            "Malaysia",
+            "Russia"
+        ]
+    },
+    {
+        "country": "Malaysia",
+        "similar_countries": [
+            "Hong Kong",
+            "Greece",
+            "Russia",
+            "Canada"
+        ]
+    },
+    {
+        "country": "Russia",
+        "similar_countries": [
+            "Greece",
+            "Malaysia",
+            "Canada",
+            "Poland"
+        ]
+    },
+    {
+        "country": "Canada",
+        "similar_countries": [
+            "Malaysia",
+            "Russia",
+            "Poland",
+            "Netherlands"
+        ]
+    },
+    {
+        "country": "Poland",
+        "similar_countries": [
+            "Russia",
+            "Canada",
+            "Netherlands",
+            "China"
+        ]
+    },
+    {
+        "country": "Netherlands",
+        "similar_countries": [
+            "Canada",
+            "Poland",
+            "China",
+            "Saudi Arabia"
+        ]
+    },
+    {
+        "country": "Macao SAR, China",
+        "similar_countries": [
+            "Poland",
+            "Netherlands",
+            "Saudi Arabia",
+            "Croatia"
+        ]
+    },
+    {
+        "country": "Saudi Arabia",
+        "similar_countries": [
+            "Netherlands",
+            "China",
+            "Croatia",
+            "India"
+        ]
+    },
+    {
+        "country": "Croatia",
+        "similar_countries": [
+            "China",
+            "Saudi Arabia",
+            "India",
+            "Portugal"
+        ]
+    },
+    {
+        "country": "India",
+        "similar_countries": [
+            "Saudi Arabia",
+            "Croatia",
+            "Portugal",
+            "Ukraine"
+        ]
+    },
+    {
+        "country": "Portugal",
+        "similar_countries": [
+            "Croatia",
+            "India",
+            "Ukraine",
+            "Indonesia"
+        ]
+    },
+    {
+        "country": "Ukraine",
+        "similar_countries": [
+            "India",
+            "Portugal",
+            "Indonesia",
+            "Singapore"
+        ]
+    },
+    {
+        "country": "Indonesia",
+        "similar_countries": [
+            "Portugal",
+            "Ukraine",
+            "Singapore",
+            "South Korea"
+        ]
+    },
+    {
+        "country": "Singapore",
+        "similar_countries": [
+            "Ukraine",
+            "Indonesia",
+            "South Korea",
+            "Vietnam"
+        ]
+    },
+    {
+        "country": "South Korea",
+        "similar_countries": [
+            "Indonesia",
+            "Singapore",
+            "Vietnam",
+            "Denmark"
+        ]
+    },
+    {
+        "country": "Vietnam",
+        "similar_countries": [
+            "Singapore",
+            "South Korea",
+            "Denmark",
+            "Bahrain"
+        ]
+    },
+    {
+        "country": "Denmark",
+        "similar_countries": [
+            "South Korea",
+            "Vietnam",
+            "Bahrain",
+            "Morocco"
+        ]
+    },
+    {
+        "country": "Bahrain",
+        "similar_countries": [
+            "Vietnam",
+            "Denmark",
+            "Morocco",
+            "Belarus"
+        ]
+    },
+    {
+        "country": "Morocco",
+        "similar_countries": [
+            "Denmark",
+            "Bahrain",
+            "Belarus",
+            "Romania"
+        ]
+    },
+    {
+        "country": "Belarus",
+        "similar_countries": [
+            "Bahrain",
+            "Morocco",
+            "Romania",
+            "Ireland"
+        ]
+    },
+    {
+        "country": "Romania",
+        "similar_countries": [
+            "Morocco",
+            "Belarus",
+            "Ireland",
+            "South Africa"
+        ]
+    },
+    {
+        "country": "Ireland",
+        "similar_countries": [
+            "Belarus",
+            "Romania",
+            "South Africa",
+            "Czech Republic"
+        ]
+    },
+    {
+        "country": "South Africa",
+        "similar_countries": [
+            "Romania",
+            "Ireland",
+            "Czech Republic",
+            "Switzerland"
+        ]
+    },
+    {
+        "country": "Czech Republic",
+        "similar_countries": [
+            "Ireland",
+            "South Africa",
+            "Switzerland",
+            "Bulgaria"
+        ]
+    },
+    {
+        "country": "Switzerland",
+        "similar_countries": [
+            "South Africa",
+            "Czech Republic",
+            "Bulgaria",
+            "Australia"
+        ]
+    },
+    {
+        "country": "Bulgaria",
+        "similar_countries": [
+            "Czech Republic",
+            "Switzerland",
+            "Australia",
+            "Belgium"
+        ]
+    },
+    {
+        "country": "Australia",
+        "similar_countries": [
+            "Switzerland",
+            "Bulgaria",
+            "Belgium",
+            "Egypt"
+        ]
+    },
+    {
+        "country": "Belgium",
+        "similar_countries": [
+            "Bulgaria",
+            "Australia",
+            "Egypt",
+            "Kazakhstan"
+        ]
+    },
+    {
+        "country": "Egypt",
+        "similar_countries": [
+            "Australia",
+            "Belgium",
+            "Kazakhstan",
+            "United Arab Emirates"
+        ]
+    },
+    {
+        "country": "Kazakhstan",
+        "similar_countries": [
+            "Belgium",
+            "Egypt",
+            "United Arab Emirates",
+            "Sweden"
+        ]
+    },
+    {
+        "country": "United Arab Emirates",
+        "similar_countries": [
+            "Egypt",
+            "Kazakhstan",
+            "Sweden",
+            "Tunisia"
+        ]
+    },
+    {
+        "country": "Sweden",
+        "similar_countries": [
+            "Kazakhstan",
+            "United Arab Emirates",
+            "Tunisia",
+            "Argentina"
+        ]
+    },
+    {
+        "country": "Tunisia",
+        "similar_countries": [
+            "United Arab Emirates",
+            "Sweden",
+            "Argentina",
+            "Philippines"
+        ]
+    },
+    {
+        "country": "Argentina",
+        "similar_countries": [
+            "Sweden",
+            "Tunisia",
+            "Philippines",
+            "Brazil"
+        ]
+    },
+    {
+        "country": "Philippines",
+        "similar_countries": [
+            "Tunisia",
+            "Argentina",
+            "Brazil",
+            "Georgia"
+        ]
+    },
+    {
+        "country": "Brazil",
+        "similar_countries": [
+            "Argentina",
+            "Philippines",
+            "Georgia",
+            "Chile"
+        ]
+    },
+    {
+        "country": "Georgia",
+        "similar_countries": [
+            "Philippines",
+            "Brazil",
+            "Chile",
+            "Norway"
+        ]
+    },
+    {
+        "country": "Chile",
+        "similar_countries": [
+            "Brazil",
+            "Georgia",
+            "Norway",
+            "Dominican Republic"
+        ]
+    },
+    {
+        "country": "Norway",
+        "similar_countries": [
+            "Georgia",
+            "Chile",
+            "Dominican Republic",
+            "Hungary"
+        ]
+    },
+    {
+        "country": "Dominican Republic",
+        "similar_countries": [
+            "Chile",
+            "Norway",
+            "Hungary",
+            "Cambodia"
+        ]
+    },
+    {
+        "country": "Hungary",
+        "similar_countries": [
+            "Norway",
+            "Dominican Republic",
+            "Cambodia",
+            "Syria"
+        ]
+    },
+    {
+        "country": "Cambodia",
+        "similar_countries": [
+            "Dominican Republic",
+            "Hungary",
+            "Syria",
+            "Iran"
+        ]
+    },
+    {
+        "country": "Syria",
+        "similar_countries": [
+            "Hungary",
+            "Cambodia",
+            "Iran",
+            "Albania"
+        ]
+    },
+    {
+        "country": "Iran",
+        "similar_countries": [
+            "Cambodia",
+            "Syria",
+            "Albania",
+            "Cuba"
+        ]
+    },
+    {
+        "country": "Albania",
+        "similar_countries": [
+            "Syria",
+            "Iran",
+            "Cuba",
+            "Kyrgyzstan"
+        ]
+    },
+    {
+        "country": "Cuba",
+        "similar_countries": [
+            "Iran",
+            "Albania",
+            "Kyrgyzstan",
+            "Colombia"
+        ]
+    },
+    {
+        "country": "Kyrgyzstan",
+        "similar_countries": [
+            "Albania",
+            "Cuba",
+            "Colombia",
+            "Peru"
+        ]
+    },
+    {
+        "country": "Colombia",
+        "similar_countries": [
+            "Cuba",
+            "Kyrgyzstan",
+            "Peru",
+            "Jordan"
+        ]
+    },
+    {
+        "country": "Peru",
+        "similar_countries": [
+            "Kyrgyzstan",
+            "Colombia",
+            "Jordan",
+            "Puerto Rico"
+        ]
+    },
+    {
+        "country": "Jordan",
+        "similar_countries": [
+            "Colombia",
+            "Peru",
+            "Puerto Rico",
+            "Uruguay"
+        ]
+    },
+    {
+        "country": "Puerto Rico",
+        "similar_countries": [
+            "Peru",
+            "Jordan",
+            "Uruguay",
+            "Cyprus"
+        ]
+    },
+    {
+        "country": "Uruguay",
+        "similar_countries": [
+            "Jordan",
+            "Puerto Rico",
+            "Cyprus",
+            "Israel"
+        ]
+    },
+    {
+        "country": "Cyprus",
+        "similar_countries": [
+            "Puerto Rico",
+            "Uruguay",
+            "Israel",
+            "Slovenia"
+        ]
+    },
+    {
+        "country": "Israel",
+        "similar_countries": [
+            "Uruguay",
+            "Cyprus",
+            "Slovenia",
+            "New Zealand"
+        ]
+    },
+    {
+        "country": "Slovenia",
+        "similar_countries": [
+            "Cyprus",
+            "Israel",
+            "New Zealand",
+            "Myanmar"
+        ]
+    },
+    {
+        "country": "New Zealand",
+        "similar_countries": [
+            "Israel",
+            "Slovenia",
+            "Myanmar",
+            "Laos"
+        ]
+    },
+    {
+        "country": "Myanmar",
+        "similar_countries": [
+            "Slovenia",
+            "New Zealand",
+            "Laos",
+            "Estonia"
+        ]
+    },
+    {
+        "country": "Laos",
+        "similar_countries": [
+            "New Zealand",
+            "Myanmar",
+            "Estonia",
+            "Finland"
+        ]
+    },
+    {
+        "country": "Estonia",
+        "similar_countries": [
+            "Myanmar",
+            "Laos",
+            "Finland",
+            "Costa Rica"
+        ]
+    },
+    {
+        "country": "Finland",
+        "similar_countries": [
+            "Laos",
+            "Estonia",
+            "Costa Rica",
+            "Andorra"
+        ]
+    },
+    {
+        "country": "Costa Rica",
+        "similar_countries": [
+            "Estonia",
+            "Finland",
+            "Andorra",
+            "Uzbekistan"
+        ]
+    },
+    {
+        "country": "Andorra",
+        "similar_countries": [
+            "Finland",
+            "Costa Rica",
+            "Uzbekistan",
+            "Lithuania"
+        ]
+    },
+    {
+        "country": "Uzbekistan",
+        "similar_countries": [
+            "Costa Rica",
+            "Andorra",
+            "Lithuania",
+            "Azerbaijan"
+        ]
+    },
+    {
+        "country": "Lithuania",
+        "similar_countries": [
+            "Andorra",
+            "Uzbekistan",
+            "Azerbaijan",
+            "Algeria"
+        ]
+    },
+    {
+        "country": "Azerbaijan",
+        "similar_countries": [
+            "Uzbekistan",
+            "Lithuania",
+            "Algeria",
+            "Zimbabwe"
+        ]
+    },
+    {
+        "country": "Algeria",
+        "similar_countries": [
+            "Lithuania",
+            "Azerbaijan",
+            "Zimbabwe",
+            "Oman"
+        ]
+    },
+    {
+        "country": "Zimbabwe",
+        "similar_countries": [
+            "Azerbaijan",
+            "Algeria",
+            "Oman",
+            "Jamaica"
+        ]
+    },
+    {
+        "country": "Oman",
+        "similar_countries": [
+            "Algeria",
+            "Zimbabwe",
+            "Jamaica",
+            "Malta"
+        ]
+    },
+    {
+        "country": "Jamaica",
+        "similar_countries": [
+            "Zimbabwe",
+            "Oman",
+            "Malta",
+            "Qatar"
+        ]
+    },
+    {
+        "country": "Malta",
+        "similar_countries": [
+            "Oman",
+            "Jamaica",
+            "Qatar",
+            "Iceland"
+        ]
+    },
+    {
+        "country": "Qatar",
+        "similar_countries": [
+            "Jamaica",
+            "Malta",
+            "Iceland",
+            "Slovakia"
+        ]
+    },
+    {
+        "country": "Iceland",
+        "similar_countries": [
+            "Malta",
+            "Qatar",
+            "Slovakia",
+            "Sri Lanka"
+        ]
+    },
+    {
+        "country": "Slovakia",
+        "similar_countries": [
+            "Qatar",
+            "Iceland",
+            "Sri Lanka",
+            "Guatemala"
+        ]
+    },
+    {
+        "country": "Sri Lanka",
+        "similar_countries": [
+            "Iceland",
+            "Slovakia",
+            "Guatemala",
+            "Latvia"
+        ]
+    },
+    {
+        "country": "Guatemala",
+        "similar_countries": [
+            "Slovakia",
+            "Sri Lanka",
+            "Latvia",
+            "Nigeria"
+        ]
+    },
+    {
+        "country": "Latvia",
+        "similar_countries": [
+            "Sri Lanka",
+            "Guatemala",
+            "Nigeria",
+            "Montenegro"
+        ]
+    },
+    {
+        "country": "Nigeria",
+        "similar_countries": [
+            "Guatemala",
+            "Latvia",
+            "Montenegro",
+            "Lebanon"
+        ]
+    },
+    {
+        "country": "Montenegro",
+        "similar_countries": [
+            "Latvia",
+            "Nigeria",
+            "Lebanon",
+            "Panama"
+        ]
+    },
+    {
+        "country": "Lebanon",
+        "similar_countries": [
+            "Nigeria",
+            "Montenegro",
+            "Panama",
+            "C\u00f4te d'Ivoire"
+        ]
+    },
+    {
+        "country": "Panama",
+        "similar_countries": [
+            "Montenegro",
+            "Lebanon",
+            "C\u00f4te d'Ivoire",
+            "Nicaragua"
+        ]
+    },
+    {
+        "country": "C\u00f4te d'Ivoire",
+        "similar_countries": [
+            "Lebanon",
+            "Panama",
+            "Nicaragua",
+            "Ecuador"
+        ]
+    },
+    {
+        "country": "Nicaragua",
+        "similar_countries": [
+            "Panama",
+            "C\u00f4te d'Ivoire",
+            "Ecuador",
+            "Paraguay"
+        ]
+    },
+    {
+        "country": "Ecuador",
+        "similar_countries": [
+            "C\u00f4te d'Ivoire",
+            "Nicaragua",
+            "Paraguay",
+            "Botswana"
+        ]
+    },
+    {
+        "country": "Paraguay",
+        "similar_countries": [
+            "Nicaragua",
+            "Ecuador",
+            "Botswana",
+            "El Salvador"
+        ]
+    },
+    {
+        "country": "Botswana",
+        "similar_countries": [
+            "Ecuador",
+            "Paraguay",
+            "El Salvador",
+            "Namibia"
+        ]
+    },
+    {
+        "country": "El Salvador",
+        "similar_countries": [
+            "Paraguay",
+            "Botswana",
+            "Namibia",
+            "Serbia"
+        ]
+    },
+    {
+        "country": "Namibia",
+        "similar_countries": [
+            "Botswana",
+            "El Salvador",
+            "Serbia",
+            "Armenia"
+        ]
+    },
+    {
+        "country": "Serbia",
+        "similar_countries": [
+            "El Salvador",
+            "Namibia",
+            "Armenia",
+            "Mozambique"
+        ]
+    },
+    {
+        "country": "Armenia",
+        "similar_countries": [
+            "Namibia",
+            "Serbia",
+            "Mozambique",
+            "Bahamas"
+        ]
+    },
+    {
+        "country": "Mozambique",
+        "similar_countries": [
+            "Serbia",
+            "Armenia",
+            "Bahamas",
+            "Uganda"
+        ]
+    },
+    {
+        "country": "Bahamas",
+        "similar_countries": [
+            "Armenia",
+            "Mozambique",
+            "Uganda",
+            "Senegal"
+        ]
+    },
+    {
+        "country": "Uganda",
+        "similar_countries": [
+            "Mozambique",
+            "Bahamas",
+            "Senegal",
+            "Kenya"
+        ]
+    },
+    {
+        "country": "Senegal",
+        "similar_countries": [
+            "Bahamas",
+            "Uganda",
+            "Kenya",
+            "Mauritius"
+        ]
+    },
+    {
+        "country": "Kenya",
+        "similar_countries": [
+            "Uganda",
+            "Senegal",
+            "Mauritius",
+            "Tanzania"
+        ]
+    },
+    {
+        "country": "Mauritius",
+        "similar_countries": [
+            "Senegal",
+            "Kenya",
+            "Tanzania",
+            "Lesotho"
+        ]
+    },
+    {
+        "country": "Tanzania",
+        "similar_countries": [
+            "Kenya",
+            "Mauritius",
+            "Lesotho",
+            "Bolivia"
+        ]
+    },
+    {
+        "country": "Lesotho",
+        "similar_countries": [
+            "Mauritius",
+            "Tanzania",
+            "Bolivia",
+            "Zambia"
+        ]
+    },
+    {
+        "country": "Bolivia",
+        "similar_countries": [
+            "Tanzania",
+            "Lesotho",
+            "Zambia",
+            "Luxembourg"
+        ]
+    },
+    {
+        "country": "Zambia",
+        "similar_countries": [
+            "Lesotho",
+            "Bolivia",
+            "Luxembourg",
+            "Cameroon"
+        ]
+    },
+    {
+        "country": "Luxembourg",
+        "similar_countries": [
+            "Bolivia",
+            "Zambia",
+            "Cameroon",
+            "Pakistan"
+        ]
+    },
+    {
+        "country": "Cameroon",
+        "similar_countries": [
+            "Zambia",
+            "Luxembourg",
+            "Pakistan",
+            "Nepal"
+        ]
+    },
+    {
+        "country": "Pakistan",
+        "similar_countries": [
+            "Luxembourg",
+            "Cameroon",
+            "Nepal",
+            "Ethiopia"
+        ]
+    },
+    {
+        "country": "Nepal",
+        "similar_countries": [
+            "Cameroon",
+            "Pakistan",
+            "Ethiopia",
+            "Rwanda"
+        ]
+    },
+    {
+        "country": "Ethiopia",
+        "similar_countries": [
+            "Pakistan",
+            "Nepal",
+            "Rwanda",
+            "Bosnia and Herzegovina"
+        ]
+    },
+    {
+        "country": "Rwanda",
+        "similar_countries": [
+            "Nepal",
+            "Ethiopia",
+            "Bosnia and Herzegovina",
+            "Eswatini"
+        ]
+    },
+    {
+        "country": "Bosnia and Herzegovina",
+        "similar_countries": [
+            "Ethiopia",
+            "Rwanda",
+            "Eswatini",
+            "Ghana"
+        ]
+    },
+    {
+        "country": "Eswatini",
+        "similar_countries": [
+            "Rwanda",
+            "Bosnia and Herzegovina",
+            "Ghana",
+            "Iraq"
+        ]
+    },
+    {
+        "country": "Ghana",
+        "similar_countries": [
+            "Bosnia and Herzegovina",
+            "Eswatini",
+            "Iraq",
+            "Honduras"
+        ]
+    },
+    {
+        "country": "Iraq",
+        "similar_countries": [
+            "Eswatini",
+            "Ghana",
+            "Honduras",
+            "Fiji"
+        ]
+    },
+    {
+        "country": "Honduras",
+        "similar_countries": [
+            "Ghana",
+            "Iraq",
+            "Fiji",
+            "Malawi"
+        ]
+    },
+    {
+        "country": "Fiji",
+        "similar_countries": [
+            "Iraq",
+            "Honduras",
+            "Malawi",
+            "Sudan"
+        ]
+    },
+    {
+        "country": "Malawi",
+        "similar_countries": [
+            "Honduras",
+            "Fiji",
+            "Sudan",
+            "Cabo Verde"
+        ]
+    },
+    {
+        "country": "Sudan",
+        "similar_countries": [
+            "Fiji",
+            "Malawi",
+            "Cabo Verde",
+            "Barbados"
+        ]
+    },
+    {
+        "country": "Cabo Verde",
+        "similar_countries": [
+            "Malawi",
+            "Sudan",
+            "Barbados",
+            "North Macedonia"
+        ]
+    },
+    {
+        "country": "Barbados",
+        "similar_countries": [
+            "Sudan",
+            "Cabo Verde",
+            "North Macedonia",
+            "Togo"
+        ]
+    },
+    {
+        "country": "North Macedonia",
+        "similar_countries": [
+            "Cabo Verde",
+            "Barbados",
+            "Togo",
+            "Mongolia"
+        ]
+    },
+    {
+        "country": "Togo",
+        "similar_countries": [
+            "Barbados",
+            "North Macedonia",
+            "Mongolia",
+            "Haiti"
+        ]
+    },
+    {
+        "country": "Mongolia",
+        "similar_countries": [
+            "North Macedonia",
+            "Togo",
+            "Haiti",
+            "Tajikistan"
+        ]
+    },
+    {
+        "country": "Haiti",
+        "similar_countries": [
+            "Togo",
+            "Mongolia",
+            "Tajikistan",
+            "Belize"
+        ]
+    },
+    {
+        "country": "Tajikistan",
+        "similar_countries": [
+            "Mongolia",
+            "Haiti",
+            "Belize",
+            "Venezuela"
+        ]
+    },
+    {
+        "country": "Belize",
+        "similar_countries": [
+            "Haiti",
+            "Tajikistan",
+            "Venezuela",
+            "Cayman Islands"
+        ]
+    },
+    {
+        "country": "Venezuela",
+        "similar_countries": [
+            "Tajikistan",
+            "Belize",
+            "Cayman Islands",
+            "Trinidad and Tobago"
+        ]
+    },
+    {
+        "country": "Cayman Islands",
+        "similar_countries": [
+            "Belize",
+            "Venezuela",
+            "Trinidad and Tobago",
+            "St. Lucia"
+        ]
+    },
+    {
+        "country": "Trinidad and Tobago",
+        "similar_countries": [
+            "Venezuela",
+            "Cayman Islands",
+            "St. Lucia",
+            "Yemen"
+        ]
+    },
+    {
+        "country": "St. Lucia",
+        "similar_countries": [
+            "Cayman Islands",
+            "Trinidad and Tobago",
+            "Yemen",
+            "Monaco"
+        ]
+    },
+    {
+        "country": "Yemen",
+        "similar_countries": [
+            "Trinidad and Tobago",
+            "St. Lucia",
+            "Monaco",
+            "Congo"
+        ]
+    },
+    {
+        "country": "Monaco",
+        "similar_countries": [
+            "St. Lucia",
+            "Yemen",
+            "Congo",
+            "Seychelles"
+        ]
+    },
+    {
+        "country": "Congo",
+        "similar_countries": [
+            "Yemen",
+            "Monaco",
+            "Seychelles",
+            "Kuwait"
+        ]
+    },
+    {
+        "country": "Seychelles",
+        "similar_countries": [
+            "Monaco",
+            "Congo",
+            "Kuwait",
+            "Burundi"
+        ]
+    },
+    {
+        "country": "Kuwait",
+        "similar_countries": [
+            "Congo",
+            "Seychelles",
+            "Burundi",
+            "Benin"
+        ]
+    },
+    {
+        "country": "Burundi",
+        "similar_countries": [
+            "Seychelles",
+            "Kuwait",
+            "Benin",
+            "Suriname"
+        ]
+    },
+    {
+        "country": "Benin",
+        "similar_countries": [
+            "Kuwait",
+            "Burundi",
+            "Suriname",
+            "Gabon"
+        ]
+    },
+    {
+        "country": "Suriname",
+        "similar_countries": [
+            "Burundi",
+            "Benin",
+            "Gabon",
+            "Angola"
+        ]
+    },
+    {
+        "country": "Gabon",
+        "similar_countries": [
+            "Benin",
+            "Suriname",
+            "Angola",
+            "Brunei"
+        ]
+    },
+    {
+        "country": "Angola",
+        "similar_countries": [
+            "Suriname",
+            "Gabon",
+            "Brunei",
+            "Bhutan"
+        ]
+    },
+    {
+        "country": "Brunei",
+        "similar_countries": [
+            "Gabon",
+            "Angola",
+            "Bhutan",
+            "Madagascar"
+        ]
+    },
+    {
+        "country": "Bhutan",
+        "similar_countries": [
+            "Angola",
+            "Brunei",
+            "Madagascar",
+            "Antigua and Barbuda"
+        ]
+    },
+    {
+        "country": "Madagascar",
+        "similar_countries": [
+            "Brunei",
+            "Bhutan",
+            "Antigua and Barbuda",
+            "Guyana"
+        ]
+    },
+    {
+        "country": "Antigua and Barbuda",
+        "similar_countries": [
+            "Bhutan",
+            "Madagascar",
+            "Guyana",
+            "Congo"
+        ]
+    },
+    {
+        "country": "Guyana",
+        "similar_countries": [
+            "Madagascar",
+            "Antigua and Barbuda",
+            "Congo",
+            "Mali"
+        ]
+    },
+    {
+        "country": "Congo",
+        "similar_countries": [
+            "Antigua and Barbuda",
+            "Guyana",
+            "Mali",
+            "Papua New Guinea"
+        ]
+    },
+    {
+        "country": "Mali",
+        "similar_countries": [
+            "Guyana",
+            "Congo",
+            "Papua New Guinea",
+            "Grenada"
+        ]
+    },
+    {
+        "country": "Papua New Guinea",
+        "similar_countries": [
+            "Congo",
+            "Mali",
+            "Grenada",
+            "Niger"
+        ]
+    },
+    {
+        "country": "Grenada",
+        "similar_countries": [
+            "Mali",
+            "Papua New Guinea",
+            "Niger",
+            "Gambia"
+        ]
+    },
+    {
+        "country": "Niger",
+        "similar_countries": [
+            "Papua New Guinea",
+            "Grenada",
+            "Gambia",
+            "Samoa"
+        ]
+    },
+    {
+        "country": "Gambia",
+        "similar_countries": [
+            "Grenada",
+            "Niger",
+            "Samoa",
+            "Moldova"
+        ]
+    },
+    {
+        "country": "Samoa",
+        "similar_countries": [
+            "Niger",
+            "Gambia",
+            "Moldova",
+            "Burkina Faso"
+        ]
+    },
+    {
+        "country": "Moldova",
+        "similar_countries": [
+            "Gambia",
+            "Samoa",
+            "Burkina Faso",
+            "Eritrea"
+        ]
+    },
+    {
+        "country": "Burkina Faso",
+        "similar_countries": [
+            "Samoa",
+            "Moldova",
+            "Eritrea",
+            "Bangladesh"
+        ]
+    },
+    {
+        "country": "Eritrea",
+        "similar_countries": [
+            "Moldova",
+            "Burkina Faso",
+            "Bangladesh",
+            "Palau"
+        ]
+    },
+    {
+        "country": "Bangladesh",
+        "similar_countries": [
+            "Burkina Faso",
+            "Eritrea",
+            "Palau",
+            "St. Kitts and Nevis"
+        ]
+    },
+    {
+        "country": "Palau",
+        "similar_countries": [
+            "Eritrea",
+            "Bangladesh",
+            "St. Kitts and Nevis",
+            "New Caledonia"
+        ]
+    },
+    {
+        "country": "St. Kitts and Nevis",
+        "similar_countries": [
+            "Bangladesh",
+            "Palau",
+            "New Caledonia",
+            "Central African Republic"
+        ]
+    },
+    {
+        "country": "New Caledonia",
+        "similar_countries": [
+            "Palau",
+            "St. Kitts and Nevis",
+            "Central African Republic",
+            "Vanuatu"
+        ]
+    },
+    {
+        "country": "Central African Republic",
+        "similar_countries": [
+            "St. Kitts and Nevis",
+            "New Caledonia",
+            "Vanuatu",
+            "Chad"
+        ]
+    },
+    {
+        "country": "Vanuatu",
+        "similar_countries": [
+            "New Caledonia",
+            "Central African Republic",
+            "Chad",
+            "San Marino"
+        ]
+    },
+    {
+        "country": "Chad",
+        "similar_countries": [
+            "Central African Republic",
+            "Vanuatu",
+            "San Marino",
+            "St. Vincent and the Grenadines"
+        ]
+    },
+    {
+        "country": "San Marino",
+        "similar_countries": [
+            "Vanuatu",
+            "Chad",
+            "St. Vincent and the Grenadines",
+            "Timor-Leste"
+        ]
+    },
+    {
+        "country": "St. Vincent and the Grenadines",
+        "similar_countries": [
+            "Chad",
+            "San Marino",
+            "Timor-Leste",
+            "Dominica"
+        ]
+    },
+    {
+        "country": "Timor-Leste",
+        "similar_countries": [
+            "San Marino",
+            "St. Vincent and the Grenadines",
+            "Dominica",
+            "Liechtenstein"
+        ]
+    },
+    {
+        "country": "Dominica",
+        "similar_countries": [
+            "St. Vincent and the Grenadines",
+            "Timor-Leste",
+            "Liechtenstein",
+            "Djibouti"
+        ]
+    },
+    {
+        "country": "Liechtenstein",
+        "similar_countries": [
+            "Timor-Leste",
+            "Dominica",
+            "Djibouti",
+            "Tonga"
+        ]
+    },
+    {
+        "country": "Djibouti",
+        "similar_countries": [
+            "Dominica",
+            "Liechtenstein",
+            "Tonga",
+            "Guinea"
+        ]
+    },
+    {
+        "country": "Tonga",
+        "similar_countries": [
+            "Liechtenstein",
+            "Djibouti",
+            "Guinea",
+            "Sierra Leone"
+        ]
+    },
+    {
+        "country": "Guinea",
+        "similar_countries": [
+            "Djibouti",
+            "Tonga",
+            "Sierra Leone",
+            "Guinea-Bissau"
+        ]
+    },
+    {
+        "country": "Sierra Leone",
+        "similar_countries": [
+            "Tonga",
+            "Guinea",
+            "Guinea-Bissau",
+            "Libya"
+        ]
+    },
+    {
+        "country": "Guinea-Bissau",
+        "similar_countries": [
+            "Guinea",
+            "Sierra Leone",
+            "Libya",
+            "Mauritania"
+        ]
+    },
+    {
+        "country": "Libya",
+        "similar_countries": [
+            "Sierra Leone",
+            "Guinea-Bissau",
+            "Mauritania",
+            "S\u00e3o Tom\u00e9 and Principe"
+        ]
+    },
+    {
+        "country": "Mauritania",
+        "similar_countries": [
+            "Guinea-Bissau",
+            "Libya",
+            "S\u00e3o Tom\u00e9 and Principe",
+            "Comoros"
+        ]
+    },
+    {
+        "country": "S\u00e3o Tom\u00e9 and Principe",
+        "similar_countries": [
+            "Libya",
+            "Mauritania",
+            "Comoros",
+            "Solomon Islands"
+        ]
+    },
+    {
+        "country": "Comoros",
+        "similar_countries": [
+            "Mauritania",
+            "S\u00e3o Tom\u00e9 and Principe",
+            "Solomon Islands",
+            "Turkmenistan"
+        ]
+    },
+    {
+        "country": "Solomon Islands",
+        "similar_countries": [
+            "S\u00e3o Tom\u00e9 and Principe",
+            "Comoros",
+            "Turkmenistan",
+            "Kiribati"
+        ]
+    },
+    {
+        "country": "Turkmenistan",
+        "similar_countries": [
+            "Comoros",
+            "Solomon Islands",
+            "Kiribati",
+            "Tuvalu"
+        ]
+    },
+    {
+        "country": "Kiribati",
+        "similar_countries": [
+            "Solomon Islands",
+            "Turkmenistan",
+            "Tuvalu"
+        ]
+    },
+    {
+        "country": "Tuvalu",
+        "similar_countries": [
+            "Turkmenistan",
+            "Kiribati"
+        ]
+    }
+]

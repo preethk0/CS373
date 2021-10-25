@@ -1,5 +1,4 @@
 import React from "react";
-import FoodAndTourismData from "./FoodAndTourismData";
 import { useParams } from "react-router";
 import "./FoodAndTourismInstance.css";
 import { convertStringArrayToArray } from "../../utils";

@@ -1,9 +1,9 @@
 import React from "react";
-import DemographicsData from "./DemographicsData";
 import { useParams } from "react-router";
 import "./DemographicsInstance.css";
 import { convertStringArrayToArray } from "../../utils";
 import codeToCountry from "../../codeToCountry";
+import DemographicsData from "./DemographicsData";
 
 const DemographicsInstance = ({}) => {
   const { country: country_id } = useParams();

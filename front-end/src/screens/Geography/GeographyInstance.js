@@ -1,7 +1,6 @@
 import React from "react";
 import GoogleMapReact from "google-map-react";
 import "./GeographyInstance.css";
-import GeographyData from "./GeographyData";
 import { useParams } from "react-router";
 import { convertStringArrayToArray } from "../../utils";
 import codeToCountry from "../../codeToCountry";
@@ -94,7 +93,9 @@ const GeographyInstance = ({}) => {
                   </p>
                   <br />
                 </div>
-                <h3 className="subTitle" style={{marginTop: -30}}>Area</h3>
+                <h3 className="subTitle" style={{ marginTop: -30 }}>
+                  Area
+                </h3>
                 <div className="area">
                   <text>
                     <b>
