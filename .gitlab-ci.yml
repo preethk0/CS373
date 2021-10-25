@@ -10,3 +10,11 @@ build_app:
     - cd front-end
     - npm install
     - CI=false npm run-script build
+
+unit_tests:
+  stage: test
+  script:
+    - cd back-end
+    - python tests.py
+
+
