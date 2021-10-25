@@ -12,8 +12,7 @@ import sys
 
 PATH = "chromedriver.exe"
 # PATH = "./front-end/gui_tests/chromedriver.exe"
-URL = "https://https://www.around-the-world.me/demographics"
-# URL = "https://www.texasvotes.me/districts/view/"
+URL = "https://www.around-the-world.me/demographics"
 
 class TestDemographics(unittest.TestCase):
 

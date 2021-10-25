@@ -7,6 +7,8 @@ if __name__ == "__main__":
         PATH = "./front-end/gui_tests/chromedriver.exe"
     elif platform == "linux":
         PATH = "./front-end/gui_tests/chromedriver_linux"
+    elif platform == "darwin":
+        PATH = "./front-end/gui_tests/chromedriver_mac"
     else:
         print("Unsupported OS")
         exit(-1)
