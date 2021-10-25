@@ -127,6 +127,14 @@ const DemographicsInstance = ({}) => {
               {data.country_income_level}
             </p>
             <p class="card-text">
+              <b>GDP: </b>
+              {data.country_GDP}
+            </p>
+            <p class="card-text">
+              <b>GDP per capita: </b>
+              {data.country_GDP_per_capita}
+            </p>
+            <p class="card-text">
               <b>Countries with similar population: </b>
               {countriesWithSimilarPopulation.map((country, idx) => {
                 const countryCodeAndCountry = Object.entries(
