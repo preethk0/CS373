@@ -18,3 +18,8 @@ jest_tests:
     - cd front-end
     - npm install
     - npm test
+
+selenium_tests:
+  stage: test
+  script:
+    - python front-end/guitests.py
