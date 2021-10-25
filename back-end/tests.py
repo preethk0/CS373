@@ -1,4 +1,5 @@
 from unittest import main, TestCase
+import requests
 import json
 
 class Tests(TestCase):
