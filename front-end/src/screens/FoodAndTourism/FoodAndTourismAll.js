@@ -14,6 +14,9 @@ const FoodAndTourismAll = ({}) => {
     const foodAndTourismResult = data;
     if (foodAndTourismResult) {
       setFoodAndTourismData(foodAndTourismResult);
+      for (let res in foodAndTourismResult) {
+        console.log(`"${foodAndTourismResult[res].country_name}",`);
+      }
     }
   }, [data]);
 

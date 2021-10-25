@@ -2,9 +2,14 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import "./DemographicsInstance.css";
 import { convertStringArrayToArray } from "../../utils";
-import codeToCountry from "../../codeToCountry";
+import codeToCountry from "../../countryData/codeToCountry";
 import useAxios from "axios-hooks";
 import { Spinner } from "react-bootstrap";
+import {
+  geographyCountryCodes,
+  geographyCountryNames,
+} from "../../countryData/geographyCountries";
+import { foodAndTourismCountryCodes } from "../../countryData/foodAndTourismCountries";
 
 const DemographicsInstance = ({}) => {
   const { country: country_id } = useParams();
@@ -27,6 +32,9 @@ const DemographicsInstance = ({}) => {
   const countriesWithSimilarPopulation = data
     ? convertStringArrayToArray(data.countries_with_similar_pop)
     : null;
+
+  const hasGeography = geographyCountryCodes.includes(country_id);
+  const hasFoodAndTourism = foodAndTourismCountryCodes.includes(country_id);
 
   return (
     <>
@@ -59,22 +67,30 @@ const DemographicsInstance = ({}) => {
               height="400"
               style={{ marginLeft: -25 }}
             />
-            <div className="linksToModules">
-              <h4> Interested to learn more about {data.country_name}?</h4>
-              <text>
-                Check out the{" "}
-                <a href={"/geography/" + country_id}>{"Geography"}</a> of this
-                country!
-              </text>
-              <br />
-              <text>
-                Check out the{" "}
-                <a href={"/foodandtourism/" + country_id}>
-                  {"Food and Tourism"}
-                </a>{" "}
-                of this country!
-              </text>
-            </div>
+            {(hasGeography || hasFoodAndTourism) && (
+              <div className="linksToModules">
+                <h4> Interested to learn more about {data.country_name}?</h4>
+                {hasGeography && (
+                  <div>
+                    <text>
+                      Check out the{" "}
+                      <a href={"/geography/" + country_id}>{"Geography"}</a> of
+                      this country!
+                    </text>
+                    <br />
+                  </div>
+                )}
+                {hasFoodAndTourism && (
+                  <text>
+                    Check out the{" "}
+                    <a href={"/foodandtourism/" + country_id}>
+                      {"Food and Tourism"}
+                    </a>{" "}
+                    of this country!
+                  </text>
+                )}
+              </div>
+            )}
           </div>
           <div class="col">
             <p class="card-text">
@@ -116,7 +132,10 @@ const DemographicsInstance = ({}) => {
                 const countryCodeAndCountry = Object.entries(
                   codeToCountry
                 ).filter(([_, val]) => val == country);
-                if (countryCodeAndCountry.length > 0)
+                if (
+                  countryCodeAndCountry.length > 0 &&
+                  geographyCountryNames.includes(country)
+                )
                   return (
                     <a href={"/geography/" + countryCodeAndCountry[0][0]}>
                       {country}
