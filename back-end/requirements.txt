@@ -15,3 +15,7 @@ psycopg2-binary
 black
 uWSGI==2.0.19.1
 chromium-browser
+libglib2
+libnss3
+libgconf
+libfontconfig1
