@@ -22,4 +22,5 @@ jest_tests:
 selenium_tests:
   stage: test
   script:
+    - pip install selenium
     - python front-end/guitests.py
