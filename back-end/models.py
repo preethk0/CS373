@@ -29,6 +29,7 @@ class Demographics(db.Model):
     country_GDP_per_capita = db.Column(db.String())
     countries_with_similar_pop = db.Column(db.PickleType)
 
+
 # Define Geography table/data model
 class Geography(db.Model):
     __tablename__ = "geography"
@@ -43,6 +44,7 @@ class Geography(db.Model):
     country_water_area = db.Column(db.String())
     country_water_percent = db.Column(db.String())
     country_topography_image = db.Column(db.String())
+
 
 # Define Food and Tourism table/data model
 class FoodAndTourism(db.Model):
@@ -61,7 +63,8 @@ class FoodAndTourism(db.Model):
     country_tourism_percent_GDP = db.Column(db.Float)
     country_coldest_month_temp = db.Column(db.Float)
     country_warmest_month_temp = db.Column(db.Float)
-    country_similar_tourist_countries_data =  db.Column(db.PickleType)
+    country_similar_tourist_countries_data = db.Column(db.PickleType)
+
 
 ###### MODEL SCHEMAS ######
 class DemographicsSchema(ma.Schema):
@@ -79,12 +82,10 @@ class DemographicsSchema(ma.Schema):
     country_states = fields.Int(required=True)
     country_income_level = fields.Str(required=True)
     country_demographics_video_src = fields.Str(required=True)
-<<<<<<< HEAD
     country_GDP = fields.Str(required=True)
     country_GDP_per_capita = fields.Str(required=True)
-=======
->>>>>>> frontend
     countries_with_similar_pop = fields.Str(required=True)
+
 
 class GeographySchema(ma.Schema):
     country_id = fields.Str(required=True)
@@ -98,6 +99,7 @@ class GeographySchema(ma.Schema):
     country_water_area = fields.Str(required=True)
     country_water_percent = fields.Str(required=True)
     country_topography_image = fields.Str(required=True)
+
 
 class FoodAndTourismSchema(ma.Schema):
     country_id = fields.Str(required=True)

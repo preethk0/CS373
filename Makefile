@@ -9,9 +9,6 @@ CFILES :=                                     \
 
 check: $(CFILES)
 
-format:
-	black ./back-end/*.py
-
 docker:
 	docker run -p 3000:3000 around-the-world
 

@@ -7,3 +7,6 @@ backend:
 	 -p 5000:5000 \
 	 -w /usr/src/backend \
 	 around-the-world
+
+format:
+	black ./*.py
