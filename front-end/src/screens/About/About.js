@@ -32,6 +32,12 @@ const getGitLabStatistics = async () => {
     totalTests += member.tests;
   });
 
+  // Clear commits and issues data
+  for (const [key, value] of Object.entries(membersData)) {
+    value.commits = 0
+    value.issues = 0
+  }
+
   commitsData.forEach((contributor) => {
     if (contributor.name in gitLabSpecialCases) {
       membersData[gitLabSpecialCases[contributor.name]].commits +=
@@ -41,16 +47,33 @@ const getGitLabStatistics = async () => {
     }
     totalCommits += contributor.commits;
   });
+  
+  // Issue Count code adapted from TexasVotes: 
+  // (https://gitlab.com/forbesye/fitsbits/-/blob/master/front-end/src/views/About/About.js)
+	const issuePaginationLength = 100
+	let page = 1
+	let issuePage = []
+	let issueList = []
+	do {
+		issuePage = await fetch(
+			`https://gitlab.com/api/v4/projects/29853995/issues?per_page=${issuePaginationLength}&page=${page++}`
+		)
+		issuePage = await issuePage.json()
+		issueList = [...issueList, ...issuePage]
+	} while (issuePage.length === 100)
 
-  issuesData.forEach((issue, idx) => {
-    if (Boolean(issue.assignees)) {
-      issue.assignees.forEach((assignee) => {
-        if (assignee.name in membersData) {
-          membersData[assignee.name].issues += 1;
-        }
-      });
-    }
-  });
+	issueList.forEach((element) => {
+		const { assignees } = element
+		assignees.forEach((a) => {
+			const { name } = a
+      for (const [key, value] of Object.entries(membersData)) {
+        if (key === name) {
+					value.issues += 1
+				}
+      }
+		})
+	})
+
 
   return {
     totalCommits,
