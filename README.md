@@ -51,9 +51,9 @@ https://www.around-the-world.me/
 | Name    | Estimate | Actual |
 | ------- | -------- | ------ |
 | Mehul   | 25       | 35     |
-| Preeth  | 25       |        |
+| Preeth  | 25       | 20     |
 | Justin  | 25       | 20     |
-| Raphael | 25       |        |
-| Daniela | 25       |        |
+| Raphael | 25       | 18     |
+| Daniela | 25       | 30     |
 
 ## Comments
