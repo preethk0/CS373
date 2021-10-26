@@ -20,12 +20,12 @@ stages:
 #     - npm test
 
 selenium_tests:
-  image: python:3.6-stretch
+  image: mehuldar/selenium-ci
   stage: test
   before_script:
     - pip install -r front-end/gui_tests/requirements.txt
     # - apt-get install -y libglib2.0-0 \ libnss3 \ libgconf-2-4 \ libfontconfig1
     # - apt-get install -y chromium-browser
   script:
-    # - chmod 755 front-end/gui_tests/chromedriver_linux
+    - chmod 755 front-end/gui_tests/chromedriver_linux
     - python front-end/guitests.py
