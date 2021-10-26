@@ -14,10 +14,6 @@ WORKDIR /usr/src/backend
 RUN pip3 install --upgrade pip
 RUN pip3 install -r requirements.txt
 
-RUN curl https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -o /chrome.deb
-RUN dpkg -i /chrome.deb || apt-get install -yf
-RUN rm /chrome.deb
-
 EXPOSE 80
 
 COPY nginx.conf /etc/nginx
