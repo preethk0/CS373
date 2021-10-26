@@ -9,6 +9,7 @@ if __name__ == "__main__":
         PATH = "/app/src/front-end/gui_tests/chromedriver_mac"
     else:
         PATH = "/app/src/front-end/gui_tests/chromedriver.exe"
+        
 
     # Run all of the gui tests
     os.system("python3 ./front-end/gui_tests/demographicsTests.py " + PATH)
