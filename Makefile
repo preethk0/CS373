@@ -21,3 +21,9 @@ frontend-install:
 frontend-start:
 	cd front-end/ && npm start
 
+selenium-tests:
+	chmod 775 front-end/gui_tests/chromedriver.exe
+	chmod 775 front-end/gui_tests/chromedriver_linux
+	python3 front-end/guitests.py
+
+
