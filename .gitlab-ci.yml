@@ -25,33 +25,22 @@ selenium_tests:
   script:
     - pip install -r front-end/gui_tests/requirements.txt
     - cd ./front-end
+    - npm install --force
+    - wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
+    - sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+    - apt update -q -y
+    - apt --yes install libnss3
+    - apt --yes install libgconf-2-4
+    - apt --yes install libx11-xcb1
+    - apt install -y google-chrome-stable
+    # - wget https://chromedriver.storage.googleapis.com/89.0.4389.23/chromedriver_linux64.zip
+    # - unzip chromedriver_linux64.zip
+    # - cp chromedriver /usr/bin/chromedriver
+    # - chown root:root /usr/bin/chromedriver
+    # - chmod +x /usr/bin/chromedriver
+    # - chmod +x ./chromedriver
+    - mount -t tmpfs -o rw,nosuid,nodev,noexec,relatime,size=512M tmpfs /dev/shm
+    - python3 gui_tests.py
 
-    # code from texas votes
-    # Dependencies for chromedriver, 
-    # https://gist.github.com/mikesmullin/2636776#gistcomment-1742414
-    - apt-get update -q -y
-    - apt-get install nodejs npm -y
-    - apt-get --yes install libnss3
-    - apt-get --yes install libgconf-2-4
-    - apt-get install libx11-xcb1
-
-    # install chrome and add key
-    # based off of
-    # - https://gitlab.com/gitlab-org/gitlab-build-images
-    # /blob/9dadb28021f15913a49897126a0cd6ab0149e44f/scripts/install-chrome
-    # - https://askubuntu.com/a/510186/196148
-    - curl -sS -L https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
-    
-    # add repo and install yarn
-    - echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ 
-      stable main" > /etc/apt/sources.list.d/google.list
-    - apt-get update -q -y
-    - apt-get install -y google-chrome-stable
-
-    - npm install --global yarn
-    - yarn install
-
-    # - apt-get install -y libglib2.0-0 \ libnss3 \ libgconf-2-4 \ libfontconfig1
-    # - apt-get install -y chromium-browser
     - chmod 755 front-end/gui_tests/chromedriver_linux
     - python3 front-end/guitests.py
