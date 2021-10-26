@@ -8,6 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
 import sys
 
 PATH = "chromedriver.exe"
@@ -22,8 +23,9 @@ class TestFoodAndTourism(unittest.TestCase):
         chrome_options.add_argument('--headless')
         chrome_options.add_argument('--no-sandbox')
         chrome_options.add_argument('--disable-dev-shm-usage')
-        cls.driver = webdriver.Chrome(PATH, options=chrome_options)
+        cls.driver = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
         cls.driver.get(URL)
+        cls.driver.implicitly_wait(40)
         cls.actions = ActionChains(cls.driver)
 
     @classmethod
