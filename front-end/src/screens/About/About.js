@@ -34,12 +34,11 @@ const getGitLabStatistics = async () => {
 
   commitsData.forEach((contributor) => {
     if (contributor.name in gitLabSpecialCases) {
-      membersData[gitLabSpecialCases[contributor.name]].commits =
+      membersData[gitLabSpecialCases[contributor.name]].commits +=
         contributor.commits;
     } else if (contributor.name in membersData) {
-      membersData[contributor.name].commits = contributor.commits;
+      membersData[contributor.name].commits += contributor.commits;
     }
-
     totalCommits += contributor.commits;
   });
 
