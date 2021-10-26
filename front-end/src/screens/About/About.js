@@ -25,7 +25,6 @@ const getGitLabStatistics = async () => {
 
   let totalCommits = 0;
   let totalTests = 0;
-  let totalIssues = issuesData.length;
   let membersData = membersInfo;
 
   Object.values(membersData).forEach((member) => {
@@ -34,8 +33,8 @@ const getGitLabStatistics = async () => {
 
   // Clear commits and issues data
   for (const [key, value] of Object.entries(membersData)) {
-    value.commits = 0
-    value.issues = 0
+    value.commits = 0;
+    value.issues = 0;
   }
 
   commitsData.forEach((contributor) => {
@@ -47,33 +46,34 @@ const getGitLabStatistics = async () => {
     }
     totalCommits += contributor.commits;
   });
-  
-  // Issue Count code adapted from TexasVotes: 
-  // (https://gitlab.com/forbesye/fitsbits/-/blob/master/front-end/src/views/About/About.js)
-	const issuePaginationLength = 100
-	let page = 1
-	let issuePage = []
-	let issueList = []
-	do {
-		issuePage = await fetch(
-			`https://gitlab.com/api/v4/projects/29853995/issues?per_page=${issuePaginationLength}&page=${page++}`
-		)
-		issuePage = await issuePage.json()
-		issueList = [...issueList, ...issuePage]
-	} while (issuePage.length === 100)
 
-	issueList.forEach((element) => {
-		const { assignees } = element
-		assignees.forEach((a) => {
-			const { name } = a
+  // Issue Count code adapted from TexasVotes:
+  // (https://gitlab.com/forbesye/fitsbits/-/blob/master/front-end/src/views/About/About.js)
+  const issuePaginationLength = 100;
+  let page = 1;
+  let issuePage = [];
+  let issueList = [];
+  do {
+    issuePage = await fetch(
+      `https://gitlab.com/api/v4/projects/29853995/issues?per_page=${issuePaginationLength}&page=${page++}`
+    );
+    issuePage = await issuePage.json();
+    issueList = [...issueList, ...issuePage];
+  } while (issuePage.length === 100);
+
+  let totalIssues = issueList.length;
+
+  issueList.forEach((element) => {
+    const { assignees } = element;
+    assignees.forEach((a) => {
+      const { name } = a;
       for (const [key, value] of Object.entries(membersData)) {
         if (key === name) {
-					value.issues += 1
-				}
+          value.issues += 1;
+        }
       }
-		})
-	})
-
+    });
+  });
 
   return {
     totalCommits,
