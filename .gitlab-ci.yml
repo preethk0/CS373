@@ -5,67 +5,52 @@ stages:
   - test
   - deploy
 
-# build_app:
-#   stage: build
-#   script:
-#     - cd front-end
-#     - npm install
-#     - CI=false npm run-script build
+build_app:
+  stage: build
+  script:
+    - cd front-end
+    - npm install
+    - CI=false npm run-script build
 
-# jest_tests:
-#   stage: test
-#   script:
-#     - cd front-end
-#     - npm install
-#     - npm test
+jest_tests:
+  stage: test
+  script:
+    - make jest-tests
 
 selenium_tests:
   image: python:3.7
   stage: test
   script:
     - pip install -r front-end/gui_tests/requirements.txt
-    # code from texas votes
-    # Dependencies for chromedriver,
-    # https://gist.github.com/mikesmullin/2636776#gistcomment-1742414
+
     - apt-get update -q -y
     - apt-get install nodejs npm -y
     - apt-get --yes install libnss3
     - apt-get --yes install libgconf-2-4
     - apt-get install libx11-xcb1
 
-    # install chrome and add key
-    # based off of
-    # - https://gitlab.com/gitlab-org/gitlab-build-images
-    # /blob/9dadb28021f15913a49897126a0cd6ab0149e44f/scripts/install-chrome
-    # - https://askubuntu.com/a/510186/196148
     - curl -sS -L https://dl.google.com/linux/linux_signing_key.pub |
       apt-key add -
 
-    # add repo and install npm
     - echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/
       stable main" > /etc/apt/sources.list.d/google.list
     - apt-get update -q -y
     - apt-get install -y google-chrome-stable
     - npm install
-
-    # test the website
     - make selenium-tests
 
+postman_tests:
+  stage: test
+  image:
+    name: postman/newman_alpine33
+    entrypoint: [""]
+  script:
+    - make postman-tests
 
-# postman_tests:
-#   stage: test
-#   image:
-#     name: postman/newman_alpine33
-#     entrypoint: [""]
-#   script:
-#     - newman --version
-#     - newman run Postman.json
-
-# unit_tests:
-#   image: python:3.6-stretch
-#   stage: test
-#   before_script:
-#     - pip install -r back-end/requirements.txt
-#   script:
-#     - cd back-end
-#     - python tests.py
+unit_tests:
+  image: python:3.6-stretch
+  stage: test
+  before_script:
+    - pip install -r back-end/requirements.txt
+  script:
+    - make unit-tests
