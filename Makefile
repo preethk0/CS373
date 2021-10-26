@@ -26,9 +26,6 @@ selenium-tests:
 	chmod 775 front-end/gui_tests/chromedriver_linux
 	python3 front-end/guitests.py
 
-postman-tests:
-	newman --version && newman run Postman.json
-
 unit-tests:
 	cd back-end/ && python tests.py
 

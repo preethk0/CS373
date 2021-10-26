@@ -45,7 +45,8 @@ postman_tests:
     name: postman/newman_alpine33
     entrypoint: [""]
   script:
-    - make postman-tests
+    - newman --version
+    - newman run Postman.json
 
 unit_tests:
   image: python:3.6-stretch
