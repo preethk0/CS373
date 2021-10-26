@@ -20,7 +20,7 @@ stages:
 #     - npm test
 
 selenium_tests:
-  image: python:3.6-stretch
+  image: mehuldar/selenium-ci
   stage: test
   before_script:
     - pip install -r front-end/gui_tests/requirements.txt
