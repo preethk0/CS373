@@ -3,13 +3,12 @@ from sys import platform
 
 if __name__ == "__main__":
     # Use chromedriver based on OS
-    if platform == "win32":
-        PATH = "./front-end/gui_tests/chromedriver.exe"
-    elif platform == "linux":
+    if platform == "linux":
         PATH = "./front-end/gui_tests/chromedriver_linux"
+    elif platform == "darwin":
+        PATH = "./front-end/gui_tests/chromedriver_mac"
     else:
-        print("Unsupported OS")
-        exit(-1)
+        PATH = "./front-end/gui_tests/chromedriver.exe"
 
     # Run all of the gui tests
     os.system("python3 ./front-end/gui_tests/demographicsTests.py " + PATH)

@@ -12,8 +12,7 @@ import sys
 
 PATH = "chromedriver.exe"
 # PATH = "./front-end/gui_tests/chromedriver.exe"
-URL = "https://https://www.around-the-world.me/demographics"
-# URL = "https://www.texasvotes.me/districts/view/"
+URL = "https://www.around-the-world.me/demographics"
 
 class TestDemographics(unittest.TestCase):
 
@@ -41,10 +40,10 @@ class TestDemographics(unittest.TestCase):
             print(ex)
             return
 
-        self.driver.find_elements_by_class_name('ant-card-hoverable')[0].click()
+        self.driver.find_elements(By.CLASS_NAME, 'ant-card-hoverable')[0].click()
         time.sleep(2)
-        element = self.driver.find_element_by_tag_name('h1')
-        assert element.text == 'Paraguay'
+        element = self.driver.find_element(By.CLASS_NAME, 'countryName')
+        assert element.text == 'Paraguay 🇵🇾'
 
     def testCountryLearnMore(self):
         self.driver.get(URL)
@@ -56,19 +55,14 @@ class TestDemographics(unittest.TestCase):
             print(ex)
             return
 
-        self.driver.find_elements_by_class_name('ant-card-hoverable')[2].click()
+        self.driver.find_elements(By.CLASS_NAME, 'ant-card-hoverable')[2].click()
         time.sleep(2)
-        self.driver.find_elements_by_tag_name('a')[0].click()
-        time.sleep(2)
-        currentURL = self.driver.current_url
-        assert currentURL == "https://www.around-the-world.me/geography/DK"
-        self.driver.back()
 
-        self.driver.find_elements_by_tag_name('a')[1].click()
+        element = self.driver.find_elements(By.TAG_NAME, 'a')[6]
+        self.driver.execute_script("arguments[0].click();", element)
         time.sleep(2)
         currentURL = self.driver.current_url
         assert currentURL == "https://www.around-the-world.me/foodandtourism/DK"
-        self.driver.back()
 
     def testCountryInfo(self):
         self.driver.get(URL)
@@ -80,9 +74,9 @@ class TestDemographics(unittest.TestCase):
             print(ex)
             return
 
-        self.driver.find_elements_by_class_name('ant-card-hoverable')[1].click()
+        self.driver.find_elements(By.CLASS_NAME, 'ant-card-hoverable')[1].click()
         time.sleep(2)
-        element = self.driver.find_elements_by_class_name('card-text')[0]
+        element = self.driver.find_elements(By.CLASS_NAME, 'card-text')[0]
         assert element.text == 'Capital: Majuro'
 
 if __name__ == "__main__":

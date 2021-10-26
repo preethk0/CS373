@@ -12,6 +12,21 @@ build_app:
     - npm install
     - CI=false npm run-script build
 
+jest_tests:
+  stage: test
+  script:
+    - cd front-end
+    - npm install
+    - npm test
+
+selenium_tests:
+  image: mehuldar/selenium-ci
+  stage: test
+  script:
+    - pip install -r front-end/gui_tests/requirements.txt
+    - chmod 755 front-end/gui_tests/chromedriver_linux
+    - python3 front-end/guitests.py
+
 postman_tests:
   stage: test
   image:
