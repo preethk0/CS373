@@ -24,7 +24,7 @@ selenium_tests:
   stage: test
   script:
     - pip install -r front-end/gui_tests/requirements.txt
-    - cd ./frontend
+    - cd ./front-end
 
     # code from texas votes
     # Dependencies for chromedriver, 
