@@ -21,7 +21,7 @@ ENV PORT 5000
 WORKDIR ${APP_HOME}
 
 #copy local files
-COPY . . 
+COPY . /app
 
 # CMD exec gunicorn --bind :${PORT} --workers 1 --threads 8 main:app 
 CMD ["bash"]
