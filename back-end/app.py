@@ -1,4 +1,4 @@
-from flask import jsonify
+from flask import Flask, request, make_response, jsonify, send_from_directory
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import create_engine, Column, String, Integer
 from models import (
@@ -12,7 +12,7 @@ from models import (
     foodandtourism_schema,
     all_foodandtourism_schema,
 )
-from init import app
+from init import app, db
 
 # a simple page that says hello
 @app.route("/")
@@ -22,11 +22,41 @@ def hello_world():
 
 # ************************************************************************#
 
+
+def filter_demographics(dem_query, queries):
+    if "country_name" in queries:
+        countries_filter = queries['country_name']
+        dem_query = dem_query.filter(Demographics.country_name.in_(countries_filter))
+
+    if "country_population" in queries:
+        population_filter = queries['country_population']
+    
+    if "country_gdp" in queries:
+        gdp_filter = queries['country_gdp']
+        # dem_query = dem_query.filter(Demographics.country_GDP)
+        print(Demographics.country_GDP.ilike("HI"))
+        print(gdp_filter)
+
+    if "country_language" in queries:
+        language_filter = queries['country_language']
+
+    return dem_query
+
 # Retrieve demographics data for all countries
 @app.route("/demographics", methods=["GET"])
 def get_all_demographics():
-    all_demographics = Demographics.query.all()
-    result = all_demographics_schema.dump(all_demographics)
+    queries = request.args.to_dict(flat=False)
+    dem_query = db.session.query(Demographics)
+
+    page = int(queries['page'][0]) if "page" in queries else 1
+    per_page = int(queries['per_page'][0]) if "per_page" in queries else 9
+    
+    dem_query = filter_demographics(dem_query, queries)
+    demographics = dem_query.paginate(page=page, per_page=per_page)
+
+
+    result = all_demographics_schema.dump(demographics.items, many=True)
+
     return jsonify(result)
 
 
