@@ -44,7 +44,32 @@ def filter_demographics(dem_query, queries):
 
     if "country_language" in queries:
         language_filter = queries['country_language']
+        # for language in language_filter:
+        # dem_query = dem_query.filter("English" in Demographics.country_languages)
+        # dem_query = dem_query.filter(or_(*tuple(all_filters)))
 
+    return dem_query
+
+def sort_demographics(dem_query, queries):
+    if "sort" in queries:
+        sort_value = queries['sort'][0]
+        print("HELLO")
+        print(sort_value)
+        attribute, order = sort_value.split("-")
+
+        dem_attribute = None
+        if attribute == "country_name":
+            dem_attribute = Demographics.country_name
+        elif attribute == "country_population":
+            dem_attribute = Demographics.country_population
+        elif attribute == "country_states":
+            dem_attribute = Demographics.country_states
+        elif attribute == "country_GDP":
+            dem_attribute = Demographics.country_GDP
+
+        if dem_attribute:
+            return dem_query.order_by(dem_attribute.desc() if order == "des" else dem_attribute)
+    
     return dem_query
 
 # Retrieve demographics data for all countries
@@ -57,6 +82,7 @@ def get_all_demographics():
     per_page = int(queries['per_page'][0]) if "per_page" in queries else 9
     
     dem_query = filter_demographics(dem_query, queries)
+    dem_query = sort_demographics(dem_query, queries)
     demographics = dem_query.paginate(page=page, per_page=per_page)
 
 

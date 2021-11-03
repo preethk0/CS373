@@ -15,8 +15,11 @@ import { demographicCountryNames } from "../../countryData/demographicsCountries
 import {
   countryFilterOptions,
   demographicGDPFilterValues,
+  demographicLanguageFilterValues,
   demographicPopulationFilterValues,
+  demographicSortValues,
 } from "../../countryData/filterData";
+import { convertStringArrayToArray } from "../../utils";
 
 const axios = require("axios");
 
@@ -42,6 +45,7 @@ const DemographicsAll = ({}) => {
     country_population: [],
     country_gdp: [],
     country_language: [],
+    sort: "",
   });
 
   const updateFilter = (key, values) => {
@@ -53,11 +57,11 @@ const DemographicsAll = ({}) => {
     });
   };
 
-  const updatePage = (page) => {
+  const updateParam = (key, value) => {
     const currentParams = params;
     setParams({
       ...currentParams,
-      page: page,
+      [key]: value,
     });
   };
 
@@ -88,7 +92,13 @@ const DemographicsAll = ({}) => {
       }
 
       if (params.country_language.length > 0) {
-        urlParams.append("country_language", params.country_language);
+        params.country_language.forEach((lang) => {
+          urlParams.append("country_language", lang);
+        });
+      }
+
+      if (params.sort.length > 0) {
+        urlParams.append("sort", params.sort);
       }
 
       return urlParams;
@@ -99,7 +109,6 @@ const DemographicsAll = ({}) => {
       axios
         .get("http://10.0.0.157:5000/demographics?" + urlParams.toString())
         .then((response) => {
-          console.log(response.data);
           setDemographicsData(response.data.result);
           setItemCount(response.data.count);
         });
@@ -148,6 +157,20 @@ const DemographicsAll = ({}) => {
           className="basic-multi-select"
           classNamePrefix="select"
         />
+        <Select
+          options={demographicLanguageFilterValues}
+          styles={customStyles}
+          onChange={(vals) => updateFilter("country_language", vals)}
+          isMulti
+          className="basic-multi-select"
+          classNamePrefix="select"
+        />
+        <Select
+          options={demographicSortValues}
+          styles={customStyles}
+          onChange={(val) => updateParam("sort", val.value)}
+          classNamePrefix="select"
+        />
       </div>
       {demographicsData.length > 0 ? (
         <div>
@@ -163,7 +186,7 @@ const DemographicsAll = ({}) => {
               <Pagination
                 defaultPage={1}
                 page={params.page}
-                onChange={(_, value) => updatePage(value)}
+                onChange={(_, value) => updateParam("page", value)}
                 count={Math.ceil(itemCount / 9)}
                 variant="outlined"
                 color="primary"
