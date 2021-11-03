@@ -15,6 +15,7 @@ import { demographicCountryNames } from "../../countryData/demographicsCountries
 import {
   countryFilterOptions,
   demographicGDPFilterValues,
+  demographicPopulationFilterValues,
 } from "../../countryData/filterData";
 
 const axios = require("axios");
@@ -33,7 +34,7 @@ const customStyles = {
 
 const DemographicsAll = ({}) => {
   const [demographicsData, setDemographicsData] = useState([]);
-  const [page, setPage] = useState(1);
+  const [itemCount, setItemCount] = useState(demographicCountryNames.length);
   const [params, setParams] = useState({
     page: 1,
     per_page: 9,
@@ -42,7 +43,6 @@ const DemographicsAll = ({}) => {
     country_gdp: [],
     country_language: [],
   });
-  const totalDemographics = demographicCountryNames.length;
 
   const updateFilter = (key, values) => {
     const currentParams = params;
@@ -76,7 +76,9 @@ const DemographicsAll = ({}) => {
       }
 
       if (params.country_population.length > 0) {
-        urlParams.append("country_population", params.country_population);
+        params.country_population.forEach((pop) => {
+          urlParams.append("country_population", pop);
+        });
       }
 
       if (params.country_gdp.length > 0) {
@@ -97,7 +99,9 @@ const DemographicsAll = ({}) => {
       axios
         .get("http://10.0.0.157:5000/demographics?" + urlParams.toString())
         .then((response) => {
-          setDemographicsData(response.data);
+          console.log(response.data);
+          setDemographicsData(response.data.result);
+          setItemCount(response.data.count);
         });
     };
 
@@ -136,6 +140,14 @@ const DemographicsAll = ({}) => {
           className="basic-multi-select"
           classNamePrefix="select"
         />
+        <Select
+          options={demographicPopulationFilterValues}
+          styles={customStyles}
+          onChange={(vals) => updateFilter("country_population", vals)}
+          isMulti
+          className="basic-multi-select"
+          classNamePrefix="select"
+        />
       </div>
       {demographicsData.length > 0 ? (
         <div>
@@ -152,7 +164,7 @@ const DemographicsAll = ({}) => {
                 defaultPage={1}
                 page={params.page}
                 onChange={(_, value) => updatePage(value)}
-                count={Math.ceil(totalDemographics / 9)}
+                count={Math.ceil(itemCount / 9)}
                 variant="outlined"
                 color="primary"
                 style={{ alignSelf: "center" }}
@@ -167,8 +179,8 @@ const DemographicsAll = ({}) => {
               justifyContent: "center",
             }}
           >
-            Displaying {(page - 1) * 9 + 1}-
-            {Math.min(page * 9, totalDemographics)} of {totalDemographics}
+            Displaying {(params.page - 1) * 9 + 1}-
+            {Math.min(params.page * 9, itemCount)} of {itemCount}
           </div>
           <div className="cardGrid">
             {demographicsData.map((country) => (

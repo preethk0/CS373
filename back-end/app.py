@@ -1,6 +1,8 @@
 from flask import Flask, request, make_response, jsonify, send_from_directory
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy import create_engine, Column, String, Integer
+from sqlalchemy import and_, or_, func
+
+
 from models import (
     Demographics,
     Geography,
@@ -30,12 +32,15 @@ def filter_demographics(dem_query, queries):
 
     if "country_population" in queries:
         population_filter = queries['country_population']
+        all_filters = []
+        for filter in population_filter:
+            lower_bound, upper_bound = filter.split("-")
+            all_filters.append(and_(Demographics.country_population > int(lower_bound) * 10**6, Demographics.country_population <= int(upper_bound) * 10**6))
+        dem_query = dem_query.filter(or_(*tuple(all_filters)))
     
     if "country_gdp" in queries:
         gdp_filter = queries['country_gdp']
         # dem_query = dem_query.filter(Demographics.country_GDP)
-        print(Demographics.country_GDP.ilike("HI"))
-        print(gdp_filter)
 
     if "country_language" in queries:
         language_filter = queries['country_language']
@@ -57,7 +62,7 @@ def get_all_demographics():
 
     result = all_demographics_schema.dump(demographics.items, many=True)
 
-    return jsonify(result)
+    return {'result': result, 'count': dem_query.count()}
 
 
 # Retrieve demographics data for country with specific country-id
