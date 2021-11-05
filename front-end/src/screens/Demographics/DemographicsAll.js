@@ -20,6 +20,7 @@ import {
   demographicSortValues,
 } from "../../countryData/filterData";
 import { convertStringArrayToArray } from "../../utils";
+import { MDBInput } from "mdbreact";
 
 const axios = require("axios");
 
@@ -46,6 +47,7 @@ const DemographicsAll = ({}) => {
     country_gdp: [],
     country_language: [],
     sort: "",
+    search: "",
   });
 
   const updateFilter = (key, values) => {
@@ -101,6 +103,10 @@ const DemographicsAll = ({}) => {
         urlParams.append("sort", params.sort);
       }
 
+      if (params.search.length > 0) {
+        urlParams.append("search", params.search);
+      }
+
       return urlParams;
     };
 
@@ -125,6 +131,11 @@ const DemographicsAll = ({}) => {
         locate the country you're looking for and give you some basic
         information about it.
       </p>
+      <MDBInput
+        label="Search"
+        value={params.search}
+        onChange={(e) => updateParam("search", e.target.value)}
+      />
       <div
         style={{
           display: "flex",

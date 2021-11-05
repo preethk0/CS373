@@ -53,8 +53,6 @@ def filter_demographics(dem_query, queries):
 def sort_demographics(dem_query, queries):
     if "sort" in queries:
         sort_value = queries['sort'][0]
-        print("HELLO")
-        print(sort_value)
         attribute, order = sort_value.split("-")
 
         dem_attribute = None
@@ -72,6 +70,17 @@ def sort_demographics(dem_query, queries):
     
     return dem_query
 
+def search_demographics(dem_query, queries):
+    if "search" in queries:
+        terms = queries['search'][0].strip().lower().split()
+
+        all_filters = []
+        for term in terms:
+            all_filters.append(func.lower(Demographics.country_name).contains(term))
+        dem_query = dem_query.filter(or_(*tuple(all_filters)))
+            
+    return dem_query
+
 # Retrieve demographics data for all countries
 @app.route("/demographics", methods=["GET"])
 def get_all_demographics():
@@ -83,6 +92,7 @@ def get_all_demographics():
     
     dem_query = filter_demographics(dem_query, queries)
     dem_query = sort_demographics(dem_query, queries)
+    dem_query = search_demographics(dem_query, queries)
     demographics = dem_query.paginate(page=page, per_page=per_page)
 
 

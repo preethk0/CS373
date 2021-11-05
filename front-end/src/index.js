@@ -7,6 +7,7 @@ import { QueryParamProvider } from "use-query-params";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "antd/dist/antd.css";
+import "mdbreact/dist/css/mdb.css";
 
 ReactDOM.render(
   <React.StrictMode>
