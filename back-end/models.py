@@ -16,7 +16,7 @@ class Demographics(db.Model):
     country_flag_emoji = db.Column(db.String())
     country_capital = db.Column(db.String())
     country_population = db.Column(db.Integer)
-    country_languages = db.Column(db.PickleType)
+    country_languages = db.Column(db.String())
     country_currency = db.Column(db.String())
     country_calling_code = db.Column(db.String())
     country_domain = db.Column(db.String())
@@ -25,9 +25,8 @@ class Demographics(db.Model):
     country_income_level = db.Column(db.String())
     countries_with_similar_pop = db.Column(db.PickleType)
     country_demographics_video_src = db.Column(db.String())
-    country_GDP = db.Column(db.String())
-    country_GDP_per_capita = db.Column(db.String())
-    countries_with_similar_pop = db.Column(db.PickleType)
+    country_GDP = db.Column(db.BigInteger)
+    country_GDP_per_capita = db.Column(db.BigInteger)
 
 
 # Define Geography table/data model
@@ -82,8 +81,8 @@ class DemographicsSchema(ma.Schema):
     country_states = fields.Int(required=True)
     country_income_level = fields.Str(required=True)
     country_demographics_video_src = fields.Str(required=True)
-    country_GDP = fields.Str(required=True)
-    country_GDP_per_capita = fields.Str(required=True)
+    country_GDP = fields.Int(required=True)
+    country_GDP_per_capita = fields.Int(required=True)
     countries_with_similar_pop = fields.Str(required=True)
 
 

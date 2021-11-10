@@ -1,778 +1,778 @@
 [
     {
         "country": "Monaco",
-        "GDP_per_capita": "$184,382.79"
+        "GDP_per_capita": 184382.79
     },
     {
         "country": "Luxembourg",
-        "GDP_per_capita": "$115,124.04"
+        "GDP_per_capita": 115124.04
     },
     {
-        "country": "China",
-        "GDP_per_capita": "$86,008.89"
+        "country": "China, Macao Special Administrative Region",
+        "GDP_per_capita": 86008.89
     },
     {
         "country": "Switzerland",
-        "GDP_per_capita": "$82,075.51"
+        "GDP_per_capita": 82075.51
     },
     {
         "country": "Norway",
-        "GDP_per_capita": "$80,717.23"
+        "GDP_per_capita": 80717.23
     },
     {
         "country": "Ireland",
-        "GDP_per_capita": "$78,338.48"
+        "GDP_per_capita": 78338.48
     },
     {
         "country": "Iceland",
-        "GDP_per_capita": "$76,329.36"
+        "GDP_per_capita": 76329.36
     },
     {
         "country": "Qatar",
-        "GDP_per_capita": "$67,569.66"
+        "GDP_per_capita": 67569.66
     },
     {
         "country": "Singapore",
-        "GDP_per_capita": "$62,738.65"
+        "GDP_per_capita": 62738.65
     },
     {
         "country": "United States",
-        "GDP_per_capita": "$62,432.49"
+        "GDP_per_capita": 62432.49
     },
     {
         "country": "Denmark",
-        "GDP_per_capita": "$61,622.13"
+        "GDP_per_capita": 61622.13
     },
     {
         "country": "Australia",
-        "GDP_per_capita": "$56,893.74"
+        "GDP_per_capita": 56893.74
     },
     {
         "country": "Sweden",
-        "GDP_per_capita": "$55,407.02"
+        "GDP_per_capita": 55407.02
     },
     {
         "country": "Netherlands",
-        "GDP_per_capita": "$53,439.31"
+        "GDP_per_capita": 53439.31
     },
     {
         "country": "Austria",
-        "GDP_per_capita": "$50,840.91"
+        "GDP_per_capita": 50840.91
     },
     {
         "country": "Finland",
-        "GDP_per_capita": "$50,024.43"
-    },
-    {
-        "country": "China, Hong Kong Special Administrative Region",
-        "GDP_per_capita": "$48,772.78"
-    },
-    {
-        "country": "Germany",
-        "GDP_per_capita": "$47,267.24"
-    },
-    {
-        "country": "Belgium",
-        "GDP_per_capita": "$47,035.77"
-    },
-    {
-        "country": "Canada",
-        "GDP_per_capita": "$45,797.76"
-    },
-    {
-        "country": "Israel",
-        "GDP_per_capita": "$43,499.44"
-    },
-    {
-        "country": "New Zealand",
-        "GDP_per_capita": "$42,843.67"
-    },
-    {
-        "country": "France",
-        "GDP_per_capita": "$42,646.20"
-    },
-    {
-        "country": "United Arab Emirates",
-        "GDP_per_capita": "$42,390.65"
-    },
-    {
-        "country": "United Kingdom",
-        "GDP_per_capita": "$42,281.80"
-    },
-    {
-        "country": "Andorra",
-        "GDP_per_capita": "$41,953.49"
-    },
-    {
-        "country": "Japan",
-        "GDP_per_capita": "$39,187.38"
-    },
-    {
-        "country": "Guam",
-        "GDP_per_capita": "$35,386.59"
-    },
-    {
-        "country": "Puerto Rico",
-        "GDP_per_capita": "$34,475.61"
-    },
-    {
-        "country": "Italy",
-        "GDP_per_capita": "$34,415.54"
-    },
-    {
-        "country": "Kuwait",
-        "GDP_per_capita": "$33,430.66"
-    },
-    {
-        "country": "Malta",
-        "GDP_per_capita": "$33,047.65"
-    },
-    {
-        "country": "Bahamas",
-        "GDP_per_capita": "$31,899.73"
-    },
-    {
-        "country": "South Korea",
-        "GDP_per_capita": "$31,613.73"
-    },
-    {
-        "country": "Brunei Darussalam",
-        "GDP_per_capita": "$31,311.97"
-    },
-    {
-        "country": "Spain",
-        "GDP_per_capita": "$30,362.42"
-    },
-    {
-        "country": "Turks and Caicos Islands",
-        "GDP_per_capita": "$26,766.30"
-    },
-    {
-        "country": "Slovenia",
-        "GDP_per_capita": "$25,982.18"
-    },
-    {
-        "country": "Portugal",
-        "GDP_per_capita": "$23,535.14"
-    },
-    {
-        "country": "Estonia",
-        "GDP_per_capita": "$23,182.72"
-    },
-    {
-        "country": "Northern Mariana Islands",
-        "GDP_per_capita": "$23,124.12"
-    },
-    {
-        "country": "Bahrain",
-        "GDP_per_capita": "$22,999.65"
-    },
-    {
-        "country": "Saudi Arabia",
-        "GDP_per_capita": "$22,951.72"
-    },
-    {
-        "country": "Czechia",
-        "GDP_per_capita": "$22,941.43"
-    },
-    {
-        "country": "Cyprus",
-        "GDP_per_capita": "$20,826.41"
-    },
-    {
-        "country": "Greece",
-        "GDP_per_capita": "$20,817.57"
-    },
-    {
-        "country": "Slovakia",
-        "GDP_per_capita": "$19,407.07"
-    },
-    {
-        "country": "Lithuania",
-        "GDP_per_capita": "$19,360.95"
-    },
-    {
-        "country": "Cura\u00e7ao",
-        "GDP_per_capita": "$19,139.95"
-    },
-    {
-        "country": "Saint Kitts and Nevis",
-        "GDP_per_capita": "$19,132.04"
-    },
-    {
-        "country": "Latvia",
-        "GDP_per_capita": "$18,046.10"
-    },
-    {
-        "country": "Barbados",
-        "GDP_per_capita": "$17,925.52"
-    },
-    {
-        "country": "Uruguay",
-        "GDP_per_capita": "$17,215.92"
-    },
-    {
-        "country": "Trinidad and Tobago",
-        "GDP_per_capita": "$17,067.15"
-    },
-    {
-        "country": "Antigua and Barbuda",
-        "GDP_per_capita": "$16,584.19"
-    },
-    {
-        "country": "Hungary",
-        "GDP_per_capita": "$16,302.34"
-    },
-    {
-        "country": "Seychelles",
-        "GDP_per_capita": "$16,269.33"
-    },
-    {
-        "country": "Oman",
-        "GDP_per_capita": "$15,935.05"
-    },
-    {
-        "country": "Palau",
-        "GDP_per_capita": "$15,776.62"
-    },
-    {
-        "country": "Chile",
-        "GDP_per_capita": "$15,736.10"
-    },
-    {
-        "country": "Poland",
-        "GDP_per_capita": "$15,457.86"
-    },
-    {
-        "country": "Panama",
-        "GDP_per_capita": "$15,319.92"
-    },
-    {
-        "country": "Croatia",
-        "GDP_per_capita": "$14,762.05"
-    },
-    {
-        "country": "Romania",
-        "GDP_per_capita": "$12,370.67"
-    },
-    {
-        "country": "Costa Rica",
-        "GDP_per_capita": "$11,912.71"
-    },
-    {
-        "country": "Nauru",
-        "GDP_per_capita": "$11,671.17"
-    },
-    {
-        "country": "Argentina",
-        "GDP_per_capita": "$11,609.28"
-    },
-    {
-        "country": "American Samoa",
-        "GDP_per_capita": "$11,498.41"
-    },
-    {
-        "country": "Russia",
-        "GDP_per_capita": "$11,363.06"
-    },
-    {
-        "country": "Malaysia",
-        "GDP_per_capita": "$11,223.30"
-    },
-    {
-        "country": "Mauritius",
-        "GDP_per_capita": "$11,200.04"
-    },
-    {
-        "country": "Grenada",
-        "GDP_per_capita": "$10,588.44"
-    },
-    {
-        "country": "Saint Lucia",
-        "GDP_per_capita": "$10,513.68"
-    },
-    {
-        "country": "Maldives",
-        "GDP_per_capita": "$10,033.69"
-    },
-    {
-        "country": "Equatorial Guinea",
-        "GDP_per_capita": "$9,906.01"
-    },
-    {
-        "country": "Kazakhstan",
-        "GDP_per_capita": "$9,667.18"
-    },
-    {
-        "country": "Mexico",
-        "GDP_per_capita": "$9,568.45"
+        "GDP_per_capita": 50024.43
     },
     {
         "country": "China",
-        "GDP_per_capita": "$9,491.08"
+        "GDP_per_capita": 48772.78
+    },
+    {
+        "country": "Germany",
+        "GDP_per_capita": 47267.24
+    },
+    {
+        "country": "Belgium",
+        "GDP_per_capita": 47035.77
+    },
+    {
+        "country": "Canada",
+        "GDP_per_capita": 45797.76
+    },
+    {
+        "country": "Israel",
+        "GDP_per_capita": 43499.44
+    },
+    {
+        "country": "New Zealand",
+        "GDP_per_capita": 42843.67
+    },
+    {
+        "country": "France",
+        "GDP_per_capita": 42646.2
+    },
+    {
+        "country": "United Arab Emirates",
+        "GDP_per_capita": 42390.65
+    },
+    {
+        "country": "United Kingdom",
+        "GDP_per_capita": 42281.8
+    },
+    {
+        "country": "Andorra",
+        "GDP_per_capita": 41953.49
+    },
+    {
+        "country": "Japan",
+        "GDP_per_capita": 39187.38
+    },
+    {
+        "country": "Guam",
+        "GDP_per_capita": 35386.59
+    },
+    {
+        "country": "Puerto Rico",
+        "GDP_per_capita": 34475.61
+    },
+    {
+        "country": "Italy",
+        "GDP_per_capita": 34415.54
+    },
+    {
+        "country": "Kuwait",
+        "GDP_per_capita": 33430.66
+    },
+    {
+        "country": "Malta",
+        "GDP_per_capita": 33047.65
+    },
+    {
+        "country": "Bahamas",
+        "GDP_per_capita": 31899.73
+    },
+    {
+        "country": "South Korea",
+        "GDP_per_capita": 31613.73
+    },
+    {
+        "country": "Brunei Darussalam",
+        "GDP_per_capita": 31311.97
+    },
+    {
+        "country": "Spain",
+        "GDP_per_capita": 30362.42
+    },
+    {
+        "country": "Turks and Caicos Islands",
+        "GDP_per_capita": 26766.3
+    },
+    {
+        "country": "Slovenia",
+        "GDP_per_capita": 25982.18
+    },
+    {
+        "country": "Portugal",
+        "GDP_per_capita": 23535.14
+    },
+    {
+        "country": "Estonia",
+        "GDP_per_capita": 23182.72
+    },
+    {
+        "country": "Northern Mariana Islands",
+        "GDP_per_capita": 23124.12
+    },
+    {
+        "country": "Bahrain",
+        "GDP_per_capita": 22999.65
+    },
+    {
+        "country": "Saudi Arabia",
+        "GDP_per_capita": 22951.72
+    },
+    {
+        "country": "Czechia",
+        "GDP_per_capita": 22941.43
+    },
+    {
+        "country": "Cyprus",
+        "GDP_per_capita": 20826.41
+    },
+    {
+        "country": "Greece",
+        "GDP_per_capita": 20817.57
+    },
+    {
+        "country": "Slovakia",
+        "GDP_per_capita": 19407.07
+    },
+    {
+        "country": "Lithuania",
+        "GDP_per_capita": 19360.95
+    },
+    {
+        "country": "Cura\u00e7ao",
+        "GDP_per_capita": 19139.95
+    },
+    {
+        "country": "Saint Kitts and Nevis",
+        "GDP_per_capita": 19132.04
+    },
+    {
+        "country": "Latvia",
+        "GDP_per_capita": 18046.1
+    },
+    {
+        "country": "Barbados",
+        "GDP_per_capita": 17925.52
+    },
+    {
+        "country": "Uruguay",
+        "GDP_per_capita": 17215.92
+    },
+    {
+        "country": "Trinidad and Tobago",
+        "GDP_per_capita": 17067.15
+    },
+    {
+        "country": "Antigua and Barbuda",
+        "GDP_per_capita": 16584.19
+    },
+    {
+        "country": "Hungary",
+        "GDP_per_capita": 16302.34
+    },
+    {
+        "country": "Seychelles",
+        "GDP_per_capita": 16269.33
+    },
+    {
+        "country": "Oman",
+        "GDP_per_capita": 15935.05
+    },
+    {
+        "country": "Palau",
+        "GDP_per_capita": 15776.62
+    },
+    {
+        "country": "Chile",
+        "GDP_per_capita": 15736.1
+    },
+    {
+        "country": "Poland",
+        "GDP_per_capita": 15457.86
+    },
+    {
+        "country": "Panama",
+        "GDP_per_capita": 15319.92
+    },
+    {
+        "country": "Croatia",
+        "GDP_per_capita": 14762.05
+    },
+    {
+        "country": "Romania",
+        "GDP_per_capita": 12370.67
+    },
+    {
+        "country": "Costa Rica",
+        "GDP_per_capita": 11912.71
+    },
+    {
+        "country": "Nauru",
+        "GDP_per_capita": 11671.17
+    },
+    {
+        "country": "Argentina",
+        "GDP_per_capita": 11609.28
+    },
+    {
+        "country": "American Samoa",
+        "GDP_per_capita": 11498.41
+    },
+    {
+        "country": "Russia",
+        "GDP_per_capita": 11363.06
+    },
+    {
+        "country": "Malaysia",
+        "GDP_per_capita": 11223.3
+    },
+    {
+        "country": "Mauritius",
+        "GDP_per_capita": 11200.04
+    },
+    {
+        "country": "Grenada",
+        "GDP_per_capita": 10588.44
+    },
+    {
+        "country": "Saint Lucia",
+        "GDP_per_capita": 10513.68
+    },
+    {
+        "country": "Maldives",
+        "GDP_per_capita": 10033.69
+    },
+    {
+        "country": "Equatorial Guinea",
+        "GDP_per_capita": 9906.01
+    },
+    {
+        "country": "Kazakhstan",
+        "GDP_per_capita": 9667.18
+    },
+    {
+        "country": "Mexico",
+        "GDP_per_capita": 9568.45
+    },
+    {
+        "country": "China",
+        "GDP_per_capita": 9491.08
     },
     {
         "country": "Bulgaria",
-        "GDP_per_capita": "$9,304.55"
+        "GDP_per_capita": 9304.55
     },
     {
         "country": "Turkey",
-        "GDP_per_capita": "$9,245.52"
+        "GDP_per_capita": 9245.52
     },
     {
         "country": "Brazil",
-        "GDP_per_capita": "$8,853.97"
+        "GDP_per_capita": 8853.97
     },
     {
         "country": "Cuba",
-        "GDP_per_capita": "$8,825.44"
+        "GDP_per_capita": 8825.44
     },
     {
         "country": "Montenegro",
-        "GDP_per_capita": "$8,764.76"
+        "GDP_per_capita": 8764.76
     },
     {
         "country": "Lebanon",
-        "GDP_per_capita": "$8,261.60"
+        "GDP_per_capita": 8261.6
     },
     {
         "country": "Botswana",
-        "GDP_per_capita": "$8,080.91"
+        "GDP_per_capita": 8080.91
     },
     {
         "country": "Dominican Republic",
-        "GDP_per_capita": "$7,966.82"
+        "GDP_per_capita": 7966.82
     },
     {
         "country": "Gabon",
-        "GDP_per_capita": "$7,757.42"
+        "GDP_per_capita": 7757.42
     },
     {
         "country": "Dominica",
-        "GDP_per_capita": "$7,671.74"
+        "GDP_per_capita": 7671.74
     },
     {
         "country": "Saint Vincent and the Grenadines",
-        "GDP_per_capita": "$7,335.91"
+        "GDP_per_capita": 7335.91
     },
     {
         "country": "Thailand",
-        "GDP_per_capita": "$7,252.98"
+        "GDP_per_capita": 7252.98
     },
     {
         "country": "Libya",
-        "GDP_per_capita": "$7,136.04"
+        "GDP_per_capita": 7136.04
     },
     {
         "country": "Turkmenistan",
-        "GDP_per_capita": "$6,859.73"
+        "GDP_per_capita": 6859.73
     },
     {
         "country": "Peru",
-        "GDP_per_capita": "$6,829.95"
+        "GDP_per_capita": 6829.95
     },
     {
         "country": "Colombia",
-        "GDP_per_capita": "$6,576.30"
+        "GDP_per_capita": 6576.3
     },
     {
         "country": "Belarus",
-        "GDP_per_capita": "$6,311.88"
+        "GDP_per_capita": 6311.88
     },
     {
         "country": "South Africa",
-        "GDP_per_capita": "$6,289.27"
+        "GDP_per_capita": 6289.27
     },
     {
         "country": "Ecuador",
-        "GDP_per_capita": "$6,239.22"
+        "GDP_per_capita": 6239.22
     },
     {
         "country": "Fiji",
-        "GDP_per_capita": "$6,221.39"
+        "GDP_per_capita": 6221.39
     },
     {
         "country": "Suriname",
-        "GDP_per_capita": "$6,176.44"
+        "GDP_per_capita": 6176.44
     },
     {
         "country": "Bosnia and Herzegovina",
-        "GDP_per_capita": "$6,107.81"
+        "GDP_per_capita": 6107.81
     },
     {
         "country": "North Macedonia",
-        "GDP_per_capita": "$6,082.26"
+        "GDP_per_capita": 6082.26
     },
     {
         "country": "Namibia",
-        "GDP_per_capita": "$5,821.44"
+        "GDP_per_capita": 5821.44
     },
     {
         "country": "Serbia",
-        "GDP_per_capita": "$5,767.89"
+        "GDP_per_capita": 5767.89
     },
     {
         "country": "Paraguay",
-        "GDP_per_capita": "$5,748.62"
+        "GDP_per_capita": 5748.62
     },
     {
         "country": "Iraq",
-        "GDP_per_capita": "$5,704.13"
+        "GDP_per_capita": 5704.13
     },
     {
         "country": "Jamaica",
-        "GDP_per_capita": "$5,329.86"
+        "GDP_per_capita": 5329.86
     },
     {
         "country": "Albania",
-        "GDP_per_capita": "$5,242.26"
+        "GDP_per_capita": 5242.26
     },
     {
         "country": "Guyana",
-        "GDP_per_capita": "$4,955.02"
+        "GDP_per_capita": 4955.02
     },
     {
         "country": "Belize",
-        "GDP_per_capita": "$4,793.64"
+        "GDP_per_capita": 4793.64
     },
     {
         "country": "Azerbaijan",
-        "GDP_per_capita": "$4,671.66"
+        "GDP_per_capita": 4671.66
     },
     {
         "country": "Guatemala",
-        "GDP_per_capita": "$4,462.68"
+        "GDP_per_capita": 4462.68
     },
     {
         "country": "Georgia",
-        "GDP_per_capita": "$4,403.48"
+        "GDP_per_capita": 4403.48
     },
     {
         "country": "Tonga",
-        "GDP_per_capita": "$4,309.72"
+        "GDP_per_capita": 4309.72
     },
     {
         "country": "Armenia",
-        "GDP_per_capita": "$4,203.59"
+        "GDP_per_capita": 4203.59
     },
     {
         "country": "Jordan",
-        "GDP_per_capita": "$4,180.61"
+        "GDP_per_capita": 4180.61
     },
     {
         "country": "Sri Lanka",
-        "GDP_per_capita": "$4,169.10"
+        "GDP_per_capita": 4169.1
     },
     {
         "country": "Samoa",
-        "GDP_per_capita": "$4,162.97"
+        "GDP_per_capita": 4162.97
     },
     {
         "country": "Eswatini",
-        "GDP_per_capita": "$4,102.85"
+        "GDP_per_capita": 4102.85
     },
     {
         "country": "Mongolia",
-        "GDP_per_capita": "$4,051.50"
+        "GDP_per_capita": 4051.5
     },
     {
         "country": "El Salvador",
-        "GDP_per_capita": "$4,037.62"
+        "GDP_per_capita": 4037.62
     },
     {
         "country": "Algeria",
-        "GDP_per_capita": "$4,035.90"
+        "GDP_per_capita": 4035.9
     },
     {
         "country": "Indonesia",
-        "GDP_per_capita": "$3,850.98"
+        "GDP_per_capita": 3850.98
     },
     {
         "country": "Marshall Islands",
-        "GDP_per_capita": "$3,763.81"
+        "GDP_per_capita": 3763.81
     },
     {
         "country": "Tuvalu",
-        "GDP_per_capita": "$3,654.04"
+        "GDP_per_capita": 3654.04
     },
     {
         "country": "Cabo Verde",
-        "GDP_per_capita": "$3,594.63"
+        "GDP_per_capita": 3594.63
     },
     {
         "country": "Micronesia",
-        "GDP_per_capita": "$3,531.58"
+        "GDP_per_capita": 3531.58
     },
     {
         "country": "Bolivia",
-        "GDP_per_capita": "$3,499.29"
+        "GDP_per_capita": 3499.29
     },
     {
         "country": "Tunisia",
-        "GDP_per_capita": "$3,409.33"
+        "GDP_per_capita": 3409.33
     },
     {
         "country": "Angola",
-        "GDP_per_capita": "$3,322.86"
+        "GDP_per_capita": 3322.86
     },
     {
         "country": "Morocco",
-        "GDP_per_capita": "$3,233.22"
+        "GDP_per_capita": 3233.22
     },
     {
         "country": "Bhutan",
-        "GDP_per_capita": "$3,206.26"
+        "GDP_per_capita": 3206.26
     },
     {
         "country": "Philippines",
-        "GDP_per_capita": "$3,060.68"
+        "GDP_per_capita": 3060.68
     },
     {
         "country": "Vanuatu",
-        "GDP_per_capita": "$3,048.87"
+        "GDP_per_capita": 3048.87
     },
     {
         "country": "Djibouti",
-        "GDP_per_capita": "$3,036.20"
+        "GDP_per_capita": 3036.2
     },
     {
         "country": "Ukraine",
-        "GDP_per_capita": "$2,973.89"
+        "GDP_per_capita": 2973.89
     },
     {
-        "country": "State of Palestine",
-        "GDP_per_capita": "$2,934.08"
+        "country": "Palestine",
+        "GDP_per_capita": 2934.08
     },
     {
-        "country": "Republic of Moldova",
-        "GDP_per_capita": "$2,830.31"
+        "country": "Moldova",
+        "GDP_per_capita": 2830.31
     },
     {
         "country": "Papua New Guinea",
-        "GDP_per_capita": "$2,677.45"
+        "GDP_per_capita": 2677.45
     },
     {
         "country": "Vietnam",
-        "GDP_per_capita": "$2,542.07"
+        "GDP_per_capita": 2542.07
     },
     {
         "country": "Laos",
-        "GDP_per_capita": "$2,504.20"
+        "GDP_per_capita": 2504.2
     },
     {
         "country": "Egypt",
-        "GDP_per_capita": "$2,499.25"
+        "GDP_per_capita": 2499.25
     },
     {
         "country": "Honduras",
-        "GDP_per_capita": "$2,459.43"
+        "GDP_per_capita": 2459.43
     },
     {
         "country": "Ghana",
-        "GDP_per_capita": "$2,155.20"
+        "GDP_per_capita": 2155.2
     },
     {
         "country": "Zimbabwe",
-        "GDP_per_capita": "$2,116.73"
+        "GDP_per_capita": 2116.73
     },
     {
         "country": "Congo",
-        "GDP_per_capita": "$2,093.43"
+        "GDP_per_capita": 2093.43
     },
     {
         "country": "Solomon Islands",
-        "GDP_per_capita": "$2,083.55"
+        "GDP_per_capita": 2083.55
     },
     {
         "country": "Nicaragua",
-        "GDP_per_capita": "$2,004.10"
+        "GDP_per_capita": 2004.1
     },
     {
         "country": "Timor-Leste",
-        "GDP_per_capita": "$1,995.95"
+        "GDP_per_capita": 1995.95
     },
     {
         "country": "India",
-        "GDP_per_capita": "$1,989.68"
+        "GDP_per_capita": 1989.68
     },
     {
         "country": "Nigeria",
-        "GDP_per_capita": "$1,976.82"
+        "GDP_per_capita": 1976.82
     },
     {
         "country": "Sao Tome and Principe",
-        "GDP_per_capita": "$1,963.73"
+        "GDP_per_capita": 1963.73
     },
     {
         "country": "Bangladesh",
-        "GDP_per_capita": "$1,680.66"
+        "GDP_per_capita": 1680.66
     },
     {
         "country": "C\u00f4te d\u2019Ivoire",
-        "GDP_per_capita": "$1,672.35"
+        "GDP_per_capita": 1672.35
     },
     {
         "country": "Kenya",
-        "GDP_per_capita": "$1,672.09"
+        "GDP_per_capita": 1672.09
     },
     {
         "country": "Kiribati",
-        "GDP_per_capita": "$1,600.95"
+        "GDP_per_capita": 1600.95
     },
     {
         "country": "Uzbekistan",
-        "GDP_per_capita": "$1,531.15"
+        "GDP_per_capita": 1531.15
     },
     {
         "country": "Zambia",
-        "GDP_per_capita": "$1,496.00"
+        "GDP_per_capita": 1496.0
     },
     {
         "country": "Cameroon",
-        "GDP_per_capita": "$1,494.61"
+        "GDP_per_capita": 1494.61
     },
     {
         "country": "Cambodia",
-        "GDP_per_capita": "$1,488.64"
+        "GDP_per_capita": 1488.64
     },
     {
         "country": "Senegal",
-        "GDP_per_capita": "$1,480.67"
+        "GDP_per_capita": 1480.67
     },
     {
         "country": "Pakistan",
-        "GDP_per_capita": "$1,452.63"
+        "GDP_per_capita": 1452.63
     },
     {
         "country": "Comoros",
-        "GDP_per_capita": "$1,384.38"
+        "GDP_per_capita": 1384.38
     },
     {
         "country": "Myanmar",
-        "GDP_per_capita": "$1,317.68"
+        "GDP_per_capita": 1317.68
     },
     {
         "country": "Lesotho",
-        "GDP_per_capita": "$1,288.68"
+        "GDP_per_capita": 1288.68
     },
     {
         "country": "Kyrgyzstan",
-        "GDP_per_capita": "$1,261.38"
+        "GDP_per_capita": 1261.38
     },
     {
         "country": "Mauritania",
-        "GDP_per_capita": "$1,156.69"
+        "GDP_per_capita": 1156.69
     },
     {
         "country": "Nepal",
-        "GDP_per_capita": "$1,015.09"
+        "GDP_per_capita": 1015.09
     },
     {
         "country": "Tanzania",
-        "GDP_per_capita": "$999.93"
+        "GDP_per_capita": 999.93
     },
     {
         "country": "Sudan",
-        "GDP_per_capita": "$954.18"
+        "GDP_per_capita": 954.18
     },
     {
         "country": "Yemen",
-        "GDP_per_capita": "$922.93"
+        "GDP_per_capita": 922.93
     },
     {
         "country": "Benin",
-        "GDP_per_capita": "$877.40"
+        "GDP_per_capita": 877.4
     },
     {
         "country": "Mali",
-        "GDP_per_capita": "$873.10"
+        "GDP_per_capita": 873.1
     },
     {
         "country": "Haiti",
-        "GDP_per_capita": "$857.56"
+        "GDP_per_capita": 857.56
     },
     {
         "country": "Guinea",
-        "GDP_per_capita": "$854.04"
+        "GDP_per_capita": 854.04
     },
     {
         "country": "Tajikistan",
-        "GDP_per_capita": "$807.09"
+        "GDP_per_capita": 807.09
     },
     {
         "country": "Guinea-Bissau",
-        "GDP_per_capita": "$759.09"
+        "GDP_per_capita": 759.09
     },
     {
         "country": "Rwanda",
-        "GDP_per_capita": "$753.05"
+        "GDP_per_capita": 753.05
     },
     {
         "country": "Ethiopia",
-        "GDP_per_capita": "$752.65"
+        "GDP_per_capita": 752.65
     },
     {
         "country": "Chad",
-        "GDP_per_capita": "$706.92"
+        "GDP_per_capita": 706.92
     },
     {
         "country": "Gambia",
-        "GDP_per_capita": "$695.50"
+        "GDP_per_capita": 695.5
     },
     {
         "country": "Burkina Faso",
-        "GDP_per_capita": "$695.07"
+        "GDP_per_capita": 695.07
     },
     {
         "country": "Togo",
-        "GDP_per_capita": "$663.01"
+        "GDP_per_capita": 663.01
     },
     {
         "country": "Liberia",
-        "GDP_per_capita": "$661.08"
+        "GDP_per_capita": 661.08
     },
     {
         "country": "Uganda",
-        "GDP_per_capita": "$620.32"
+        "GDP_per_capita": 620.32
     },
     {
         "country": "Democratic Republic of the Congo",
-        "GDP_per_capita": "$544.16"
+        "GDP_per_capita": 544.16
     },
     {
         "country": "Sierra Leone",
-        "GDP_per_capita": "$522.85"
+        "GDP_per_capita": 522.85
     },
     {
         "country": "Madagascar",
-        "GDP_per_capita": "$513.67"
+        "GDP_per_capita": 513.67
     },
     {
         "country": "Afghanistan",
-        "GDP_per_capita": "$508.99"
+        "GDP_per_capita": 508.99
     },
     {
         "country": "Mozambique",
-        "GDP_per_capita": "$484.66"
+        "GDP_per_capita": 484.66
     },
     {
         "country": "Central African Republic",
-        "GDP_per_capita": "$467.82"
+        "GDP_per_capita": 467.82
     },
     {
         "country": "Niger",
-        "GDP_per_capita": "$398.57"
+        "GDP_per_capita": 398.57
     },
     {
         "country": "Malawi",
-        "GDP_per_capita": "$379.25"
+        "GDP_per_capita": 379.25
     },
     {
         "country": "Somalia",
-        "GDP_per_capita": "$305.69"
+        "GDP_per_capita": 305.69
     },
     {
         "country": "Burundi",
-        "GDP_per_capita": "$263.38"
+        "GDP_per_capita": 263.38
     }
 ]

@@ -1,11 +1,4 @@
 import React, { useEffect, useState, useMemo } from "react";
-import {
-  ArrayParam,
-  NumberParam,
-  StringParam,
-  useQueryParams,
-  withDefault,
-} from "use-query-params";
 import "./DemographicsAll.css";
 import CountryCard from "../../components/Cards/CountryCard";
 import { Pagination } from "@mui/material";
@@ -19,7 +12,6 @@ import {
   demographicPopulationFilterValues,
   demographicSortValues,
 } from "../../countryData/filterData";
-import { convertStringArrayToArray } from "../../utils";
 import { MDBInput } from "mdbreact";
 
 const axios = require("axios");
@@ -33,12 +25,15 @@ const customStyles = {
   container: (provided) => ({
     ...provided,
     width: 200,
+    marginLeft: 10,
+    marginRight: 10,
   }),
 };
 
 const DemographicsAll = ({}) => {
   const [demographicsData, setDemographicsData] = useState([]);
   const [itemCount, setItemCount] = useState(demographicCountryNames.length);
+  const [loading, setLoading] = useState(true);
   const [params, setParams] = useState({
     page: 1,
     per_page: 9,
@@ -113,10 +108,11 @@ const DemographicsAll = ({}) => {
     const getDemographicsData = async () => {
       const urlParams = buildParams(params);
       axios
-        .get("http://10.0.0.157:5000/demographics?" + urlParams.toString())
+        .get("http://192.168.1.247:5000/demographics?" + urlParams.toString())
         .then((response) => {
           setDemographicsData(response.data.result);
           setItemCount(response.data.count);
+          setLoading(false);
         });
     };
 
@@ -141,6 +137,33 @@ const DemographicsAll = ({}) => {
           display: "flex",
           flexDirection: "row",
           alignItems: "center",
+          justifyContent: "space-between",
+        }}
+      >
+        {[
+          "Country Name",
+          "Nominal GDP",
+          "Population",
+          "Language",
+          "Sort by...",
+        ].map((item) => (
+          <text
+            style={{
+              marginLeft: 10,
+              marginRight: 10,
+              width: 200,
+              marginBottom: 5,
+              fontWeight: "bold",
+            }}
+          >
+            {item}
+          </text>
+        ))}
+      </div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
           justifyContent: "space-between",
         }}
       >
@@ -183,7 +206,7 @@ const DemographicsAll = ({}) => {
           classNamePrefix="select"
         />
       </div>
-      {demographicsData.length > 0 ? (
+      {!loading ? (
         <div>
           <div
             style={{
@@ -213,12 +236,15 @@ const DemographicsAll = ({}) => {
               justifyContent: "center",
             }}
           >
-            Displaying {(params.page - 1) * 9 + 1}-
+            Displaying {itemCount > 0 ? (params.page - 1) * 9 + 1 : 0}-
             {Math.min(params.page * 9, itemCount)} of {itemCount}
           </div>
           <div className="cardGrid">
             {demographicsData.map((country) => (
-              <CountryCard country={country} />
+              <CountryCard
+                country={country}
+                searchQuery={params.search.toLowerCase()}
+              />
             ))}
           </div>
         </div>

@@ -3,14 +3,6 @@
   height: 650px;
 }
 
-.cardStatsSection {
-  margin-top: 15px;
-  padding-top: 10px;
-  border-top-width: 1px;
-  border-top-color: #dbdbdb;
-  border-top-style: solid;
-}
-
 .countryCardStyle {
   width: 350px;
   height: 450px;

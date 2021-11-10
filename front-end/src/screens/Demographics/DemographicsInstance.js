@@ -17,7 +17,7 @@ const DemographicsInstance = ({}) => {
   const [data, setData] = useState({});
 
   const [{ data: countryData, loading, error }] = useAxios(
-    `https://api.around-the-world.me/demographics/${country_id}`
+    `http://192.168.1.247:5000/demographics/${country_id}`
   );
 
   useEffect(() => {
@@ -26,9 +26,6 @@ const DemographicsInstance = ({}) => {
     }
   }, [countryData]);
 
-  const languages = data
-    ? convertStringArrayToArray(data.country_languages)
-    : null;
   const countriesWithSimilarPopulation = data
     ? convertStringArrayToArray(data.countries_with_similar_pop)
     : null;
@@ -103,7 +100,7 @@ const DemographicsInstance = ({}) => {
             </p>
             <p class="card-text">
               <b>Languages: </b>
-              {languages.join(", ")}
+              {data.country_languages}
             </p>
             <p class="card-text">
               <b>Calling Code: </b>+{data.country_calling_code}

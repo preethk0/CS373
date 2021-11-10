@@ -1,6 +1,8 @@
-from flask import Flask, request, make_response, jsonify, send_from_directory
-from flask_sqlalchemy import SQLAlchemy
+from flask import request, jsonify
 from sqlalchemy import and_, or_, func
+import sqlalchemy
+from sqlalchemy.sql.expression import all_, cast
+
 
 
 from models import (
@@ -40,13 +42,18 @@ def filter_demographics(dem_query, queries):
     
     if "country_gdp" in queries:
         gdp_filter = queries['country_gdp']
-        # dem_query = dem_query.filter(Demographics.country_GDP)
+        all_filters = []
+        for filter in gdp_filter:
+            lower_bound, upper_bound = filter.split("-")
+            all_filters.append(and_(Demographics.country_GDP > int(lower_bound) * 10**9, Demographics.country_GDP <= int(upper_bound) * 10**9))
+        dem_query = dem_query.filter(or_(*tuple(all_filters)))
 
     if "country_language" in queries:
         language_filter = queries['country_language']
-        # for language in language_filter:
-        # dem_query = dem_query.filter("English" in Demographics.country_languages)
-        # dem_query = dem_query.filter(or_(*tuple(all_filters)))
+        all_filters = []
+        for language in language_filter:
+            all_filters.append(Demographics.country_languages.contains(language))
+        dem_query = dem_query.filter(or_(*tuple(all_filters)))
 
     return dem_query
 
@@ -72,11 +79,31 @@ def sort_demographics(dem_query, queries):
 
 def search_demographics(dem_query, queries):
     if "search" in queries:
-        terms = queries['search'][0].strip().lower().split()
+        term = queries['search'][0].strip().lower()
+
+        keywords = ['population:', 'languages:', 'number of states:', 'nominal gdp: $']
 
         all_filters = []
-        for term in terms:
-            all_filters.append(func.lower(Demographics.country_name).contains(term))
+
+        if True in [keyword.strip().find(term) >= 0 for keyword in keywords]:
+            return dem_query
+
+        if term.find(keywords[0]) == 0:
+            all_filters.append(func.lower(cast(Demographics.country_population, sqlalchemy.String)).startswith(term[len(keywords[0]) + 1:])) # Check populations
+        elif term.find(keywords[1]) == 0:
+            all_filters.append(func.lower(Demographics.country_languages).startswith(term[len(keywords[1]) + 1:])) # Check languages
+        elif term.find(keywords[2]) == 0:
+            all_filters.append(func.lower(cast(Demographics.country_states, sqlalchemy.String)).startswith(term[len(keywords[2]) + 1:])) # Check number of states
+        elif term.find(keywords[3]) == 0:
+            all_filters.append(func.lower(cast(Demographics.country_GDP, sqlalchemy.String)).startswith(term[len(keywords[3]):])) # Check nominal GDP
+        
+        all_filters.append(func.lower(Demographics.country_name).contains(term)) # Check country names
+        all_filters.append(func.lower(Demographics.country_capital).contains(term)) # Check capitals
+        all_filters.append(func.lower(cast(Demographics.country_population, sqlalchemy.String)).contains(term)) # Check populations
+        all_filters.append(func.lower(Demographics.country_languages).contains(term)) # Check languages
+        all_filters.append(func.lower(cast(Demographics.country_states, sqlalchemy.String)).contains(term)) # Check number of states
+        all_filters.append(func.lower(cast(Demographics.country_GDP, sqlalchemy.String)).contains(term)) # Check GDP
+
         dem_query = dem_query.filter(or_(*tuple(all_filters)))
             
     return dem_query
@@ -94,7 +121,6 @@ def get_all_demographics():
     dem_query = sort_demographics(dem_query, queries)
     dem_query = search_demographics(dem_query, queries)
     demographics = dem_query.paginate(page=page, per_page=per_page)
-
 
     result = all_demographics_schema.dump(demographics.items, many=True)
 
