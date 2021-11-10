@@ -17,7 +17,7 @@ const DemographicsInstance = ({}) => {
   const [data, setData] = useState({});
 
   const [{ data: countryData, loading, error }] = useAxios(
-    `http://192.168.1.247:5000/demographics/${country_id}`
+    `https://api.around-the-world.me/demographics/${country_id}`
   );
 
   useEffect(() => {

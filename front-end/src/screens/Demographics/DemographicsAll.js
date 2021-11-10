@@ -108,7 +108,9 @@ const DemographicsAll = ({}) => {
     const getDemographicsData = async () => {
       const urlParams = buildParams(params);
       axios
-        .get("http://192.168.1.247:5000/demographics?" + urlParams.toString())
+        .get(
+          "https://api.around-the-world.me/demographics?" + urlParams.toString()
+        )
         .then((response) => {
           setDemographicsData(response.data.result);
           setItemCount(response.data.count);
