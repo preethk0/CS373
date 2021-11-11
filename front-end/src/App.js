@@ -22,6 +22,7 @@ function App() {
         <Route exact path="/demographics" component={DemographicsAll} />
         <Route exact path="/geography" component={GeographyAll} />
         <Route exact path="/foodandtourism" component={FoodAndTourismAll} />
+        <Route exact path="/search" component={Search} />
         <Route path="/demographics/:country" component={DemographicsInstance} />
         <Route path="/geography/:country" component={GeographyInstance} />
         <Route path="/foodandtourism/:country" component={FoodAndTourismInstance} />
