@@ -11,6 +11,7 @@ import {
   demographicLanguageFilterValues,
   demographicPopulationFilterValues,
   demographicSortValues,
+  demographicStatesFilterValues,
 } from "../../countryData/filterData";
 import { MDBInput } from "mdbreact";
 
@@ -41,6 +42,7 @@ const DemographicsAll = ({}) => {
     country_population: [],
     country_gdp: [],
     country_language: [],
+    country_states: [],
     sort: "",
     search: "",
   });
@@ -91,6 +93,12 @@ const DemographicsAll = ({}) => {
       if (params.country_language.length > 0) {
         params.country_language.forEach((lang) => {
           urlParams.append("country_language", lang);
+        });
+      }
+
+      if (params.country_states.length > 0) {
+        params.country_states.forEach((num) => {
+          urlParams.append("country_states", num);
         });
       }
 
@@ -147,6 +155,7 @@ const DemographicsAll = ({}) => {
           "Nominal GDP",
           "Population",
           "Language",
+          "Number of States",
           "Sort by...",
         ].map((item) => (
           <text
@@ -197,6 +206,14 @@ const DemographicsAll = ({}) => {
           options={demographicLanguageFilterValues}
           styles={customStyles}
           onChange={(vals) => updateFilter("country_language", vals)}
+          isMulti
+          className="basic-multi-select"
+          classNamePrefix="select"
+        />
+        <Select
+          options={demographicStatesFilterValues}
+          styles={customStyles}
+          onChange={(vals) => updateFilter("country_states", vals)}
           isMulti
           className="basic-multi-select"
           classNamePrefix="select"
