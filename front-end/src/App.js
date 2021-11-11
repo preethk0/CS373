@@ -7,6 +7,7 @@ import HomeSplash from "./screens/HomeSplash/HomeSplash.js";
 import GeographyAll from "./screens/Geography/GeographyAll.js";
 import FoodAndTourismAll from "./screens/FoodAndTourism/FoodAndTourismAll.js";
 import About from "./screens/About/About.js";
+import Search from "./screens/Search/Search.js";
 import DemographicsInstance from "./screens/Demographics/DemographicsInstance";
 import GeographyInstance from "./screens/Geography/GeographyInstance";
 import FoodAndTourismInstance from "./screens/FoodAndTourism/FoodAndTourismInstance";
