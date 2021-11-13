@@ -2,25 +2,9 @@ import React from "react";
 import { Card } from "antd";
 import "./Card.css";
 
-const CountryCard = ({ country, searchQuery }) => {
+const CountryCard = ({ country, highlightText }) => {
   const formatNumbers = (number) => {
     return number.toLocaleString();
-  };
-
-  const highlightText = (text) => {
-    const parts = text.split(new RegExp(`(${searchQuery})`, "gi"));
-
-    return (
-      <span>
-        {parts.map((part) =>
-          part.toLowerCase() === searchQuery ? (
-            <text style={{ backgroundColor: "yellow" }}>{part}</text>
-          ) : (
-            part
-          )
-        )}
-      </span>
-    );
   };
 
   const country_id = country.country_id;

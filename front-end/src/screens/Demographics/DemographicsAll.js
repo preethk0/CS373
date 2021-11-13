@@ -47,6 +47,23 @@ const DemographicsAll = ({}) => {
     search: "",
   });
 
+  const highlightText = (text) => {
+    const searchQuery = params.search.toLowerCase();
+    const parts = text.split(new RegExp(`(${searchQuery})`, "gi"));
+
+    return (
+      <span>
+        {parts.map((part) =>
+          part.toLowerCase() === searchQuery ? (
+            <text style={{ backgroundColor: "yellow" }}>{part}</text>
+          ) : (
+            part
+          )
+        )}
+      </span>
+    );
+  };
+
   const updateFilter = (key, values) => {
     const currentParams = params;
     setParams({
@@ -131,11 +148,11 @@ const DemographicsAll = ({}) => {
 
   return (
     <div className="mainPage">
-      <h2 className="header">Demographics</h2>
+      <h2 className="header">{highlightText("Demographics")}</h2>
       <p className="descriptionText">
-        Looking to learn more about a certain country? This page can quickly
-        locate the country you're looking for and give you some basic
-        information about it.
+        {highlightText(
+          "Looking to learn more about a certain country? This page can quickly locate the country you're looking for and give you some basic information about it."
+        )}
       </p>
       <MDBInput
         label="Search"
@@ -167,7 +184,7 @@ const DemographicsAll = ({}) => {
               fontWeight: "bold",
             }}
           >
-            {item}
+            {highlightText(item)}
           </text>
         ))}
       </div>
@@ -255,15 +272,15 @@ const DemographicsAll = ({}) => {
               justifyContent: "center",
             }}
           >
-            Displaying {itemCount > 0 ? (params.page - 1) * 9 + 1 : 0}-
-            {Math.min(params.page * 9, itemCount)} of {itemCount}
+            {highlightText(
+              `Displaying ${
+                itemCount > 0 ? (params.page - 1) * 9 + 1 : 0
+              }-${Math.min(params.page * 9, itemCount)} of ${itemCount}`
+            )}
           </div>
           <div className="cardGrid">
             {demographicsData.map((country) => (
-              <CountryCard
-                country={country}
-                searchQuery={params.search.toLowerCase()}
-              />
+              <CountryCard country={country} highlightText={highlightText} />
             ))}
           </div>
         </div>
