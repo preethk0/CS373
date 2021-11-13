@@ -1,8 +1,6 @@
 import React from "react";
 import { Card } from "antd";
 import "./Card.css";
-import { convertStringArrayToArray } from "../../utils";
-import Highlighter from "react-highlight-words";
 
 const CountryCard = ({ country, searchQuery }) => {
   const formatNumbers = (number) => {
