@@ -55,18 +55,15 @@ def get_demographics(id):
 # Retrieve geography data for all countries
 @app.route("/geography", methods=["GET"])
 def get_all_geography():
-    # all_geography = Geography.query.all()
-    # result = all_geography_schema.dump(all_geography)
-    # return jsonify(result)
     queries = request.args.to_dict(flat=False)
     geo_query = db.session.query(Geography)
 
     page = int(queries['page'][0]) if "page" in queries else 1
     per_page = int(queries['per_page'][0]) if "per_page" in queries else 10
     
-    # geo_query = filter_geography(geo_query, queries)
+    geo_query = filter_geography(geo_query, queries)
     geo_query = sort_geography(geo_query, queries)
-    # geo_query = search_geography(geo_query, queries)
+    geo_query = search_geography(geo_query, queries)
     geography = geo_query.paginate(page=page, per_page=per_page)
 
     result = all_geography_schema.dump(geography.items, many=True)
