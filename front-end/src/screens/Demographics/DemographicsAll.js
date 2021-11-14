@@ -13,6 +13,13 @@ import {
   demographicSortValues,
   demographicStatesFilterValues,
 } from "../../countryData/filterData";
+import {
+  useQueryParams,
+  StringParam,
+  NumberParam,
+  ArrayParam,
+  withDefault,
+} from "use-query-params";
 import { MDBInput } from "mdbreact";
 
 const axios = require("axios");
@@ -35,20 +42,20 @@ const DemographicsAll = ({}) => {
   const [demographicsData, setDemographicsData] = useState([]);
   const [itemCount, setItemCount] = useState(demographicCountryNames.length);
   const [loading, setLoading] = useState(true);
-  const [params, setParams] = useState({
-    page: 1,
-    per_page: 9,
-    country_name: [],
-    country_population: [],
-    country_gdp: [],
-    country_language: [],
-    country_states: [],
-    sort: "",
-    search: "",
+  const [params, setParams] = useQueryParams({
+    page: withDefault(NumberParam, 1),
+    per_page: withDefault(NumberParam, 9),
+    country_name: withDefault(ArrayParam, []),
+    country_population: withDefault(ArrayParam, []),
+    country_gdp: withDefault(ArrayParam, []),
+    country_language: withDefault(ArrayParam, []),
+    country_states: withDefault(ArrayParam, []),
+    sort: StringParam,
+    search: StringParam,
   });
 
   const highlightText = (text) => {
-    const searchQuery = params.search.toLowerCase();
+    const searchQuery = params.search?.toLowerCase() ?? "";
     const parts = text.split(new RegExp(`(${searchQuery})`, "gi"));
 
     return (
@@ -119,11 +126,11 @@ const DemographicsAll = ({}) => {
         });
       }
 
-      if (params.sort.length > 0) {
+      if (params.sort?.length ?? 0 > 0) {
         urlParams.append("sort", params.sort);
       }
 
-      if (params.search.length > 0) {
+      if (params.search?.length ?? 0 > 0) {
         urlParams.append("search", params.search);
       }
 
@@ -202,6 +209,9 @@ const DemographicsAll = ({}) => {
           isMulti
           className="basic-multi-select"
           classNamePrefix="select"
+          value={countryFilterOptions.filter((item) =>
+            params.country_name.includes(item.value)
+          )}
         />
         <Select
           options={demographicGDPFilterValues}
@@ -210,6 +220,9 @@ const DemographicsAll = ({}) => {
           isMulti
           className="basic-multi-select"
           classNamePrefix="select"
+          value={demographicGDPFilterValues.filter((item) =>
+            params.country_gdp.includes(item.value)
+          )}
         />
         <Select
           options={demographicPopulationFilterValues}
@@ -218,6 +231,9 @@ const DemographicsAll = ({}) => {
           isMulti
           className="basic-multi-select"
           classNamePrefix="select"
+          value={demographicPopulationFilterValues.filter((item) =>
+            params.country_population.includes(item.value)
+          )}
         />
         <Select
           options={demographicLanguageFilterValues}
@@ -226,6 +242,9 @@ const DemographicsAll = ({}) => {
           isMulti
           className="basic-multi-select"
           classNamePrefix="select"
+          value={demographicLanguageFilterValues.filter((item) =>
+            params.country_language.includes(item.value)
+          )}
         />
         <Select
           options={demographicStatesFilterValues}
@@ -234,12 +253,20 @@ const DemographicsAll = ({}) => {
           isMulti
           className="basic-multi-select"
           classNamePrefix="select"
+          value={demographicStatesFilterValues.filter((item) =>
+            params.country_states.includes(item.value)
+          )}
         />
         <Select
           options={demographicSortValues}
           styles={customStyles}
           onChange={(val) => updateParam("sort", val.value)}
           classNamePrefix="select"
+          value={
+            demographicSortValues.filter(
+              (item) => item.value == params.sort
+            )?.[0] ?? ""
+          }
         />
       </div>
       {!loading ? (
