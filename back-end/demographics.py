@@ -31,6 +31,14 @@ def filter_demographics(dem_query, queries):
             all_filters.append(Demographics.country_languages.contains(language))
         dem_query = dem_query.filter(or_(*tuple(all_filters)))
 
+    if "country_states" in queries:
+        states_filter = queries['country_states']
+        all_filters = []
+        for filter in states_filter:
+            lower_bound, upper_bound = filter.split("-")
+            all_filters.append(and_(Demographics.country_states >= int(lower_bound), Demographics.country_states <= int(upper_bound)))
+        dem_query = dem_query.filter(or_(*tuple(all_filters)))
+
     return dem_query
 
 def sort_demographics(dem_query, queries):
@@ -47,6 +55,8 @@ def sort_demographics(dem_query, queries):
             dem_attribute = Demographics.country_states
         elif attribute == "country_GDP":
             dem_attribute = Demographics.country_GDP
+        elif attribute == "country_language":
+            dem_attribute  = Demographics.country_languages
 
         if dem_attribute:
             return dem_query.order_by(dem_attribute.desc() if order == "des" else dem_attribute)
