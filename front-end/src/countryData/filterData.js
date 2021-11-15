@@ -200,7 +200,7 @@ export const geographyRegionFilterValues = [
 export const geographyLongitudeFilterValues = [
   { value: "-180*-140", label: "-180 to -140" },
   { value: "-140*-100", label: "-140 to -100" },
-  { value: "-100*-40", label: "-100 to -60" },
+  { value: "-100*-60", label: "-100 to -60" },
   { value: "-60*-20", label: "-60 to -20" },
   { value: "-20*20", label: "-20 to 20" },
   { value: "20*60", label: "20 to 60" },
@@ -212,7 +212,7 @@ export const geographyLongitudeFilterValues = [
 export const geographyLatitudeFilterValues = [
   { value: "-180*-140", label: "-180 to -140" },
   { value: "-140*-100", label: "-140 to -100" },
-  { value: "-100*-40", label: "-100 to -60" },
+  { value: "-100*-60", label: "-100 to -60" },
   { value: "-60*-20", label: "-60 to -20" },
   { value: "-20*20", label: "-20 to 20" },
   { value: "20*60", label: "20 to 60" },
