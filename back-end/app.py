@@ -1,5 +1,6 @@
 from flask import request, jsonify
 from demographics import filter_demographics, sort_demographics, search_demographics
+from foodandtourism import filter_foodandtourism, sort_foodandtourism, search_foodandtourism
 from geography import filter_geography, sort_geography, search_geography
 
 from models import (
@@ -84,10 +85,20 @@ def get_geography(id):
 # Retrieve food and tourism data for all countries
 @app.route("/foodandtourism", methods=["GET"])
 def get_all_foodandtourism():
-    all_foodandtourism = FoodAndTourism.query.all()
-    result = all_foodandtourism_schema.dump(all_foodandtourism)
-    return jsonify(result)
+    queries = request.args.to_dict(flat=False)
+    foodandtourism_query = db.session.query(FoodAndTourism)
 
+    page = int(queries['page'][0]) if "page" in queries else 1
+    per_page = int(queries['per_page'][0]) if "per_page" in queries else 10
+    
+    foodandtourism_query = filter_foodandtourism(foodandtourism_query, queries)
+    foodandtourism_query = sort_foodandtourism(foodandtourism_query, queries)
+    foodandtourism_query = search_foodandtourism(foodandtourism_query, queries)
+    foodandtourism = foodandtourism_query.paginate(page=page, per_page=per_page)
+
+    result = all_foodandtourism_schema.dump(foodandtourism.items, many=True)
+
+    return {'result': result, 'count': foodandtourism_query.count()}
 
 # Retrieve food and tourism data for country with specific country-id
 @app.route("/foodandtourism/<id>", methods=["GET"])
