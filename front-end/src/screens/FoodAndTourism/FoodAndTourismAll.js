@@ -152,7 +152,7 @@ const FoodAndTourismAll = ({}) => {
       const urlParams = buildParams(params);
       axios
         .get(
-          "https://api.around-the-world.me/foodandtourism?" +
+          "http://api.around-the-world.me/foodandtourism?" +
             urlParams.toString()
         )
         .then((response) => {
@@ -167,11 +167,11 @@ const FoodAndTourismAll = ({}) => {
 
   return (
     <div className="mainPage">
-      <h2 className="header">Food and Tourism</h2>
+      <h2 className="header">{highlightText("Food and Tourism")}</h2>
       <p className="descriptionText">
-        Looking for more tourism information before you visit a country? This
-        page will help you quickly locate a country and show you the food and
-        landmarks you'll come across.
+        {highlightText(
+          "Looking for more tourism information before you visit a country? This page will help you quickly locate a country and show you the food and landmarks you'll come across."
+        )}
       </p>
       <MDBInput
         label="Search"
