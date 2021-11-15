@@ -4,6 +4,7 @@ import sqlalchemy
 from models import FoodAndTourism
 
 def filter_foodandtourism(foodandtourism_query, queries):
+    print(queries)
     if "country_name" in queries:
         countries_filter = queries['country_name']
         foodandtourism_query = foodandtourism_query.filter(FoodAndTourism.country_name.in_(countries_filter))
@@ -25,7 +26,7 @@ def filter_foodandtourism(foodandtourism_query, queries):
         foodandtourism_query = foodandtourism_query.filter(or_(*tuple(all_filters)))
 
     if "country_income_level" in queries:
-        income_filter = queries['country_continent']
+        income_filter = queries['country_income_level']
         foodandtourism_query = foodandtourism_query.filter(FoodAndTourism.country_income_level.in_(income_filter))
 
     return foodandtourism_query
