@@ -9,7 +9,7 @@ class Tests(TestCase):
         result = requests.get("https://api.around-the-world.me/demographics")
         assert result.status_code == 200
         jsonRes = result.json()
-        assert len(jsonRes) == 9
+        assert len(jsonRes["result"]) == 9
 
     # Test single country demographics call
     def test2(self):
@@ -24,7 +24,7 @@ class Tests(TestCase):
         result = requests.get("https://api.around-the-world.me/geography")
         assert result.status_code == 200
         jsonRes = result.json()
-        assert len(jsonRes) == 154
+        assert jsonRes["count"] == 154
 
     # Test single country geography call
     def test4(self):
@@ -51,7 +51,7 @@ class Tests(TestCase):
         result = requests.get("https://api.around-the-world.me/foodandtourism")
         assert result.status_code == 200
         jsonRes = result.json()
-        assert len(jsonRes) == 139
+        assert jsonRes["count"] == 139
 
     # Test single country food and tourism call
     def test6(self):
