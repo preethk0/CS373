@@ -6,6 +6,7 @@ import { TablePagination } from '@mui/material';
 import { Spinner } from "react-bootstrap";
 import { MDBInput } from "mdbreact";
 import Select from "react-select";
+import * as Bootstrap from "react-bootstrap";
 import { geographyCountryNames } from "../../countryData/geographyCountries";
 import {
   geographyCountryNameFilterOptions,
@@ -15,6 +16,14 @@ import {
   geographyLatitudeFilterValues,
   geographySortValues,
 } from "../../countryData/filterData";
+import {
+  useQueryParams,
+  StringParam,
+  NumberParam,
+  ArrayParam,
+  withDefault,
+} from "use-query-params";
+
 
 const axios = require("axios");
 
@@ -37,20 +46,35 @@ const GeographyAll = ({}) => {
   const [geographyData, setGeographyData] = useState([]);
   const [itemCount, setItemCount] = useState(geographyCountryNames.length);
   const [loading, setLoading] = useState(true);
-  const [params, setParams] = useState({
-    page: 1,
-    per_page: 10,
-    country_name: [],
-    country_longitude: [],
-    country_latitude: [],
-    country_continent: [],
-    country_region: [],
-    sort: "",
-    search: "",
+  const [params, setParams] = useQueryParams({
+    page: withDefault(NumberParam, 1),
+    per_page: withDefault(NumberParam, 9),
+    country_name: withDefault(ArrayParam, []),
+    country_longitude: withDefault(ArrayParam, []),
+    country_latitude: withDefault(ArrayParam, []),
+    country_continent: withDefault(ArrayParam, []),
+    country_region: withDefault(ArrayParam, []),
+    sort: StringParam,
+    search: StringParam,
   });
 
+  const getGeography = (country) => {
+    const data = geographyData[country];
+    return (
+      <tr key={data.country_id}>
+        <td>
+          <a href={"/geography/" + data.country_id}>{highlightText(data.country_name)}</a>
+        </td>
+        <td> {highlightText(data.country_longitude.toString())}</td>
+        <td> {highlightText(data.country_latitude.toString())}</td>
+        <td> {highlightText(data.country_continent)}</td>
+        <td> {highlightText(data.country_region)}</td>
+      </tr>
+    );
+    };
+
   const highlightText = (text) => {
-    const searchQuery = params.search.toLowerCase();
+    const searchQuery = params.search?.toLowerCase() ?? "";
     const parts = text.split(new RegExp(`(${searchQuery})`, "gi"));
 
     return (
@@ -82,6 +106,7 @@ const GeographyAll = ({}) => {
       [key]: value,
     });
   };
+
 
   useEffect(() => {
     // Adapted from TexasVotes
@@ -122,11 +147,11 @@ const GeographyAll = ({}) => {
         });
       }
 
-      if (params.sort.length > 0) {
+      if (params.sort?.length ?? 0 > 0) {
         urlParams.append("sort", params.sort);
       }
 
-      if (params.search.length > 0) {
+      if (params.search?.length ?? 0 > 0) {
         urlParams.append("search", params.search);
       }
 
@@ -148,7 +173,6 @@ const GeographyAll = ({}) => {
 
     getGeographyData();
   }, [params]);
-
   return (
     <div className="mainPage">
       <h2 className="header">{highlightText("Geography")}</h2>
@@ -206,6 +230,10 @@ const GeographyAll = ({}) => {
           isMulti
           className="basic-multi-select"
           classNamePrefix="select"
+          value={geographyCountryNameFilterOptions.filter((item) =>
+            params.country_name.includes(item.value)
+          )}
+
         />
         <Select
           options={geographyLongitudeFilterValues}
@@ -214,6 +242,9 @@ const GeographyAll = ({}) => {
           isMulti
           className="basic-multi-select"
           classNamePrefix="select"
+          value={geographyLongitudeFilterValues.filter((item) =>
+            params.country_longitude.includes(item.value)
+          )}
         />
         <Select
           options={geographyLatitudeFilterValues}
@@ -222,6 +253,9 @@ const GeographyAll = ({}) => {
           isMulti
           className="basic-multi-select"
           classNamePrefix="select"
+          value={geographyLatitudeFilterValues.filter((item) =>
+            params.country_latitude.includes(item.value)
+          )}
         />
         <Select
           options={geographyContinentFilterValues}
@@ -230,6 +264,9 @@ const GeographyAll = ({}) => {
           isMulti
           className="basic-multi-select"
           classNamePrefix="select"
+          value={geographyContinentFilterValues.filter((item) =>
+            params.country_continent.includes(item.value)
+          )}
         />
         <Select
           options={geographyRegionFilterValues}
@@ -238,12 +275,21 @@ const GeographyAll = ({}) => {
           isMulti
           className="basic-multi-select"
           classNamePrefix="select"
+          value={geographyRegionFilterValues.filter((item) =>
+            params.country_region.includes(item.value)
+          )}
         />
         <Select
           options={geographySortValues}
           styles={customStyles}
           onChange={(val) => updateParam("sort", val.value)}
           classNamePrefix="select"
+          value={
+            geographySortValues.filter(
+              (item) => item.value == params.sort
+            )?.[0] ?? ""
+          }
+
         />
       </div>
       {!loading ? (
@@ -256,7 +302,20 @@ const GeographyAll = ({}) => {
                 }-${Math.min(params.page * 10, itemCount)} of ${itemCount}`
               )}
           </div>
-          <MaterialTable
+          <Bootstrap.Table table-bordered>
+          <thead>
+            <tr>
+              <th scope="col">Country</th>
+              <th scope="col">Longitude</th>
+              <th scope="col">Latitude</th>
+              <th scope="col">Continent</th>
+              <th scope="col">Region</th>
+            </tr>
+          </thead>
+          <tbody>{Object.keys(geographyData).map(getGeography)}</tbody>
+        </Bootstrap.Table>
+
+          {/* <MaterialTable
             style={{ width: "985pt"}}
             data={geographyData}
             options={{
@@ -277,25 +336,8 @@ const GeographyAll = ({}) => {
               { title: "Continent", field: "country_continent" },
               { title: "Region", field: "country_region" },
             ]}
-
-            // components={{
-            //   Pagination: props => (
-            //                <TablePagination
-            //                {...props}
-            //           component="div"
-            //           rowsPerPage={10}
-            //           count={Math.ceil(itemCount / 10)}
-            //           page={params.page}
-            //           onChangePage={(_, value) => updateParam("page", value)}
-            //           defaultPage={1}
-            //           onRowsPerPageChange={10}
-            //         />
-            //       ),
-            // }}
-          />
-          <div class="cols">
-            <div>
-              <Pagination
+          /> */}
+          <Pagination
                 defaultPage={1}
                 page={params.page}
                 onChange={(_, value) => updateParam("page", value)}
@@ -306,15 +348,6 @@ const GeographyAll = ({}) => {
                 showLastButton
                 style={{ paddingTop: "10pt", paddingLeft:"675pt"}}
               />
-            </div>
-            {/* <div style={{ paddingTop: "-10pt"}}>
-              {highlightText(
-                `Displaying ${
-                  itemCount > 0 ? (params.page - 1) * 10 + 1 : 0
-                }-${Math.min(params.page * 10, itemCount)} of ${itemCount}`
-              )}
-            </div> */}
-          </div>
         </div>
       ) : (
         <Spinner
