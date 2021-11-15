@@ -22,7 +22,6 @@ import {
   withDefault,
 } from "use-query-params";
 
-
 const axios = require("axios");
 
 const customStyles = {
@@ -30,7 +29,7 @@ const customStyles = {
     ...provided,
     width: 200,
     color: state.selectProps.menuColor,
-    zIndex: 9999
+    zIndex: 9999,
   }),
   container: (provided) => ({
     ...provided,
@@ -61,7 +60,9 @@ const GeographyAll = ({}) => {
     return (
       <tr key={data.country_id}>
         <td>
-          <a href={"/geography/" + data.country_id}>{highlightText(data.country_name)}</a>
+          <a href={"/geography/" + data.country_id}>
+            {highlightText(data.country_name)}
+          </a>
         </td>
         <td> {highlightText(data.country_longitude.toString())}</td>
         <td> {highlightText(data.country_latitude.toString())}</td>
@@ -69,7 +70,7 @@ const GeographyAll = ({}) => {
         <td> {highlightText(data.country_region)}</td>
       </tr>
     );
-    };
+  };
 
   const highlightText = (text) => {
     const searchQuery = params.search?.toLowerCase() ?? "";
@@ -104,7 +105,6 @@ const GeographyAll = ({}) => {
       [key]: value,
     });
   };
-
 
   useEffect(() => {
     // Adapted from TexasVotes
@@ -160,7 +160,7 @@ const GeographyAll = ({}) => {
       const urlParams = buildParams(params);
       axios
         .get(
-          "http://10.165.130.235:5000/geography?" + urlParams.toString()
+          "https://api.around-the-world.me/geography?" + urlParams.toString()
         )
         .then((response) => {
           setGeographyData(response.data.result);
@@ -175,9 +175,9 @@ const GeographyAll = ({}) => {
     <div className="mainPage">
       <h2 className="header">{highlightText("Geography")}</h2>
       <p className="descriptionText">
-      {highlightText(
-        "Want to know where the country is? This page will help you locate the country you're interested in and show you some basic geographical information."
-      )}
+        {highlightText(
+          "Want to know where the country is? This page will help you locate the country you're interested in and show you some basic geographical information."
+        )}
       </p>
       <MDBInput
         label="Search"
@@ -218,7 +218,7 @@ const GeographyAll = ({}) => {
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
-          paddingBottom: "10pt"
+          paddingBottom: "10pt",
         }}
       >
         <Select
@@ -231,7 +231,6 @@ const GeographyAll = ({}) => {
           value={geographyCountryNameFilterOptions.filter((item) =>
             params.country_name.includes(item.value)
           )}
-
         />
         <Select
           options={geographyLongitudeFilterValues}
@@ -287,47 +286,56 @@ const GeographyAll = ({}) => {
               (item) => item.value == params.sort
             )?.[0] ?? ""
           }
-
         />
       </div>
       {!loading ? (
         <div>
-          <div style={{ paddingLeft: "865pt", paddingBottom: "2pt"}}>
-              {highlightText(
-                `Displaying ${
-                  itemCount > 0 ? (params.page - 1) * 10 + 1 : 0
-                }-${Math.min(params.page * 10, itemCount)} of ${itemCount}`
-              )}
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "flex-end",
+            }}
+          >
+            {highlightText(
+              `Displaying ${
+                itemCount > 0 ? (params.page - 1) * 10 + 1 : 0
+              }-${Math.min(params.page * 10, itemCount)} of ${itemCount}`
+            )}
           </div>
           <Bootstrap.Table table-bordered>
             <thead>
               <tr>
-                <th scope="col">Country</th>
-                <th scope="col">Longitude</th>
-                <th scope="col">Latitude</th>
-                <th scope="col">Continent</th>
-                <th scope="col">Region</th>
+                <th scope="col">{highlightText("Country")}</th>
+                <th scope="col">{highlightText("Longitude")}</th>
+                <th scope="col">{highlightText("Latitude")}</th>
+                <th scope="col">{highlightText("Continent")}</th>
+                <th scope="col">{highlightText("Region")}</th>
               </tr>
             </thead>
             <tbody>{Object.keys(geographyData).map(getGeography)}</tbody>
           </Bootstrap.Table>
           <Pagination
-                defaultPage={1}
-                page={params.page}
-                onChange={(_, value) => updateParam("page", value)}
-                count={Math.ceil(itemCount / 10)}
-                variant="outlined"
-                color="primary"
-                showFirstButton 
-                showLastButton
-                style={{ paddingTop: "10pt", paddingLeft:"675pt"}}
-              />
+            defaultPage={1}
+            page={params.page}
+            onChange={(_, value) => updateParam("page", value)}
+            count={Math.ceil(itemCount / 10)}
+            variant="outlined"
+            color="primary"
+            showFirstButton
+            showLastButton
+            style={{
+              paddingTop: "10pt",
+              paddingLeft: "640pt",
+              display: "flex",
+              justifyContent: "flex-end",
+            }}
+          />
         </div>
       ) : (
         <Spinner
           animation="border"
           role="status"
-          style={{ marginTop: "15%", width: 60, height: 60,}}
+          style={{ marginTop: "15%", width: 60, height: 60 }}
         />
       )}
     </div>
