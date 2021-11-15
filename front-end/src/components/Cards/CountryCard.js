@@ -3,10 +3,6 @@ import { Card } from "antd";
 import "./Card.css";
 
 const CountryCard = ({ country, highlightText }) => {
-  const formatNumbers = (number) => {
-    return number.toLocaleString();
-  };
-
   const country_id = country.country_id;
 
   return (
