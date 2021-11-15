@@ -172,11 +172,10 @@ export const FoodAndTourismRevenueFilterValues = [
 ];
 
 export const FoodAndTourismNumberTouristsFilterValues = [
-  { value: "0-10", label: "0 to 10k" },
-  { value: "10-100", label: "10k to 100k" },
-  { value: "100-1000", label: "100k to 1 million" },
+  { value: "0-10", label: "0 to 10K" },
+  { value: "10-100", label: "10K to 100K" },
+  { value: "100-1000", label: "100K to 1 million" },
   { value: "1000-100000", label: "1 million to 10 million" },
-  { value: "100000-1000000", label: "10 million to 100 million" },
 ];
 
 export const FoodAndTourismIncomeLevelFilterValues = [
@@ -184,7 +183,9 @@ export const FoodAndTourismIncomeLevelFilterValues = [
   "Upper middle income",
   "Lower middle income",
   "Low income",
-];
+].map((incomeLevel) => {
+  return { value: incomeLevel, label: incomeLevel };
+});
 
 export const FoodAndTourismSortValues = [
   { value: "", label: "None" },

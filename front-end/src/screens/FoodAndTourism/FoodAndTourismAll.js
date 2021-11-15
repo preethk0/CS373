@@ -64,8 +64,8 @@ const FoodAndTourismAll = ({}) => {
           </a>
         </td>
         <td> {highlightText(data.country_main_attraction.toString())}</td>
-        <td> {highlightText(data.country_tourism_revenue.toString())}</td>
         <td> {highlightText(data.country_number_of_tourists.toString())}</td>
+        <td> {highlightText(data.country_tourism_revenue.toString())}</td>
         <td> {highlightText(data.country_income_level)}</td>
       </tr>
     );
@@ -113,25 +113,25 @@ const FoodAndTourismAll = ({}) => {
       urlParams.append("page", params.page);
       urlParams.append("per_page", params.per_page);
 
-      if (params.country_name > 0) {
+      if (params.country_name.length > 0) {
         params.country_name.forEach((name) => {
           urlParams.append("country_name", name);
         });
       }
 
-      if (params.country_number_of_tourists > 0) {
+      if (params.country_number_of_tourists.length > 0) {
         params.country_number_of_tourists.forEach((tourists) => {
           urlParams.append("country_number_of_tourists", tourists);
         });
       }
 
-      if (params.country_tourism_revenue > 0) {
+      if (params.country_tourism_revenue.length > 0) {
         params.country_tourism_revenue.forEach((revenue) => {
           urlParams.append("country_tourism_revenue", revenue);
         });
       }
 
-      if (params.country_income_level > 0) {
+      if (params.country_income_level.length > 0) {
         params.country_income_level.forEach((income) => {
           urlParams.append("country_income_level", income);
         });
@@ -243,7 +243,7 @@ const FoodAndTourismAll = ({}) => {
           isMulti
           className="basic-multi-select"
           classNamePrefix="select"
-          value={FoodAndTourismNumberTouristsFilterValues.filter((item) =>
+          value={FoodAndTourismRevenueFilterValues.filter((item) =>
             params.country_tourism_revenue.includes(item.value)
           )}
         />
@@ -254,7 +254,7 @@ const FoodAndTourismAll = ({}) => {
           isMulti
           className="basic-multi-select"
           classNamePrefix="select"
-          value={FoodAndTourismNumberTouristsFilterValues.filter((item) =>
+          value={FoodAndTourismIncomeLevelFilterValues.filter((item) =>
             params.country_income_level.includes(item.value)
           )}
         />
