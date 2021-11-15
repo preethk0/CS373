@@ -24,13 +24,14 @@ const HomeSplash = ({}) => {
         <h3 className="homeSubtitle">
           Explore the world from the comfort of your home!
         </h3>
-        <div class="input-group input-group-sm mb-3">
+        <div class="input-group input-group-sm mb-3 w-50">
           <input type="serach" 
             class="form-control" 
             placeholder="Enter sitewide search here"
             onChange={(e) =>
               setSearch(e.target.value)
             }
+            onSearch={onSubmit}
             />
           <div class="input-group-append">
             <button class="btn btn-primary"

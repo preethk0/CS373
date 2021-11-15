@@ -23,6 +23,7 @@ const customStyles = {
 
 const Search = ({}) => {
   const [demographicsData, setDemographicsData] = useState([]);
+  const [tempSearch, setTempSearch] = useState("");
   const [itemCount, setItemCount] = useState(demographicCountryNames.length);
   const [loading, setLoading] = useState(true);
   const [params, setParams] = useState({
@@ -105,7 +106,9 @@ const Search = ({}) => {
 
   return (
     <div className="mainPage">
-      <h2 className="header">Search</h2>
+      <h2 className="header">
+        {params.q ? `Results for "${params.q}"` : "Search"}
+      </h2>
       <p className="descriptionText">
         Search for a country's information.
       </p>
