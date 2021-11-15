@@ -158,9 +158,10 @@ export const demographicLanguageFilterValues = [
   return { value: language, label: language };
 });
 
-export const FoodAndTourismCountryNameFilterOptions = foodAndTourismCountryNames.map((country) => {
-  return { value: country, label: country };
-});
+export const FoodAndTourismCountryNameFilterOptions =
+  foodAndTourismCountryNames.map((country) => {
+    return { value: country, label: country };
+  });
 
 export const FoodAndTourismRevenueFilterValues = [
   { value: "0-10", label: "0 to 10 million" },
@@ -171,11 +172,10 @@ export const FoodAndTourismRevenueFilterValues = [
 ];
 
 export const FoodAndTourismNumberTouristsFilterValues = [
-  { value: "0-10", label: "0 to 10k" },
-  { value: "10-100", label: "10k to 100k" },
-  { value: "100-1000", label: "100k to 1 million" },
+  { value: "0-10", label: "0 to 10K" },
+  { value: "10-100", label: "10K to 100K" },
+  { value: "100-1000", label: "100K to 1 million" },
   { value: "1000-100000", label: "1 million to 10 million" },
-  { value: "100000-1000000", label: "10 million to 100 million" },
 ];
 
 export const FoodAndTourismIncomeLevelFilterValues = [
@@ -183,20 +183,33 @@ export const FoodAndTourismIncomeLevelFilterValues = [
   "Upper middle income",
   "Lower middle income",
   "Low income",
-];
+].map((incomeLevel) => {
+  return { value: incomeLevel, label: incomeLevel };
+});
 
 export const FoodAndTourismSortValues = [
   { value: "", label: "None" },
   { value: "country_name-asc", label: "Country name (A-Z)" },
   { value: "country_name-des", label: "Country name (Z-A)" },
-  { value: "country_tourism_revenue-asc", label: "Tourism Revenue (ascending)" },
-  { value: "country_tourism_revenue-des", label: "Tourism Revenue (descending)" },
-  { value: "country_number_of_tourists-asc", label: "Number of Tourists (ascending)" },
-  { value: "country_number_of_tourists-des", label: "Number of Tourists (descending)" },
+  {
+    value: "country_tourism_revenue-asc",
+    label: "Tourism Revenue (ascending)",
+  },
+  {
+    value: "country_tourism_revenue-des",
+    label: "Tourism Revenue (descending)",
+  },
+  {
+    value: "country_number_of_tourists-asc",
+    label: "Number of Tourists (ascending)",
+  },
+  {
+    value: "country_number_of_tourists-des",
+    label: "Number of Tourists (descending)",
+  },
   { value: "country_income_level-asc", label: "Income Level (ascending)" },
   { value: "country_income_level-des", label: "Income Level (descending)" },
-]
-
+];
 // ************************************************************************
 
 export const geographySortValues = [
@@ -213,9 +226,11 @@ export const geographySortValues = [
   { value: "country_latitude-des", label: "Latitude (descending)" },
 ];
 
-export const geographyCountryNameFilterOptions = geographyCountryNames.map((country) => {
-  return { value: country, label: country };
-});
+export const geographyCountryNameFilterOptions = geographyCountryNames.map(
+  (country) => {
+    return { value: country, label: country };
+  }
+);
 
 export const geographyContinentFilterValues = [
   { value: "Africa", label: "Africa" },
