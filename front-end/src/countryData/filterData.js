@@ -198,25 +198,19 @@ export const geographyRegionFilterValues = [
 ];
 
 export const geographyLongitudeFilterValues = [
-  { value: "-180*-140", label: "-180 to -140" },
-  { value: "-140*-100", label: "-140 to -100" },
-  { value: "-100*-60", label: "-100 to -60" },
-  { value: "-60*-20", label: "-60 to -20" },
-  { value: "-20*20", label: "-20 to 20" },
-  { value: "20*60", label: "20 to 60" },
-  { value: "60*100", label: "60 to 100" },
-  { value: "100*140", label: "100 to 140" },
-  { value: "140*180", label: "140 to 180" },
+  { value: "-180*-120", label: "-180 to -120" },
+  { value: "-120*-60", label: "-120 to -60" },
+  { value: "-60*0", label: "-60 to 0" },
+  { value: "0*60", label: "0 to 60" },
+  { value: "60*120", label: "60 to 120" },
+  { value: "120*180", label: "120 to 180" },
 ];
 
 export const geographyLatitudeFilterValues = [
-  { value: "-180*-140", label: "-180 to -140" },
-  { value: "-140*-100", label: "-140 to -100" },
-  { value: "-100*-60", label: "-100 to -60" },
-  { value: "-60*-20", label: "-60 to -20" },
-  { value: "-20*20", label: "-20 to 20" },
-  { value: "20*60", label: "20 to 60" },
-  { value: "60*100", label: "60 to 100" },
-  { value: "100*140", label: "100 to 140" },
-  { value: "140*180", label: "140 to 180" },
+  { value: "-90*-60", label: "-90 to -60" },
+  { value: "-60*-30", label: "-60 to -30" },
+  { value: "-30*0", label: "-30 to 0" },
+  { value: "0*30", label: "0 to 30" },
+  { value: "30*60", label: "30 to 60" },
+  { value: "60*90", label: "60 to 90" },
 ];
