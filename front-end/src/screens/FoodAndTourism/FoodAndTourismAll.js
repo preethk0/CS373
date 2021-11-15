@@ -72,12 +72,12 @@ const FoodAndTourismAll = ({}) => {
         </td>
         <td> 
           <a href={"/foodandtourism/" + data.country_id}>
-            {highlightText(data.country_number_of_tourists.toLocaleString())}
+            {highlightText(data.country_number_of_tourists.toString())}
           </a>
         </td>
         <td> 
           <a href={"/foodandtourism/" + data.country_id}>
-            {highlightText(data.country_tourism_revenue.toLocaleString())}
+            {highlightText(data.country_tourism_revenue.toString())}
           </a>
         </td>
         <td> 
