@@ -303,8 +303,8 @@ export const FoodAndTourismMainAttractionFilterValues = [
   "Old Sanaa, Yemen",
   "Table Mountain Cape Town",
   "Devil's Pool, Zambia",
-  ].map((country_main_attraction) => {
-  return { value: country_main_attraction, label: country_main_attraction };
+  ].map((attraction) => {
+    return { value: attraction, label: attraction };
 });
 
 export const FoodAndTourismRevenueFilterValues = [
@@ -335,7 +335,8 @@ export const FoodAndTourismSortValues = [
   { value: "", label: "None" },
   { value: "country_name-asc", label: "Country name (A-Z)" },
   { value: "country_name-des", label: "Country name (Z-A)" },
-  { value: "country_main_attraction-asc", 
+  { 
+    value: "country_main_attraction-asc", 
     label: "Country Main Attraction (A-Z)" 
   },
   { 

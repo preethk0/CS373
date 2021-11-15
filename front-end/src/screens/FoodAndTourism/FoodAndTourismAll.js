@@ -65,7 +65,7 @@ const FoodAndTourismAll = ({}) => {
             {highlightText(data.country_name)}
           </a>
         </td>
-        <td> {highlightText(data.country_main_attraction.toString())}</td>
+        <td> {highlightText(data.country_main_attraction)}</td>
         <td> {highlightText(data.country_number_of_tourists.toString())}</td>
         <td> {highlightText(data.country_tourism_revenue.toString())}</td>
         <td> {highlightText(data.country_income_level)}</td>
