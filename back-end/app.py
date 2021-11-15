@@ -68,7 +68,7 @@ def get_all_geography():
 
     result = all_geography_schema.dump(geography.items, many=True)
 
-    return {'result': result, 'count': geography.count()}
+    return {'result': result, 'count': geo_query.count()}
 
 
 # Retrieve geography data for country with specific country-id
