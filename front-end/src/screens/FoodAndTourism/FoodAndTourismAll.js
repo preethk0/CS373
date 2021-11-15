@@ -56,7 +56,6 @@ const FoodAndTourismAll = ({}) => {
     search: StringParam,
   });
 
-
   const getFoodAndTourism = (country) => {
     const data = FoodAndTourismData[country];
     return (
@@ -66,9 +65,9 @@ const FoodAndTourismAll = ({}) => {
             {highlightText(data.country_name)}
           </a>
         </td>
-        <td> {highlightText(data.country_main_attraction)}</td>
-        <td> {highlightText(data.country_tourism_revenue.toString())}</td>
+        <td> {highlightText(data.country_main_attraction.toString())}</td>
         <td> {highlightText(data.country_number_of_tourists.toString())}</td>
+        <td> {highlightText(data.country_tourism_revenue.toString())}</td>
         <td> {highlightText(data.country_income_level)}</td>
       </tr>
     );
@@ -107,7 +106,7 @@ const FoodAndTourismAll = ({}) => {
       [key]: value,
     });
   };
-  
+
   useEffect(() => {
     // Adapted from TexasVotes
     const buildParams = (params) => {
@@ -116,7 +115,7 @@ const FoodAndTourismAll = ({}) => {
       urlParams.append("page", params.page);
       urlParams.append("per_page", params.per_page);
 
-      if (params.country_name > 0) {
+      if (params.country_name.length > 0) {
         params.country_name.forEach((name) => {
           urlParams.append("country_name", name);
         });
@@ -128,19 +127,19 @@ const FoodAndTourismAll = ({}) => {
         });
       }
 
-      if (params.country_number_of_tourists > 0) {
+      if (params.country_number_of_tourists.length > 0) {
         params.country_number_of_tourists.forEach((tourists) => {
           urlParams.append("country_number_of_tourists", tourists);
         });
       }
 
-      if (params.country_tourism_revenue > 0) {
+      if (params.country_tourism_revenue.length > 0) {
         params.country_tourism_revenue.forEach((revenue) => {
           urlParams.append("country_tourism_revenue", revenue);
         });
       }
 
-      if (params.country_income_level > 0) {
+      if (params.country_income_level.length > 0) {
         params.country_income_level.forEach((income) => {
           urlParams.append("country_income_level", income);
         });
@@ -161,7 +160,8 @@ const FoodAndTourismAll = ({}) => {
       const urlParams = buildParams(params);
       axios
         .get(
-          "https://api.around-the-world.me/foodandtourism?" + urlParams.toString()
+          "http://api.around-the-world.me/foodandtourism?" +
+            urlParams.toString()
         )
         .then((response) => {
           setFoodAndTourismData(response.data.result);
@@ -170,17 +170,16 @@ const FoodAndTourismAll = ({}) => {
         });
     };
 
-
     getFoodAndTourismData();
   }, [params]);
 
   return (
     <div className="mainPage">
-      <h2 className="header">Food and Tourism</h2>
+      <h2 className="header">{highlightText("Food and Tourism")}</h2>
       <p className="descriptionText">
-        Looking for more tourism information before you visit a country? This
-        page will help you quickly locate a country and show you the food and
-        landmarks you'll come across.
+        {highlightText(
+          "Looking for more tourism information before you visit a country? This page will help you quickly locate a country and show you the food and landmarks you'll come across."
+        )}
       </p>
       <MDBInput
         label="Search"
@@ -201,7 +200,7 @@ const FoodAndTourismAll = ({}) => {
           "Number of Tourists",
           "Tourism Revenue",
           "Income Level",
-          "Sort by..."
+          "Sort by...",
         ].map((item) => (
           <text
             style={{
@@ -231,7 +230,9 @@ const FoodAndTourismAll = ({}) => {
           isMulti
           className="basic-multi-select"
           classNamePrefix="select"
-          value={FoodAndTourismCountryNameFilterOptions.filter((item) => params.country_name.includes(item.value))}
+          value={FoodAndTourismCountryNameFilterOptions.filter((item) =>
+            params.country_name.includes(item.value)
+          )}
         />
 
         <Select
@@ -251,7 +252,9 @@ const FoodAndTourismAll = ({}) => {
           isMulti
           className="basic-multi-select"
           classNamePrefix="select"
-          value={FoodAndTourismNumberTouristsFilterValues.filter((item) => params.country_number_of_tourists.includes(item.value))}
+          value={FoodAndTourismNumberTouristsFilterValues.filter((item) =>
+            params.country_number_of_tourists.includes(item.value)
+          )}
         />
 
         <Select
@@ -261,7 +264,9 @@ const FoodAndTourismAll = ({}) => {
           isMulti
           className="basic-multi-select"
           classNamePrefix="select"
-          value={FoodAndTourismNumberTouristsFilterValues.filter((item) => params.country_tourism_revenue.includes(item.value))}
+          value={FoodAndTourismRevenueFilterValues.filter((item) =>
+            params.country_tourism_revenue.includes(item.value)
+          )}
         />
 
         <Select
@@ -271,7 +276,9 @@ const FoodAndTourismAll = ({}) => {
           isMulti
           className="basic-multi-select"
           classNamePrefix="select"
-          value={FoodAndTourismNumberTouristsFilterValues.filter((item) => params.country_income_level.includes(item.value))}
+          value={FoodAndTourismIncomeLevelFilterValues.filter((item) =>
+            params.country_income_level.includes(item.value)
+          )}
         />
 
         <Select
@@ -285,7 +292,7 @@ const FoodAndTourismAll = ({}) => {
             )?.[0] ?? ""
           }
         />
-</div>
+      </div>
       {!loading ? (
         <div>
           <div
@@ -310,7 +317,9 @@ const FoodAndTourismAll = ({}) => {
                 <th scope="col">{highlightText("Income Level")}</th>
               </tr>
             </thead>
-            <tbody>{Object.keys(FoodAndTourismData).map(getFoodAndTourism)}</tbody>
+            <tbody>
+              {Object.keys(FoodAndTourismData).map(getFoodAndTourism)}
+            </tbody>
           </Bootstrap.Table>
           <Pagination
             defaultPage={1}

@@ -4,6 +4,7 @@ import sqlalchemy
 from models import FoodAndTourism
 
 def filter_foodandtourism(foodandtourism_query, queries):
+    print(queries)
     if "country_name" in queries:
         countries_filter = queries['country_name']
         foodandtourism_query = foodandtourism_query.filter(FoodAndTourism.country_name.in_(countries_filter))
@@ -29,7 +30,7 @@ def filter_foodandtourism(foodandtourism_query, queries):
         foodandtourism_query = foodandtourism_query.filter(or_(*tuple(all_filters)))
 
     if "country_income_level" in queries:
-        income_filter = queries['country_continent']
+        income_filter = queries['country_income_level']
         foodandtourism_query = foodandtourism_query.filter(FoodAndTourism.country_income_level.in_(income_filter))
 
     return foodandtourism_query
@@ -58,25 +59,12 @@ def sort_foodandtourism(foodandtourism_query, queries):
 
 
 def search_foodandtourism(foodandtourism_query, queries):
+    print(queries)
     if "search" in queries:
         term = queries['search'][0].strip().lower()
 
-        keywords = ['main attraction:', 'tourism revenue:', 'income level:', 'number of tourists:']
-
         all_filters = []
 
-        if True in [keyword.strip().find(term) >= 0 for keyword in keywords]:
-            return foodandtourism_query
-
-        if term.find(keywords[0]) == 0:
-            all_filters.append(func.lower(FoodAndTourism.country_main_attraction).startswith(term[len(keywords[0]) + 1:]))
-        elif term.find(keywords[1]) == 0:
-            all_filters.append(func.lower(cast(FoodAndTourism.country_tourism_revenue, sqlalchemy.String)).startswith(term[len(keywords[1]) + 1:])) 
-        elif term.find(keywords[2]) == 0:
-            all_filters.append(func.lower(FoodAndTourism.country_income_level).startswith(term[len(keywords[2]) + 1:]))
-        elif term.find(keywords[3]) == 0:
-            all_filters.append(func.lower(cast(FoodAndTourism.country_number_of_tourists, sqlalchemy.String)).startswith(term[len(keywords[3]) + 1:]))
-        
         all_filters.append(func.lower(FoodAndTourism.country_name).contains(term))
         all_filters.append(func.lower(FoodAndTourism.country_main_attraction).contains(term))
         all_filters.append(func.lower(cast(FoodAndTourism.country_tourism_revenue, sqlalchemy.String)).contains(term)) 
