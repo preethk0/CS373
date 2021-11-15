@@ -9,12 +9,12 @@ import "./HomeSplash.css";
 import { useHistory } from "react-router-dom";
 
 const HomeSplash = ({}) => {
-  const history = useHistory()
+  const history = useHistory();
 
   const [search, setSearch] = useState(0);
 
   const onSubmit = () => {
-    history.push(`/search?q=${search}`)
+    history.push(`/search?search=${search}`);
   };
 
   return (
@@ -25,19 +25,20 @@ const HomeSplash = ({}) => {
           Explore the world from the comfort of your home!
         </h3>
         <div class="input-group input-group-sm mb-3 w-50">
-          <input type="serach" 
-            class="form-control" 
-            placeholder="Enter sitewide search here"
-            onChange={(e) =>
-              setSearch(e.target.value)
-            }
-            onSearch={onSubmit}
-            />
+          <input
+            type="search"
+            class="form-control"
+            placeholder="Search our website!"
+            style={{ height: 46, marginTop: 6.5 }}
+            onChange={(e) => setSearch(e.target.value)}
+            onKeyPress={(e) => {
+              if (e.key == "Enter") {
+                onSubmit();
+              }
+            }}
+          />
           <div class="input-group-append">
-            <button class="btn btn-primary"
-              type="button"
-              onClick={onSubmit}
-            >
+            <button class="btn btn-primary" type="button" onClick={onSubmit}>
               Search
             </button>
           </div>
