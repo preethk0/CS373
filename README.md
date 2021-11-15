@@ -23,7 +23,7 @@
 | ------- | ----------------------- |
 | Phase 1 | Daniela Torres Martinez |
 | Phase 2 | Mehul Daruka            |
-| Phase 3 |                         |
+| Phase 3 | Justin Lee              |
 | Phase 4 |                         |
 
 ## GitLab Pipelines
@@ -55,5 +55,15 @@ https://www.around-the-world.me/
 | Justin  | 25       | 20     |
 | Raphael | 25       | 18     |
 | Daniela | 25       | 30     |
+
+#### Phase 3:
+
+| Name    | Estimate | Actual |
+| ------- | -------- | ------ |
+| Mehul   | 15       | 20     |
+| Preeth  | 15       |        |
+| Justin  | 15       |        |
+| Raphael | 15       |        |
+| Daniela | 15       | 20     |
 
 ## Comments

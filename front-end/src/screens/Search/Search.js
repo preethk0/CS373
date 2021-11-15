@@ -169,7 +169,9 @@ const Search = ({}) => {
       <h2 className="header">
         {params.q ? `Results for "${params.q}"` : "Search"}
       </h2>
-      <p className="descriptionText">Search for a country's information.</p>
+      <p className="descriptionText">
+        {highlightText("Search for a country's information.")}
+      </p>
       <MDBInput
         label="Search"
         value={params.search}
@@ -177,7 +179,7 @@ const Search = ({}) => {
       />
       {!loading ? (
         <div>
-          <h2 className="header">Demographics</h2>
+          <h2 className="header">{highlightText("Demographics")}</h2>
           <div
             style={{
               display: "flex",
@@ -215,7 +217,7 @@ const Search = ({}) => {
               />
             </div>
           </div>
-          <h2 className="header">Geography</h2>
+          <h2 className="header">{highlightText("Geography")}</h2>
           <div>
             <div
               style={{
@@ -266,7 +268,7 @@ const Search = ({}) => {
               }}
             />
           </div>
-          <h2 className="header">Food and Tourism</h2>
+          <h2 className="header">{highlightText("Food and Tourism")}</h2>
           <div>
             <div
               style={{
