@@ -13,7 +13,7 @@ import FoodAndTourismInstance from "./screens/FoodAndTourism/FoodAndTourismInsta
 
 function App() {
   return (
-    <Router>
+    <>
       <NavBar />
       <Switch>
         <Route exact path="/" component={HomeSplash} />
@@ -23,9 +23,12 @@ function App() {
         <Route exact path="/foodandtourism" component={FoodAndTourismAll} />
         <Route path="/demographics/:country" component={DemographicsInstance} />
         <Route path="/geography/:country" component={GeographyInstance} />
-        <Route path="/foodandtourism/:country" component={FoodAndTourismInstance} />
+        <Route
+          path="/foodandtourism/:country"
+          component={FoodAndTourismInstance}
+        />
       </Switch>
-    </Router>
+    </>
   );
 }
 

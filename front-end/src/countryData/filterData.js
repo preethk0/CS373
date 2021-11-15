@@ -1,5 +1,6 @@
 import { demographicCountryNames } from "./demographicsCountries";
 import { foodAndTourismCountryNames } from "./foodAndTourismCountries";
+import { geographyCountryNames } from "./geographyCountries";
 
 export const demographicSortValues = [
   { value: "", label: "None" },
@@ -161,7 +162,6 @@ export const FoodAndTourismCountryNameFilterOptions = foodAndTourismCountryNames
   return { value: country, label: country };
 });
 
-
 export const FoodAndTourismRevenueFilterValues = [
   { value: "0-10", label: "0 to 10 million" },
   { value: "10-100", label: "10 to 100 million" },
@@ -195,4 +195,67 @@ export const FoodAndTourismSortValues = [
   { value: "country_number_of_tourists-des", label: "Number of Tourists (descending)" },
   { value: "country_income_level-asc", label: "Income Level (ascending)" },
   { value: "country_income_level-des", label: "Income Level (descending)" },
+]
+
+// ************************************************************************
+
+export const geographySortValues = [
+  { value: "", label: "None" },
+  { value: "country_name-asc", label: "Country name (A-Z)" },
+  { value: "country_name-des", label: "Country name (Z-A)" },
+  { value: "country_continent-asc", label: "Continent (A-Z)" },
+  { value: "country_continent-des", label: "Continent (Z-A)" },
+  { value: "country_region-asc", label: "Region (A-Z)" },
+  { value: "country_region-des", label: "Region (Z-A)" },
+  { value: "country_longitude-asc", label: "Longitude (ascending)" },
+  { value: "country_longitude-des", label: "Longitude (descending)" },
+  { value: "country_latitude-asc", label: "Latitude (ascending)" },
+  { value: "country_latitude-des", label: "Latitude (descending)" },
+];
+
+export const geographyCountryNameFilterOptions = geographyCountryNames.map((country) => {
+  return { value: country, label: country };
+});
+
+export const geographyContinentFilterValues = [
+  { value: "Africa", label: "Africa" },
+  { value: "Asia", label: "Asia" },
+  { value: "Europe", label: "Europe" },
+  { value: "North America", label: "North America" },
+  { value: "Oceania", label: "Oceania" },
+  { value: "South America", label: "South America" },
+];
+
+export const geographyRegionFilterValues = [
+  { value: "East Asia & Pacific", label: "East Asia & Pacific" },
+  { value: "Europe & Central Asia", label: "Europe & Central Asia" },
+  { value: "Latin America & Caribbean", label: "Latin America & Caribbean" },
+  { value: "Middle East & North Africa", label: "Middle East & North Africa" },
+  { value: "North America", label: "North America" },
+  { value: "South Asia", label: "South Asia" },
+  { value: "Sub-Saharan Africa", label: "Sub-Saharan Africa" },
+];
+
+export const geographyLongitudeFilterValues = [
+  { value: "-180*-140", label: "-180 to -140" },
+  { value: "-140*-100", label: "-140 to -100" },
+  { value: "-100*-60", label: "-100 to -60" },
+  { value: "-60*-20", label: "-60 to -20" },
+  { value: "-20*20", label: "-20 to 20" },
+  { value: "20*60", label: "20 to 60" },
+  { value: "60*100", label: "60 to 100" },
+  { value: "100*140", label: "100 to 140" },
+  { value: "140*180", label: "140 to 180" },
+];
+
+export const geographyLatitudeFilterValues = [
+  { value: "-180*-140", label: "-180 to -140" },
+  { value: "-140*-100", label: "-140 to -100" },
+  { value: "-100*-60", label: "-100 to -60" },
+  { value: "-60*-20", label: "-60 to -20" },
+  { value: "-20*20", label: "-20 to 20" },
+  { value: "20*60", label: "20 to 60" },
+  { value: "60*100", label: "60 to 100" },
+  { value: "100*140", label: "100 to 140" },
+  { value: "140*180", label: "140 to 180" },
 ];
