@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ModelCard from "../../components/Cards/ModelCard";
 import DemographicsCoverImage from "../../images/DemographicsCoverImage.png";
 import GeographyCoverImage from "../../images/GeographyCoverImage.png";
@@ -6,8 +6,17 @@ import FoodAndTourismCoverImage from "../../images/FoodAndTourismCoverImage.png"
 import { FaChevronDown } from "react-icons/fa";
 
 import "./HomeSplash.css";
+import { useHistory } from "react-router-dom";
 
 const HomeSplash = ({}) => {
+  const history = useHistory()
+
+  const [search, setSearch] = useState(0);
+
+  const onSubmit = () => {
+    history.push(`/search?q=${search}`)
+  };
+
   return (
     <div className="overallPage">
       <div className="coverImageStyle">
@@ -15,6 +24,23 @@ const HomeSplash = ({}) => {
         <h3 className="homeSubtitle">
           Explore the world from the comfort of your home!
         </h3>
+        <div class="input-group input-group-sm mb-3">
+          <input type="serach" 
+            class="form-control" 
+            placeholder="Enter sitewide search here"
+            onChange={(e) =>
+              setSearch(e.target.value)
+            }
+            />
+          <div class="input-group-append">
+            <button class="btn btn-primary"
+              type="button"
+              onClick={onSubmit}
+            >
+              Search
+            </button>
+          </div>
+        </div>
         <a class="ct-btn-scroll ct-js-btn-scroll" href="#home">
           <FaChevronDown size={60} color="white" />
         </a>

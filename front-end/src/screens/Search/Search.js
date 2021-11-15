@@ -116,10 +116,30 @@ const Search = ({}) => {
       />
       {!loading ? (
         <div>
+          <h2 className="header">Demographics</h2>
           <div
             style={{
               display: "flex",
-              marginTop: 30,
+              marginTop: 10,
+              flex: 1,
+              justifyContent: "center",
+            }}
+          >
+            Displaying {itemCount > 0 ? (params.page - 1) * 9 + 1 : 0}-
+            {Math.min(params.page * 9, itemCount)} of {itemCount}
+          </div>
+          <div className="cardGrid">
+            {demographicsData.map((country) => (
+              <CountryCard
+                country={country}
+                searchQuery={params.search.toLowerCase()}
+              />
+            ))}
+          </div>
+          <div
+            style={{
+              display: "flex",
+              marginTop: 5,
               flex: 1,
               justifyContent: "center",
             }}
@@ -135,25 +155,6 @@ const Search = ({}) => {
                 style={{ alignSelf: "center" }}
               />
             </div>
-          </div>
-          <div
-            style={{
-              display: "flex",
-              marginTop: 20,
-              flex: 1,
-              justifyContent: "center",
-            }}
-          >
-            Displaying {itemCount > 0 ? (params.page - 1) * 9 + 1 : 0}-
-            {Math.min(params.page * 9, itemCount)} of {itemCount}
-          </div>
-          <div className="cardGrid">
-            {demographicsData.map((country) => (
-              <CountryCard
-                country={country}
-                searchQuery={params.search.toLowerCase()}
-              />
-            ))}
           </div>
         </div>
       ) : (
