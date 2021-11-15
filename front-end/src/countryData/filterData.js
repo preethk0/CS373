@@ -11,6 +11,8 @@ export const demographicSortValues = [
   { value: "country_GDP-des", label: "Nominal GDP (descending)" },
   { value: "country_states-asc", label: "Number of states (ascending)" },
   { value: "country_states-des", label: "Number of states (descending)" },
+  { value: "country_language-asc", label: "Language (ascending)" },
+  { value: "country_language-des", label: "Language (descending)" },
 ];
 
 export const demographicGDPFilterValues = [
@@ -34,6 +36,15 @@ export const demographicPopulationFilterValues = [
   { value: "50-100", label: "50 to 100 million" },
   { value: "100-1000", label: "100 million to 1 billion" },
   { value: "1000-2000", label: "Greater than 1 billion" },
+];
+
+export const demographicStatesFilterValues = [
+  { value: "0-5", label: "Less than 5 states" },
+  { value: "6-10", label: "6 to 10 states" },
+  { value: "11-25", label: "11 to 25 states" },
+  { value: "26-50", label: "26 to 50 states" },
+  { value: "51-100", label: "51 to 100 states" },
+  { value: "101-250", label: "More than 100 states" },
 ];
 
 export const countryFilterOptions = demographicCountryNames.map((country) => {
