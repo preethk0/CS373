@@ -92,8 +92,9 @@ const DemographicsAll = ({}) => {
     // Adapted from TexasVotes
     const buildParams = (params) => {
       let urlParams = new URLSearchParams();
+      const searching = params.search?.length ?? 0 > 0;
 
-      urlParams.append("page", params.page);
+      urlParams.append("page", searching ? 1 : params.page);
       urlParams.append("per_page", params.per_page);
 
       if (params.country_name.length > 0) {
@@ -130,7 +131,7 @@ const DemographicsAll = ({}) => {
         urlParams.append("sort", params.sort);
       }
 
-      if (params.search?.length ?? 0 > 0) {
+      if (searching) {
         urlParams.append("search", params.search);
       }
 

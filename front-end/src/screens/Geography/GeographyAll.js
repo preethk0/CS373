@@ -111,8 +111,9 @@ const GeographyAll = ({}) => {
     // https://gitlab.com/forbesye/fitsbits/-/blob/master/front-end/src/views/Districts/ListView.js
     const buildParams = (params) => {
       let urlParams = new URLSearchParams();
+      const searching = params.search?.length ?? 0 > 0;
 
-      urlParams.append("page", params.page);
+      urlParams.append("page", searching ? 1 : params.page);
       urlParams.append("per_page", params.per_page);
 
       if (params.country_name.length > 0) {
@@ -149,7 +150,7 @@ const GeographyAll = ({}) => {
         urlParams.append("sort", params.sort);
       }
 
-      if (params.search?.length ?? 0 > 0) {
+      if (searching) {
         urlParams.append("search", params.search);
       }
 
@@ -289,7 +290,7 @@ const GeographyAll = ({}) => {
         />
       </div>
       {!loading ? (
-        <div>
+        <div className="fullWidth">
           <div
             style={{
               display: "flex",
@@ -302,7 +303,7 @@ const GeographyAll = ({}) => {
               }-${Math.min(params.page * 10, itemCount)} of ${itemCount}`
             )}
           </div>
-          <Bootstrap.Table table-bordered>
+          <Bootstrap.Table table-bordered style={{ width: "100%" }}>
             <thead>
               <tr>
                 <th scope="col">{highlightText("Country")}</th>
@@ -324,8 +325,6 @@ const GeographyAll = ({}) => {
             showFirstButton
             showLastButton
             style={{
-              paddingTop: "10pt",
-              paddingLeft: "640pt",
               display: "flex",
               justifyContent: "flex-end",
             }}
