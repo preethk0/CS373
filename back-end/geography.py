@@ -68,19 +68,20 @@ def search_geography(geo_query, queries):
             return geo_query
 
         if term.find(keywords[0]) == 0:
-            all_filters.append(func.lower(cast(Geography.country_longitude, sqlalchemy.String)).startswith(term[len(keywords[2]) + 1:]))
+            all_filters.append(func.lower(cast(Geography.country_longitude, sqlalchemy.String)).startswith(term[len(keywords[0]) + 1:]))
         elif term.find(keywords[1]) == 0:
-            all_filters.append(func.lower(cast(Geography.country_latitude, sqlalchemy.String)).startswith(term[len(keywords[3]) + 1:]))
+            all_filters.append(func.lower(cast(Geography.country_latitude, sqlalchemy.String)).startswith(term[len(keywords[1]) + 1:]))
         elif term.find(keywords[2]) == 0:
-            all_filters.append(func.lower(cast(Geography.country_continent, sqlalchemy.String)).startswith(term[len(keywords[0]) + 1:]))
+            all_filters.append(func.lower(cast(Geography.country_continent, sqlalchemy.String)).startswith(term[len(keywords[2]) + 1:]))
         elif term.find(keywords[3]) == 0:
-            all_filters.append(func.lower(Geography.country_region).startswith(term[len(keywords[1]) + 1:]))
+            all_filters.append(func.lower(Geography.country_region).startswith(term[len(keywords[3]) + 1:]))
        
         all_filters.append(func.lower(Geography.country_name).contains(term))
-        all_filters.append(func.lower(Geography.country_longitude).contains(term))
+        
+        all_filters.append(func.lower(cast(Geography.country_longitude, sqlalchemy.String)).contains(term))
         all_filters.append(func.lower(cast(Geography.country_latitude, sqlalchemy.String)).contains(term))
         all_filters.append(func.lower(Geography.country_continent).contains(term))
-        all_filters.append(func.lower(cast(Geography.country_region, sqlalchemy.String)).contains(term))
+        all_filters.append(func.lower(Geography.country_region).contains(term))
 
         geo_query = geo_query.filter(or_(*tuple(all_filters)))
             

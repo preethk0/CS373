@@ -15,6 +15,7 @@ import {
   geographySortValues,
 } from "../../countryData/filterData";
 
+
 const axios = require("axios");
 
 const customStyles = {
@@ -22,6 +23,7 @@ const customStyles = {
     ...provided,
     width: 200,
     color: state.selectProps.menuColor,
+    zIndex: 9999
   }),
   container: (provided) => ({
     ...provided,
@@ -39,13 +41,30 @@ const GeographyAll = ({}) => {
     page: 1,
     per_page: 10,
     country_name: [],
-    country_continent: [],
-    country_region: [],
     country_longitude: [],
     country_latitude: [],
+    country_continent: [],
+    country_region: [],
     sort: "",
     search: "",
   });
+
+  const highlightText = (text) => {
+    const searchQuery = params.search.toLowerCase();
+    const parts = text.split(new RegExp(`(${searchQuery})`, "gi"));
+
+    return (
+      <span>
+        {parts.map((part) =>
+          part.toLowerCase() === searchQuery ? (
+            <text style={{ backgroundColor: "yellow" }}>{part}</text>
+          ) : (
+            part
+          )
+        )}
+      </span>
+    );
+  };
 
   const updateFilter = (key, values) => {
     const currentParams = params;
@@ -66,6 +85,7 @@ const GeographyAll = ({}) => {
 
   useEffect(() => {
     // Adapted from TexasVotes
+    // https://gitlab.com/forbesye/fitsbits/-/blob/master/front-end/src/views/Districts/ListView.js
     const buildParams = (params) => {
       let urlParams = new URLSearchParams();
 
@@ -78,18 +98,6 @@ const GeographyAll = ({}) => {
         });
       }
 
-      if (params.country_continent.length > 0) {
-        params.country_continent.forEach((continent) => {
-          urlParams.append("country_continent", continent);
-        });
-      }
-
-      if (params.country_region.length > 0) {
-        params.country_region.forEach((region) => {
-          urlParams.append("country_region", region);
-        });
-      }
-
       if (params.country_longitude.length > 0) {
         params.country_longitude.forEach((long) => {
           urlParams.append("country_longitude", long);
@@ -99,6 +107,18 @@ const GeographyAll = ({}) => {
       if (params.country_latitude.length > 0) {
         params.country_latitude.forEach((lat) => {
           urlParams.append("country_latitude", lat);
+        });
+      }
+
+      if (params.country_continent.length > 0) {
+        params.country_continent.forEach((continent) => {
+          urlParams.append("country_continent", continent);
+        });
+      }
+
+      if (params.country_region.length > 0) {
+        params.country_region.forEach((region) => {
+          urlParams.append("country_region", region);
         });
       }
 
@@ -117,7 +137,7 @@ const GeographyAll = ({}) => {
       const urlParams = buildParams(params);
       axios
         .get(
-          "https://api.around-the-world.me/geography?" + urlParams.toString()
+          "http://10.165.130.235:5000/geography?" + urlParams.toString()
         )
         .then((response) => {
           setGeographyData(response.data.result);
@@ -152,10 +172,10 @@ const GeographyAll = ({}) => {
       >
         {[
           "Country Name",
-          "Continent",
-          "Region",
           "Longitude",
           "Latitude",
+          "Continent",
+          "Region",
           "Sort by...",
         ].map((item) => (
           <text
@@ -167,7 +187,7 @@ const GeographyAll = ({}) => {
               fontWeight: "bold",
             }}
           >
-            {item}
+            {highlightText(item)}
           </text>
         ))}
       </div>
@@ -176,28 +196,13 @@ const GeographyAll = ({}) => {
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
+          paddingBottom: "10pt"
         }}
       >
         <Select
           options={geographyCountryNameFilterOptions}
           styles={customStyles}
           onChange={(vals) => updateFilter("country_name", vals)}
-          isMulti
-          className="basic-multi-select"
-          classNamePrefix="select"
-        />
-        <Select
-          options={geographyContinentFilterValues}
-          styles={customStyles}
-          onChange={(vals) => updateFilter("country_continent", vals)}
-          isMulti
-          className="basic-multi-select"
-          classNamePrefix="select"
-        />
-        <Select
-          options={geographyRegionFilterValues}
-          styles={customStyles}
-          onChange={(vals) => updateFilter("country_region", vals)}
           isMulti
           className="basic-multi-select"
           classNamePrefix="select"
@@ -219,6 +224,22 @@ const GeographyAll = ({}) => {
           classNamePrefix="select"
         />
         <Select
+          options={geographyContinentFilterValues}
+          styles={customStyles}
+          onChange={(vals) => updateFilter("country_continent", vals)}
+          isMulti
+          className="basic-multi-select"
+          classNamePrefix="select"
+        />
+        <Select
+          options={geographyRegionFilterValues}
+          styles={customStyles}
+          onChange={(vals) => updateFilter("country_region", vals)}
+          isMulti
+          className="basic-multi-select"
+          classNamePrefix="select"
+        />
+        <Select
           options={geographySortValues}
           styles={customStyles}
           onChange={(val) => updateParam("sort", val.value)}
@@ -227,27 +248,19 @@ const GeographyAll = ({}) => {
       </div>
       {!loading ? (
         <div>
-          <Pagination
-            defaultPage={1}
-            page={params.page}
-            onChange={(_, value) => updateParam("page", value)}
-            count={Math.ceil(itemCount / 10)}
-            variant="outlined"
-            color="primary"
-            style={{ alignSelf: "center" }}
-          />
           <MaterialTable
-            style={{ width: "980pt"}}
+            style={{ width: "985pt"}}
+            data={geographyData}
             options={{
-              paging: true,
               pageSize: 10,
               pageSizeOptions: [],
               search: false,
               sorting: false,
               toolbar: false,
+              paging: false,
             }}
-            onRowClick={(_, geographyData) =>
-              (window.location.href = "/geography/" + geographyData.country_id)
+            onRowClick={(_, data) =>
+              (window.location.href = "/geography/" + data.country_id)
             }
             columns={[
               { title: "Country", field: "country_name" },
@@ -256,15 +269,32 @@ const GeographyAll = ({}) => {
               { title: "Continent", field: "country_continent" },
               { title: "Region", field: "country_region" },
             ]}
-            geographyData={geographyData}
-            title="Geography"
+  
           />
+          <div style={{ paddingTop: "10pt"}}>
+            {highlightText(
+              `Displaying ${
+                itemCount > 0 ? (params.page - 1) * 10 + 1 : 0
+              }-${Math.min(params.page * 10, itemCount)} of ${itemCount}`
+            )}
+          </div>
+          <div>
+            <Pagination
+              defaultPage={1}
+              page={params.page}
+              onChange={(_, value) => updateParam("page", value)}
+              count={Math.ceil(itemCount / 10)}
+              variant="outlined"
+              color="primary"
+              style={{ paddingTop: "10pt", paddingLeft:"730pt"}}
+            />
+          </div>
         </div>
       ) : (
         <Spinner
           animation="border"
           role="status"
-          style={{ marginTop: "15%", width: 60, height: 60 }}
+          style={{ marginTop: "15%", width: 60, height: 60,}}
         />
       )}
     </div>
