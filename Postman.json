@@ -16,7 +16,7 @@
               "     pm.response.to.be.ok;",
               "     pm.response.to.be.withBody;",
               "     pm.response.to.be.json;",
-              "     pm.expect(pm.response.json().length).to.equal(9);",
+              "     pm.expect(pm.response.json().count).to.equal(168);",
               "});"
             ],
             "type": "text/javascript"
@@ -79,7 +79,7 @@
               "     pm.response.to.be.ok;",
               "     pm.response.to.be.withBody;",
               "     pm.response.to.be.json;",
-              "     pm.expect(pm.response.json().length).to.equal(154);",
+              "     pm.expect(pm.response.json().count).to.equal(154);",
               "});"
             ],
             "type": "text/javascript"
@@ -142,7 +142,7 @@
               "     pm.response.to.be.ok;",
               "     pm.response.to.be.withBody;",
               "     pm.response.to.be.json;",
-              "     pm.expect(pm.response.json().length).to.equal(139);",
+              "     pm.expect(pm.response.json().count).to.equal(139);",
               "});"
             ],
             "type": "text/javascript"
