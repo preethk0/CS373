@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./GeographyAll.css";
 import MaterialTable from "material-table";
 import { Pagination } from "@mui/material";
+import { TablePagination } from '@mui/material';
 import { Spinner } from "react-bootstrap";
 import { MDBInput } from "mdbreact";
 import Select from "react-select";
@@ -14,7 +15,6 @@ import {
   geographyLatitudeFilterValues,
   geographySortValues,
 } from "../../countryData/filterData";
-
 
 const axios = require("axios");
 
@@ -151,11 +151,11 @@ const GeographyAll = ({}) => {
 
   return (
     <div className="mainPage">
-      <h2 className="header">Geography</h2>
+      <h2 className="header">{highlightText("Geography")}</h2>
       <p className="descriptionText">
-        Want to know where the country is? This page will help you locate the
-        country you're interested in and show you some basic geographical
-        information.
+      {highlightText(
+        "Want to know where the country is? This page will help you locate the country you're interested in and show you some basic geographical information."
+      )}
       </p>
       <MDBInput
         label="Search"
@@ -247,7 +247,15 @@ const GeographyAll = ({}) => {
         />
       </div>
       {!loading ? (
+        
         <div>
+          <div style={{ paddingLeft: "865pt", paddingBottom: "2pt"}}>
+              {highlightText(
+                `Displaying ${
+                  itemCount > 0 ? (params.page - 1) * 10 + 1 : 0
+                }-${Math.min(params.page * 10, itemCount)} of ${itemCount}`
+              )}
+          </div>
           <MaterialTable
             style={{ width: "985pt"}}
             data={geographyData}
@@ -269,25 +277,43 @@ const GeographyAll = ({}) => {
               { title: "Continent", field: "country_continent" },
               { title: "Region", field: "country_region" },
             ]}
-  
+
+            // components={{
+            //   Pagination: props => (
+            //                <TablePagination
+            //                {...props}
+            //           component="div"
+            //           rowsPerPage={10}
+            //           count={Math.ceil(itemCount / 10)}
+            //           page={params.page}
+            //           onChangePage={(_, value) => updateParam("page", value)}
+            //           defaultPage={1}
+            //           onRowsPerPageChange={10}
+            //         />
+            //       ),
+            // }}
           />
-          <div style={{ paddingTop: "10pt"}}>
-            {highlightText(
-              `Displaying ${
-                itemCount > 0 ? (params.page - 1) * 10 + 1 : 0
-              }-${Math.min(params.page * 10, itemCount)} of ${itemCount}`
-            )}
-          </div>
-          <div>
-            <Pagination
-              defaultPage={1}
-              page={params.page}
-              onChange={(_, value) => updateParam("page", value)}
-              count={Math.ceil(itemCount / 10)}
-              variant="outlined"
-              color="primary"
-              style={{ paddingTop: "10pt", paddingLeft:"730pt"}}
-            />
+          <div class="cols">
+            <div>
+              <Pagination
+                defaultPage={1}
+                page={params.page}
+                onChange={(_, value) => updateParam("page", value)}
+                count={Math.ceil(itemCount / 10)}
+                variant="outlined"
+                color="primary"
+                showFirstButton 
+                showLastButton
+                style={{ paddingTop: "10pt", paddingLeft:"675pt"}}
+              />
+            </div>
+            {/* <div style={{ paddingTop: "-10pt"}}>
+              {highlightText(
+                `Displaying ${
+                  itemCount > 0 ? (params.page - 1) * 10 + 1 : 0
+                }-${Math.min(params.page * 10, itemCount)} of ${itemCount}`
+              )}
+            </div> */}
           </div>
         </div>
       ) : (
