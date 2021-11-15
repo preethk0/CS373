@@ -11,7 +11,15 @@ import {
   demographicLanguageFilterValues,
   demographicPopulationFilterValues,
   demographicSortValues,
+  demographicStatesFilterValues,
 } from "../../countryData/filterData";
+import {
+  useQueryParams,
+  StringParam,
+  NumberParam,
+  ArrayParam,
+  withDefault,
+} from "use-query-params";
 import { MDBInput } from "mdbreact";
 
 const axios = require("axios");
@@ -34,16 +42,34 @@ const DemographicsAll = ({}) => {
   const [demographicsData, setDemographicsData] = useState([]);
   const [itemCount, setItemCount] = useState(demographicCountryNames.length);
   const [loading, setLoading] = useState(true);
-  const [params, setParams] = useState({
-    page: 1,
-    per_page: 9,
-    country_name: [],
-    country_population: [],
-    country_gdp: [],
-    country_language: [],
-    sort: "",
-    search: "",
+  const [params, setParams] = useQueryParams({
+    page: withDefault(NumberParam, 1),
+    per_page: withDefault(NumberParam, 9),
+    country_name: withDefault(ArrayParam, []),
+    country_population: withDefault(ArrayParam, []),
+    country_gdp: withDefault(ArrayParam, []),
+    country_language: withDefault(ArrayParam, []),
+    country_states: withDefault(ArrayParam, []),
+    sort: StringParam,
+    search: StringParam,
   });
+
+  const highlightText = (text) => {
+    const searchQuery = params.search?.toLowerCase() ?? "";
+    const parts = text.split(new RegExp(`(${searchQuery})`, "gi"));
+
+    return (
+      <span>
+        {parts.map((part) =>
+          part.toLowerCase() === searchQuery ? (
+            <text style={{ backgroundColor: "yellow" }}>{part}</text>
+          ) : (
+            part
+          )
+        )}
+      </span>
+    );
+  };
 
   const updateFilter = (key, values) => {
     const currentParams = params;
@@ -94,11 +120,17 @@ const DemographicsAll = ({}) => {
         });
       }
 
-      if (params.sort.length > 0) {
+      if (params.country_states.length > 0) {
+        params.country_states.forEach((num) => {
+          urlParams.append("country_states", num);
+        });
+      }
+
+      if (params.sort?.length ?? 0 > 0) {
         urlParams.append("sort", params.sort);
       }
 
-      if (params.search.length > 0) {
+      if (params.search?.length ?? 0 > 0) {
         urlParams.append("search", params.search);
       }
 
@@ -123,11 +155,11 @@ const DemographicsAll = ({}) => {
 
   return (
     <div className="mainPage">
-      <h2 className="header">Demographics</h2>
+      <h2 className="header">{highlightText("Demographics")}</h2>
       <p className="descriptionText">
-        Looking to learn more about a certain country? This page can quickly
-        locate the country you're looking for and give you some basic
-        information about it.
+        {highlightText(
+          "Looking to learn more about a certain country? This page can quickly locate the country you're looking for and give you some basic information about it."
+        )}
       </p>
       <MDBInput
         label="Search"
@@ -147,6 +179,7 @@ const DemographicsAll = ({}) => {
           "Nominal GDP",
           "Population",
           "Language",
+          "Number of States",
           "Sort by...",
         ].map((item) => (
           <text
@@ -158,7 +191,7 @@ const DemographicsAll = ({}) => {
               fontWeight: "bold",
             }}
           >
-            {item}
+            {highlightText(item)}
           </text>
         ))}
       </div>
@@ -176,6 +209,9 @@ const DemographicsAll = ({}) => {
           isMulti
           className="basic-multi-select"
           classNamePrefix="select"
+          value={countryFilterOptions.filter((item) =>
+            params.country_name.includes(item.value)
+          )}
         />
         <Select
           options={demographicGDPFilterValues}
@@ -184,6 +220,9 @@ const DemographicsAll = ({}) => {
           isMulti
           className="basic-multi-select"
           classNamePrefix="select"
+          value={demographicGDPFilterValues.filter((item) =>
+            params.country_gdp.includes(item.value)
+          )}
         />
         <Select
           options={demographicPopulationFilterValues}
@@ -192,6 +231,9 @@ const DemographicsAll = ({}) => {
           isMulti
           className="basic-multi-select"
           classNamePrefix="select"
+          value={demographicPopulationFilterValues.filter((item) =>
+            params.country_population.includes(item.value)
+          )}
         />
         <Select
           options={demographicLanguageFilterValues}
@@ -200,12 +242,31 @@ const DemographicsAll = ({}) => {
           isMulti
           className="basic-multi-select"
           classNamePrefix="select"
+          value={demographicLanguageFilterValues.filter((item) =>
+            params.country_language.includes(item.value)
+          )}
+        />
+        <Select
+          options={demographicStatesFilterValues}
+          styles={customStyles}
+          onChange={(vals) => updateFilter("country_states", vals)}
+          isMulti
+          className="basic-multi-select"
+          classNamePrefix="select"
+          value={demographicStatesFilterValues.filter((item) =>
+            params.country_states.includes(item.value)
+          )}
         />
         <Select
           options={demographicSortValues}
           styles={customStyles}
           onChange={(val) => updateParam("sort", val.value)}
           classNamePrefix="select"
+          value={
+            demographicSortValues.filter(
+              (item) => item.value == params.sort
+            )?.[0] ?? ""
+          }
         />
       </div>
       {!loading ? (
@@ -238,15 +299,15 @@ const DemographicsAll = ({}) => {
               justifyContent: "center",
             }}
           >
-            Displaying {itemCount > 0 ? (params.page - 1) * 9 + 1 : 0}-
-            {Math.min(params.page * 9, itemCount)} of {itemCount}
+            {highlightText(
+              `Displaying ${
+                itemCount > 0 ? (params.page - 1) * 9 + 1 : 0
+              }-${Math.min(params.page * 9, itemCount)} of ${itemCount}`
+            )}
           </div>
           <div className="cardGrid">
             {demographicsData.map((country) => (
-              <CountryCard
-                country={country}
-                searchQuery={params.search.toLowerCase()}
-              />
+              <CountryCard country={country} highlightText={highlightText} />
             ))}
           </div>
         </div>

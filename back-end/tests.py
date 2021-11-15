@@ -9,7 +9,7 @@ class Tests(TestCase):
         result = requests.get("https://api.around-the-world.me/demographics")
         assert result.status_code == 200
         jsonRes = result.json()
-        assert len(jsonRes) == 168
+        assert len(jsonRes) == 9
 
     # Test single country demographics call
     def test2(self):

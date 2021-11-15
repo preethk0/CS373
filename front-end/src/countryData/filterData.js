@@ -1,4 +1,6 @@
 import { demographicCountryNames } from "./demographicsCountries";
+import { foodAndTourismCountryNames } from "./foodAndTourismCountries";
+import { geographyCountryNames } from "./geographyCountries";
 
 export const demographicSortValues = [
   { value: "", label: "None" },
@@ -10,6 +12,8 @@ export const demographicSortValues = [
   { value: "country_GDP-des", label: "Nominal GDP (descending)" },
   { value: "country_states-asc", label: "Number of states (ascending)" },
   { value: "country_states-des", label: "Number of states (descending)" },
+  { value: "country_language-asc", label: "Language (ascending)" },
+  { value: "country_language-des", label: "Language (descending)" },
 ];
 
 export const demographicGDPFilterValues = [
@@ -33,6 +37,15 @@ export const demographicPopulationFilterValues = [
   { value: "50-100", label: "50 to 100 million" },
   { value: "100-1000", label: "100 million to 1 billion" },
   { value: "1000-2000", label: "Greater than 1 billion" },
+];
+
+export const demographicStatesFilterValues = [
+  { value: "0-5", label: "Less than 5 states" },
+  { value: "6-10", label: "6 to 10 states" },
+  { value: "11-25", label: "11 to 25 states" },
+  { value: "26-50", label: "26 to 50 states" },
+  { value: "51-100", label: "51 to 100 states" },
+  { value: "101-250", label: "More than 100 states" },
 ];
 
 export const countryFilterOptions = demographicCountryNames.map((country) => {
@@ -144,3 +157,272 @@ export const demographicLanguageFilterValues = [
 ].map((language) => {
   return { value: language, label: language };
 });
+
+export const FoodAndTourismCountryNameFilterOptions =
+  foodAndTourismCountryNames.map((country) => {
+    return { value: country, label: country };
+  });
+
+export const FoodAndTourismMainAttractionFilterValues = [
+  "Sheikh Zayed Grand Mosque",
+  "Antigua's Donkey Sanctuary",
+  "Butrint, Albania",
+  "Monastery of Geghard and the Upper Azat Valley",
+  "Miradouro Da Lua",
+  "Garganta Del Diablo",
+  "Historic Center of Vienna, Austria",
+  "Sydney Harbour",
+  "Old City Baku",
+  "Gallery 11/07/95",
+  "Hunte's Gardens, Barbados",
+  "Cox's Bazar, Bangladesh",
+  "Grand Place, Antwerp, Belgium",
+  "Nazinga Game Reserve, Burkina Faso",
+  "Nessebar, Bulgaria",
+  "Al Fateh Grand Mosque, Bahrain",
+  "Rusizi National Park, Burundi",
+  "Porte Du Non Retour (Door of No Return), Benin",
+  "Iguazu Falls",
+  "Paro Taktsang, Bhutan",
+  "Okavango Delta",
+  "Brest Fortress",
+  "Hol Chan Marine Reserve, Belize",
+  "Niagara Falls",
+  "Matterhorn",
+  "Torres Del Paine National Park",
+  "Mefou National Park, Cameroon",
+  "Great Wall at Mutianyu",
+  "Walled City of Cartagena, Colombia",
+  "Proyecto Asis, Costa Rica",
+  "Varadero",
+  "Fig Tree Bay, Cyprus",
+  "Miniatur Wunderland",
+  "Rushing Waters Adventures, Djibouti",
+  "Nyhavn, Denmark",
+  "Boiling Lake, Dominica",
+  "Notre-Dame D'Afrique",
+  "Museo Templo Del Sol Pintor Ortega Maila, Ecuador",
+  "Historic Centre (Old Town) of Tallinn",
+  "Karnak Temple",
+  "Cathedral of Asmara, Eritrea",
+  "La Sagrada Familia",
+  "Rock-Hewn Churches of Lalibela, Ethiopia",
+  "Fortress of Suomenlinna",
+  "Zipline Fiji",
+  "Musee d'Orsay",
+  "Harry Potter Studio Tour",
+  "Grand Anse Beach, Grenada",
+  "Gergeti Trinity Church, Georgia",
+  "Cape Coast, Ghana",
+  "Îles De Los, Guinea",
+  "Acropolis Museum",
+  "Temple IV, Tikal, Guatemala",
+  "Kaieteur Falls, Guyana",
+  "Little French Key, Honduras",
+  "Ancient City Walls, Dubrovnik",
+  "Citadelle Laferrière, Haiti",
+  "Hungarian Parliament",
+  "Waterbom Bali, Indonesia",
+  "Killarney National Park, Ireland",
+  "Old City of Jerusalem",
+  "Taj Mahal",
+  "Sami Abdulrahman Park, Iraq",
+  "Persepolis",
+  "Gullfoss Waterfall",
+  "Colosseum",
+  "Island Gully Falls, Jamaica",
+  "Petra",
+  "Fushimi Inari Shrine, Kyoto",
+  "Masai Mara Wildlife Reserve, Kenya",
+  "Ala Archa, Kyrgyzstan",
+  "Angkor Wat",
+  "Fenua-Ura (Fanning Island), Kiribati",
+  "Grand Mosque Du Vendredi",
+  "The Avenues, Kuwait",
+  "Medeu Skating Rink and Ski Resort, Kazakhstan",
+  "Baalbek, Lebanon",
+  "Afriski",
+  "Old Vilnius, Lithuania",
+  "Luxembourg American Cemetery",
+  "Old Riga, Latvia",
+  "Hassan II Mosque, Morocco",
+  "Bay of Kotor, Montenegro",
+  "Avenue of the Baobabs, Madagascar",
+  "National Park of Mali",
+  "Bagan Temples & Pagodas",
+  "Gorkhi-Terelj National Park, Mongolia",
+  "Port De Peche, Mauritania",
+  "Mdina Old City, Malta",
+  "Le Morne Brabant, Mauritius",
+  "Mount Mulanje, Malawi",
+  "The National Museum of Anthropology (Mexico City, Mexico)",
+  "Petronas Towers Kuala Lampur",
+  "Praia Do Tofo, Mozambique",
+  "Etosha National Park, Namibia",
+  "Nike Art Gallery, Lagos",
+  "Masaya Volcano National Park, Nicaragua",
+  "Geiranger Fjord",
+  "Annapurna Mountain Range, Nepal",
+  "Museum of New Zealand (Wellington, New Zealand)",
+  "Sultan Qaboos Grand Mosque, Oman",
+  "Panama Canal",
+  "Machu Picchu",
+  "Kokoda Track, Papua New Guinea",
+  "Kayangan Lake",
+  "Badshahi Mosque",
+  "Main Market Square, Krakow",
+  "Quinta Da Regaleira",
+  "Ciudad Del Este Falls, Paraguay",
+  "Museum of Islamic Art (Doha-Qatar)",
+  "Peles Castle",
+  "The Belgrade Fortress, Serbia",
+  "Volcanoes National Park, Rwanda",
+  "Al-Masjid An-Nabawi, Medina",
+  "Bonegi I and II, Solomon Islands",
+  "Anse Lazio, Seychelles",
+  "Sudan National Museum",
+  "Vasa Museum",
+  "Gardens by the Bay, Singapore",
+  "Lake Bled",
+  "River Number 2 Beach, Sierra Leone",
+  "La Maison Des Esclaves, Senegal",
+  "Iglesia Del Rosario, El Salvador",
+  "Reclining Buddha, Wat Pho, Bangkok",
+  "Rudaki Park, Tajikistan",
+  "Amphitheatre of El Jem",
+  "Mapu'a 'A Vaea Blowholes, Tonga",
+  "Hagia Sophia",
+  "Nylon Pool, Trinidad and Tobago",
+  "Tuvalu Philatelic Bureau",
+  "Bwindi Impenetrable National Park, Uganda",
+  "Central Park",
+  "Barrio Historico, Uruguay",
+  "Registan Square",
+  "Millennium Cave, Vanuatu",
+  "To Sua Ocean Trench",
+  "Old Sanaa, Yemen",
+  "Table Mountain Cape Town",
+  "Devil's Pool, Zambia",
+  ].map((attraction) => {
+    return { value: attraction, label: attraction };
+});
+
+export const FoodAndTourismRevenueFilterValues = [
+  { value: "0-10", label: "0 to 10 million" },
+  { value: "10-100", label: "10 to 100 million" },
+  { value: "100-1000", label: "100 million to 1 billion" },
+  { value: "1000-100000", label: "1 to 100 billion" },
+  { value: "100000-1000000", label: "100 billion to 1 trillion" },
+];
+
+export const FoodAndTourismNumberTouristsFilterValues = [
+  { value: "0-10", label: "0 to 10K" },
+  { value: "10-100", label: "10K to 100K" },
+  { value: "100-1000", label: "100K to 1 million" },
+  { value: "1000-100000", label: "1 million to 10 million" },
+];
+
+export const FoodAndTourismIncomeLevelFilterValues = [
+  "High income",
+  "Upper middle income",
+  "Lower middle income",
+  "Low income",
+].map((incomeLevel) => {
+  return { value: incomeLevel, label: incomeLevel };
+});
+
+export const FoodAndTourismSortValues = [
+  { value: "", label: "None" },
+  { value: "country_name-asc", label: "Country name (A-Z)" },
+  { value: "country_name-des", label: "Country name (Z-A)" },
+  { 
+    value: "country_main_attraction-asc", 
+    label: "Country Main Attraction (A-Z)" 
+  },
+  { 
+    value: "country_main_attraction-des", 
+    label: "Country Main Attraction (Z-A)" 
+  },
+  {
+    value: "country_tourism_revenue-asc",
+    label: "Tourism Revenue (ascending)",
+  },
+  {
+    value: "country_tourism_revenue-des",
+    label: "Tourism Revenue (descending)",
+  },
+  {
+    value: "country_number_of_tourists-asc",
+    label: "Number of Tourists (ascending)",
+  },
+  {
+    value: "country_number_of_tourists-des",
+    label: "Number of Tourists (descending)",
+  },
+  { value: "country_income_level-asc", label: "Income Level (ascending)" },
+  { value: "country_income_level-des", label: "Income Level (descending)" },
+];
+// ************************************************************************
+
+export const geographySortValues = [
+  { value: "", label: "None" },
+  { value: "country_name-asc", label: "Country name (A-Z)" },
+  { value: "country_name-des", label: "Country name (Z-A)" },
+  { value: "country_continent-asc", label: "Continent (A-Z)" },
+  { value: "country_continent-des", label: "Continent (Z-A)" },
+  { value: "country_region-asc", label: "Region (A-Z)" },
+  { value: "country_region-des", label: "Region (Z-A)" },
+  { value: "country_longitude-asc", label: "Longitude (ascending)" },
+  { value: "country_longitude-des", label: "Longitude (descending)" },
+  { value: "country_latitude-asc", label: "Latitude (ascending)" },
+  { value: "country_latitude-des", label: "Latitude (descending)" },
+];
+
+export const geographyCountryNameFilterOptions = geographyCountryNames.map(
+  (country) => {
+    return { value: country, label: country };
+  }
+);
+
+export const geographyContinentFilterValues = [
+  { value: "Africa", label: "Africa" },
+  { value: "Asia", label: "Asia" },
+  { value: "Europe", label: "Europe" },
+  { value: "North America", label: "North America" },
+  { value: "Oceania", label: "Oceania" },
+  { value: "South America", label: "South America" },
+];
+
+export const geographyRegionFilterValues = [
+  { value: "East Asia & Pacific", label: "East Asia & Pacific" },
+  { value: "Europe & Central Asia", label: "Europe & Central Asia" },
+  { value: "Latin America & Caribbean", label: "Latin America & Caribbean" },
+  { value: "Middle East & North Africa", label: "Middle East & North Africa" },
+  { value: "North America", label: "North America" },
+  { value: "South Asia", label: "South Asia" },
+  { value: "Sub-Saharan Africa", label: "Sub-Saharan Africa" },
+];
+
+export const geographyLongitudeFilterValues = [
+  { value: "-180*-140", label: "-180 to -140" },
+  { value: "-140*-100", label: "-140 to -100" },
+  { value: "-100*-60", label: "-100 to -60" },
+  { value: "-60*-20", label: "-60 to -20" },
+  { value: "-20*20", label: "-20 to 20" },
+  { value: "20*60", label: "20 to 60" },
+  { value: "60*100", label: "60 to 100" },
+  { value: "100*140", label: "100 to 140" },
+  { value: "140*180", label: "140 to 180" },
+];
+
+export const geographyLatitudeFilterValues = [
+  { value: "-180*-140", label: "-180 to -140" },
+  { value: "-140*-100", label: "-140 to -100" },
+  { value: "-100*-60", label: "-100 to -60" },
+  { value: "-60*-20", label: "-60 to -20" },
+  { value: "-20*20", label: "-20 to 20" },
+  { value: "20*60", label: "20 to 60" },
+  { value: "60*100", label: "60 to 100" },
+  { value: "100*140", label: "100 to 140" },
+  { value: "140*180", label: "140 to 180" },
+];

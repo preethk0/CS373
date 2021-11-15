@@ -10,6 +10,7 @@ build_app:
   script:
     - cd front-end
     - npm install
+    - export NODE_OPTIONS=--openssl-legacy-provider
     - CI=false npm run-script build
 
 jest_tests:
