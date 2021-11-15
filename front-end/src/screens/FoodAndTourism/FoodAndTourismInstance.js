@@ -30,9 +30,15 @@ const FoodAndTourismInstance = ({}) => {
   const main_dishes_images = convertStringArrayToArray(
     data.country_main_dishes_images
   );
-  const countriesWithSimilarTourists = data
-    ? convertStringArrayToArray(data.country_similar_tourist_countries_data)
-    : null;
+
+  let countriesWithSimilarTourists = [];
+
+  try {
+    countriesWithSimilarTourists = convertStringArrayToArray(
+      data.country_similar_tourist_countries_data
+    );
+  } catch (e) {}
+
   const tourism_video = (data.country_tourism_video_src || "").replace(
     "watch?v=",
     "embed/"
@@ -40,6 +46,8 @@ const FoodAndTourismInstance = ({}) => {
 
   const hasDemographics = demographicCountryCodes.includes(country);
   const hasGeography = geographyCountryCodes.includes(country);
+
+  console.log(countryData);
 
   return (
     <>
@@ -150,27 +158,41 @@ const FoodAndTourismInstance = ({}) => {
                   Wanna check out the demographics of countries with similar
                   tourist numbers?
                 </h4>
-                {countriesWithSimilarTourists.map((country, idx) => {
-                  const countryCodeAndCountry = Object.entries(
-                    codeToCountry
-                  ).filter(([_, val]) => val == country);
-                  if (
-                    countryCodeAndCountry.length > 0 &&
-                    demographicCountryNames.includes(country)
-                  )
+                {countriesWithSimilarTourists.length > 0 ? (
+                  countriesWithSimilarTourists.map((country, idx) => {
+                    const countryCodeAndCountry = Object.entries(
+                      codeToCountry
+                    ).filter(([_, val]) => val == country);
+                    if (
+                      countryCodeAndCountry.length > 0 &&
+                      demographicCountryNames.includes(country)
+                    )
+                      return (
+                        <a
+                          href={"/demographics/" + countryCodeAndCountry[0][0]}
+                        >
+                          {country}
+                          {idx < countriesWithSimilarTourists.length - 1 &&
+                            ", "}
+                        </a>
+                      );
                     return (
-                      <a href={"/demographics/" + countryCodeAndCountry[0][0]}>
+                      <text>
                         {country}
                         {idx < countriesWithSimilarTourists.length - 1 && ", "}
-                      </a>
+                      </text>
                     );
-                  return (
-                    <text>
-                      {country}
-                      {idx < countriesWithSimilarTourists.length - 1 && ", "}
-                    </text>
-                  );
-                })}
+                  })
+                ) : (
+                  <p
+                    style={{
+                      fontSize: 12,
+                      color: "gray",
+                    }}
+                  >
+                    We could not find countries with similar tourist numbers!
+                  </p>
+                )}
               </div>
             </div>
           </div>
