@@ -1,7 +1,7 @@
 from flask import request, jsonify
 from demographics import filter_demographics, sort_demographics, search_demographics
-from geography import filter_geography, sort_geography, search_geography
 from foodandtourism import filter_foodandtourism, sort_foodandtourism, search_foodandtourism
+from geography import filter_geography, sort_geography, search_geography
 
 from models import (
     Demographics,
