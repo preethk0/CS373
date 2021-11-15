@@ -9,6 +9,7 @@ import Select from "react-select";
 import { foodAndTourismCountryNames } from "../../countryData/foodAndTourismCountries";
 import {
   FoodAndTourismCountryNameFilterOptions,
+  FoodAndTourismMainAttractionFilterValues,
   FoodAndTourismRevenueFilterValues,
   FoodAndTourismNumberTouristsFilterValues,
   FoodAndTourismIncomeLevelFilterValues,
@@ -47,6 +48,7 @@ const FoodAndTourismAll = ({}) => {
     page: withDefault(NumberParam, 1),
     per_page: withDefault(NumberParam, 10),
     country_name: withDefault(ArrayParam, []),
+    country_main_attraction: withDefault(ArrayParam, []),
     country_number_of_tourists: withDefault(ArrayParam, []),
     country_tourism_revenue: withDefault(ArrayParam, []),
     country_income_level: withDefault(ArrayParam, []),
@@ -120,6 +122,12 @@ const FoodAndTourismAll = ({}) => {
         });
       }
 
+      if (params.country_main_attraction.length > 0) {
+        params.country_main_attraction.forEach((mainAttraction) => {
+          urlParams.append("country_main_attraction", mainAttraction);
+        });
+      }
+
       if (params.country_number_of_tourists > 0) {
         params.country_number_of_tourists.forEach((tourists) => {
           urlParams.append("country_number_of_tourists", tourists);
@@ -189,6 +197,7 @@ const FoodAndTourismAll = ({}) => {
       >
         {[
           "Country Name",
+          "Main Attraction",
           "Number of Tourists",
           "Tourism Revenue",
           "Income Level",
@@ -224,6 +233,17 @@ const FoodAndTourismAll = ({}) => {
           classNamePrefix="select"
           value={FoodAndTourismCountryNameFilterOptions.filter((item) => params.country_name.includes(item.value))}
         />
+
+        <Select
+          options={FoodAndTourismMainAttractionFilterValues}
+          styles={customStyles}
+          onChange={(vals) => updateFilter("country_main_attraction", vals)}
+          isMulti
+          className="basic-multi-select"
+          classNamePrefix="select"
+          value={FoodAndTourismMainAttractionFilterValues.filter((item) => params.country_main_attraction.includes(item.value))}
+        />
+
         <Select
           options={FoodAndTourismNumberTouristsFilterValues}
           styles={customStyles}
@@ -233,6 +253,7 @@ const FoodAndTourismAll = ({}) => {
           classNamePrefix="select"
           value={FoodAndTourismNumberTouristsFilterValues.filter((item) => params.country_number_of_tourists.includes(item.value))}
         />
+
         <Select
           options={FoodAndTourismRevenueFilterValues}
           styles={customStyles}
@@ -242,6 +263,7 @@ const FoodAndTourismAll = ({}) => {
           classNamePrefix="select"
           value={FoodAndTourismNumberTouristsFilterValues.filter((item) => params.country_tourism_revenue.includes(item.value))}
         />
+
         <Select
           options={FoodAndTourismIncomeLevelFilterValues}
           styles={customStyles}
@@ -251,6 +273,7 @@ const FoodAndTourismAll = ({}) => {
           classNamePrefix="select"
           value={FoodAndTourismNumberTouristsFilterValues.filter((item) => params.country_income_level.includes(item.value))}
         />
+
         <Select
           options={FoodAndTourismSortValues}
           styles={customStyles}
