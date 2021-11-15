@@ -161,7 +161,7 @@ const FoodAndTourismAll = ({}) => {
       const urlParams = buildParams(params);
       axios
         .get(
-          "http://api.around-the-world.me/foodandtourism?" +
+          "https://api.around-the-world.me/foodandtourism?" +
             urlParams.toString()
         )
         .then((response) => {
