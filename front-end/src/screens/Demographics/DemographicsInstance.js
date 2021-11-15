@@ -26,6 +26,10 @@ const DemographicsInstance = ({}) => {
     }
   }, [countryData]);
 
+  const formatNumbers = (number) => {
+    return number.toLocaleString();
+  };
+
   const countriesWithSimilarPopulation = data
     ? convertStringArrayToArray(data.countries_with_similar_pop)
     : null;
@@ -125,14 +129,13 @@ const DemographicsInstance = ({}) => {
             </p>
             {String(data.country_GDP) !== "0" && (
               <p class="card-text">
-                <b>GDP: </b>
-                {data.country_GDP}
+                <b>GDP: </b>${formatNumbers(data.country_GDP)}
               </p>
             )}
             {String(data.country_GDP_per_capita) !== "0" && (
               <p class="card-text">
-                <b>GDP per capita: </b>
-                {data.country_GDP_per_capita}
+                <b>GDP per capita: </b>$
+                {formatNumbers(data.country_GDP_per_capita)}
               </p>
             )}
             <p class="card-text">
