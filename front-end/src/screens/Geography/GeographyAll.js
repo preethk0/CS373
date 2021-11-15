@@ -58,16 +58,31 @@ const GeographyAll = ({}) => {
   const getGeography = (country) => {
     const data = geographyData[country];
     return (
-      <tr key={data.country_id}>
+      <tr key={data.country_id}
+          onClick="window.location='https://ide.geeksforgeeks.org/Y4U8qx'">
         <td>
           <a href={"/geography/" + data.country_id}>
             {highlightText(data.country_name)}
           </a>
         </td>
-        <td> {highlightText(data.country_longitude.toString())}</td>
-        <td> {highlightText(data.country_latitude.toString())}</td>
-        <td> {highlightText(data.country_continent)}</td>
-        <td> {highlightText(data.country_region)}</td>
+        <td>
+          <a href={"/geography/" + data.country_id}>
+            {highlightText(data.country_longitude.toString())}
+          </a>
+        </td>
+        <td>
+          <a href={"/geography/" + data.country_id}>
+            {highlightText(data.country_latitude.toString())}
+          </a>
+        </td>
+        <td>
+          <a href={"/geography/" + data.country_id}>{
+          highlightText(data.country_continent)}</a></td>
+        <td>
+          <a href={"/geography/" + data.country_id}>
+            {highlightText(data.country_region)}
+          </a>
+        </td>
       </tr>
     );
   };
@@ -303,9 +318,9 @@ const GeographyAll = ({}) => {
               }-${Math.min(params.page * 10, itemCount)} of ${itemCount}`
             )}
           </div>
-          <Bootstrap.Table table-bordered style={{ width: "100%" }}>
+          <Bootstrap.Table class="table table-hover" style={{ width: "100%" }}>
             <thead>
-              <tr>
+              <tr class = "tableHeader">
                 <th scope="col">{highlightText("Country")}</th>
                 <th scope="col">{highlightText("Longitude")}</th>
                 <th scope="col">{highlightText("Latitude")}</th>
