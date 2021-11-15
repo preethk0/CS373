@@ -54,7 +54,6 @@ const FoodAndTourismAll = ({}) => {
     search: StringParam,
   });
 
-
   const getFoodAndTourism = (country) => {
     const data = FoodAndTourismData[country];
     return (
@@ -64,6 +63,7 @@ const FoodAndTourismAll = ({}) => {
             {highlightText(data.country_name)}
           </a>
         </td>
+        <td> {highlightText(data.country_main_attraction.toString())}</td>
         <td> {highlightText(data.country_tourism_revenue.toString())}</td>
         <td> {highlightText(data.country_number_of_tourists.toString())}</td>
         <td> {highlightText(data.country_income_level)}</td>
@@ -104,7 +104,7 @@ const FoodAndTourismAll = ({}) => {
       [key]: value,
     });
   };
-  
+
   useEffect(() => {
     // Adapted from TexasVotes
     const buildParams = (params) => {
@@ -152,7 +152,8 @@ const FoodAndTourismAll = ({}) => {
       const urlParams = buildParams(params);
       axios
         .get(
-          "https://api.around-the-world.me/foodandtourism?" + urlParams.toString()
+          "https://api.around-the-world.me/foodandtourism?" +
+            urlParams.toString()
         )
         .then((response) => {
           setFoodAndTourismData(response.data.result);
@@ -160,7 +161,6 @@ const FoodAndTourismAll = ({}) => {
           setLoading(false);
         });
     };
-
 
     getFoodAndTourismData();
   }, [params]);
@@ -191,7 +191,7 @@ const FoodAndTourismAll = ({}) => {
           "Number of Tourists",
           "Tourism Revenue",
           "Income Level",
-          "Sort by..."
+          "Sort by...",
         ].map((item) => (
           <text
             style={{
@@ -221,7 +221,9 @@ const FoodAndTourismAll = ({}) => {
           isMulti
           className="basic-multi-select"
           classNamePrefix="select"
-          value={FoodAndTourismCountryNameFilterOptions.filter((item) => params.country_name.includes(item.value))}
+          value={FoodAndTourismCountryNameFilterOptions.filter((item) =>
+            params.country_name.includes(item.value)
+          )}
         />
         <Select
           options={FoodAndTourismNumberTouristsFilterValues}
@@ -230,7 +232,9 @@ const FoodAndTourismAll = ({}) => {
           isMulti
           className="basic-multi-select"
           classNamePrefix="select"
-          value={FoodAndTourismNumberTouristsFilterValues.filter((item) => params.country_number_of_tourists.includes(item.value))}
+          value={FoodAndTourismNumberTouristsFilterValues.filter((item) =>
+            params.country_number_of_tourists.includes(item.value)
+          )}
         />
         <Select
           options={FoodAndTourismRevenueFilterValues}
@@ -239,7 +243,9 @@ const FoodAndTourismAll = ({}) => {
           isMulti
           className="basic-multi-select"
           classNamePrefix="select"
-          value={FoodAndTourismNumberTouristsFilterValues.filter((item) => params.country_tourism_revenue.includes(item.value))}
+          value={FoodAndTourismNumberTouristsFilterValues.filter((item) =>
+            params.country_tourism_revenue.includes(item.value)
+          )}
         />
         <Select
           options={FoodAndTourismIncomeLevelFilterValues}
@@ -248,7 +254,9 @@ const FoodAndTourismAll = ({}) => {
           isMulti
           className="basic-multi-select"
           classNamePrefix="select"
-          value={FoodAndTourismNumberTouristsFilterValues.filter((item) => params.country_income_level.includes(item.value))}
+          value={FoodAndTourismNumberTouristsFilterValues.filter((item) =>
+            params.country_income_level.includes(item.value)
+          )}
         />
         <Select
           options={FoodAndTourismSortValues}
@@ -261,7 +269,7 @@ const FoodAndTourismAll = ({}) => {
             )?.[0] ?? ""
           }
         />
-</div>
+      </div>
       {!loading ? (
         <div>
           <div
@@ -286,7 +294,9 @@ const FoodAndTourismAll = ({}) => {
                 <th scope="col">{highlightText("Income Level")}</th>
               </tr>
             </thead>
-            <tbody>{Object.keys(FoodAndTourismData).map(getFoodAndTourism)}</tbody>
+            <tbody>
+              {Object.keys(FoodAndTourismData).map(getFoodAndTourism)}
+            </tbody>
           </Bootstrap.Table>
           <Pagination
             defaultPage={1}
