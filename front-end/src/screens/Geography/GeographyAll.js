@@ -45,7 +45,7 @@ const GeographyAll = ({}) => {
   const [loading, setLoading] = useState(true);
   const [params, setParams] = useQueryParams({
     page: withDefault(NumberParam, 1),
-    per_page: withDefault(NumberParam, 9),
+    per_page: withDefault(NumberParam, 10),
     country_name: withDefault(ArrayParam, []),
     country_longitude: withDefault(ArrayParam, []),
     country_latitude: withDefault(ArrayParam, []),
