@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./GeographyAll.css";
-import MaterialTable from "material-table";
 import { Pagination } from "@mui/material";
-import { TablePagination } from '@mui/material';
 import { Spinner } from "react-bootstrap";
 import { MDBInput } from "mdbreact";
 import Select from "react-select";
@@ -293,7 +291,6 @@ const GeographyAll = ({}) => {
         />
       </div>
       {!loading ? (
-        
         <div>
           <div style={{ paddingLeft: "865pt", paddingBottom: "2pt"}}>
               {highlightText(
@@ -303,40 +300,17 @@ const GeographyAll = ({}) => {
               )}
           </div>
           <Bootstrap.Table table-bordered>
-          <thead>
-            <tr>
-              <th scope="col">Country</th>
-              <th scope="col">Longitude</th>
-              <th scope="col">Latitude</th>
-              <th scope="col">Continent</th>
-              <th scope="col">Region</th>
-            </tr>
-          </thead>
-          <tbody>{Object.keys(geographyData).map(getGeography)}</tbody>
-        </Bootstrap.Table>
-
-          {/* <MaterialTable
-            style={{ width: "985pt"}}
-            data={geographyData}
-            options={{
-              pageSize: 10,
-              pageSizeOptions: [],
-              search: false,
-              sorting: false,
-              toolbar: false,
-              paging: false,
-            }}
-            onRowClick={(_, data) =>
-              (window.location.href = "/geography/" + data.country_id)
-            }
-            columns={[
-              { title: "Country", field: "country_name" },
-              { title: "Longitude", field: "country_longitude" },
-              { title: "Latitude", field: "country_latitude" },
-              { title: "Continent", field: "country_continent" },
-              { title: "Region", field: "country_region" },
-            ]}
-          /> */}
+            <thead>
+              <tr>
+                <th scope="col">Country</th>
+                <th scope="col">Longitude</th>
+                <th scope="col">Latitude</th>
+                <th scope="col">Continent</th>
+                <th scope="col">Region</th>
+              </tr>
+            </thead>
+            <tbody>{Object.keys(geographyData).map(getGeography)}</tbody>
+          </Bootstrap.Table>
           <Pagination
                 defaultPage={1}
                 page={params.page}
