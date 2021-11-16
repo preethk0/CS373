@@ -65,10 +65,26 @@ const FoodAndTourismAll = ({}) => {
             {highlightText(data.country_name)}
           </a>
         </td>
-        <td> {highlightText(data.country_main_attraction)}</td>
-        <td> {highlightText(data.country_number_of_tourists.toString())}</td>
-        <td> {highlightText(data.country_tourism_revenue.toString())}</td>
-        <td> {highlightText(data.country_income_level)}</td>
+        <td> 
+          <a href={"/foodandtourism/" + data.country_id}>
+            {highlightText(data.country_main_attraction)}
+          </a>
+        </td>
+        <td> 
+          <a href={"/foodandtourism/" + data.country_id}>
+            {highlightText(data.country_number_of_tourists.toString())}
+          </a>
+        </td>
+        <td> 
+          <a href={"/foodandtourism/" + data.country_id}>
+            {highlightText(data.country_tourism_revenue.toString())}
+          </a>
+        </td>
+        <td> 
+          <a href={"/foodandtourism/" + data.country_id}>
+            {highlightText(data.country_income_level)}
+          </a>
+        </td>
       </tr>
     );
   };
@@ -310,9 +326,9 @@ const FoodAndTourismAll = ({}) => {
               }-${Math.min(params.page * 10, itemCount)} of ${itemCount}`
             )}
           </div>
-          <Bootstrap.Table table-bordered>
+          <Bootstrap.Table class="table table-hover" style={{ width: "100%" }}>
             <thead>
-              <tr>
+              <tr class="tableHeader">
                 <th scope="col">{highlightText("Country")}</th>
                 <th scope="col">{highlightText("Main Attraction")}</th>
                 <th scope="col">{highlightText("Number of Tourists")}</th>

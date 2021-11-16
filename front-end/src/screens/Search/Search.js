@@ -167,7 +167,7 @@ const Search = ({}) => {
   return (
     <div className="mainPage">
       <h2 className="header">
-        {params.q ? `Results for "${params.q}"` : "Search"}
+        Search
       </h2>
       <p className="descriptionText">
         {highlightText("Search for a country's information.")}
