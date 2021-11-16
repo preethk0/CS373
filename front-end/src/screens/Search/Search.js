@@ -271,12 +271,12 @@ const Search = ({}) => {
               style={{ width: "90%", marginLeft: "5%" }}
             >
               <thead>
-                <tr>
-                  <th scope="col">Country</th>
-                  <th scope="col">Longitude</th>
-                  <th scope="col">Latitude</th>
-                  <th scope="col">Continent</th>
-                  <th scope="col">Region</th>
+                <tr class="tableHeader">
+                  <th scope="col">{highlightText("Country")}</th>
+                  <th scope="col">{highlightText("Longitude")}</th>
+                  <th scope="col">{highlightText("Latitude")}</th>
+                  <th scope="col">{highlightText("Continent")}</th>
+                  <th scope="col">{highlightText("Region")}</th>
                 </tr>
               </thead>
               <tbody>{Object.keys(geographyData).map(getGeography)}</tbody>
@@ -321,7 +321,7 @@ const Search = ({}) => {
               style={{ width: "90%", marginLeft: "5%" }}
             >
               <thead>
-                <tr>
+                <tr class="tableHeader">
                   <th scope="col">{highlightText("Country")}</th>
                   <th scope="col">{highlightText("Main Attraction")}</th>
                   <th scope="col">{highlightText("Number of Tourists")}</th>

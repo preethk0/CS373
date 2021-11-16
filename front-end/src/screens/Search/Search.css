@@ -22,6 +22,10 @@
   margin-top: 15px;
 }
 
+.tableHeader:hover {
+  background: rgb(255, 255, 255);
+}
+
 tr:hover {
   background: rgb(214, 214, 214);
 }
