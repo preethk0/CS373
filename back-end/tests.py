@@ -2,6 +2,25 @@ from unittest import main, TestCase
 import requests
 import json
 
+from sqlalchemy import and_, or_, func
+from sqlalchemy.sql.expression import all_, cast
+import sqlalchemy
+from models import (
+    Demographics,
+    Geography,
+    FoodAndTourism,
+    demographics_schema,
+    all_demographics_schema,
+    geography_schema,
+    all_geography_schema,
+    foodandtourism_schema,
+    all_foodandtourism_schema,
+)
+
+from init import app, db
+from flask import request, jsonify
+
+
 
 class Tests(TestCase):
     # Test all demographics
@@ -83,7 +102,28 @@ class Tests(TestCase):
         assert result.status_code == 200
         jsonRes = result.json()
         expected = {}
-        assert jsonRes == expected
+        assert jsonRes == expected 
+
+    def test8(self):
+        queries = {"country_name": ["Denmark", "Paraguay"]}
+        dem_query = db.session.query(Demographics)
+
+        page = int(queries['page'][0]) if "page" in queries else 1
+        per_page = int(queries['per_page'][0]) if "per_page" in queries else 9
+
+
+        if "country_name" in queries:
+            countries_filter = queries['country_name']
+            dem_query = dem_query.filter(Demographics.country_name.in_(countries_filter)) 
+
+            demographics = dem_query.paginate(page=page, per_page=per_page)
+
+            result = all_demographics_schema.dump(demographics.items, many=True)
+
+            assert len(result) == 2
+        
+
+
 
 
 if __name__ == "__main__":  # pragma: no cover
