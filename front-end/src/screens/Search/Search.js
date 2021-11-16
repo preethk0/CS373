@@ -53,10 +53,26 @@ const Search = ({}) => {
             {highlightText(data.country_name)}
           </a>
         </td>
-        <td> {highlightText(data.country_longitude.toString())}</td>
-        <td> {highlightText(data.country_latitude.toString())}</td>
-        <td> {highlightText(data.country_continent)}</td>
-        <td> {highlightText(data.country_region)}</td>
+        <td>
+          <a href={"/geography/" + data.country_id}>
+            {highlightText(data.country_longitude.toString())}
+          </a>
+        </td>
+        <td>
+          <a href={"/geography/" + data.country_id}>
+            {highlightText(data.country_latitude.toString())}
+          </a>
+        </td>
+        <td>
+          <a href={"/geography/" + data.country_id}>
+            {highlightText(data.country_continent)}
+          </a>
+        </td>
+        <td>
+          <a href={"/geography/" + data.country_id}>
+            {highlightText(data.country_region)}
+          </a>
+        </td>
       </tr>
     );
   };
@@ -70,10 +86,26 @@ const Search = ({}) => {
             {highlightText(data.country_name)}
           </a>
         </td>
-        <td> {highlightText(data.country_main_attraction)}</td>
-        <td> {highlightText(data.country_number_of_tourists.toString())}</td>
-        <td> {highlightText(data.country_tourism_revenue.toString())}</td>
-        <td> {highlightText(data.country_income_level)}</td>
+        <td>
+          <a href={"/foodandtourism/" + data.country_id}>
+            {highlightText(data.country_main_attraction)}
+          </a>
+        </td>
+        <td>
+          <a href={"/foodandtourism/" + data.country_id}>
+            {highlightText(data.country_number_of_tourists.toString())}
+          </a>
+        </td>
+        <td>
+          <a href={"/foodandtourism/" + data.country_id}>
+            {highlightText(data.country_tourism_revenue.toString())}
+          </a>
+        </td>
+        <td>
+          <a href={"/foodandtourism/" + data.country_id}>
+            {highlightText(data.country_income_level)}
+          </a>
+        </td>
       </tr>
     );
   };
@@ -166,9 +198,7 @@ const Search = ({}) => {
 
   return (
     <div className="mainPage">
-      <h2 className="header">
-        Search
-      </h2>
+      <h2 className="header">Search</h2>
       <p className="descriptionText">
         {highlightText("Search for a country's information.")}
       </p>
