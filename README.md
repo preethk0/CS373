@@ -62,7 +62,7 @@ https://www.around-the-world.me/
 | ------- | -------- | ------ |
 | Mehul   | 15       | 20     |
 | Preeth  | 15       |        |
-| Justin  | 15       |        |
+| Justin  | 13       | 10     |
 | Raphael | 15       |        |
 | Daniela | 15       | 20     |
 
