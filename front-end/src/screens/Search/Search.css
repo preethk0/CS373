@@ -21,3 +21,16 @@
   padding: 30px;
   margin-top: 15px;
 }
+
+.tableHeader:hover {
+  background: rgb(255, 255, 255);
+}
+
+tr:hover {
+  background: rgb(214, 214, 214);
+}
+
+td a {
+  display: block;
+  padding: 8px;
+}
