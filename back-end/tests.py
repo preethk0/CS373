@@ -121,5 +121,5 @@ class Tests(TestCase):
         assert len(jsonRes) > 0 and jsonRes["result"][0]["country_name"] == "Zimbabwe"
 
 
-if __name__ == "__main__":  # pragma: no cover
+if __name__ == "__main__": 
     main()
