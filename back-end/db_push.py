@@ -165,12 +165,14 @@ def add_demographics(country_ind_data):
                 "country_flag": country_flag_data[0]["flag"],
                 "country_flag_emoji": country_ind_data["countryFlagEmoji"],
                 "country_capital": country_basic_data[0]["capital"],
-                "country_languages": ", ".join(list(
-                    map(
-                        lambda lang_obj: lang_obj["isoName"],
-                        country_ind_data["isoAdminLanguages"],
+                "country_languages": ", ".join(
+                    list(
+                        map(
+                            lambda lang_obj: lang_obj["isoName"],
+                            country_ind_data["isoAdminLanguages"],
+                        )
                     )
-                )),
+                ),
                 "country_population": country_population_data[0]["populationCounts"][
                     -1
                 ]["value"],
@@ -188,9 +190,9 @@ def add_demographics(country_ind_data):
                 if len(country_GDP_data) > 0
                 else 0,
                 "countries_with_similar_pop": countriesWithSimilarPopulation,
-                "country_GDP_per_capita": round(country_GDP_per_capita_data[0][
-                    "GDP_per_capita"
-                ])
+                "country_GDP_per_capita": round(
+                    country_GDP_per_capita_data[0]["GDP_per_capita"]
+                )
                 if len(country_GDP_per_capita_data) > 0
                 else 0,
             }

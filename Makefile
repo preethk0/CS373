@@ -27,7 +27,7 @@ selenium-tests:
 	python3 front-end/guitests.py
 
 unit-tests:
-	cd back-end/ && python tests.py
+	cd back-end/ && python3 tests.py
 
 jest-tests:
 	cd front-end/ && npm install && npm test

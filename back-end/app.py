@@ -1,6 +1,10 @@
 from flask import request, jsonify
 from demographics import filter_demographics, sort_demographics, search_demographics
-from foodandtourism import filter_foodandtourism, sort_foodandtourism, search_foodandtourism
+from foodandtourism import (
+    filter_foodandtourism,
+    sort_foodandtourism,
+    search_foodandtourism,
+)
 from geography import filter_geography, sort_geography, search_geography
 
 from models import (
@@ -30,9 +34,9 @@ def get_all_demographics():
     queries = request.args.to_dict(flat=False)
     dem_query = db.session.query(Demographics)
 
-    page = int(queries['page'][0]) if "page" in queries else 1
-    per_page = int(queries['per_page'][0]) if "per_page" in queries else 9
-    
+    page = int(queries["page"][0]) if "page" in queries else 1
+    per_page = int(queries["per_page"][0]) if "per_page" in queries else 9
+
     dem_query = filter_demographics(dem_query, queries)
     dem_query = sort_demographics(dem_query, queries)
     dem_query = search_demographics(dem_query, queries)
@@ -40,7 +44,7 @@ def get_all_demographics():
 
     result = all_demographics_schema.dump(demographics.items, many=True)
 
-    return {'result': result, 'count': dem_query.count()}
+    return {"result": result, "count": dem_query.count()}
 
 
 # Retrieve demographics data for country with specific country-id
@@ -59,9 +63,9 @@ def get_all_geography():
     queries = request.args.to_dict(flat=False)
     geo_query = db.session.query(Geography)
 
-    page = int(queries['page'][0]) if "page" in queries else 1
-    per_page = int(queries['per_page'][0]) if "per_page" in queries else 10
-    
+    page = int(queries["page"][0]) if "page" in queries else 1
+    per_page = int(queries["per_page"][0]) if "per_page" in queries else 10
+
     geo_query = filter_geography(geo_query, queries)
     geo_query = sort_geography(geo_query, queries)
     geo_query = search_geography(geo_query, queries)
@@ -69,7 +73,7 @@ def get_all_geography():
 
     result = all_geography_schema.dump(geography.items, many=True)
 
-    return {'result': result, 'count': geo_query.count()}
+    return {"result": result, "count": geo_query.count()}
 
 
 # Retrieve geography data for country with specific country-id
@@ -88,9 +92,9 @@ def get_all_foodandtourism():
     queries = request.args.to_dict(flat=False)
     foodandtourism_query = db.session.query(FoodAndTourism)
 
-    page = int(queries['page'][0]) if "page" in queries else 1
-    per_page = int(queries['per_page'][0]) if "per_page" in queries else 10
-    
+    page = int(queries["page"][0]) if "page" in queries else 1
+    per_page = int(queries["per_page"][0]) if "per_page" in queries else 10
+
     foodandtourism_query = filter_foodandtourism(foodandtourism_query, queries)
     foodandtourism_query = sort_foodandtourism(foodandtourism_query, queries)
     foodandtourism_query = search_foodandtourism(foodandtourism_query, queries)
@@ -98,7 +102,8 @@ def get_all_foodandtourism():
 
     result = all_foodandtourism_schema.dump(foodandtourism.items, many=True)
 
-    return {'result': result, 'count': foodandtourism_query.count()}
+    return {"result": result, "count": foodandtourism_query.count()}
+
 
 # Retrieve food and tourism data for country with specific country-id
 @app.route("/foodandtourism/<id>", methods=["GET"])

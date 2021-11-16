@@ -21,7 +21,6 @@ from init import app, db
 from flask import request, jsonify
 
 
-
 class Tests(TestCase):
     # Test all demographics
     def test1(self):
@@ -102,54 +101,25 @@ class Tests(TestCase):
         assert result.status_code == 200
         jsonRes = result.json()
         expected = {}
-        assert jsonRes == expected 
+        assert jsonRes == expected
 
     # Test for filtering
     def test8(self):
-        queries = {"country_name": ["Denmark", "Paraguay"]}
-        dem_query = db.session.query(Demographics)
-
-        page = int(queries['page'][0]) if "page" in queries else 1
-        per_page = int(queries['per_page'][0]) if "per_page" in queries else 9
-
-
-        if "country_name" in queries:
-            countries_filter = queries['country_name']
-            dem_query = dem_query.filter(Demographics.country_name.in_(countries_filter)) 
-
-            demographics = dem_query.paginate(page=page, per_page=per_page)
-
-            result = all_demographics_schema.dump(demographics.items, many=True)
-
-            assert len(result) == 2 
+        result = requests.get(
+            "https://api.around-the-world.me/demographics?page=1&per_page=9&country_name=Denmark&country_name=Paraguay"
+        )
+        assert result.status_code == 200
+        assert len(result.json()) == 2
 
     # Test for sorting
-    def test9(self): 
-        queries = {"sort": ["country_name-des"]}
-        dem_query = db.session.query(Demographics)
+    def test9(self):
+        result = requests.get(
+            "https://api.around-the-world.me/demographics?page=1&per_page=9&sort=country_name-des"
+        )
+        assert result.status_code == 200
+        jsonRes = result.json()
+        assert len(jsonRes) > 0 and jsonRes["result"][0]["country_name"] == "Zimbabwe"
 
-        if "sort" in queries:
-            sort_value = queries['sort'][0]
-            attribute, order = sort_value.split("-")
-
-            dem_attribute = None
-            if attribute == "country_name":
-                dem_attribute = Demographics.country_name
-            elif attribute == "country_population":
-                dem_attribute = Demographics.country_population
-            elif attribute == "country_states":
-                dem_attribute = Demographics.country_states
-            elif attribute == "country_GDP":
-                dem_attribute = Demographics.country_GDP
-            elif attribute == "country_language":
-                dem_attribute  = Demographics.country_languages
-
-            if dem_attribute:
-                dem_query = dem_query.order_by(dem_attribute.desc() if order == "des" else dem_attribute)
-                result = all_demographics_schema.dump(dem_query, many=True)
-                assert result[0]["country_name"] == "Zimbabwe"
-
-        
 
 if __name__ == "__main__":  # pragma: no cover
     main()
