@@ -30,55 +30,63 @@ class TestDemographics(unittest.TestCase):
     def tearDownClass(cls):
         cls.driver.quit()
 
-    def testCountryTitle(self):
+    def testCountryCard(self):
         self.driver.get(URL)
         try:
             a = WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.CLASS_NAME, 'cardGrid'))
+                EC.presence_of_element_located((By.CLASS_NAME, 'ant-card ant-card-bordered ant-card-hoverable countryCardStyle'))
             )
         except Exception as ex:
             print(ex)
             return
 
         grid = self.driver.find_element(By.CLASS_NAME, 'cardGrid')
-        grid.find_elements(By.TAG_NAME, 'a')[0].click()
+        element = grid.find_elements(By.CLASS_NAME, 'ant-card-body')[1]
         time.sleep(2)
-        element = self.driver.find_element(By.CLASS_NAME, 'countryName')
-        assert element.text == 'Paraguay 🇵🇾'
+        country_name = element.text.split("\n")[0]
+        assert country_name == 'Marshall Islands'
 
-    def testCountryLearnMore(self):
+    def testCountryFilter(self):
         self.driver.get(URL)
         try:
             a = WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.CLASS_NAME, 'ant-card-hoverable'))
+                EC.presence_of_element_located((By.CLASS_NAME, 'select__control css-1s2u09g-control'))
             )
         except Exception as ex:
             print(ex)
             return
 
-        self.driver.find_elements(By.CLASS_NAME, 'ant-card-hoverable')[2].click()
+        self.driver.find_elements(By.CLASS_NAME, 'select__control css-1s2u09g-control')[1].click()
+        time.sleep(2)
+        self.actions.send_keys(Keys.DOWN, Keys.DOWN, Keys.DOWN, Keys.DOWN, Keys.DOWN, Keys.DOWN, Keys.DOWN, Keys.DOWN, Keys.DOWN, Keys.RETURN).perform()
         time.sleep(2)
 
-        element = self.driver.find_elements(By.TAG_NAME, 'a')[6]
-        self.driver.execute_script("arguments[0].click();", element)
+        grid = self.driver.find_element(By.CLASS_NAME, 'cardGrid')
+        element = grid.find_elements(By.CLASS_NAME, 'ant-card-body')[0]
         time.sleep(2)
-        currentURL = self.driver.current_url
-        assert currentURL == "https://www.around-the-world.me/foodandtourism/DK"
+        country_name = element.text.split("\n")[0]
+        assert country_name == 'China'
 
-    def testCountryInfo(self):
+    def testCountrySort(self):
         self.driver.get(URL)
         try:
             a = WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.CLASS_NAME, 'ant-card-hoverable'))
+                EC.presence_of_element_located((By.CLASS_NAME, 'select__value-container css-1d8n9bt'))
             )
         except Exception as ex:
             print(ex)
             return
 
-        self.driver.find_elements(By.CLASS_NAME, 'ant-card-hoverable')[1].click()
+        self.driver.find_element(By.CLASS_NAME, 'select__value-container css-1d8n9bt').click()
         time.sleep(2)
-        element = self.driver.find_elements(By.CLASS_NAME, 'card-text')[0]
-        assert element.text == 'Capital: Majuro'
+        self.actions.send_keys(Keys.DOWN, Keys.DOWN, Keys.DOWN, Keys.RETURN).perform()
+        time.sleep(2)
+
+        grid = self.driver.find_element(By.CLASS_NAME, 'cardGrid')
+        element = grid.find_elements(By.CLASS_NAME, 'ant-card-body')[0]
+        time.sleep(2)
+        country_name = element.text.split("\n")[0]
+        assert country_name == 'Nauru'
 
 if __name__ == "__main__":
     PATH = sys.argv[1]

@@ -40,7 +40,6 @@ class TestFoodAndTourism(unittest.TestCase):
             print(ex)
             return
 
-
         self.driver.find_element(By.CLASS_NAME, 'select__control css-1s2u09g-control')[3].click()
         time.sleep(2)
         self.actions.send_keys(Keys.DOWN, Keys.RETURN).perform()
