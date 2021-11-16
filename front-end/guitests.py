@@ -12,5 +12,5 @@ if __name__ == "__main__":
 
     # Run all of the gui tests
     os.system("python3 ./front-end/gui_tests/demographicsTests.py " + PATH)
-    os.system("python3 ./front-end/gui_tests/geographyTests.py " + PATH)
-    os.system("python3 ./front-end/gui_tests/foodandtourismTests.py " + PATH)
+    # os.system("python3 ./front-end/gui_tests/geographyTests.py " + PATH)
+    # os.system("python3 ./front-end/gui_tests/foodandtourismTests.py " + PATH)

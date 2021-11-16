@@ -34,27 +34,30 @@ class TestGeography(unittest.TestCase):
         self.driver.get(URL)
         try:
             a = WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.CLASS_NAME, 'MuiTableCell-root MuiTableCell-head'))
+                EC.presence_of_element_located((By.CLASS_NAME, 'select__input-container css-ackcql'))
             )
         except Exception as ex:
             print(ex)
             return
 
-        self.driver.find_elements(By.CLASS_NAME, 'MuiTableCell-root MuiTableCell-head')[1].click()
+
+        self.driver.find_element(By.CLASS_NAME, 'select__input-container css-ackcql').click()
+        time.sleep(2)
+        self.actions.send_keys(Keys.DOWN, Keys.DOWN, Keys.DOWN, Keys.DOWN, Keys.DOWN, Keys.DOWN, Keys.DOWN, Keys.RETURN).perform()
         time.sleep(2)
 
         try:
             a = WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.CLASS_NAME, 'MuiTableRow-root MuiTableRow-hover'))
+                EC.presence_of_element_located((By.TAG_NAME, 'tr'))
             )
         except Exception as ex:
             print(ex)
             return
 
-        self.driver.find_elements(By.CLASS_NAME, 'MuiTableRow-root MuiTableRow-hover')[0].click()
-        time.sleep(2)
-        element = self.driver.find_element(By.TAG_NAME, 'h1')
-        assert element.text == 'Tonga'
+        element = self.driver.find_elements(By.TAG_NAME, 'tr')[0]
+        span = element.find_elements(By.TAG_NAME, 'span')[0]
+        print(span.text)
+        assert span.text == 'Tonga'
 
     def testAdjacentCountries(self):
         self.driver.get(URL)

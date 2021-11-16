@@ -34,13 +34,14 @@ class TestDemographics(unittest.TestCase):
         self.driver.get(URL)
         try:
             a = WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.CLASS_NAME, 'ant-card-hoverable'))
+                EC.presence_of_element_located((By.CLASS_NAME, 'cardGrid'))
             )
         except Exception as ex:
             print(ex)
             return
 
-        self.driver.find_elements(By.CLASS_NAME, 'ant-card-hoverable')[0].click()
+        grid = self.driver.find_element(By.CLASS_NAME, 'cardGrid')
+        grid.find_elements(By.TAG_NAME, 'a')[0].click()
         time.sleep(2)
         element = self.driver.find_element(By.CLASS_NAME, 'countryName')
         assert element.text == 'Paraguay 🇵🇾'

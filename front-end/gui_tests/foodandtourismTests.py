@@ -30,31 +30,34 @@ class TestFoodAndTourism(unittest.TestCase):
     def tearDownClass(cls):
         cls.driver.quit()
 
-    def testSorting(self):
+    def testFiltering(self):
         self.driver.get(URL)
         try:
             a = WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.CLASS_NAME, 'MuiTableCell-root MuiTableCell-head'))
+                EC.presence_of_element_located((By.CLASS_NAME, 'select__control css-1s2u09g-control'))
             )
         except Exception as ex:
             print(ex)
             return
 
-        self.driver.find_elements(By.CLASS_NAME, 'MuiTableCell-root MuiTableCell-head')[2].click()
+
+        self.driver.find_element(By.CLASS_NAME, 'select__control css-1s2u09g-control')[3].click()
+        time.sleep(2)
+        self.actions.send_keys(Keys.DOWN, Keys.RETURN).perform()
         time.sleep(2)
 
         try:
             a = WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.CLASS_NAME, 'MuiTableRow-root MuiTableRow-hover'))
+                EC.presence_of_element_located((By.TAG_NAME, 'tr'))
             )
         except Exception as ex:
             print(ex)
             return
 
-        self.driver.find_elements(By.CLASS_NAME, 'MuiTableRow-root MuiTableRow-hover')[0].click()
-        time.sleep(2)
-        element = self.driver.find_elements(By.CLASS_NAME, 'card-text')[3]
-        assert element.text == 'Number of Tourists (per year): 2,500'
+        element = self.driver.find_elements(By.TAG_NAME, 'tr')[0]
+        span = element.find_elements(By.TAG_NAME, 'span')[3]
+        print(span.text)
+        assert span.text == '33000000'
 
     def testCountryInfo(self):
         self.driver.get(URL)
@@ -71,22 +74,23 @@ class TestFoodAndTourism(unittest.TestCase):
         element = self.driver.find_elements(By.CLASS_NAME, 'card-text')[0]
         assert element.text == 'Main Dishes: Fufu, Egusi Soup'
 
-    def testTitles(self):
+    def testSearch(self):
         self.driver.get(URL)
         try:
             a = WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.CLASS_NAME, 'MuiTableRow-root MuiTableRow-hover'))
+                EC.presence_of_element_located((By.CLASS_NAME, 'form-control'))
             )
         except Exception as ex:
             print(ex)
             return
 
-        self.driver.find_elements(By.CLASS_NAME, 'MuiTableRow-root MuiTableRow-hover')[0].click()
+        self.driver.find_element(By.CLASS_NAME, 'form-control').click()
         time.sleep(2)
-        element = self.driver.find_elements(By.TAG_NAME, 'h3')[0]
-        assert element.text == 'Food'
-        element = self.driver.find_elements(By.TAG_NAME, 'h3')[1]
-        assert element.text == 'Tourism'
+        self.actions.send_keys("Petra").perform()
+        time.sleep(2)
+        element = self.driver.find_elements(By.TAG_NAME, 'tr')[1]
+        span = element.find_elements(By.TAG_NAME, 'span')[0]
+        assert span.text == 'Jordan'
 
     def testImages(self):
         self.driver.get(URL)
