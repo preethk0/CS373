@@ -104,6 +104,7 @@ class Tests(TestCase):
         expected = {}
         assert jsonRes == expected 
 
+    # Test for filtering
     def test8(self):
         queries = {"country_name": ["Denmark", "Paraguay"]}
         dem_query = db.session.query(Demographics)
@@ -120,11 +121,35 @@ class Tests(TestCase):
 
             result = all_demographics_schema.dump(demographics.items, many=True)
 
-            assert len(result) == 2
+            assert len(result) == 2 
+
+    # Test for sorting
+    def test9(self): 
+        queries = {"sort": ["country_name-des"]}
+        dem_query = db.session.query(Demographics)
+
+        if "sort" in queries:
+            sort_value = queries['sort'][0]
+            attribute, order = sort_value.split("-")
+
+            dem_attribute = None
+            if attribute == "country_name":
+                dem_attribute = Demographics.country_name
+            elif attribute == "country_population":
+                dem_attribute = Demographics.country_population
+            elif attribute == "country_states":
+                dem_attribute = Demographics.country_states
+            elif attribute == "country_GDP":
+                dem_attribute = Demographics.country_GDP
+            elif attribute == "country_language":
+                dem_attribute  = Demographics.country_languages
+
+            if dem_attribute:
+                dem_query = dem_query.order_by(dem_attribute.desc() if order == "des" else dem_attribute)
+                result = all_demographics_schema.dump(dem_query, many=True)
+                assert result[0]["country_name"] == "Zimbabwe"
+
         
-
-
-
 
 if __name__ == "__main__":  # pragma: no cover
     main()
