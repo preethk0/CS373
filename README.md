@@ -61,9 +61,11 @@ https://www.around-the-world.me/
 | Name    | Estimate | Actual |
 | ------- | -------- | ------ |
 | Mehul   | 15       | 20     |
-| Preeth  | 15       |        |
-| Justin  | 13       | 10     |
-| Raphael | 15       |        |
+| Preeth  | 15       | 15     |
+| Justin  | 15       | 10     |
+| Raphael | 15       | 10     |
 | Daniela | 15       | 20     |
 
 ## Comments
+
+We noticed the comments from Phase 2 grading about formatting large values with commas, and we will implement this next phase so as to not interfere with our current implementation of searching and sorting. We also thought it would be better to keep data about countries for which instances may not exist (such as bordering countries, countries with similar populations etc.) since, for example, it would be misleading to say that a country has no bordering countries just because we don't have instances for those countries. We will also try to make the website cleaner on mobile in Phase 4.
