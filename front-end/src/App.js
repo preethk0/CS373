@@ -11,6 +11,7 @@ import Search from "./screens/Search/Search.js";
 import DemographicsInstance from "./screens/Demographics/DemographicsInstance";
 import GeographyInstance from "./screens/Geography/GeographyInstance";
 import FoodAndTourismInstance from "./screens/FoodAndTourism/FoodAndTourismInstance";
+import Visualizations from "./screens/Visualizations/Visualizations.js";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route exact path="/geography" component={GeographyAll} />
         <Route exact path="/foodandtourism" component={FoodAndTourismAll} />
         <Route exact path="/search" component={Search} />
+        <Route exact path="/visualizations" component={Visualizations} />
         <Route path="/demographics/:country" component={DemographicsInstance} />
         <Route path="/geography/:country" component={GeographyInstance} />
         <Route

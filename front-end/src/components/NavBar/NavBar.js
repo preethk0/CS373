@@ -13,6 +13,7 @@ const NavBar = ({}) => {
         <Nav.Link href="/demographics">Demographics</Nav.Link>
         <Nav.Link href="/geography">Geography</Nav.Link>
         <Nav.Link href="/foodandtourism">Food & Tourism</Nav.Link>
+        <Nav.Link href="/visualizations">Visualizations</Nav.Link>
         <Nav.Link href="/search">Search</Nav.Link>
       </Nav>
     </Navbar>
