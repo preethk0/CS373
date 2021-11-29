@@ -120,15 +120,19 @@ const Visualizations = ({}) => {
           size: 10,
           color: "#fff",
         }}
-        bubbleClickFunc={() => {
-          window.location = "/geography";
+        bubbleClickFunc={(id) => {
+          window.location = "/geography/" + id;
         }}
         data={geoData.map((country) => {
           let land_area = country.country_land_area.replace(/,/g, "");
           land_area = Number(
             land_area.substring(0, land_area.indexOf("(")).trim()
           );
-          return { label: country.country_name, value: land_area };
+          return {
+            label: country.country_name,
+            value: land_area,
+            id: country.country_id,
+          };
         })}
       />
     </div>

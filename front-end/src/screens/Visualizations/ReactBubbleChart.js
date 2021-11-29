@@ -99,7 +99,7 @@ export default class ReactBubbleChart extends Component {
   }
 
   renderBubbles(width, nodes, colors) {
-    const { graph, valueFont, labelFont } = this.props;
+    const { graph, valueFont, labelFont, bubbleClickFunc } = this.props;
     const bubbleChart = d3
       .select(this.svg.current)
       .append("g")
@@ -149,8 +149,9 @@ export default class ReactBubbleChart extends Component {
       })
       .style("z-index", 1)
       .on("mouseover", function (event, d) {
-        console.log("mouse over " + d.label);
         tooltip.style("visibility", "visible");
+
+        d3.select(this).style("opacity", 0.5).style("cursor", "pointer");
 
         d3.select(this)
           .transition()
@@ -160,8 +161,11 @@ export default class ReactBubbleChart extends Component {
       .on("mouseout", function (event, d) {
         const r = d.r / 1.04;
         tooltip.style("visibility", "hidden");
+        d3.select(this).style("opacity", 1).style("cursor", "default");
+
         d3.select(this).transition().duration(500).attr("r", r);
-      });
+      })
+      .on("click", (e, d) => bubbleClickFunc(d.data.id));
 
     node
       .append("clipPath")
