@@ -1,30 +1,27 @@
 import React, { useEffect, useState, useMemo, useRef } from "react";
-import {
-  useQueryParams,
-  StringParam,
-  NumberParam,
-  ArrayParam,
-  withDefault,
-} from "use-query-params";
 import * as d3 from "d3";
+import ReactBubbleChart from "./ReactBubbleChart";
+import BubbleChart from "@weknow/react-bubble-chart-d3";
 import "./Visualizations.css";
 
 const axios = require("axios");
 const gdpFactor = 4 * Math.pow(10, 11);
 
 const Visualizations = ({}) => {
+  const [geoData, setGeoData] = useState([]);
+
   useEffect(() => {
-    const buildParams = () => {
+    const buildParams = (num) => {
       let urlParams = new URLSearchParams();
 
       urlParams.append("page", 1);
-      urlParams.append("per_page", 168);
+      urlParams.append("per_page", num);
 
       return urlParams;
     };
 
     const getGDPGraph = async () => {
-      const urlParams = buildParams();
+      const urlParams = buildParams(168);
       axios
         .get(
           "https://api.around-the-world.me/demographics?" + urlParams.toString()
@@ -50,7 +47,19 @@ const Visualizations = ({}) => {
             .attr("y", (d, i) => h - 10 * (d / gdpFactor))
             .attr("width", 5)
             .attr("height", (d, i) => (d / gdpFactor) * 10)
-            .attr("fill", "green");
+            .attr("fill", "green")
+            .on("mouseover", function (d) {
+              d3.select(this).style("cursor", "pointer");
+              d3.select(this).style("opacity", 0.7);
+            })
+            .on("mouseout", function (d) {
+              d3.select(this).style("cursor", "default");
+              d3.select(this).style("opacity", 1);
+            })
+            .on("click", function (event, d) {
+              const i = data.indexOf(d);
+              window.location = "demographics/" + demData[i].country_id;
+            });
 
           svg
             .selectAll("text")
@@ -65,13 +74,63 @@ const Visualizations = ({}) => {
         });
     };
 
+    const getGeoData = async () => {
+      const urlParams = buildParams(154);
+      axios
+        .get(
+          "https://api.around-the-world.me/geography?" + urlParams.toString()
+        )
+        .then((response) => {
+          const data = response.data.result;
+          setGeoData(data);
+        });
+    };
+
     getGDPGraph();
-  });
+    getGeoData();
+  }, []);
 
   return (
     <div>
       <h2 className="header">Country GDPs</h2>
       <div id="barGraph" />
+      <h2 className="header">Country Land Areas</h2>
+      <ReactBubbleChart
+        graph={{
+          zoom: 1,
+          offsetX: 0.35,
+          offsetY: 0,
+        }}
+        width={window.innerWidth * 0.4}
+        padding={0} // optional value, number that set the padding between bubbles
+        showLegend={false} // optional value, pass false to disable the legend.
+        legendFont={{
+          family: "Arial",
+          size: 12,
+          color: "#000",
+          weight: "bold",
+        }}
+        valueFont={{
+          family: "Verdana",
+          size: 7,
+          color: "#fff",
+        }}
+        labelFont={{
+          family: "Verdana",
+          size: 10,
+          color: "#fff",
+        }}
+        bubbleClickFunc={() => {
+          window.location = "/geography";
+        }}
+        data={geoData.map((country) => {
+          let land_area = country.country_land_area.replace(/,/g, "");
+          land_area = Number(
+            land_area.substring(0, land_area.indexOf("(")).trim()
+          );
+          return { label: country.country_name, value: land_area };
+        })}
+      />
     </div>
   );
 };
