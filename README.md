@@ -24,7 +24,7 @@
 | Phase 1 | Daniela Torres Martinez |
 | Phase 2 | Mehul Daruka            |
 | Phase 3 | Justin Lee              |
-| Phase 4 |                         |
+| Phase 4 | Preeth Kanamangala      |
 
 ## GitLab Pipelines
 
@@ -66,6 +66,22 @@ https://www.around-the-world.me/
 | Raphael | 15       | 10     |
 | Daniela | 15       | 20     |
 
+#### Phase 4:
+
+| Name    | Estimate | Actual |
+| ------- | -------- | ------ |
+| Mehul   | 10       |        |
+| Preeth  | 10       |        |
+| Justin  | 10       |        |
+| Raphael | 10       |        |
+| Daniela | 10       |        |
+
 ## Comments
 
-We noticed the comments from Phase 2 grading about formatting large values with commas, and we will implement this next phase so as to not interfere with our current implementation of searching and sorting. We also thought it would be better to keep data about countries for which instances may not exist (such as bordering countries, countries with similar populations etc.) since, for example, it would be misleading to say that a country has no bordering countries just because we don't have instances for those countries. We will also try to make the website cleaner on mobile in Phase 4.
+Phase 1: N/A
+
+Phase 2: N/A
+
+Phase 3: We noticed the comments from Phase 2 grading about formatting large values with commas, and we will implement this next phase so as to not interfere with our current implementation of searching and sorting. We also thought it would be better to keep data about countries for which instances may not exist (such as bordering countries, countries with similar populations etc.) since, for example, it would be misleading to say that a country has no bordering countries just because we don't have instances for those countries. We will also try to make the website cleaner on mobile in Phase 4.
+
+Phase 4: We initially tried to use the "@weknow/react-bubble-chart-d3" library for our bubble chart visualizations, however, we came across errors from the library itself that prevented us from using it for its intended functionality. I came across a project from last semester - WhereArtThou - that faced a similar problem and adapted the library code with the desired changes, so we adapted the code from their project (in ReactBubbleChart.js).

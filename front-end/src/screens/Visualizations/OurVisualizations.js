@@ -1,13 +1,12 @@
 import React, { useEffect, useState, useMemo, useRef } from "react";
 import * as d3 from "d3";
 import ReactBubbleChart from "./ReactBubbleChart";
-import BubbleChart from "@weknow/react-bubble-chart-d3";
-import "./Visualizations.css";
+import "./OurVisualizations.css";
 
 const axios = require("axios");
 const gdpFactor = 4 * Math.pow(10, 11);
 
-const Visualizations = ({}) => {
+const OurVisualizations = ({}) => {
   const [geoData, setGeoData] = useState([]);
 
   useEffect(() => {
@@ -139,4 +138,4 @@ const Visualizations = ({}) => {
   );
 };
 
-export default Visualizations;
+export default OurVisualizations;
