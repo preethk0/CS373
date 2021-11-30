@@ -33,7 +33,7 @@ const OurVisualizations = ({}) => {
           const svg = d3
             .select("#barGraph")
             .append("svg")
-            .attr("width", 7 * data.length)
+            .attr("width", 7.5 * data.length)
             .attr("height", h)
             .style("margin-left", 100);
 
@@ -61,15 +61,26 @@ const OurVisualizations = ({}) => {
             });
 
           svg
-            .selectAll("text")
+            .selectAll("country_name")
             .data(data)
             .enter()
             .append("text")
             .text((d, i) => (d > gdpFactor * 7 ? demData[i].country_name : ""))
             .style("font-size", "12")
             .style("font-weight", "bold")
-            .attr("x", (d, i) => i * 7)
-            .attr("y", (d, i) => h - 10 * (d / gdpFactor) - 3);
+            .attr("x", (d, i) => i * 7 - 3)
+            .attr("y", (d, i) => h - 10 * (d / gdpFactor) - 6);
+
+          svg
+            .selectAll("country_gdp")
+            .data(data)
+            .enter()
+            .append("text")
+            .text((d, i) => (d > gdpFactor * 7 ? `$${d.toLocaleString()}` : ""))
+            .style("font-size", "12")
+            .style("font-weight", "bold")
+            .attr("x", (d, i) => i * 7 - 3)
+            .attr("y", (d, i) => h - 10 * (d / gdpFactor) - 18);
         });
     };
 

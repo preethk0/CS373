@@ -180,7 +180,9 @@ export default class ReactBubbleChart extends Component {
     node
       .append("text")
       .attr("class", "value-text")
-      .style("font-size", `${valueFont.size}px`)
+      .style("font-size", (d) => {
+        return `${Math.log10(d.data.value) - 1}px`;
+      })
       .attr("clip-path", function (d) {
         return "url(#clip-" + d.id + ")";
       })
@@ -204,7 +206,9 @@ export default class ReactBubbleChart extends Component {
     node
       .append("text")
       .attr("class", "label-text")
-      .style("font-size", `${labelFont.size}px`)
+      .style("font-size", (d) => {
+        return `${Math.log10(d.data.value)}px`;
+      })
       .attr("clip-path", function (d) {
         return "url(#clip-" + d.id + ")";
       })
