@@ -27,8 +27,8 @@ const ProviderVisualizations = ({}) => {
       <h2 className="header">Number of Products</h2>
       <ReactBubbleChart
         graph={{
-          zoom: 1,
-          offsetX: 0.35,
+          zoom: 0.7,
+          offsetX: 0.47,
           offsetY: 0,
         }}
         textSizeFunc={(val) => (val > 1 ? Math.log2(val) * 1.7 : 2)}
