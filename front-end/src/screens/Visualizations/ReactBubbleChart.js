@@ -49,12 +49,12 @@ export default class ReactBubbleChart extends Component {
     } = this.props;
 
     const colors = [
-      "#7454fb",
-      "#83d4fb",
-      "#fb6c44",
-      "#2cfb5c",
-      "#fb93cc",
-      "#f3fb7b",
+      "#d9534f",
+      "#ffcc5c",
+      "#5bc0de",
+      "#5cb85c",
+      "#428bca",
+      "#e8702a",
     ];
 
     // Reset the svg element to a empty state.
