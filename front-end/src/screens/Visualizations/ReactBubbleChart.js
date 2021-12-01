@@ -244,7 +244,7 @@ export default class ReactBubbleChart extends Component {
         return d.hideLabel ? 0 : 1;
       })
       .attr("y", function (d) {
-        return labelFont.size / 2;
+        return textSizeFunc(d.data.value) / 2;
       });
 
     // Center the texts inside the circles.
@@ -256,9 +256,9 @@ export default class ReactBubbleChart extends Component {
       })
       .attr("y", function (d) {
         if (d.hideLabel) {
-          return valueFont.size / 3;
+          return textSizeFunc(d.data.value) / 3;
         } else {
-          return -valueFont.size * 0.5;
+          return -textSizeFunc(d.data.value) * 0.5;
         }
       });
 
