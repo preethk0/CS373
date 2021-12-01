@@ -1,3 +1,7 @@
+// Originally from https://github.com/weknowinc/react-bubble-chart-d3
+// Adapted from WhereArtThou project which fixes issues with unmounting node
+
+
 import React, { useEffect, useState } from "react";
 import * as d3 from "d3";
 import ReactBubbleChart from "./ReactBubbleChart";
@@ -10,14 +14,6 @@ const ProviderVisualizations = ({}) => {
   const [brandsData, setBrandsData] = useState([]);
 
   useEffect(() => {
-    const buildParams = (num) => {
-      let urlParams = new URLSearchParams();
-
-      urlParams.append("page", 1);
-      urlParams.append("per_page", num);
-
-      return urlParams;
-    };
 
     const getBrandsData = async () => {
       axios
@@ -54,22 +50,19 @@ const ProviderVisualizations = ({}) => {
         }}
         valueFont={{
           family: "Verdana",
-          size: 12,
-          color: "#000",
+          size: 7,
+          color: "#fff",
         }}
         labelFont={{
           family: "Verdana",
           size: 10,
-          color: "#000",
+          color: "#fff",
         }}
         bubbleClickFunc={(id) => {
           window.location = "https://www.mytechreview.me/#/brand/" + id;
         }}
         data={brandsData.map((brand) => {
           let revenue = brand.revenue;
-          if (revenue == null) {
-             revenue = 0
-          }
           return {
             label: brand.name,
             value: (revenue * revenueFactor),
