@@ -112,6 +112,7 @@ const OurVisualizations = ({}) => {
           offsetY: 0,
         }}
         width={window.innerWidth * 0.4}
+        textSizeFunc={Math.log10}
         padding={0} // optional value, number that set the padding between bubbles
         showLegend={false} // optional value, pass false to disable the legend.
         legendFont={{

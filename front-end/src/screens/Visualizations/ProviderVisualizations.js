@@ -1,10 +1,9 @@
 // Originally from https://github.com/weknowinc/react-bubble-chart-d3
 // Adapted from WhereArtThou project which fixes issues with unmounting node
 
-
 import React, { useEffect, useState } from "react";
 import * as d3 from "d3";
-import ReactBubbleChart from "./ProviderReactBubbleChart";
+import ReactBubbleChart from "./ReactBubbleChart";
 import "./OurVisualizations.css";
 
 const axios = require("axios");
@@ -13,13 +12,8 @@ const ProviderVisualizations = ({}) => {
   const [brandsData, setBrandsData] = useState([]);
 
   useEffect(() => {
-
     const getBrandsData = async () => {
-      axios
-        .get(
-          "https://api.mytechreview.me/brands"
-      )
-      .then((response) => {
+      axios.get("https://api.mytechreview.me/brands").then((response) => {
         const data = response.data;
         setBrandsData(data);
       });
@@ -27,7 +21,6 @@ const ProviderVisualizations = ({}) => {
 
     getBrandsData();
   }, []);
-
 
   return (
     <div>
@@ -38,6 +31,7 @@ const ProviderVisualizations = ({}) => {
           offsetX: 0.35,
           offsetY: 0,
         }}
+        textSizeFunc={(val) => (val > 1 ? Math.log2(val) * 1.7 : 2)}
         width={window.innerWidth * 0.4}
         padding={0} // optional value, number that set the padding between bubbles
         showLegend={false} // optional value, pass false to disable the legend.

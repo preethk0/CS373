@@ -99,7 +99,8 @@ export default class ReactBubbleChart extends Component {
   }
 
   renderBubbles(width, nodes, colors) {
-    const { graph, valueFont, labelFont, bubbleClickFunc } = this.props;
+    const { graph, valueFont, labelFont, bubbleClickFunc, textSizeFunc } =
+      this.props;
     const bubbleChart = d3
       .select(this.svg.current)
       .append("g")
@@ -181,7 +182,7 @@ export default class ReactBubbleChart extends Component {
       .append("text")
       .attr("class", "value-text")
       .style("font-size", (d) => {
-        return `${Math.log10(d.data.value) - 1}px`;
+        return `${textSizeFunc(d.data.value) - 1}px`;
       })
       .attr("clip-path", function (d) {
         return "url(#clip-" + d.id + ")";
@@ -207,7 +208,7 @@ export default class ReactBubbleChart extends Component {
       .append("text")
       .attr("class", "label-text")
       .style("font-size", (d) => {
-        return `${Math.log10(d.data.value)}px`;
+        return `${textSizeFunc(d.data.value)}px`;
       })
       .attr("clip-path", function (d) {
         return "url(#clip-" + d.id + ")";
