@@ -4,11 +4,10 @@
 
 import React, { useEffect, useState } from "react";
 import * as d3 from "d3";
-import ReactBubbleChart from "./ReactBubbleChart";
+import ReactBubbleChart from "./ProviderReactBubbleChart";
 import "./OurVisualizations.css";
 
 const axios = require("axios");
-const revenueFactor = Math.pow(10, 9);
 
 const ProviderVisualizations = ({}) => {
   const [brandsData, setBrandsData] = useState([]);
@@ -32,7 +31,7 @@ const ProviderVisualizations = ({}) => {
 
   return (
     <div>
-      <h2 className="header">Brand Revenue</h2>
+      <h2 className="header">Number of Products</h2>
       <ReactBubbleChart
         graph={{
           zoom: 1,
@@ -50,22 +49,22 @@ const ProviderVisualizations = ({}) => {
         }}
         valueFont={{
           family: "Verdana",
-          size: 7,
+          size: 12,
           color: "#fff",
         }}
         labelFont={{
           family: "Verdana",
-          size: 10,
+          size: 12,
           color: "#fff",
         }}
         bubbleClickFunc={(id) => {
           window.location = "https://www.mytechreview.me/#/brand/" + id;
         }}
         data={brandsData.map((brand) => {
-          let revenue = brand.revenue;
+          let num_products = brand.numProducts;
           return {
             label: brand.name,
-            value: (revenue * revenueFactor),
+            value: num_products,
             id: brand.id,
           };
         })}
