@@ -34,8 +34,8 @@ const ProviderVisualizations = ({}) => {
       <h2 className="header">Number of Products</h2>
       <ReactBubbleChart
         graph={{
-          zoom: 1,
-          offsetX: 0.35,
+          zoom: 0.7,
+          offsetX: 0.47,
           offsetY: 0,
         }}
         width={window.innerWidth * 0.4}
