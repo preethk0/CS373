@@ -262,7 +262,7 @@ const OurVisualizations = ({}) => {
           })}
         />
       </div>
-      <h2 className="header">Country Income Levels</h2>
+      <h2 className="header">Number of countries by Income Levels</h2>
       <div
         style={{
           height: 500,
