@@ -39,7 +39,7 @@ const ProviderVisualizations = ({}) => {
           .append("svg")
           .attr("width", 10.5 * data.length)
           .attr("height", h)
-          .style("margin-left", 90);
+          .style("margin-left", 160);
 
         svg
           .selectAll("rect")
@@ -48,7 +48,7 @@ const ProviderVisualizations = ({}) => {
           .append("rect")
           .attr("x", (d, i) => i * 10)
           .attr("y", (d, i) => h - 20 * d)
-          .attr("width", 6)
+          .attr("width", 9)
           .attr("height", (d, i) => d * 20)
           .attr("fill", "orange")
           .on("mouseover", function (d) {
@@ -201,6 +201,16 @@ const ProviderVisualizations = ({}) => {
 
   return (
     <div>
+      <h2 className="header">Number of products by price range</h2>
+      <div
+        style={{
+          height: 500,
+          width: 500,
+          marginLeft: (window.innerWidth - 500) / 2,
+        }}
+      >
+        <div id="pie-container" />
+      </div>
       <h2 className="header">Average rating per brand</h2>
       <div id="barGraph" />
       <h2 className="header">Number of products by brand</h2>
@@ -213,7 +223,7 @@ const ProviderVisualizations = ({}) => {
         <ReactBubbleChart
           graph={{
             zoom: 0.6,
-            offsetX: 0.55,
+            offsetX: 0.45,
             offsetY: 0,
           }}
           textSizeFunc={(val) => (val > 1 ? Math.log2(val) * 1.7 : 2)}
@@ -248,16 +258,6 @@ const ProviderVisualizations = ({}) => {
             };
           })}
         />
-      </div>
-      <h2 className="header">Number of products by price range</h2>
-      <div
-        style={{
-          height: 500,
-          width: 500,
-          marginLeft: (window.innerWidth - 500) / 2,
-        }}
-      >
-        <div id="pie-container" />
       </div>
     </div>
   );
