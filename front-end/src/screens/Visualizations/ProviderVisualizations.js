@@ -39,7 +39,7 @@ const ProviderVisualizations = ({}) => {
           .append("svg")
           .attr("width", 10.5 * data.length)
           .attr("height", h)
-          .style("margin-left", 160);
+          .style("margin-left", "8%");
 
         svg
           .selectAll("rect")
@@ -223,7 +223,7 @@ const ProviderVisualizations = ({}) => {
         <ReactBubbleChart
           graph={{
             zoom: 0.6,
-            offsetX: 0.45,
+            offsetX: 0.55,
             offsetY: 0,
           }}
           textSizeFunc={(val) => (val > 1 ? Math.log2(val) * 1.7 : 2)}
