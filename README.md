@@ -70,11 +70,11 @@ https://www.around-the-world.me/
 
 | Name    | Estimate | Actual |
 | ------- | -------- | ------ |
-| Mehul   | 10       |        |
-| Preeth  | 10       |        |
-| Justin  | 10       |        |
-| Raphael | 10       |        |
-| Daniela | 10       |        |
+| Mehul   | 10       | 15     |
+| Preeth  | 10       | 15     |
+| Justin  | 10       | 1      |
+| Raphael | 10       | 1      |
+| Daniela | 10       | 1      |
 
 ## Comments
 
