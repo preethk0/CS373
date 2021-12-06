@@ -206,12 +206,13 @@ const ProviderVisualizations = ({}) => {
         style={{
           width: "100%",
           height: 500,
+          marginBottom: 150,
         }}
       >
         <ReactBubbleChart
           graph={{
             zoom: 0.6,
-            offsetX: 0.55,
+            offsetX: 0.50,
             offsetY: 0,
           }}
           textSizeFunc={(val) => (val > 1 ? Math.log2(val) * 1.7 : 2)}
