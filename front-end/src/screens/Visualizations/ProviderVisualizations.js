@@ -18,12 +18,73 @@ const ProviderVisualizations = ({}) => {
         setBrandsData(data);
       });
     };
+    
+    const getRatingsGraph = async () => {
+      const data = brandsData.map((brand) => brand.avgRating);
+      const h = 150;
+
+      const svg = d3
+        .select("#barGraph")
+        .append("svg")
+        .attr("width", 7.5 * data.length)
+        .attr("height", h)
+        .style("margin-left", 185);
+
+      svg
+        .selectAll("rect")
+        .data(data)
+        .enter()
+        .append("rect")
+        .attr("x", (d, i) => i * 7)
+        .attr("y", (d, i) => h - 4 * d)
+        .attr("width", 5)
+        .attr("height", (d, i) => d * 4)
+        .attr("fill", "orange")
+        .on("mouseover", function (d) {
+          d3.select(this).style("cursor", "pointer");
+          d3.select(this).style("opacity", 0.7);
+        })
+        .on("mouseout", function (d) {
+          d3.select(this).style("cursor", "default");
+          d3.select(this).style("opacity", 1);
+        })
+        .on("click", function (event, d) {
+          const i = data.indexOf(d);
+          window.location = "https://www.mytechreview.me/#/brand/" + brandsData[i].id;
+        });
+
+      svg
+        .selectAll("name")
+        .data(data)
+        .enter()
+        .append("text")
+        .text((d, i) => (d > 4 ? brandsData[i].name : ""))
+        .style("font-size", "10")
+        .style("font-weight", "bold")
+        .attr("x", (d, i) => i * 7)
+        .attr("y", (d, i) => h - 10 * d);
+        
+
+      svg
+        .selectAll("avgRating")
+        .data(data)
+        .enter()
+        .append("text")
+        .text((d, i) => (d))
+        .style("font-size", "10")
+        .style("font-weight", "bold")
+        .attr("x", (d, i) => i * 7)
+        .attr("y", (d, i) => h - 4 * d);
+      };
 
     getBrandsData();
+    getRatingsGraph();
   }, []);
 
   return (
     <div>
+      <h2 className="header">Reviews per brand</h2>
+      <div id="barGraph" />
       <h2 className="header">Number of Products</h2>
       <ReactBubbleChart
         graph={{
@@ -63,6 +124,7 @@ const ProviderVisualizations = ({}) => {
           };
         })}
       />
+
     </div>
   );
 };
