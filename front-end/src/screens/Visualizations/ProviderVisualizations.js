@@ -201,18 +201,6 @@ const ProviderVisualizations = ({}) => {
 
   return (
     <div>
-      <h2 className="header">Number of products by price range</h2>
-      <div
-        style={{
-          height: 500,
-          width: 500,
-          marginLeft: (window.innerWidth - 500) / 2,
-        }}
-      >
-        <div id="pie-container" />
-      </div>
-      <h2 className="header">Average rating per brand</h2>
-      <div id="barGraph" />
       <h2 className="header">Number of products by brand</h2>
       <div
         style={{
@@ -259,6 +247,19 @@ const ProviderVisualizations = ({}) => {
           })}
         />
       </div>
+      <h2 className="header">Number of products by price range</h2>
+      <div
+        style={{
+          height: 500,
+          width: 500,
+          marginLeft: (window.innerWidth - 500) / 2,
+        }}
+      >
+        <div id="pie-container" />
+      </div>
+      <h2 className="header">Average rating per brand</h2>
+      <div id="barGraph" />
+      <div style={{ height: 60 }} />
     </div>
   );
 };

@@ -1,57 +1,58 @@
 image: node:latest
 
 stages:
-  # - build
+  - build
   - test
-  # - deploy
+  - deploy
 
-# build_app:
-#   stage: build
-#   script:
-#     - cd front-end
-#     - npm install
-#     - export NODE_OPTIONS=--openssl-legacy-provider
-#     - CI=false npm run-script build
+build_app:
+  stage: build
+  script:
+    - cd front-end
+    - npm install
+    - export NODE_OPTIONS=--openssl-legacy-provider
+    - CI=false npm run-script build
 
 jest_tests:
   stage: test
   script:
     - make jest-tests
-# selenium_tests:
-#   image: python:3.7
-#   stage: test
-#   script:
-#     - pip install -r front-end/gui_tests/requirements.txt
 
-#     - apt-get update -q -y
-#     - apt-get install nodejs npm -y
-#     - apt-get --yes install libnss3
-#     - apt-get --yes install libgconf-2-4
-#     - apt-get install libx11-xcb1
+selenium_tests:
+  image: python:3.7
+  stage: test
+  script:
+    - pip install -r front-end/gui_tests/requirements.txt
 
-#     - curl -sS -L https://dl.google.com/linux/linux_signing_key.pub |
-#       apt-key add -
+    - apt-get update -q -y
+    - apt-get install nodejs npm -y
+    - apt-get --yes install libnss3
+    - apt-get --yes install libgconf-2-4
+    - apt-get install libx11-xcb1
 
-#     - echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/
-#       stable main" > /etc/apt/sources.list.d/google.list
-#     - apt-get update -q -y
-#     - apt-get install -y google-chrome-stable
-#     - npm install
-#     - make selenium-tests
+    - curl -sS -L https://dl.google.com/linux/linux_signing_key.pub |
+      apt-key add -
 
-# postman_tests:
-#   stage: test
-#   image:
-#     name: postman/newman_alpine33
-#     entrypoint: [""]
-#   script:
-#     - newman --version
-#     - newman run Postman.json
+    - echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/
+      stable main" > /etc/apt/sources.list.d/google.list
+    - apt-get update -q -y
+    - apt-get install -y google-chrome-stable
+    - npm install
+    - make selenium-tests
 
-# unit_tests:
-#   image: python:3.6-stretch
-#   stage: test
-#   before_script:
-#     - pip install -r back-end/requirements.txt
-#   script:
-#     - make unit-tests
+postman_tests:
+  stage: test
+  image:
+    name: postman/newman_alpine33
+    entrypoint: [""]
+  script:
+    - newman --version
+    - newman run Postman.json
+
+unit_tests:
+  image: python:3.6-stretch
+  stage: test
+  before_script:
+    - pip install -r back-end/requirements.txt
+  script:
+    - make unit-tests
