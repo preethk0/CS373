@@ -26,70 +26,68 @@ const ProviderVisualizations = ({}) => {
   const [brandsData, setBrandsData] = useState([]);
 
   useEffect(() => {
-    const getBrandsData = async () => {
+    const getRatingsGraph = async () => {
       axios.get("https://api.mytechreview.me/brands").then((response) => {
-        const data = response.data;
-        setBrandsData(data);
+        const dataBrands = response.data;
+        setBrandsData(dataBrands);
+
+        const data = dataBrands.map((brand) => brand.avgRating);
+        const h = 150;
+
+        const svg = d3
+          .select("#barGraph")
+          .append("svg")
+          .attr("width", 10.5 * data.length)
+          .attr("height", h)
+          .style("margin-left", 90);
+
+        svg
+          .selectAll("rect")
+          .data(data)
+          .enter()
+          .append("rect")
+          .attr("x", (d, i) => i * 10)
+          .attr("y", (d, i) => h - 20 * d)
+          .attr("width", 6)
+          .attr("height", (d, i) => d * 20)
+          .attr("fill", "orange")
+          .on("mouseover", function (d) {
+            d3.select(this).style("cursor", "pointer");
+            d3.select(this).style("opacity", 0.7);
+          })
+          .on("mouseout", function (d) {
+            d3.select(this).style("cursor", "default");
+            d3.select(this).style("opacity", 1);
+          })
+          .on("click", function (event, d) {
+            const i = data.indexOf(d);
+            window.location =
+              "https://www.mytechreview.me/#/brand/" + dataBrands[i].id;
+          });
+
+        svg
+          .selectAll("name")
+          .data(data)
+          .enter()
+          .append("text")
+          .text((d, i) => (d > 4 ? dataBrands[i]?.name : ""))
+          .style("font-size", "10")
+          .style("font-weight", "bold")
+          .attr("x", (d, i) => i * 10)
+          .attr("y", (d, i) => h - (Math.floor(Math.random() * 5) + 23) * d);
+
+        svg
+          .selectAll("avgRating")
+          .data(data)
+          .enter()
+          .append("text")
+          .text((d, i) => d)
+          .style("font-size", "10")
+          .style("font-weight", "bold")
+          .attr("x", (d, i) => i * 10)
+          .attr("y", (d, i) => h - 21 * d);
       });
     };
-    
-    const getRatingsGraph = async () => {
-      const data = brandsData.map((brand) => brand.avgRating);
-      const h = 150;
-
-      const svg = d3
-        .select("#barGraph")
-        .append("svg")
-        .attr("width", 7.5 * data.length)
-        .attr("height", h)
-        .style("margin-left", 180);
-
-      svg
-        .selectAll("rect")
-        .data(data)
-        .enter()
-        .append("rect")
-        .attr("x", (d, i) => i * 7)
-        .attr("y", (d, i) => h - 4 * d)
-        .attr("width", 5)
-        .attr("height", (d, i) => d * 4)
-        .attr("fill", "orange")
-        .on("mouseover", function (d) {
-          d3.select(this).style("cursor", "pointer");
-          d3.select(this).style("opacity", 0.7);
-        })
-        .on("mouseout", function (d) {
-          d3.select(this).style("cursor", "default");
-          d3.select(this).style("opacity", 1);
-        })
-        .on("click", function (event, d) {
-          const i = data.indexOf(d);
-          window.location = "https://www.mytechreview.me/#/brand/" + brandsData[i].id;
-        });
-
-      svg
-        .selectAll("name")
-        .data(data)
-        .enter()
-        .append("text")
-        .text((d, i) => (d > 4 ? brandsData[i].name : ""))
-        .style("font-size", "10")
-        .style("font-weight", "bold")
-        .attr("x", (d, i) => i * 7)
-        .attr("y", (d, i) => h - 10 * d);
-        
-
-      svg
-        .selectAll("avgRating")
-        .data(data)
-        .enter()
-        .append("text")
-        .text((d, i) => (d))
-        .style("font-size", "10")
-        .style("font-weight", "bold")
-        .attr("x", (d, i) => i * 7)
-        .attr("y", (d, i) => h - 4 * d);
-      };
 
     const drawChart = () => {
       axios.get("https://api.mytechreview.me/products").then((response) => {
@@ -197,54 +195,60 @@ const ProviderVisualizations = ({}) => {
       });
     };
 
-    getBrandsData();
     getRatingsGraph();
     drawChart();
   }, []);
 
   return (
     <div>
-      <h2 className="header">Reviews per brand</h2>
+      <h2 className="header">Average rating per brand</h2>
       <div id="barGraph" />
-      <h2 className="header">Number of Products</h2>
-      <ReactBubbleChart
-        graph={{
-          zoom: 0.7,
-          offsetX: 0.47,
-          offsetY: 0,
+      <h2 className="header">Number of products by brand</h2>
+      <div
+        style={{
+          width: "100%",
+          height: 500,
         }}
-        textSizeFunc={(val) => (val > 1 ? Math.log2(val) * 1.7 : 2)}
-        width={window.innerWidth * 0.4}
-        padding={0} // optional value, number that set the padding between bubbles
-        showLegend={false} // optional value, pass false to disable the legend.
-        legendFont={{
-          family: "Arial",
-          size: 12,
-          color: "#000",
-          weight: "bold",
-        }}
-        valueFont={{
-          family: "Verdana",
-          size: 12,
-          color: "#fff",
-        }}
-        labelFont={{
-          family: "Verdana",
-          size: 12,
-          color: "#fff",
-        }}
-        bubbleClickFunc={(id) => {
-          window.location = "https://www.mytechreview.me/#/brand/" + id;
-        }}
-        data={brandsData.map((brand) => {
-          let num_products = brand.numProducts;
-          return {
-            label: brand.name,
-            value: num_products,
-            id: brand.id,
-          };
-        })}
-      />
+      >
+        <ReactBubbleChart
+          graph={{
+            zoom: 0.6,
+            offsetX: 0.55,
+            offsetY: 0,
+          }}
+          textSizeFunc={(val) => (val > 1 ? Math.log2(val) * 1.7 : 2)}
+          width={window.innerWidth * 0.4}
+          padding={0} // optional value, number that set the padding between bubbles
+          showLegend={false} // optional value, pass false to disable the legend.
+          legendFont={{
+            family: "Arial",
+            size: 12,
+            color: "#000",
+            weight: "bold",
+          }}
+          valueFont={{
+            family: "Verdana",
+            size: 12,
+            color: "#fff",
+          }}
+          labelFont={{
+            family: "Verdana",
+            size: 12,
+            color: "#fff",
+          }}
+          bubbleClickFunc={(id) => {
+            window.location = "https://www.mytechreview.me/#/brand/" + id;
+          }}
+          data={brandsData.map((brand) => {
+            let num_products = brand.numProducts;
+            return {
+              label: brand.name,
+              value: num_products,
+              id: brand.id,
+            };
+          })}
+        />
+      </div>
       <h2 className="header">Number of products by price range</h2>
       <div
         style={{
