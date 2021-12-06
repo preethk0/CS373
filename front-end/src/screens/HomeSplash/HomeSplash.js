@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import ModelCard from "../../components/Cards/ModelCard";
-import DemographicsCoverImage from "../../images/DemographicsCoverImage.png";
-import GeographyCoverImage from "../../images/GeographyCoverImage.png";
-import FoodAndTourismCoverImage from "../../images/FoodAndTourismCoverImage.png";
 import { FaChevronDown } from "react-icons/fa";
 
 import "./HomeSplash.css";
@@ -53,19 +50,19 @@ const HomeSplash = ({}) => {
             name="Demographics"
             description="Learn about the basic facts, demographics and statistics of countries around the world!"
             link="/demographics"
-            photo={DemographicsCoverImage}
+            photo="/images/DemographicsCoverImage.png"
           />
           <ModelCard
             name="Geography"
             description="Gain a better understanding of the geography of various countries and how they connect to each other!"
             link="/geography"
-            photo={GeographyCoverImage}
+            photo="/images/GeographyCoverImage.png"
           />
           <ModelCard
             name="Food and Tourism"
             description="Explore the traditional dishes and culture of different countries and get a glimpse into their popular tourist attractions!"
             link="/foodandtourism"
-            photo={FoodAndTourismCoverImage}
+            photo="/images/FoodAndTourismCoverImage.png"
           />
         </div>
       </section>

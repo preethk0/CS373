@@ -49,23 +49,12 @@
     "eject": "react-scripts eject"
   },
   "jest": {
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf)$": "<rootDir>/assetsTransformer.js",
-      "\\.(webp|svg|ttf|woff|woff2|mp4)$": "<rootDir>/assetsTransformer.js",
-      "\\.(webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js",
-      "\\.(css|less)$": "identity-obj-proxy"
-    },
-    "transform": {
-      "\\.(jpg|jpeg|png|gif|eot|otf)$": "<rootDir>/assetsTransformer.js",
-      "\\.(webp|svg|ttf|woff|woff2|mp4)$": "<rootDir>/assetsTransformer.js",
-      "\\.(webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js"
-    },
-    "snapshotSerializers": [
-      "enzyme-to-json"
+    "transformIgnorePatterns": [
+      "/node_modules/(?!d3-scale-chromatic|d3)/"
     ],
-    "setupFilesAfterEnv": [
-      "<rootDir>/src/setupTests.js"
-    ]
+    "moduleNameMapper": {
+      "\\.(css|less)$": "<rootDir>/styleMock.js"
+    }
   },
   "eslintConfig": {
     "extends": [
@@ -86,7 +75,9 @@
     ]
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.16.4",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.5",
+    "babel-jest": "^27.4.2",
     "enzyme": "^3.11.0",
     "enzyme-to-json": "^3.6.2",
     "jest": "^26.6.0",
